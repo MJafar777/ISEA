@@ -9,7 +9,7 @@ export default function AboutLandingCard({ image, text }) {
         <img className={s.image} src={image} />
       </div>
       <div className={s.descrip}>
-        <p>{text}</p>
+        <p className="text">{text}</p>
         <Button />
       </div>
     </div>
