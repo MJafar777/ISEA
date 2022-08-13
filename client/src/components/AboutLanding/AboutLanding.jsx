@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../title/Title";
+import Title from "../Title/Title";
 import s from "./AboutLanding.module.css";
 import AboutLandingCard from "./AboutLandingCard/AboutLandingCard";
 import image1 from "../../img/hero-Slider/2.jpg";
