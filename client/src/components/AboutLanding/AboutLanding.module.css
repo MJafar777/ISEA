@@ -1,4 +1,18 @@
 .container {
   width: 100%;
-  background-color: red;
+}
+
+.card {
+  background-color: #fff;
+  padding-bottom: 2rem;
+}
+
+.image {
+  width: 100%;
+}
+
+s.content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
