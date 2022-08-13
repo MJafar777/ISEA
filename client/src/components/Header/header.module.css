@@ -4,6 +4,7 @@
   background-color: white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
   position: sticky;
+  z-index: 10;
   top: 0;
 }
 .header {
