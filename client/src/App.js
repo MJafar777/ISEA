@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header/Header";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/homePage";
+import HomePage from "./pages/homePage/HomePage";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
