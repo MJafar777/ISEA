@@ -13,12 +13,7 @@ export default function PublicationLanding() {
       <Title name="Recent Rublications" />
       <div className={s.container}>
         <Card image={image1} title={"Renewable Energy Statistics 2022"} />
-        <Card
-          image={image2}
-          title={
-            "Global Hydrogen Trade to Meet <br/> the 1.5°C Climate Goal: Trade.."
-          }
-        />
+        <Card image={image2} title={"Global Hydrogen Trade to Meet"} />
         <Card image={image3} title={"Scenarios for the Energy Transition"} />
         <Card image={image4} title={"Scenarios for the Energy Transition"} />
       </div>
