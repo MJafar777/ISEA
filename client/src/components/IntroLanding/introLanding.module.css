@@ -17,6 +17,7 @@
 .cardLevel:hover {
   transform: scale(1.05);
   transition: all 0.5s;
+  z-index: 0;
 }
 .cardLevel p {
   /* background-color: hsla(214, 7%, 52%, 0.8); */
