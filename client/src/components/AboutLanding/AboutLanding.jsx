@@ -6,13 +6,15 @@ import image1 from "../../img/hero-Slider/2.jpg";
 import image2 from "../../img/hero-Slider/3.jpg";
 
 export default function AboutLanding() {
+  const text =
+    "With 168 Members, IRENA plays a leading role in the energy transformation as a centre of excellence for knowledge and innovation, a global voice for renewables, a network hub and a source of advice and support for countries.";
   return (
-    <div className={s.container}>
+    <section className={s.container}>
       <Title name="About us" />
       <div className={s.content}>
-        <AboutLandingCard image={image1} text="111" />
-        <AboutLandingCard image={image2} text="111" />
+        <AboutLandingCard image={image1} text={text} />
+        <AboutLandingCard image={image2} text={text} />
       </div>
-    </div>
+    </section>
   );
 }

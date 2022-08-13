@@ -4,15 +4,26 @@
 
 .card {
   background-color: #fff;
-  padding-bottom: 2rem;
 }
 
 .image {
   width: 100%;
+  height: 20rem;
+  object-fit: cover;
 }
 
-s.content {
+.content {
   width: 100%;
   display: grid;
+  gap: 5rem;
   grid-template-columns: 1fr 1fr;
+}
+
+.descrip {
+  padding: 2rem;
+}
+
+.descrip p {
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
