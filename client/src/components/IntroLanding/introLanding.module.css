@@ -1,0 +1,31 @@
+.cards {
+  width: 100%;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 0;
+}
+.cardLevel img {
+  width: 26rem;
+}
+.cardLevel {
+  margin: 0px;
+  padding: 0;
+  background-color: hsla(214, 7%, 52%, 0.8);
+}
+.cardLevel:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.cardLevel p {
+  /* background-color: hsla(214, 7%, 52%, 0.8); */
+  width: 26rem;
+  height: 10.1rem;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 1rem;
+}

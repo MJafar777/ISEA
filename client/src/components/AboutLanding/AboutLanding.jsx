@@ -1,8 +1,9 @@
 import React from "react";
-import Title from "../Title/Title";
+import Title from "../Title/Title.jsx";
 import s from "./AboutLanding.module.css";
 import AboutLandingCard from "./AboutLandingCard/AboutLandingCard";
 import image1 from "../../img/hero-Slider/2.jpg";
+
 import image2 from "../../img/hero-Slider/3.jpg";
 
 export default function AboutLanding() {
