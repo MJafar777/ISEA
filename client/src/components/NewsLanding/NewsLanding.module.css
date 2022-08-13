@@ -1,0 +1,23 @@
+.main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+}
+
+.left {
+}
+
+.mainText a {
+  color: #333;
+  font-size: 4rem;
+}
+.mainText {
+  margin-bottom: 30px;
+}
+
+.mainImg {
+  height: 36rem;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
