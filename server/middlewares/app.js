@@ -8,4 +8,5 @@ app.use(express.json());
 
 app.use("/api/v1/news", newsRouter);
 app.use("/api/v1/books", booksRouter);
+
 module.exports = app;
