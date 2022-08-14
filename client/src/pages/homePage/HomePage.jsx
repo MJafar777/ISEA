@@ -5,6 +5,7 @@ import HeroSlider from "../../components/HeroSlider/HeroSlider";
 import IntroLanding from "../../components/IntroLanding/IntroLanding";
 import NewsLanding from "../../components/NewsLanding/NewsLanding";
 import PublicationLanding from "../../components/PublicationLanding/PublicationLanding";
+import Topic from "../../components/Topics/Topic";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,9 @@ const HomePage = () => {
         <NewsLanding />
       </div>
       <PublicationLanding />
+      <div className="container">
+        <Topic />
+      </div>
       <EnergySources />
     </main>
   );
