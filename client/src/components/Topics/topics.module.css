@@ -1,0 +1,17 @@
+.title {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+}
+.grid {
+  padding: 0 100px;
+  column-gap: 180px;
+  row-gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 60px;
+}
