@@ -5,7 +5,6 @@ import HomePage from "./pages/homePage/HomePage";
 import Footer from "./components/Footer/Footer";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import OurWork from "./pages/OurWork/OurWork";
-import AboutContactPage from "./pages/AboutPage/Contact/AboutContactPage";
 
 const App = () => {
   return (
@@ -14,9 +13,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        {/* about page child comonents started */}
-        <Route path="/AboutContactPage" element={<AboutContactPage />} />
-        {/* about page child comonents finished */}
         <Route path="/ourwork" element={<OurWork />} />
         <Route path="/renewables" element={<HomePage />} />
         <Route path="/newroom" element={<HomePage />} />

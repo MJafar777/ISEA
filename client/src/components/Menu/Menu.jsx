@@ -9,7 +9,7 @@ const AboutMenu = () => {
       <div className={s.aboutMenu}>
         <Title name={"About Menu"} />
         <Router name={"About ISEA"} route={"/about"} />
-        <Router name={"Contact"} route={"/AboutContactPage"} />
+        <Router name={"Contact"} route={"/about/contact"} />
         <Router name={"History"} route={"/abo"} />
         <Router name={"Institutional Structure"} route={"/bout"} />
         <Router name={"ISEA Membership"} route={"/ut"} />
