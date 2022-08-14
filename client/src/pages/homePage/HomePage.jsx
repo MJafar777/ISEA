@@ -7,13 +7,15 @@ import PublicationLanding from "../../components/PublicationLanding/PublicationL
 
 const HomePage = () => {
   return (
-    <div>
-      <IntroLanding />
-      <AboutLanding />
-      <NewsLanding />
+    <main>
+      <div className="container">
+        <IntroLanding />
+        <AboutLanding />
+        <NewsLanding />
+      </div>
       <PublicationLanding />
       <EnergySources />
-    </div>
+    </main>
   );
 };
 
