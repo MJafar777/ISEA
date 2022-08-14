@@ -12,7 +12,8 @@
 .cardLevel {
   margin: 0px;
   padding: 0;
-  background-color: hsla(214, 7%, 52%, 0.8);
+  /* background-color: hsla(214, 7%, 52%, 0.8); */
+  background-color: #ff8302;
 }
 .cardLevel:hover {
   transform: scale(1.05);
