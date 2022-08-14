@@ -3,7 +3,7 @@ import s from "./header.module.css";
 
 import { NavLink } from "react-router-dom";
 
-import logo from "../../img/Logo/neu.svg";
+import logo from "../../img/Logo/neu.png";
 
 import lang from "../../img/icons/lang.svg";
 
@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className={s.main}>
       <div className={container}>
-        <img src={logo} alt="logo" />
+        <img className={s.logo} src={logo} alt="logo" />
         <div className={s.links}>
           <div className={s.menuIcon}>
             <NavLink className={s.link} to={"/about"}>
