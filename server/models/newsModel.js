@@ -7,7 +7,7 @@ const schema = new mongoose.Schema({
   },
   section: [
     {
-      descrpition: {
+      description: {
         type: String,
         required: true,
       },

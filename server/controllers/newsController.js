@@ -21,7 +21,7 @@ exports.addNews = async (req, res, next) => {
 
 exports.getOne = async (req, res, next) => {
   const { id } = req.params;
-  const news = await News.findOne(id);
+  const news = await News.findById(id);
 
   res.status(201).json({
     status: "success",
@@ -32,7 +32,7 @@ exports.getOne = async (req, res, next) => {
 exports.updateNews = async (req, res, next) => {
   const { id } = req.params;
   const news = await News.findByIdAndUpdate(id, req.body);
-  res.status(203).josn({
+  res.status(203).json({
     status: "success",
   });
 };
@@ -40,7 +40,7 @@ exports.updateNews = async (req, res, next) => {
 exports.deleteNews = async (req, res, next) => {
   const { id } = req.params;
   const news = await News.findByIdAndRemove(id);
-  res.status(203).josn({
+  res.status(203).json({
     status: "success",
   });
 };
