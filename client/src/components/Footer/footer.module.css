@@ -1,0 +1,76 @@
+.footer {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #328fbb;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.foot {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.footerTitle h4 {
+  font-size: 18px;
+  margin: 1rem 0;
+}
+.footerTitle h6 {
+  font-size: 14px;
+}
+.footerTitle a {
+  text-decoration: none;
+  color: #fff;
+  user-select: none;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+.footerTitle a img {
+  height: 1.4rem;
+  margin-right: 0.5rem;
+}
+.footerTitle form {
+  margin: 1.5rem 0;
+}
+
+.footerTitle form input {
+  background-color: #328fbb;
+  color: #fff;
+  border: 1px solid #fff;
+  height: 4rem;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  border-radius: 5px 0 0 5px;
+}
+.footerTitle form input:focus {
+  outline: none;
+}
+.footerTitle form input::placeholder {
+  color: #fff;
+}
+.footerTitle form button {
+  height: 4rem;
+  border: 1px solid #fff;
+  font-size: 14px;
+  color: #328fbb;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.footerTitle form button:active {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+.footerTitle p {
+  margin-bottom: 1rem;
+}
