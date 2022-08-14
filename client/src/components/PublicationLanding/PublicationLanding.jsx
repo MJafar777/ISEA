@@ -10,12 +10,14 @@ import image4 from "../../img/Publications/4.jpg";
 export default function PublicationLanding() {
   return (
     <div className={s.background}>
-      <Title name="Recent Rublications" />
-      <div className={s.container}>
-        <Card image={image1} title={"Renewable Energy Statistics 2022"} />
-        <Card image={image2} title={"Global Hydrogen Trade to Meet"} />
-        <Card image={image3} title={"Scenarios for the Energy Transition"} />
-        <Card image={image4} title={"Scenarios for the Energy Transition"} />
+      <div className="container">
+        <Title name="Recent Rublications" />
+        <div className={s.container}>
+          <Card image={image1} title={"Renewable Energy Statistics 2022"} />
+          <Card image={image2} title={"Global Hydrogen Trade to Meet"} />
+          <Card image={image3} title={"Scenarios for the Energy Transition"} />
+          <Card image={image4} title={"Scenarios for the Energy Transition"} />
+        </div>
       </div>
     </div>
   );

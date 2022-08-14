@@ -1,26 +1,31 @@
 .energyComponent {
   width: 100%;
   padding: 3rem 0;
-  /* background-color: #fff; */
+  background-color: #fff;
 }
+
 .rowParent {
   display: flex;
   align-items: center;
   justify-content: space-around;
   cursor: pointer;
 }
+
 .row:hover {
   transform: scale(1.05);
   transition: all 0.5s;
   box-shadow: 0px 1.5px 3px 3px rgba(128, 128, 128, 0.575);
   border-radius: 20%;
 }
+
 .row {
   padding: 1rem;
 }
+
 .energys img {
   transform: scale(0.8);
 }
+
 .energys p {
   text-align: center;
   font-size: 16px;

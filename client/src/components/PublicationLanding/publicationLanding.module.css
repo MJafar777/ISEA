@@ -1,7 +1,7 @@
 .background {
   margin-top: 30px;
-  /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.418) 0 100%),
-    url("../../img/hero-Slider/5.jpg"); */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.418) 0 100%),
+    url("../../img/hero-Slider/5.jpg");
   padding: 10px 0 40px;
 }
 
@@ -18,7 +18,6 @@
 }
 
 .image {
-  /* width: 100%; */
   object-fit: cover;
   height: 280px;
   width: 200px;
