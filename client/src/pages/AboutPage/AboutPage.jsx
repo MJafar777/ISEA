@@ -1,11 +1,11 @@
 import React from "react";
 import Title from "../../components/Title/Title";
-import AboutMenu from "../../components/Menu/Menu";
 import s from "./AboutPage.module.css";
 import AboutContactPage from "./Contact/AboutContactPage";
 import batary from "../../img/hero-Slider/aboutAdd.jpg";
 import About from "./About/About";
-import { Routes, Route } from "react-router-dom";
+
+import Menu from "../../components/Menu/Menu";
 
 const AboutPage = () => {
   return (
@@ -14,12 +14,10 @@ const AboutPage = () => {
       <img src={batary} alt="batary" className={s.batary} />
       <div className={s.containerInfo}>
         <About />
-        <Routes>
-          <Route path={"/about/contact"} element={<AboutContactPage />} />
-        </Routes>
+        {/* <AboutContactPage /> */}
         <hr />
         <div className={s.RightContainer}>
-          <AboutMenu />
+          <Menu />
         </div>
       </div>
     </div>

@@ -3,13 +3,13 @@ import React from "react";
 import Router from "../Router/Router";
 import Title from "../Title/Title";
 import s from "./Menu.module.css";
-const AboutMenu = () => {
+const Menu = () => {
   return (
     <div>
+      <Title name={"About Menu"} />
       <div className={s.aboutMenu}>
-        <Title name={"About Menu"} />
         <Router name={"About ISEA"} route={"/about"} />
-        <Router name={"Contact"} route={"/about/contact"} />
+        <Router name={"Contact"} route={"/contact"} />
         <Router name={"History"} route={"/abo"} />
         <Router name={"Institutional Structure"} route={"/bout"} />
         <Router name={"ISEA Membership"} route={"/ut"} />
@@ -21,4 +21,4 @@ const AboutMenu = () => {
   );
 };
 
-export default AboutMenu;
+export default Menu;

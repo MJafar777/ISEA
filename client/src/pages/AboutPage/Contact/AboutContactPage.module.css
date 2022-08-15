@@ -7,3 +7,74 @@
   height: 50vh;
   object-fit: cover;
 }
+.containerInfo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.contact {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  margin: 0 auto 4rem;
+}
+.leftContainer {
+  width: 60%;
+  font-size: 16px;
+  color: #328fbb;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.RightContainer {
+  width: 25%;
+}
+hr {
+  margin: 0 2rem;
+  border: 0.1px solid #0073ab;
+}
+.hrr {
+  width: 110%;
+}
+.city {
+  width: 25rem;
+  height: 15rem;
+}
+.contactTitle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.contactTitleChild {
+  margin: 2rem;
+}
+.contactTitleChild h2 {
+  color: black;
+  font-size: 18px;
+}
+.contactTitleChild p,
+.contactTitleChild h4 {
+  margin: 1rem 0;
+}
+.contactTitleChild h4 {
+  cursor: pointer;
+}
+
+.titleTeam {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleTeam img {
+  width: 30%;
+  margin: 1rem 2rem 1rem 0;
+}
+.titleTeam div p {
+  margin: 2rem 0;
+}
+/* otherContact Started */
+
+.otherContact {
+  width: 100%;
+  height: 40vh;
+}
