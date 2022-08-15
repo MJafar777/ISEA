@@ -57,3 +57,9 @@ ul {
   font-size: 1.3rem;
   line-height: 1.5;
 }
+
+.active {
+  transition: all 0.5s;
+  font-size: 22px;
+  color: black !important;
+}

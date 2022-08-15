@@ -1,0 +1,14 @@
+.linkAboutMenu {
+  display: block;
+  margin: 2rem 0;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0073ab;
+  user-select: none;
+}
+.linkAboutMenu:hover {
+  transition: all 0.5s;
+  transform: translateX(1rem);
+  text-decoration: underline;
+  text-decoration-color: black;
+}
