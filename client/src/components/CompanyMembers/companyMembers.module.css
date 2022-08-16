@@ -1,0 +1,29 @@
+.parentContainer {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  width: 80%;
+  height: 25rem;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+}
+.slayd {
+  width: 35rem;
+  padding: 2rem;
+  background-color: #fff;
+  margin: 2rem;
+  user-select: none;
+}
+.control_Slider {
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+.control_Slider:active {
+  transform: scale(1.05);
+  transition: all 0.2s;
+}

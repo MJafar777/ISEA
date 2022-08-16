@@ -1,5 +1,6 @@
 import React from "react";
 import AboutLanding from "../../components/AboutLanding/AboutLanding";
+import CompanyMembers from "../../components/CompanyMembers/CompanyMembers";
 import EnergySources from "../../components/EnergySources/EnergySources";
 import HeroSlider from "../../components/HeroSlider/HeroSlider";
 import IntroLanding from "../../components/IntroLanding/IntroLanding";
@@ -17,6 +18,7 @@ const HomePage = () => {
         <NewsLanding />
       </div>
       <PublicationLanding />
+      <CompanyMembers />
       <div className="container">
         <Topic />
       </div>

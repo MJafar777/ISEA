@@ -1,6 +1,11 @@
 .logo {
   width: 150px;
   cursor: pointer;
+  animation-name: logo;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .main {
@@ -50,4 +55,20 @@
 .links {
   display: flex;
   align-items: center;
+}
+@keyframes logo {
+  0% {
+    opacity: 1;
+    transform: rotateY(360deg) scale(1.05);
+  }
+  50% {
+    opacity: 0.5;
+    /* transform: rotateY(320deg); */
+    transform: rotateZ(350deg);
+  }
+  100% {
+    opacity: 1;
+    /* box-shadow: 0 1.5px 3px 6px #0072ab70; */
+    transform: rotateY(360deg) scale(1.05);
+  }
 }
