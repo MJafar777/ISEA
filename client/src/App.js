@@ -6,6 +6,8 @@ import Footer from "./components/Footer/Footer";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import OurWork from "./pages/OurWork/OurWork";
 import AboutContactPage from "./pages/AboutPage/Contact/AboutContactPage";
+import Renewables from "./pages/Renewables/Renewables";
+import "./pages/Renewables/renewables.module.css";
 
 const App = () => {
   return (
@@ -18,7 +20,7 @@ const App = () => {
         <Route path="/contact" element={<AboutContactPage />} />
         {/* about page child comonents finished */}
         <Route path="/ourwork" element={<OurWork />} />
-        <Route path="/renewables" element={<HomePage />} />
+        <Route path="/renewables" element={<Renewables />} />
         <Route path="/newroom" element={<HomePage />} />
         <Route path="/publications" element={<HomePage />} />
         <Route path="/education" element={<HomePage />} />

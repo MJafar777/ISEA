@@ -36,10 +36,10 @@ const Header = () => {
               EDUCATION
             </NavLink>
             <NavLink className={s.link} to={"/data"}>
-              DATA
+              ENGINEERING
             </NavLink>
             <NavLink className={s.link} to={"/events"}>
-              EVENTS
+              PROJECTS
             </NavLink>
           </div>
           <div className={s.selector}>
