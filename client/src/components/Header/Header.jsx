@@ -12,7 +12,9 @@ const Header = () => {
   return (
     <div className={s.main}>
       <div className={container}>
-        <img className={s.logo} src={logo} alt="logo" />
+        <NavLink className={s.link} to={"/"}>
+          <img className={s.logo} src={logo} alt="logo" />
+        </NavLink>
         <div className={s.links}>
           <div className={s.menuIcon}>
             <NavLink className={s.link} to={"/about"}>
