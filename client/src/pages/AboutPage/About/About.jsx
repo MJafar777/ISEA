@@ -16,7 +16,7 @@ const About = () => {
           работ направленных на трансфер технологий.
         </p>
         <p>
-          With a mandate from countries around the world, IRENA encourages
+          With a mandate from countries around the world, ISEA encourages
           governments to adopt enabling policies for renewable energy
           investments, provides practical tools and policy advice to accelerate
           renewable energy deployment, and facilitates knowledge sharing and
@@ -33,41 +33,53 @@ const About = () => {
             в области <span>солнечной энергии</span>;
           </li>
           <li>
-            - внедрение целевых научных программ на уровне мировых требований и
+            внедрение целевых научных программ на уровне мировых требований и
             стандартов, содействие в организации типовых{" "}
             <span>научно-исследовательских институтов</span>;
           </li>
           <li>
-            Renewable energy <span>cost studies</span>;
+            содействие в организации и организация сертификационных услуг
+            солнечных технологий и их компонентов <span>компонентов</span>;
           </li>
           <li>
-            <span>Renewables Readiness Assessments</span> , conducted in
-            partnership with governments and regional organisations, to help
-            boost renewable energy development on a country by country basis;
+            <span>содействие в организации</span> - проектно-изыскательских
+            работ с участием иностранных специалистов;
           </li>
           <li>
-            The <span>Global</span> Atlas, which maps resource potential by
-            source and by location;
+            The <span>Global</span>- содействие в разработке и подготовке
+            технико-экономических обоснований (ТЭО) и предварительных
+            технико-экономических обоснований (ПТЭО) наряду с реализацией
+            местных и инвестиционных проектов по внедрению солнечных технологий;
           </li>
           <li>
-            Renewable energy <span>benefits studies</span>;
+            содействие в разработке передовых технологий и технических решений
+            солнечной и ветровой энергии на основе передовых материалов;
           </li>
           <li>
-            <span>REmap</span>, a roadmap to double renewable energy use
-            worldwide by 2030;
+            развитие эффективных форм сотрудничества, интеграция науки и
+            техники.
           </li>
-          <li>Renewable energy technology briefs;</li>
-          <li>Facilitation of regional renewable energy planning;</li>
           <li>
-            Renewable energy project development tools like the Project
-            Navigator, the Sustainable Energy Marketplace and the IRENA/ADFD
-            Project Facility.
+            содействие укреплению потенциала науки и инноваций путем организации
+            научных конференций, семинаров и практикумов с местными и
+            зарубежными университетами, учебными и научно-исследовательскими
+            учреждениями;
+          </li>
+          <li>
+            содействие развитию международного научно-технического
+            сотрудничества через международные научно-исследовательские и
+            образовательные учреждения, инновационные центры, зарубежных
+            партнеров, научно-технические и инновационные проекты, обмен
+            знаниями и специалистами и реализацию совместных проектов;
+          </li>
+          <li>
+            привлечение грантовых средств из международных проектов и фондов для
+            реализации крупных исследовательских проектов;
           </li>
         </ul>
         <p>
-          With more than 180 countries actively engaged, IRENA promotes
-          renewable resources and technologies as the key to a sustainable
-          future and helps countries achieve their renewable energy potential.
+          - организация и проведение конкурсов, конкурсов и конкурсов по
+          солнечным энергетическим технологиям, проблемам и решениям.
         </p>
       </div>
     </>
