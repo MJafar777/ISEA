@@ -1,0 +1,8 @@
+.content {
+  display: flex;
+  gap: 10px;
+}
+
+.content span {
+  font-size: 12px;
+}

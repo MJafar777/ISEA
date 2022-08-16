@@ -3,13 +3,12 @@ import s from "./header.module.css";
 import { NavLink } from "react-router-dom";
 import logo from "../../img/Logo/neu.png";
 import lang from "../../img/icons/lang.svg";
-
-import bottom from "../../img/icons/left_icon.svg";
-
 import Navbar from "../Navbar/Navbar";
+import Profile from "../Profile/Profile";
 
 const Header = () => {
   const container = s.header + " " + "container";
+  const isAuth = false;
   return (
     <div className={s.main}>
       <div className={container}>
@@ -18,31 +17,6 @@ const Header = () => {
         </NavLink>
         <div className={s.links}>
           <div className={s.menuIcon}>
-            HEAD
-            <NavLink className={s.link} to={"/about"}>
-              ABOUT
-            </NavLink>
-            <NavLink className={s.link} to={"/ourwork"}>
-              OUR WORK <img className={s.bottom} src={bottom} alt="bottom" />
-            </NavLink>
-            <NavLink className={s.link} to={"/renewables"}>
-              RENEWABLES
-            </NavLink>
-            <NavLink className={s.link} to={"/newroom"}>
-              NEWSROOM
-            </NavLink>
-            <NavLink className={s.link} to={"/publications"}>
-              PUBLICATIONS
-            </NavLink>
-            <NavLink className={s.link} to={"/education"}>
-              EDUCATION
-            </NavLink>
-            <NavLink className={s.link} to={"/data"}>
-              ENGINEERING
-            </NavLink>
-            <NavLink className={s.link} to={"/events"}>
-              PROJECTS
-            </NavLink>
             <Navbar name="ABOUT" route={"/about"} />
             <Navbar name="OURWORK" route={"/ourwork"} />
             <Navbar name="RENEWABLES" route={"/renewables"} />
@@ -51,14 +25,24 @@ const Header = () => {
             <Navbar name="PUBLICATION" route={"/engineering"} />
             <Navbar name="PROJECT" route={"/project"} />
           </div>
-          <div className={s.selector}>
-            <img className={s.lang} src={lang} alt="lang" />
+          {/* <div className={s.selector}>
+             <img className={s.lang} src={lang} alt="lang" />
             <select className="select" name="language" id="language">
               <option value="eng">Eng</option>
               <option value="rus">Rus</option>
               <option value="uzb">Uzb</option>
-            </select>
-          </div>
+            </select> 
+          </div> */}
+        </div>
+        <div className={s.profile}>
+          {isAuth ? (
+            <Profile name={"Niyozbek Pulatov"} image={"111"} />
+          ) : (
+            <>
+              <NavLink to={"/login"}>Login</NavLink>
+              <NavLink to={"/register"}>Register</NavLink>
+            </>
+          )}
         </div>
       </div>
     </div>
