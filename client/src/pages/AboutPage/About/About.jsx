@@ -1,5 +1,5 @@
 import React from "react";
-  
+
 import s from "../AboutPage.module.css";
 
 const About = () => {
@@ -7,16 +7,13 @@ const About = () => {
     <>
       <div className={s.leftContainer}>
         <p>
-          The International Renewable Energy Agency (IRENA) is an
-          intergovernmental organisation that supports countries in their
-          transition to a sustainable energy future, and serves as the principal
-          platform for international cooperation, a centre of excellence, and a
-          repository of policy, technology, resource and financial knowledge on
-          renewable energy. IRENA promotes the widespread adoption and
-          sustainable use of all forms of renewable energy, including bioenergy,
-          geothermal, hydropower, ocean, solar and wind energy in the pursuit of
-          sustainable development, energy access, energy security and low-carbon
-          economic growth and prosperity.
+          Основной целью организации является содействие эффективному
+          использованию передовых технологий в области солнечной энергетики на
+          основе подготовки и переподготовки кадров в соответствии с
+          международными стандартами и требованиями, стратегический анализ
+          крупных проектов и управление проектами, реализуемых за счет
+          внутренних и иностранных инвестиций, а также содействие в реализации
+          работ направленных на трансфер технологий.
         </p>
         <p>
           With a mandate from countries around the world, IRENA encourages
@@ -27,16 +24,18 @@ const About = () => {
           world’s growing population.
         </p>
         <p>
-          In line with these aims, IRENA provides a wide range of products and
-          services, including:
+          Для достижения своих целей организация выполняет следующие задачи:
         </p>
 
         <ul style={{ listStyleType: "circle" }}>
           <li>
-            Annual reviews of renewable energy <span>employment</span>;
+            проведение фундаментальных, прикладных и инновационных исследований
+            в области <span>солнечной энергии</span>;
           </li>
           <li>
-            Renewable energy <span>capacity statistics</span>;
+            - внедрение целевых научных программ на уровне мировых требований и
+            стандартов, содействие в организации типовых{" "}
+            <span>научно-исследовательских институтов</span>;
           </li>
           <li>
             Renewable energy <span>cost studies</span>;
