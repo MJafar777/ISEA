@@ -16,3 +16,25 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 60px;
 }
+.content {
+  cursor: pointer;
+}
+.content:hover {
+  border-radius: 20px;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+@keyframes logo {
+  0% {
+    opacity: 1;
+    transform: translate(120deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(180deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
