@@ -11,8 +11,16 @@ exports.getBooks = async (req, res, next) => {
 };
 
 exports.addBooks = async (req, res, next) => {
-  const { section, title, category, publisher } = req.body;
-  const books = await Books.create({ section, title, category, publisher });
+  const { section, title, language, description, category, publisher } =
+    req.body;
+  const books = await Books.create({
+    section,
+    title,
+    category,
+    publisher,
+    description,
+    language,
+  });
   res.status(201).json({
     status: "success",
     books,
@@ -21,7 +29,7 @@ exports.addBooks = async (req, res, next) => {
 
 exports.getOne = async (req, res, next) => {
   const { id } = req.params;
-  const Books = await Books.findById(id);
+  const books = await Books.findById(id);
 
   res.status(201).json({
     status: "success",
