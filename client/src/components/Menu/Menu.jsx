@@ -1,12 +1,9 @@
 import React from "react";
-
 import Router from "../Router/Router";
-import Title from "../Title/Title";
 import s from "./Menu.module.css";
 const Menu = () => {
   return (
     <div>
-      <Title name={"About Menu"} />
       <div className={s.aboutMenu}>
         <Router name={"About ISEA"} route={"/about"} />
         <Router name={"Contact"} route={"/contact"} />

@@ -14,9 +14,9 @@ const AboutPage = () => {
       <img src={batary} alt="batary" className={s.batary} />
       <div className={s.containerInfo}>
         <About />
-        {/* <AboutContactPage /> */}
         <hr />
         <div className={s.RightContainer}>
+          <Title name={"About"} />
           <Menu />
         </div>
       </div>

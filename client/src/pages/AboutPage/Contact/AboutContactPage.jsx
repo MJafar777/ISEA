@@ -83,6 +83,7 @@ const AboutContactPage = () => {
           </div>
           <hr />
           <div className={s.RightContainer}>
+            <Title name={"Contact"} />
             <Menu />
           </div>
         </div>
