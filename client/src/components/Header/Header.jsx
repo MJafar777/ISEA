@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../img/Logo/neu.png";
 
 import lang from "../../img/icons/lang.svg";
+import bottom from "../../img/icons/left_icon.svg";
 
 const Header = () => {
   const container = s.header + " " + "container";
@@ -21,7 +22,7 @@ const Header = () => {
               ABOUT
             </NavLink>
             <NavLink className={s.link} to={"/ourwork"}>
-              OUR WORK
+              OUR WORK <img className={s.bottom} src={bottom} alt="bottom" />
             </NavLink>
             <NavLink className={s.link} to={"/renewables"}>
               RENEWABLES

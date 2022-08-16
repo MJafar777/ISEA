@@ -9,7 +9,8 @@
   margin: 4rem auto;
   display: flex;
   justify-content: center;
-  overflow-x: scroll;
+  /* overflow: scroll; */
+  overflow: scroll;
 }
 .slayd {
   width: 35rem;
