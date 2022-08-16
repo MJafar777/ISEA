@@ -11,6 +11,8 @@ import Publication from "./pages/Publication/Publication";
 import Education from "./pages/Education/Education";
 import Engineering from "./pages/Engineering/Engineering";
 import Project from "./pages/Project/Project";
+import Renewables from "./pages/Renewables/Renewables";
+import "./pages/Renewables/renewables.module.css";
 
 const App = () => {
   return (
@@ -29,6 +31,12 @@ const App = () => {
         <Route path="/education" element={<Education />} />
         <Route path="/engineering" element={<Engineering />} />
         <Route path="/project" element={<Project />} />
+        <Route path="/renewables" element={<Renewables />} />
+        <Route path="/newroom" element={<HomePage />} />
+        <Route path="/publications" element={<HomePage />} />
+        <Route path="/education" element={<HomePage />} />
+        <Route path="/data" element={<HomePage />} />
+        <Route path="/events" element={<HomePage />} />
       </Routes>
       <Footer />
     </>
