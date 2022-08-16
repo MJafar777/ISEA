@@ -1,11 +1,9 @@
 import React from "react";
 import s from "./header.module.css";
-
 import { NavLink } from "react-router-dom";
-
 import logo from "../../img/Logo/neu.png";
-
 import lang from "../../img/icons/lang.svg";
+import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
   const container = s.header + " " + "container";
@@ -17,30 +15,13 @@ const Header = () => {
         </NavLink>
         <div className={s.links}>
           <div className={s.menuIcon}>
-            <NavLink className={s.link} to={"/about"}>
-              ABOUT
-            </NavLink>
-            <NavLink className={s.link} to={"/ourwork"}>
-              OUR WORK
-            </NavLink>
-            <NavLink className={s.link} to={"/renewables"}>
-              RENEWABLES
-            </NavLink>
-            <NavLink className={s.link} to={"/newroom"}>
-              NEWSROOM
-            </NavLink>
-            <NavLink className={s.link} to={"/publications"}>
-              PUBLICATIONS
-            </NavLink>
-            <NavLink className={s.link} to={"/education"}>
-              EDUCATION
-            </NavLink>
-            <NavLink className={s.link} to={"/data"}>
-              ENGINEERING
-            </NavLink>
-            <NavLink className={s.link} to={"/events"}>
-              PROJECTS
-            </NavLink>
+            <Navbar name="ABOUT" route={"/about"} />
+            <Navbar name="OURWORK" route={"/ourwork"} />
+            <Navbar name="RENEWABLES" route={"/renewables"} />
+            <Navbar name="PUBLICATIONS" route={"/publications"} />
+            <Navbar name="EDUCATION" route={"/education"} />
+            <Navbar name="PUBLICATION" route={"/engineering"} />
+            <Navbar name="PROJECT" route={"/project"} />
           </div>
           <div className={s.selector}>
             <img className={s.lang} src={lang} alt="lang" />

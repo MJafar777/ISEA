@@ -6,6 +6,11 @@ import Footer from "./components/Footer/Footer";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import OurWork from "./pages/OurWork/OurWork";
 import AboutContactPage from "./pages/AboutPage/Contact/AboutContactPage";
+import Newsroom from "./pages/Newsroom/Newsroom";
+import Publication from "./pages/Publication/Publication";
+import Education from "./pages/Education/Education";
+import Engineering from "./pages/Engineering/Engineering";
+import Project from "./pages/Project/Project";
 import Renewables from "./pages/Renewables/Renewables";
 import "./pages/Renewables/renewables.module.css";
 
@@ -20,6 +25,12 @@ const App = () => {
         <Route path="/contact" element={<AboutContactPage />} />
         {/* about page child comonents finished */}
         <Route path="/ourwork" element={<OurWork />} />
+        <Route path="/renewables" element={<HomePage />} />
+        <Route path="/newroom" element={<Newsroom />} />
+        <Route path="/publications" element={<Publication />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/engineering" element={<Engineering />} />
+        <Route path="/project" element={<Project />} />
         <Route path="/renewables" element={<Renewables />} />
         <Route path="/newroom" element={<HomePage />} />
         <Route path="/publications" element={<HomePage />} />
