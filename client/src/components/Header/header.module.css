@@ -1,11 +1,11 @@
 .logo {
   width: 150px;
   cursor: pointer;
-  animation-name: logo;
+  /* animation-name: logo;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 
 .main {
@@ -26,18 +26,7 @@
 .menuIcon {
   margin-left: 3rem;
 }
-.link {
-  font-size: 1.5rem;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: 600;
-  color: #0073ab;
-  user-select: none;
-}
-.link:active {
-  transform: scale(1.05);
-  transition: all 0.2s ease-in-out;
-}
+
 .lang {
   width: 2rem;
   display: inline-block;
@@ -56,6 +45,9 @@
   display: flex;
   align-items: center;
 }
+.bottom {
+  width: 10rem;
+}
 
 @keyframes logo {
   0% {
@@ -64,12 +56,12 @@
   }
   50% {
     opacity: 0.5;
-    /* transform: rotateY(320deg); */
+    transform: rotateY(320deg);
     transform: rotateZ(350deg);
   }
   100% {
     opacity: 1;
-    /* box-shadow: 0 1.5px 3px 6px #0072ab70; */
+    box-shadow: 0 1.5px 3px 6px #0072ab70;
     transform: rotateY(360deg) scale(1.05);
   }
 }
