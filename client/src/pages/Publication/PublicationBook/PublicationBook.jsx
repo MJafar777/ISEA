@@ -6,14 +6,21 @@ import Router from "../../../components/Router/Router";
 import PublicationImage from "../PublicationImage/PublicationImage";
 import image from "../../../img/Publications/3.jpg";
 
-export default function PublicationBook({ name }) {
+export default function PublicationBook({ name, date, isbn }) {
   const container = s.content + " " + "container";
   return (
     <div className={container}>
       <div>
         <Title name={name} />
         <div className={s.book}>
-          <PublicationImage image={image} />
+          <div>
+            <PublicationImage image={image} />
+            <p className={s.date}>{date}</p>
+            <p className={s.isbn}>ISBN: {isbn}</p>
+            <form action="/" method="post">
+              <button type="submit">Download</button>
+            </form>
+          </div>
           <div>
             <h2 className={s.title}>Download Renewable energy highlights</h2>
             <p className={s.text}>
@@ -62,11 +69,11 @@ export default function PublicationBook({ name }) {
       <div>
         <Menu title={"Browse by topic"}>
           <Router route={"/benefits"} name={"Benefits"} />
-          <Router route={"/benefits"} name={"Costs"} />
-          <Router route={"/benefits"} name={"Off-grid of energy"} />
-          <Router route={"/benefits"} name={"Energy Transition"} />
-          <Router route={"/benefits"} name={"Finance & Invesment"} />
-          <Router route={"/benefits"} name={"See all"} />
+          <Router route={"/costs"} name={"Costs"} />
+          <Router route={"/gridenergy"} name={"Off-grid of energy"} />
+          <Router route={"/transition"} name={"Energy Transition"} />
+          <Router route={"/finances"} name={"Finance & Invesment"} />
+          <Router route={"/see"} name={"See all"} />
         </Menu>
       </div>
     </div>
