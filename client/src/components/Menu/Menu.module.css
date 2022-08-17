@@ -5,3 +5,9 @@
   padding-left: 4rem;
   border-radius: 1rem;
 }
+
+.title {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 20px;
+}

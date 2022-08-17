@@ -10,3 +10,17 @@
   grid-template-columns: 3fr 1fr;
   gap: 30px;
 }
+
+.futher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--color-primary);
+  cursor: pointer;
+}
