@@ -34,10 +34,6 @@ const userScheme = new mongoose.Schema(
       type: String,
       default: "default.jpeg",
     },
-    phone: {
-      type: String,
-      unique: true,
-    },
     email: {
       type: String,
       unique: true,
@@ -72,14 +68,6 @@ const userScheme = new mongoose.Schema(
       enum: ["user", "sponsor", "admin", "engineer"],
       default: "user",
     },
-    phone_active: {
-      type: Boolean,
-      default: false,
-    },
-    email_active: {
-      type: Boolean,
-      default: false,
-    },
     active_user: {
       type: Boolean,
       default: true,
@@ -94,6 +82,21 @@ const userScheme = new mongoose.Schema(
   }
 );
 
-const User = mongoose.model("users", userScheme);
+userScheme.pre("save", async function (next) {
+  console.log("pre ga kirish", this.password);
+
+  if (!this.isModified("password")) {
+    return next();
+  }
+
+  const hashPassword = await bcrypt.hash(this.password, 12);
+
+  this.password = hashPassword;
+
+  this.passwordConfirm = undefined; // pasword confirm bizga keremas shuning uchun databasega saqlash kerak emas shuning uchun undefined qib beramiz
+
+  next();
+});
+const User = mongoose.model("users1", userScheme);
 
 module.exports = User;

@@ -3,6 +3,7 @@ const User = require("../models/userModel");
 const catchErrLittle = require("../utility/catchErrorLitlle");
 const Email = require("../utility/mail");
 const jwt = require("jsonwebtoken");
+const AppError = require("../utility/appError");
 
 const saveCookie = (req, res, token) => {
   res.cookie("code", token, {
@@ -33,13 +34,11 @@ const signUp = catchErrLittle(async (req, res, next) => {
     });
 
     if (hasEmail) {
-      await Code.findByIdAndUpdate(hasEmail._id, {
-        code: randomCode,
-        expired_date: Number(Date.now()) + 600000,
-        verified: false,
-      });
-
-      token = createToken(hasEmail._id);
+      return next(
+        new AppError(
+          "Siz bu email bilan royhatdan otgansiz.Iltimos tizimga kirishni bosing."
+        )
+      );
     } else {
       const newUser = await Code.create({
         email_or_phone: user.email,
@@ -105,22 +104,16 @@ const register = catchErrLittle(async (req, res, next) => {
     );
   }
 
-  const check = user.email_or_phone.includes("@");
-
   const data = await User.create({
     name: req.body.name,
     surname: req.body.surname,
     name_of_father: req.body.name_of_father,
-    date_of_birth: req.body.date_of_birth,
     gender: req.body.gender,
     photo: req.body.photo,
-    phone: check ? "" : user.email_or_phone,
-    email: check ? user.email_or_phone : "",
+    email: user.email_or_phone,
     password: req.body.password,
     passwordConfirm: req.body.passwordConfirm,
     role: req.body.role,
-    phone_active: check ? false : true,
-    email_active: check ? true : false,
   });
 
   res.status(200).json({
