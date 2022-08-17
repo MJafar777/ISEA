@@ -130,7 +130,7 @@ const OurWork = () => {
             corrupti ipsam assumenda voluptatem ad cupiditate voluptates error
             nam nobis fugit, quidem mollitia odio voluptatibus eaque impedit.
           </div>
-          
+
           <div className={s.content2}>
             <div>
               <h3>lorem</h3>
@@ -200,7 +200,6 @@ const OurWork = () => {
             eligendi unde eius dolore quis. Distinctio, totam architecto! Fugiat
             rem voluptatum odio! Sit exercitationem expedita eius, enim quis
             corrupti ipsam assumenda voluptatem ad cupiditate voluptates error
-            nam nobis fugit, quidem mollitia odio voluptatibus eaque impedit.
           </div>
         </div>
       </div>
