@@ -4,3 +4,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.featured {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}
