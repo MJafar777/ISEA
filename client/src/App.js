@@ -33,7 +33,12 @@ const App = () => {
         <Route path="/engineering" element={<Engineering />} />
         <Route path="/project" element={<Project />} />
         <Route path="/renewables" element={<Renewables />} />
-        <Route path="/publications/:id" element={<PublicationBook />} />
+        <Route
+          path="/publications/:id"
+          element={
+            <PublicationBook name={"Renewable Energy Statistics 2022"} />
+          }
+        />
       </Routes>
       <Footer />
     </>
