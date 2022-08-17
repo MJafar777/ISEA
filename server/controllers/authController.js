@@ -13,9 +13,23 @@ const saveCookie = (req, res, token) => {
   });
 };
 
+const saveCookieAfterEntering = (req, res, token) => {
+  res.cookie("afterEnter", token, {
+    maxAge: 10 * 24 * 60 * 60 * 1000,
+    httpOnly: true,
+    secure: process.env.NODE_ENV == "DEVELOPMENT" ? false : true,
+  });
+};
+
 const createToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET_KEY, {
     expiresIn: 10 * 60 * 1000,
+  });
+};
+
+const createTokenAfterEntering = (id) => {
+  return jwt.sign({ id }, process.env.JWT_SECRET_KEY, {
+    expiresIn: 10 * 24 * 60 * 60 * 1000,
   });
 };
 
@@ -104,7 +118,7 @@ const register = catchErrLittle(async (req, res, next) => {
     );
   }
 
-  const data = await User.create({
+  const newUser = await User.create({
     name: req.body.name,
     surname: req.body.surname,
     name_of_father: req.body.name_of_father,
@@ -116,11 +130,27 @@ const register = catchErrLittle(async (req, res, next) => {
     role: req.body.role,
   });
 
+  const token = createTokenAfterEntering(newUser._id);
+
+  saveCookieAfterEntering(req, res, token);
+
   res.status(200).json({
     status: "success",
     message: "Siz muvaffaqiyatli royhatdan otdingiz",
-    data: data,
+    data: newUser,
   });
 });
 
-module.exports = { signUp, verify, register };
+const login = async (req, res, next) => {
+  const { email, password } = req.body;
+
+  if (!email && !password) {
+    return next("Email yoki passwordni kiriting", 404);
+  }
+
+  const user = await User.find({
+    email: email,
+  });
+};
+
+module.exports = { signUp, verify, register, login };
