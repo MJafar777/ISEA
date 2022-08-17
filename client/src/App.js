@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/contact" element={<AboutContactPage />} />
         {/* about page child comonents finished */}
         <Route path="/ourwork" element={<OurWork />} />
-        <Route path="/renewables" element={<HomePage />} />
+        <Route path="/renewables" element={<Renewables />} />
         <Route path="/newroom" element={<Newsroom />} />
         <Route path="/publications" element={<Publication />} />
         <Route path="/education" element={<Education />} />
