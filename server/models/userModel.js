@@ -25,13 +25,10 @@ const userScheme = new mongoose.Schema(
       minlength: [3, "Siz eng kamida 3 ta symbol ishlata olasiz"],
       maxlength: [30, "Siz eng kopida 12 ta symbol ishlata olasiz"],
     },
-    date_of_birth: {
-      type: Date,
-      required: [true, "Siz tugilgan kuningizni kiritishingiz kerak"],
-    },
     gender: {
       type: String,
-      required: [true, "Siz millatni kiritishingiz kerak"],
+      required: [true, "Siz gender kiritishingiz kerak"],
+      enum: ["male", "female"],
     },
     photo: {
       type: String,
@@ -73,6 +70,7 @@ const userScheme = new mongoose.Schema(
     role: {
       type: String,
       enum: ["user", "sponsor", "admin", "engineer"],
+      default: "user",
     },
     phone_active: {
       type: Boolean,

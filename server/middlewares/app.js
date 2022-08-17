@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const morgan = require("morgan");
 
+const cookie = require("cookie-parser");
+app.use(cookie());
+
 //---- Routes -----
 const newsRouter = require("../routes/newsRouter");
 const booksRouter = require("../routes/booksRouter");
