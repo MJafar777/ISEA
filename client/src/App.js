@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/contact" element={<AboutContactPage />} />
         {/* about page child comonents finished */}
         <Route path="/ourwork" element={<OurWork />} />
-        <Route path="/renewables" element={<HomePage />} />
+        <Route path="/renewables" element={<Renewables />} />
         <Route path="/newroom" element={<Newsroom />} />
         <Route path="/publications" element={<Publication />} />
         <Route path="/education" element={<Education />} />
@@ -37,12 +37,15 @@ const App = () => {
         <Route
           path="/publications/:id"
           element={
-            <PublicationBook name={"Renewable Energy Statistics 2022"} />
+            <PublicationBook
+              name={"Renewable Energy Statistics 2022"}
+              date={"July 2022"}
+              isbn={"978-92-9260-446-2"}
+            />
           }
         />
       </Routes>
       <Footer />
-      {/* <Slider /> */}
     </>
   );
 };
