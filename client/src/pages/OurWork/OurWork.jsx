@@ -1,8 +1,6 @@
 import React from "react";
 
 import s from "./ourWork.module.css";
-
-import ourWork from "../../img/hero-Slider/5.jpg";
 import Title from "../../components/Title/Title";
 const OurWork = () => {
   return (
@@ -94,41 +92,53 @@ const OurWork = () => {
         </div>
         <div className={s.main2}>
           <div className={s.context}>
-            <h2>Lorem, ipsum dolor</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            tenetur eaque alias voluptate autem at! Natus repudiandae numquam
-            explicabo harum eveniet eos soluta, fuga ut, et, eligendi debitis
-            reprehenderit dolorum vero amet nulla dolor tempore earum provident
-            quia! Commodi adipisci nam quaerat molestias, quidem ipsum iusto
-            excepturi perspiciatis maiores, sit quos alias. Similique voluptatum
-            at exercitationem architecto cupiditate harum quo nostrum dolorum
-            vel autem, ab necessitatibus, culpa assumenda? Debitis, cumque
-            suscipit! Quos sit vel pariatur, provident voluptate, mollitia
-            officiis porro blanditiis deleniti tempore consequatur aspernatur
-            earum, natus alias! Modi vitae similique eum distinctio! Neque
-            beatae architecto nam eos minus culpa officia amet quam obcaecati?
-            Doloremque placeat facere quia fugiat repellendus consequatur, quas
-            provident. Eum nihil tempora, hic alias possimus reprehenderit.
-            Recusandae commodi odio inventore quisquam. Officiis repellat ad
-            esse beatae. Sed, possimus cum sequi dignissimos tempore dolore
-            debitis nesciunt perferendis, recusandae error quam laudantium
-            incidunt optio quod ipsa. Omnis similique a repellat sed aut quaerat
-            quas hic debitis. Mollitia perspiciatis delectus pariatur aut
-            nesciunt iusto veritatis quaerat quia vero dolore enim quisquam
-            exercitationem, hic accusantium distinctio saepe minima fugiat illo
-            eveniet quam architecto necessitatibus ipsum, nisi illum! Quod, non
-            aperiam possimus quis iste ullam doloribus commodi ipsa odio!
-            Explicabo laudantium nam cumque quo placeat iure maiores
-            accusantium, repudiandae magnam voluptas quia distinctio rem
-            eligendi cum qui accusamus dolores blanditiis facilis facere, in
-            odio nobis obcaecati magni et. Aperiam vero dignissimos aliquam,
-            error at eos vitae, debitis similique nemo enim maxime quo dolorem
-            ipsam aliquid eveniet voluptate voluptatum incidunt deserunt natus
-            provident. Tempore maxime ducimus natus minima impedit quasi,
-            eligendi unde eius dolore quis. Distinctio, totam architecto! Fugiat
-            rem voluptatum odio! Sit exercitationem expedita eius, enim quis
-            corrupti ipsam assumenda voluptatem ad cupiditate voluptates error
-            nam nobis fugit, quidem mollitia odio voluptatibus eaque impedit.
+            <h2>солнечной энергетики</h2>
+            Основной целью организации является содействие эффективному
+            использованию передовых технологий в области солнечной энергетики на
+            основе подготовки и переподготовки кадров в соответствии с
+            международными стандартами и требованиями, стратегический анализ
+            крупных проектов и управление проектами, реализуемых за счет
+            внутренних и иностранных инвестиций, а также содействие в реализации
+            работ направленных на трансфер технологий. With a mandate from
+            countries around the world, ISEA encourages governments to adopt
+            enabling policies for renewable energy investments, provides
+            practical tools and policy advice to accelerate renewable energy
+            deployment, and facilitates knowledge sharing and technology
+            transfer to provide clean, sustainable energy for the world’s
+            growing population. Для достижения своих целей организация выполняет
+            следующие задачи: nostrum dolorum vel autem, ab necessitatibus,
+            culpa assumenda? Debitis, cumque suscipit! Quos sit vel pariatur,
+            provident voluptate, mollitia officiis porro blanditiis deleniti
+            tempore consequatur aspernatur earum, natus alias! Modi vitae
+            similique eum distinctio! Neque beatae architecto nam eos minus
+            culpa officia amet quam obcaecati? Doloremque placeat facere quia
+            fugiat repellendus consequatur, quas provident. Eum nihil tempora,
+            hic alias possimus reprehenderit. Recusandae commodi odio inventore
+            quisquam. Officiis repellat ad esse beatae. Sed, possimus cum sequi
+            dignissimos tempore dolore debitis nesciunt perferendis, recusandae
+            error quam laudantium incidunt optio quod ipsa. Omnis similique a
+            repellat sed aut quaerat quas hic debitis. Mollitia perspiciatis
+            delectus pariatur aut nesciunt iusto veritatis quaerat quia vero
+            dolore enim quisquam exercitationem, hic accusantium distinctio
+            saepe minima fugiat illo eveniet quam architecto necessitatibus
+            ipsum, nisi illum! Quod, non aperiam possimus quis iste ullam
+            doloribus commodi ipsa odio! Explicabo laudantium nam cumque quo
+            placeat iure maiores accusantium, repudiandae magnam voluptas quia
+            distinctio rem eligendi cum qui accusamus dolores blanditiis facilis
+            Основной целью организации является содействие эффективному
+            использованию передовых технологий в области солнечной энергетики на
+            основе подготовки и переподготовки кадров в соответствии с
+            международными стандартами и требованиями, стратегический анализ
+            крупных проектов и управление проектами, реализуемых за счет
+            внутренних и иностранных инвестиций, а также содействие в реализации
+            работ направленных на трансфер технологий. With a mandate from
+            countries around the world, ISEA encourages governments to adopt
+            enabling policies for renewable energy investments, provides
+            practical tools and policy advice to accelerate renewable energy
+            deployment, and facilitates knowledge sharing and technology
+            transfer to provide clean, sustainable energy for the world’s
+            growing population. Для достижения своих целей организация выполняет
+            следующие задачи:
           </div>
 
           <div className={s.content2}>
@@ -166,40 +176,53 @@ const OurWork = () => {
             </div>
           </div>
           <div className={s.context}>
-            <h2>Lorem, ipsum dolor</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            tenetur eaque alias voluptate autem at! Natus repudiandae numquam
-            explicabo harum eveniet eos soluta, fuga ut, et, eligendi debitis
-            reprehenderit dolorum vero amet nulla dolor tempore earum provident
-            quia! Commodi adipisci nam quaerat molestias, quidem ipsum iusto
-            excepturi perspiciatis maiores, sit quos alias. Similique voluptatum
-            at exercitationem architecto cupiditate harum quo nostrum dolorum
-            vel autem, ab necessitatibus, culpa assumenda? Debitis, cumque
-            suscipit! Quos sit vel pariatur, provident voluptate, mollitia
-            officiis porro blanditiis deleniti tempore consequatur aspernatur
-            earum, natus alias! Modi vitae similique eum distinctio! Neque
-            beatae architecto nam eos minus culpa officia amet quam obcaecati?
-            Doloremque placeat facere quia fugiat repellendus consequatur, quas
-            provident. Eum nihil tempora, hic alias possimus reprehenderit.
-            Recusandae commodi odio inventore quisquam. Officiis repellat ad
-            esse beatae. Sed, possimus cum sequi dignissimos tempore dolore
-            debitis nesciunt perferendis, recusandae error quam laudantium
-            incidunt optio quod ipsa. Omnis similique a repellat sed aut quaerat
-            quas hic debitis. Mollitia perspiciatis delectus pariatur aut
-            nesciunt iusto veritatis quaerat quia vero dolore enim quisquam
-            exercitationem, hic accusantium distinctio saepe minima fugiat illo
-            eveniet quam architecto necessitatibus ipsum, nisi illum! Quod, non
-            aperiam possimus quis iste ullam doloribus commodi ipsa odio!
-            Explicabo laudantium nam cumque quo placeat iure maiores
-            accusantium, repudiandae magnam voluptas quia distinctio rem
-            eligendi cum qui accusamus dolores blanditiis facilis facere, in
-            odio nobis obcaecati magni et. Aperiam vero dignissimos aliquam,
-            error at eos vitae, debitis similique nemo enim maxime quo dolorem
-            ipsam aliquid eveniet voluptate voluptatum incidunt deserunt natus
-            provident. Tempore maxime ducimus natus minima impedit quasi,
-            eligendi unde eius dolore quis. Distinctio, totam architecto! Fugiat
-            rem voluptatum odio! Sit exercitationem expedita eius, enim quis
-            corrupti ipsam assumenda voluptatem ad cupiditate voluptates error
+            <h2>Основной целью организации</h2>
+            Основной целью организации является содействие эффективному
+            использованию передовых технологий в области солнечной энергетики на
+            основе подготовки и переподготовки кадров в соответствии с
+            международными стандартами и требованиями, стратегический анализ
+            крупных проектов и управление проектами, реализуемых за счет
+            внутренних и иностранных инвестиций, а также содействие в реализации
+            работ направленных на трансфер технологий. With a mandate from
+            countries around the world, ISEA encourages governments to adopt
+            enabling policies for renewable energy investments, provides
+            practical tools and policy advice to accelerate renewable energy
+            deployment, and facilitates knowledge sharing and technology
+            transfer to provide clean, sustainable energy for the world’s
+            growing population. Для достижения своих целей организация выполняет
+            следующие задачи: nostrum dolorum vel autem, ab necessitatibus,
+            culpa assumenda? Debitis, cumque suscipit! Quos sit vel pariatur,
+            provident voluptate, mollitia officiis porro blanditiis deleniti
+            tempore consequatur aspernatur earum, natus alias! Modi vitae
+            similique eum distinctio! Neque beatae architecto nam eos minus
+            culpa officia amet quam obcaecati? Doloremque placeat facere quia
+            fugiat repellendus consequatur, quas provident. Eum nihil tempora,
+            hic alias possimus reprehenderit. Recusandae commodi odio inventore
+            quisquam. Officiis repellat ad esse beatae. Sed, possimus cum sequi
+            dignissimos tempore dolore debitis nesciunt perferendis, recusandae
+            error quam laudantium incidunt optio quod ipsa. Omnis similique a
+            repellat sed aut quaerat quas hic debitis. Mollitia perspiciatis
+            delectus pariatur aut nesciunt iusto veritatis quaerat quia vero
+            dolore enim quisquam exercitationem, hic accusantium distinctio
+            saepe minima fugiat illo eveniet quam architecto necessitatibus
+            ipsum, nisi illum! Quod, non aperiam possimus quis iste ullam
+            doloribus commodi ipsa odio! Explicabo laudantium nam cumque quo
+            placeat iure maiores accusantium, repudiandae magnam voluptas quia
+            distinctio rem eligendi cum qui accusamus dolores blanditiis facilis
+            Основной целью организации является содействие эффективному
+            использованию передовых технологий в области солнечной энергетики на
+            основе подготовки и переподготовки кадров в соответствии с
+            международными стандартами и требованиями, стратегический анализ
+            крупных проектов и управление проектами, реализуемых за счет
+            внутренних и иностранных инвестиций, а также содействие в реализации
+            работ направленных на трансфер технологий. With a mandate from
+            countries around the world, ISEA encourages governments to adopt
+            enabling policies for renewable energy investments, provides
+            practical tools and policy advice to accelerate renewable energy
+            deployment, and facilitates knowledge sharing and technology
+            transfer to provide clean, sustainable energy for the world’s
+            growing population. Для достижения своих целей организация выполняет
+            следующие задачи:
           </div>
         </div>
       </div>
