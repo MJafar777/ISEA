@@ -16,13 +16,7 @@ const cors = require("cors");
 const AppError = require("../utility/AppError");
 const errController = require("../controllers/errController");
 
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true, //access-control-allow-credentials:true
-    optionSuccessStatus: 200,
-  })
-);
+app.use(cors());
 
 app.use(morgan("dev"));
 app.use(express.json());
