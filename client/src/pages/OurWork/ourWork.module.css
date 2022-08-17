@@ -1,0 +1,27 @@
+.img {
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(54, 54, 66, 0.216) 100%,
+      rgba(2, 0, 36, 1) 100%
+    ),
+    url(../../img/hero-Slider/5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0 0 2rem 0;
+}
+.imgBottom {
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.574);
+  position: absolute;
+  bottom: 0;
+}
+.imgBottom p {
+  color: #fff;
+  padding: 2rem;
+  font-size: 32px;
+}

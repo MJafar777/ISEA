@@ -17,9 +17,13 @@ const Header = () => {
         </NavLink>
         <div className={s.links}>
           <div className={s.menuIcon}>
-            <Navbar name="ABOUT" route={"/about"} />
-            <Navbar name="OURWORK" route={"/ourwork"} />
-            <Navbar name="RENEWABLES" route={"/renewables"} />
+            <Navbar className={s.acardion} name="ABOUT▼" route={"/about"} />
+            <Navbar className={s.acardion} name="OURWORK▼" route={"/ourwork"} />
+            <Navbar
+              className={s.acardion}
+              name="RENEWABLES▼"
+              route={"/renewables"}
+            />
             <Navbar name="PUBLICATIONS" route={"/publications"} />
             <Navbar name="EDUCATION" route={"/education"} />
             <Navbar name="PUBLICATION" route={"/engineering"} />
