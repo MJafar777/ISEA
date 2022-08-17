@@ -1,8 +1,8 @@
 const appError = require("./appError");
 
 const catchErrLittle = (funksiya) => {
-  const catchFunc = (req, res, next, Model) => {
-    funksiya(req, res, next, Model).catch((err) =>
+  const catchFunc = (req, res, next) => {
+    funksiya(req, res, next).catch((err) =>
       next(new appError(err.message, 404))
     );
   };
