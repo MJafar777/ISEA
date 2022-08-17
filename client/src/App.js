@@ -15,6 +15,7 @@ import Renewables from "./pages/Renewables/Renewables";
 import "./pages/Renewables/renewables.module.css";
 import PublicationBook from "./pages/Publication/PublicationBook/PublicationBook";
 import Slider from "./components/Slider/Slider";
+import Register from "./pages/Register/Register";
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
             />
           }
         />
+        <Route path={"/register"} element={<Register />} />
       </Routes>
       <Footer />
     </>
