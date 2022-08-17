@@ -37,12 +37,15 @@ const App = () => {
         <Route
           path="/publications/:id"
           element={
-            <PublicationBook name={"Renewable Energy Statistics 2022"} />
+            <PublicationBook
+              name={"Renewable Energy Statistics 2022"}
+              date={"July 2022"}
+              isbn={"978-92-9260-446-2"}
+            />
           }
         />
       </Routes>
       <Footer />
-      {/* <Slider /> */}
     </>
   );
 };

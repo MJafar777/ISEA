@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <main>
       <div className="container">
-        <HeroSlider />
+        {/* <HeroSlider /> */}
         <IntroLanding />
         <AboutLanding />
         <NewsLanding />
