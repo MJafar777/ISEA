@@ -4,7 +4,7 @@ const morgan = require("morgan");
 const newsRouter = require("../routes/newsRouter");
 const booksRouter = require("../routes/booksRouter");
 const cors = require("cors");
-const AppError = require("../../utility/AppError");
+const AppError = require("../utility/AppError");
 const errController = require("../controllers/errController");
 
 app.use(
