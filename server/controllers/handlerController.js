@@ -1,4 +1,4 @@
-const catchErrBig = require("../../utility/catchErrBig");
+const catchErrBig = require("../utility/catchErrBig");
 const FeatureAPI = require("../utility/featureApi");
 
 const responseFunction = (res, statusCode, data) => {
