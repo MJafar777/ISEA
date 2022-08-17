@@ -3,13 +3,16 @@ import Date from "../../../components/Date/Date";
 import PublicationImage from "../PublicationImage/PublicationImage";
 import s from "./publicationcard.module.css";
 import image from "../../../img/Publications/1.jpg";
+import { NavLink } from "react-router-dom";
 
 export default function PublicationCard() {
   return (
     <div className={s.container}>
       <PublicationImage image={image} />
       <div className={s.info}>
-        <h2 className={s.info}>Title</h2>
+        <NavLink to={"/publications/1"}>
+          <h2 className={s.info}>Title</h2>
+        </NavLink>
         <p className={s.inform}>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
           repellendus, sapiente quo inventore error voluptatem, dolorem, id eos
