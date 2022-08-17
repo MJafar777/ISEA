@@ -51,6 +51,13 @@
   width: 100%;
   color: #fff;
   font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.42);
   display: flex;
+  align-items: center;
   padding: 2rem;
+  justify-content: space-around;
+}
+.content2 div {
+  width: 20%;
+  text-align: center;
 }
