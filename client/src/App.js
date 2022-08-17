@@ -14,6 +14,7 @@ import Project from "./pages/Project/Project";
 import Renewables from "./pages/Renewables/Renewables";
 import "./pages/Renewables/renewables.module.css";
 import PublicationBook from "./pages/Publication/PublicationBook/PublicationBook";
+import Slider from "./components/Slider/Slider";
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
         />
       </Routes>
       <Footer />
+      <Slider />
     </>
   );
 };
