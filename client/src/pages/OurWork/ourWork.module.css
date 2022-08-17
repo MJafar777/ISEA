@@ -25,3 +25,32 @@
   padding: 2rem;
   font-size: 32px;
 }
+.leftContainer {
+  font-size: 20px;
+  color: var(--color-primary);
+}
+.main2 {
+  width: 100%;
+
+  background-image: url(../../img/hero-Slider/8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+}
+.context {
+  width: 100%;
+  font-size: 18px;
+  /* color: black; */
+  color: #fff;
+  padding: 2rem;
+  /* background-color: #f0f0f0; */
+  background-color: rgba(128, 128, 128, 0.5);
+}
+.content2 {
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  padding: 2rem;
+}
