@@ -26,32 +26,22 @@
   font-size: 32px;
 }
 .leftContainer {
-  font-size: 20px;
+  font-size: 22px;
   color: var(--color-primary);
 }
 .main2 {
   width: 100%;
-
-  background-image: url(../../img/hero-Slider/8.jpg);
+  background-attachment: fixed;
+  background-image: url(../../img/hero-Slider/1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: sticky;
 }
-.context {
-  width: 100%;
-  font-size: 18px;
-  text-align: center;
-  /* color: black; */
-  color: #fff;
-  padding: 2rem;
-  /* background-color: #f0f0f0; */
-  background-color: rgba(94, 94, 94, 0.605);
-}
 .content2 {
   width: 100%;
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
   background-color: rgba(0, 0, 0, 0.42);
   display: flex;
   align-items: center;
@@ -60,5 +50,4 @@
 }
 .content2 div {
   width: 20%;
-  text-align: center;
 }
