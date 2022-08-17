@@ -2,11 +2,12 @@ import React from "react";
 import Date from "../../../components/Date/Date";
 import PublicationImage from "../PublicationImage/PublicationImage";
 import s from "./publicationcard.module.css";
+import image from "../../../img/Publications/1.jpg";
 
 export default function PublicationCard() {
   return (
     <div className={s.container}>
-      <PublicationImage />
+      <PublicationImage image={image} />
       <div className={s.info}>
         <h2 className={s.info}>Title</h2>
         <p className={s.inform}>
