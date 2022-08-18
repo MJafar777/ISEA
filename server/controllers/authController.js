@@ -37,18 +37,14 @@ const createTokenAfterEntering = (id) => {
 const signUp = async (req, res, next) => {
   try {
     let token;
-
     const randomCode = Math.round(Math.random() * 900000 + 100000);
-
     if (req.body.email) {
       const user = {
         email: req.body.email,
       };
-
       const hasEmail = await Code.findOne({
         email_or_phone: user.email,
       });
-
       if (hasEmail) {
         return next(
           new AppError(
@@ -78,8 +74,10 @@ const signUp = async (req, res, next) => {
 
 const verify = async (req, res, next) => {
   try {
+    const { token } = req.body;
+    console.log(token);
     const getCode = await jwt.verify(
-      req.cookies.code,
+      req.body?.token,
       process.env.JWT_SECRET_KEY
     );
 
@@ -88,6 +86,8 @@ const verify = async (req, res, next) => {
     if (!user) {
       return next(new AppError("User has not defined", 400));
     }
+
+    console.log(user);
 
     if (!(user.code == req.body.code && user.expired_date > Date.now())) {
       return next(
