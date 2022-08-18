@@ -45,7 +45,6 @@ const App = () => {
         <Route path="/ourwork" element={<OurWork />} />
         <Route path="/renewables" element={<Renewables />} />
         {/* renewables page child comonents started  */}
-
         <Route path="/benefits" element={<Benefits />} />
         <Route path="/climate-change" element={<ClimateChange />} />
         <Route path="/energy-transition" element={<EnergyTransition />} />
@@ -64,9 +63,7 @@ const App = () => {
         <Route path="/costs" element={<Costs />} />
         <Route path="/islands" element={<Island />} />
         <Route path="/power" element={<Power />} />
-
         {/* renewables page child comonents finished  */}
-
         <Route path="/newroom" element={<Newsroom />} />
         <Route path="/publications" element={<Publication />} />
         <Route path="/education" element={<Education />} />

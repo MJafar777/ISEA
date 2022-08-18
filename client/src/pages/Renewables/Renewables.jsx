@@ -1,9 +1,11 @@
+import Benefits from "../../components/RenewablesComponents/Benefits/Benefits";
 import s from "./renewables.module.css";
-import Router from "../../components/Router/Router";
+// import Router from "../../components/Router/Router";
 
 const Renewables = () => {
   return (
     <div className={s.container}>
+      <Benefits />
       {/* <Router name={"BENEFITS"} route={"/benefits"} />
       <Router name={"CLIMATE CHANGE"} route={"/climate-change"} />
       <Router name={"ENERGY TRANSITION"} route={"/energy-transition"} />

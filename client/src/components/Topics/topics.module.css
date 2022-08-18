@@ -18,10 +18,14 @@
 }
 .content {
   cursor: pointer;
+  text-align: center;
+}
+.links:hover {
+  transform: rotateX(-3rem);
+  color: red !important;
 }
 .content:hover {
   border-radius: 20px;
   transition: all 0.5s;
   transform: scale(1.1);
 }
-
