@@ -49,10 +49,10 @@ export default function Register() {
           <img src={google} alt="google" />
           <img src={instagram} alt="instagram" />
         </div>
-        <p>or use your email account</p>
+        <p className={s.useEmail}>or use your email account</p>
         <form className={s.content}>
           <input ref={emailRef} type="email" required placeholder="email" />
-          <button onClick={enterEmail}>sign up</button>
+          <button onClick={s.enterEmail}>sign up</button>
 
           {status && (
             <>
