@@ -63,3 +63,10 @@ ul {
   /* font-size: 22px; */
   color: black !important;
 }
+
+.cardInfo {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
+}

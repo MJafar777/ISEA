@@ -9,10 +9,10 @@ import img6 from "../../../img/hero-Slider/6.jpg";
 import Title from "../../Title/Title";
 import Shablon from "../ShablonRenewables/Shablon";
 
-const ClimateChange = () => {
+const EnergyTransition = () => {
   return (
     <div className="container">
-      <Title name={"Climate Change"} />
+      <Title name={"Energy Transition"} />
       <div className="cardInfo">
         <Shablon
           imgUrl={img1}
@@ -61,4 +61,4 @@ const ClimateChange = () => {
   );
 };
 
-export default ClimateChange;
+export default EnergyTransition;

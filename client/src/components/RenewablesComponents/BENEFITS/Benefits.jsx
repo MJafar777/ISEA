@@ -1,19 +1,64 @@
 import React from "react";
-import s from "./Benefits.module.css";
-import a from "../Renewables.module.css";
 import Title from "../../Title/Title";
+import Shablon from "../ShablonRenewables/Shablon";
 
 import img1 from "../../../img/Renewables/IMG_20220306_114700.jpg";
 import img2 from "../../../img/Renewables/photo_2022-04-12_16-52-56.jpg";
-import img3 from "../../../img/Renewables/photo_2022-04-22_17-13-06.jpg";
-import img4 from "../../../img/Renewables/thmb.jpg";
+import img3 from "../../../img/Renewables/photo_2022-04-18_17-38-59.jpg";
+import img4 from "../../../img/Renewables/photo_2022-04-22_17-13-06.jpg";
+import img5 from "../../../img/Renewables/photo_2022-04-27_17-29-06.jpg";
+import img6 from "../../../img/Renewables/site2.jpg";
 
 const Benefits = () => {
   return (
     <div className="container">
       <Title name={"Benefits"} />
-      <div className={s.cardInfo}>
-        <div className={s.info}>
+      <div className="cardInfo">
+        <Shablon
+          imgUrl={img1}
+          title={"my profile"}
+          content={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil sunt quod aspernatur! Obcaecati sint nulla voluptates, laudantium aliquid ut! Architecto quae laborum blanditiis soluta rem eius, minus ex enim!"
+          }
+        />
+        <Shablon
+          imgUrl={img2}
+          title={"my profile"}
+          content={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil sunt quod aspernatur! Obcaecati sint nulla voluptates, laudantium aliquid ut! Architecto quae laborum blanditiis soluta rem eius, minus ex enim!"
+          }
+        />
+        <Shablon
+          imgUrl={img3}
+          title={"my profile"}
+          content={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil sunt quod aspernatur! Obcaecati sint nulla voluptates, laudantium aliquid ut! Architecto quae laborum blanditiis soluta rem eius, minus ex enim!"
+          }
+        />
+        <Shablon
+          imgUrl={img4}
+          title={"my profile"}
+          content={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil sunt quod aspernatur! Obcaecati sint nulla voluptates, laudantium aliquid ut! Architecto quae laborum blanditiis soluta rem eius, minus ex enim!"
+          }
+        />
+        <Shablon
+          imgUrl={img5}
+          title={"my profile"}
+          content={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil sunt quod aspernatur! Obcaecati sint nulla voluptates, laudantium aliquid ut! Architecto quae laborum blanditiis soluta rem eius, minus ex enim!"
+          }
+        />
+        <Shablon
+          imgUrl={img6}
+          title={"my profile"}
+          content={
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil sunt quod aspernatur! Obcaecati sint nulla voluptates, laudantium aliquid ut! Architecto quae laborum blanditiis soluta rem eius, minus ex enim!"
+          }
+        />
+      </div>
+      <div>
+        {/* <div className={s.info}>
           <img src={img1} alt="img1" />
           <div className={a.content}>
             <h3>place for information</h3>
@@ -25,10 +70,9 @@ const Benefits = () => {
               выработке энергии за счет солнечных батарей, а при отсутствии
               солнца, подача энергии за счет аккумуляторов или городской...
             </p>
-            <button className={s.btn}>Read more...</button>
           </div>
-        </div>
-        <div className={s.info}>
+        </div> */}
+        {/* <div className={s.info}>
           <img src={img2} alt="img1" />
           <div className={a.content}>
             <h3>place for information</h3>
@@ -40,10 +84,10 @@ const Benefits = () => {
               выработке энергии за счет солнечных батарей, а при отсутствии
               солнца, подача энергии за счет аккумуляторов или городской...
             </p>
-            <button className={s.btn}>Read more...</button>
+            
           </div>
-        </div>
-        <div className={s.info}>
+        </div> */}
+        {/* <div className={s.info}>
           <img src={img3} alt="img1" />
           <div className={a.content}>
             <h3>place for information</h3>
@@ -55,7 +99,6 @@ const Benefits = () => {
               выработке энергии за счет солнечных батарей, а при отсутствии
               солнца, подача энергии за счет аккумуляторов или городской...
             </p>
-            <button className={s.btn}>Read more...</button>
           </div>
         </div>
         <div className={s.info}>
@@ -67,7 +110,6 @@ const Benefits = () => {
               насосной станции, расположенной на Сырдарьинской ТЭС. В результате
               установки экономится от 10 до 30% электроэнергии в час.
             </p>
-            <button className={s.btn}>Read more...</button>
           </div>
         </div>
         <div className={s.info}>
@@ -79,7 +121,6 @@ const Benefits = () => {
               мощностью на 40 кВт, установленная на навес для парковки на
               территории завода «Навоийский горно-металлургический комбинат».
             </p>
-            <button className={s.btn}>Read more...</button>
           </div>
         </div>
         <div className={s.info}>
@@ -94,9 +135,8 @@ const Benefits = () => {
               выработке энергии за счет солнечных батарей, а при отсутствии
               солнца, подача энергии за счет аккумуляторов или городской...
             </p>
-            <button className={s.btn}>Read more...</button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
