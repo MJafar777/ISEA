@@ -5,7 +5,7 @@
   text-decoration: none;
   color: #0073ab;
   user-select: none;
-  font-size: 14px;
+  font-size: 14px !important;
 }
 .linkAboutMenu:hover {
   transition: all 0.5s;

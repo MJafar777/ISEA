@@ -2,6 +2,7 @@
   --color-primary: #0073ab;
   --color-secondary: ##328fbb;
   --color-gray: #777777;
+  --color-green: #22c55e;
 }
 
 * {
@@ -62,4 +63,11 @@ ul {
   transition: all 0.5s;
   /* font-size: 22px; */
   color: black !important;
+}
+
+.cardInfo {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: flex-start;
 }

@@ -6,8 +6,11 @@ import lang from "../../img/icons/lang.svg";
 import Navbar from "../Navbar/Navbar";
 import Profile from "../Profile/Profile";
 
+import Router from "../../components/Router/Router";
+
 const Header = () => {
   const container = s.header + " " + "container";
+  const dropdown = s.acardion + " " + "dropdown";
   const isAuth = false;
   return (
     <div className={s.main}>
@@ -17,13 +20,61 @@ const Header = () => {
         </NavLink>
         <div className={s.links}>
           <div className={s.menuIcon}>
-            <Navbar className={s.acardion} name="ABOUT▼" route={"/about"} />
+            <div className={s.renewables}>
+              <Navbar className={s.acardion} name="ABOUT▼" route={"/about"} />
+              <div className={s.dropdownChild}>
+                <Router name={"About ISEA"} route={"/about"} />
+                <Router name={"Contact"} route={"/contact"} />
+                <Router name={"History"} route={"/abo"} />
+                <Router name={"Institutional Structure"} route={"/bout"} />
+                <Router name={"ISEA Membership"} route={"/ut"} />
+                <Router name={"Official Documents"} route={"/ac"} />
+                <Router name={"Senior Management"} route={"/abodut"} />
+                <Router name={"Statute, Vision & Mission"} route={"/asbout"} />
+              </div>
+            </div>
             <Navbar className={s.acardion} name="OURWORK▼" route={"/ourwork"} />
-            <Navbar
-              className={s.acardion}
-              name="RENEWABLES▼"
-              route={"/renewables"}
-            />
+
+            <div className={s.renewables}>
+              <Navbar
+                className={dropdown}
+                name="RENEWABLES▼"
+                route={"/renewables"}
+              />
+              <div className={s.dropdownChild}>
+                <Router name={"BENEFITS"} route={"/benefits"} />
+                <Router name={"CLIMATE CHANGE"} route={"/climate-change"} />
+                <Router
+                  name={"ENERGY TRANSITION"}
+                  route={"/energy-transition"}
+                />
+                <Router
+                  name={"FINANCE & INVESTMENT"}
+                  route={"/finance-and-investment"}
+                />
+                <Router
+                  name={"BENEFITSHEATING & COOLING"}
+                  route={"/benefitsheating-and-cooling"}
+                />
+                <Router
+                  name={"INNOVATION & TECHNOLOGY"}
+                  route={"/innovation-technology"}
+                />
+                <Router
+                  name={"OFF-GRID FOR ENERGY ACCESS"}
+                  route={"/off-grid"}
+                />
+                <Router name={"POLICY"} route={"/policy"} />
+                <Router
+                  name={"INDUCTRY & TRANSPORT"}
+                  route={"/inductry-transport"}
+                />
+                <Router name={"COSTS"} route={"/costs"} />
+                <Router name={"ISLANDS"} route={"/islands"} />
+                <Router name={"POWER"} route={"/power"} />
+              </div>
+            </div>
+
             <Navbar name="PUBLICATIONS" route={"/publications"} />
             <Navbar name="EDUCATION" route={"/education"} />
             <Navbar name="PUBLICATION" route={"/engineering"} />

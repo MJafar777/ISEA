@@ -4,6 +4,10 @@ import { url } from "../../configs/config";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+import facebook from "../../img/SignUp/facebook.svg";
+import google from "../../img/SignUp/google.svg";
+import instagram from "../../img/SignUp/instagram.svg";
+
 export default function Register() {
   const emailRef = useRef();
   const verifyRef = useRef();
@@ -34,19 +38,59 @@ export default function Register() {
 
   return (
     <div className={s.container}>
-      <form className={s.content}>
-        <input ref={emailRef} type="email" required placeholder="email" />
-        <button onClick={enterEmail}>sign up</button>
+      <div className={s.leftRegister}>
+        <h3>
+          Company <span>ISEA</span>
+        </h3>
+        <h1>Sign In to Account</h1>
+        <div className={s.bottom}></div>
+        <div className={s.links}>
+          <img src={facebook} alt="facebook" />
+          <img src={google} alt="google" />
+          <img src={instagram} alt="instagram" />
+        </div>
+        <p className={s.useEmail}>or use your email account</p>
+        <form className={s.content}>
+          <input
+            className={s.inputOne}
+            ref={emailRef}
+            type="email"
+            required
+            placeholder="Email"
+          />
+          <button className={s.btns} onClick={s.enterEmail}>
+            sign up
+          </button>
 
-        {status && (
-          <>
-            <input ref={verifyRef} type="text" required placeholder="verify" />
-            <button type="submit" onClick={verifyHandler}>
-              verify
-            </button>
-          </>
-        )}
-      </form>
+          {status && (
+            <>
+              <input
+                ref={verifyRef}
+                type="text"
+                required
+                placeholder="verify"
+                className={s.inputOne}
+              />
+              <button className={s.btns} type="submit" onClick={verifyHandler}>
+                verify
+              </button>
+            </>
+          )}
+          <div className={s.remember}>
+            <div className={s.rememberCheck}>
+              <input type="checkbox" />
+              <p>Remember me</p>
+            </div>
+            <p className={s.forgot}>Forgot Password?</p>
+          </div>
+        </form>
+      </div>
+      <div className={s.rightRegister}>
+        <h1 className={s.rightTitle}>Hello , Friend</h1>
+        <div className={s.bottom2}></div>
+        <p>fill up personal information and start journey with us.</p>
+        <button className={s.btn2}>Sign Up</button>
+      </div>
     </div>
   );
 }

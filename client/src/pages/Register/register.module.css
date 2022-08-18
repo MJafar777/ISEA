@@ -5,7 +5,7 @@
   margin: 50px 0;
 }
 
-.content {
+/* .content {
   width: 400px;
   padding: 150px 30px;
   background-color: white;
@@ -14,4 +14,126 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+} */
+
+.leftRegister {
+  background-color: #fff;
+  padding: 4rem 7rem;
+  width: 30%;
+  border-radius: 2rem 0 0 2rem;
+  height: 70vh;
+}
+.leftRegister h3 {
+  font-size: 24px;
+  color: var(--color-gray);
+  font-weight: 600;
+  margin: 0 0 3rem 0;
+}
+.leftRegister h3 span {
+  color: black;
+}
+h1 {
+  font-size: 36px;
+  color: var(--color-green);
+  text-align: center;
+}
+.bottom {
+  width: 8rem;
+  height: 0.5rem;
+  background-color: var(--color-green);
+  margin: 1rem auto;
+  border-radius: 2rem;
+}
+.bottom2 {
+  width: 8rem;
+  height: 0.5rem;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+.links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.links img {
+  width: 50px;
+  display: inline-block;
+  margin: 1rem;
+  border: 2px solid var(--color-green);
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
+.useEmail {
+  font-size: 18px;
+  text-align: center;
+  color: grey;
+  margin: 1rem 0;
+}
+.inputOne {
+  display: block;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 18px;
+  background-color: rgba(128, 128, 128, 0.109);
+  color: black;
+}
+.inputOne::placeholder {
+  color: black;
+  font-size: 18px;
+}
+.btns,
+.btn2 {
+  padding: 1rem 4rem;
+  display: block;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 20px;
+  margin: 0 auto;
+  border: 2px solid var(--color-green);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.btn2 {
+  border: 2px solid #fff;
+  color: #fff;
+  margin: 3rem auto;
+}
+.rememberCheck {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.remember {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.forgot {
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+.rightRegister {
+  color: #fff !important;
+  width: 25%;
+  background-color: var(--color-green);
+  height: 70vh;
+  border-radius: 0 2rem 2rem 0;
+}
+.rightTitle {
+  color: #fff;
+  margin: 8rem 0 1rem 0;
+}
+.rightRegister p {
+  text-align: center;
+  font-size: 16px;
+  width: 70%;
+  margin: 2rem auto;
 }
