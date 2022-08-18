@@ -29,59 +29,66 @@ import InductryTransport from "./components/RenewablesComponents/INDUCTRY-TRANSP
 import Costs from "./components/RenewablesComponents/COSTS/Costs";
 import Island from "./components/RenewablesComponents/ISLANDS/Island";
 import Power from "./components/RenewablesComponents/POWER/Power";
-import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
+import Admin from "./pages/Admin/Admin";
+// import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 
 const App = () => {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        {/* about page child comonents started */}
-        <Route path="/contact" element={<AboutContactPage />} />
-        {/* about page child comonents finished */}
-        <Route path="/ourwork" element={<OurWork />} />
-        <Route path="/renewables" element={<Renewables />} />
-        {/* renewables page child comonents started  */}
-        <Route path="/benefits" element={<Benefits />} />
-        <Route path="/climate-change" element={<ClimateChange />} />
-        <Route path="/energy-transition" element={<EnergyTransition />} />
-        <Route path="/finance-and-investment" element={<FinanceInvestment />} />
-        <Route
-          path="/benefitsheating-and-cooling"
-          element={<Benefitsheating />}
-        />
-        <Route
-          path="/innovation-technology"
-          element={<InnovationTechnology />}
-        />
-        <Route path="/off-grid" element={<OffGridFor />} />
-        <Route path="/policy" element={<Policy />} />
-        <Route path="/inductry-transport" element={<InductryTransport />} />
-        <Route path="/costs" element={<Costs />} />
-        <Route path="/islands" element={<Island />} />
-        <Route path="/power" element={<Power />} />
-        {/* renewables page child comonents finished  */}
-        <Route path="/newroom" element={<Newsroom />} />
-        <Route path="/publications" element={<Publication />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/engineering" element={<Engineering />} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/renewables" element={<Renewables />} />
-        <Route
-          path="/publications/:id"
-          element={
-            <PublicationBook
-              name={"Renewable Energy Statistics 2022"}
-              date={"July 2022"}
-              isbn={"978-92-9260-446-2"}
-            />
-          }
-        />
-        <Route path={"/register"} element={<Register />} />
-        <Route path={"/signup"} element={<Signup />} />
-      </Routes>
+      <main className="main">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          {/* about page child comonents started */}
+          <Route path="/contact" element={<AboutContactPage />} />
+          {/* about page child comonents finished */}
+          <Route path="/ourwork" element={<OurWork />} />
+          <Route path="/renewables" element={<Renewables />} />
+          {/* renewables page child comonents started  */}
+          {/* <Route path="/benefits" element={<Benefits />} /> */}
+          <Route path="/climate-change" element={<ClimateChange />} />
+          <Route path="/energy-transition" element={<EnergyTransition />} />
+          <Route
+            path="/finance-and-investment"
+            element={<FinanceInvestment />}
+          />
+          <Route
+            path="/benefitsheating-and-cooling"
+            element={<Benefitsheating />}
+          />
+          <Route
+            path="/innovation-technology"
+            element={<InnovationTechnology />}
+          />
+          <Route path="/off-grid" element={<OffGridFor />} />
+          <Route path="/policy" element={<Policy />} />
+          <Route path="/inductry-transport" element={<InductryTransport />} />
+          <Route path="/costs" element={<Costs />} />
+          <Route path="/islands" element={<Island />} />
+          <Route path="/power" element={<Power />} />
+          {/* renewables page child comonents finished  */}
+          <Route path="/newroom" element={<Newsroom />} />
+          <Route path="/publications" element={<Publication />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/engineering" element={<Engineering />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/renewables" element={<Renewables />} />
+          <Route
+            path="/publications/:id"
+            element={
+              <PublicationBook
+                name={"Renewable Energy Statistics 2022"}
+                date={"July 2022"}
+                isbn={"978-92-9260-446-2"}
+              />
+            }
+          />
+          <Route path={"/register"} element={<Register />} />
+          <Route path={"/signup"} element={<Signup />} />
+          <Route path={"/admin"} element={<Admin />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );
