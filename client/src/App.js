@@ -60,7 +60,7 @@ const App = () => {
         <Route path="/inductry-transport" element={<InductryTransport />} />
         <Route path="/costs" element={<Costs />} />
         <Route path="/islands" element={<Island />} />
-        <Route path="/power" element={<Power />} />
+        <Route path="/power" element={<Power  />} />
 
         {/* renewables page child comonents finished  */}
         <Route path="/newroom" element={<Newsroom />} />
