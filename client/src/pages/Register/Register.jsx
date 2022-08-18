@@ -51,8 +51,16 @@ export default function Register() {
         </div>
         <p className={s.useEmail}>or use your email account</p>
         <form className={s.content}>
-          <input ref={emailRef} type="email" required placeholder="email" />
-          <button onClick={s.enterEmail}>sign up</button>
+          <input
+            className={s.inputOne}
+            ref={emailRef}
+            type="email"
+            required
+            placeholder="Email"
+          />
+          <button className={s.btns} onClick={s.enterEmail}>
+            sign up
+          </button>
 
           {status && (
             <>
@@ -61,8 +69,9 @@ export default function Register() {
                 type="text"
                 required
                 placeholder="verify"
+                className={s.inputOne}
               />
-              <button type="submit" onClick={verifyHandler}>
+              <button className={s.btns} type="submit" onClick={verifyHandler}>
                 verify
               </button>
             </>

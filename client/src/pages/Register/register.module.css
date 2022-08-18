@@ -18,7 +18,9 @@
 
 .leftRegister {
   background-color: #fff;
-  padding: 4rem 3rem;
+  padding: 4rem 7rem;
+  width: 30%;
+  border-radius: 2rem 0 0 2rem;
 }
 .leftRegister h3 {
   font-size: 24px;
@@ -38,16 +40,18 @@ h1 {
   width: 8rem;
   height: 0.5rem;
   background-color: var(--color-green);
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 .links {
+  width: 100%;
   display: flex;
   align-items: center;
-  margin-left: 27%;
-  padding: 2rem 0;
+  justify-content: center;
+  padding: 1rem 0;
 }
 .links img {
   width: 50px;
+  display: inline-block;
   margin: 1rem;
   border: 2px solid var(--color-green);
   border-radius: 50%;
@@ -59,4 +63,28 @@ h1 {
   text-align: center;
   color: grey;
   margin: 1rem 0;
+}
+.inputOne {
+  display: block;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 18px;
+  background-color: rgba(128, 128, 128, 0.362);
+  color: black;
+}
+.inputOne::placeholder {
+  color: black;
+  font-size: 18px;
+}
+.btns {
+  padding: 1rem 4rem;
+  display: block;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 20px;
+  margin: 0 auto;
+  color: var(--color-green);
+  border: 2px solid var(--color-green);
+  border-radius: 2rem;
 }
