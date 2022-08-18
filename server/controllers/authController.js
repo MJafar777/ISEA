@@ -34,73 +34,79 @@ const createTokenAfterEntering = (id) => {
   });
 };
 
-const signUp = catchErrLittle(async (req, res, next) => {
-  let token;
+const signUp = async (req, res, next) => {
+  try {
+    let token;
 
-  const randomCode = Math.round(Math.random() * 900000 + 100000);
+    const randomCode = Math.round(Math.random() * 900000 + 100000);
 
-  if (req.body.email) {
-    const user = {
-      email: req.body.email,
-    };
+    if (req.body.email) {
+      const user = {
+        email: req.body.email,
+      };
 
-    const hasEmail = await Code.findOne({
-      email_or_phone: user.email,
-    });
-
-    if (hasEmail) {
-      return next(
-        new AppError(
-          "Siz bu email bilan royhatdan otgansiz.Iltimos tizimga kirishni bosing."
-        )
-      );
-    } else {
-      const newUser = await Code.create({
+      const hasEmail = await Code.findOne({
         email_or_phone: user.email,
-        code: randomCode,
-        verified: false,
       });
-      token = createToken(newUser._id);
+
+      if (hasEmail) {
+        return next(
+          new AppError(
+            "Siz bu email bilan royhatdan otgansiz.Iltimos tizimga kirishni bosing."
+          )
+        );
+      } else {
+        const newUser = await Code.create({
+          email_or_phone: user.email,
+          code: randomCode,
+          verified: false,
+        });
+        token = createToken(newUser._id);
+      }
+      await new Email(user, randomCode).sendCode();
     }
-    await new Email(user, randomCode).sendCode();
+
+    saveCookie(req, res, token);
+
+    res.status(200).json({
+      status: "Succes",
+      message: "Emailingizga kod jo'natildi",
+    });
+  } catch (e) {
+    res.status(400).json({ status: "failed" });
   }
+};
 
-  saveCookie(req, res, token);
-
-  res.status(200).json({
-    status: "Succes",
-    message: "Emailingizga kod jo'natildi",
-  });
-
-  next();
-});
-
-const verify = catchErrLittle(async (req, res, next) => {
-  const getCode = await jwt.verify(
-    req.cookies.code,
-    process.env.JWT_SECRET_KEY
-  );
-
-  const user = await Code.findById(getCode.id);
-
-  if (!user) {
-    return next(new AppError("User has not defined", 400));
-  }
-
-  if (!(user.code == req.body.code && user.expired_date > Date.now())) {
-    return next(
-      new AppError("Your code is invalid or your code has expired date", 400)
+const verify = async (req, res, next) => {
+  try {
+    const getCode = await jwt.verify(
+      req.cookies.code,
+      process.env.JWT_SECRET_KEY
     );
+
+    const user = await Code.findById(getCode.id);
+
+    if (!user) {
+      return next(new AppError("User has not defined", 400));
+    }
+
+    if (!(user.code == req.body.code && user.expired_date > Date.now())) {
+      return next(
+        new AppError("Your code is invalid or your code has expired date", 400)
+      );
+    }
+
+    user.verified = true;
+    user.save();
+
+    res.status(200).json({
+      status: "success",
+      message: "Email tasdiqlandi",
+    });
+  } catch (e) {
+    res.status(400).json({ status: "failed", message: e.message });
   }
-
-  user.verified = true;
-  user.save();
-
-  res.status(200).json({
-    status: "success",
-    message: "Email tasdiqlandi",
-  });
-});
+};
 
 const register = catchErrLittle(async (req, res, next) => {
   const getCode = await jwt.verify(
