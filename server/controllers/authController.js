@@ -66,10 +66,9 @@ const signUp = async (req, res, next) => {
       await new Email(user, randomCode).sendCode();
     }
 
-    saveCookie(req, res, token);
-
     res.status(200).json({
       status: "Succes",
+      token: token,
       message: "Emailingizga kod jo'natildi",
     });
   } catch (e) {
@@ -188,9 +187,6 @@ const login = catchErrLittle(async (req, res, next) => {
   // 4.JWT token yasab berish
 
   const token = createTokenAfterEntering(user._id);
-  console.log(token);
-
-  saveCookieAfterEntering(req, res, token);
 
   // Response qaytarish
 
