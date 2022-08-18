@@ -6,22 +6,6 @@ const jwt = require("jsonwebtoken");
 const AppError = require("../utility/appError");
 const bcrypt = require("bcryptjs");
 
-const saveCookie = (req, res, token) => {
-  res.cookie("code", token, {
-    maxAge: 1 * 24 * 60 * 60 * 1000,
-    httpOnly: true,
-    secure: process.env.NODE_ENV == "DEVELOPMENT" ? false : true,
-  });
-};
-
-const saveCookieAfterEntering = (req, res, token) => {
-  res.cookie("afterEnter", token, {
-    maxAge: 10 * 24 * 60 * 60 * 1000,
-    httpOnly: true,
-    secure: process.env.NODE_ENV == "DEVELOPMENT" ? false : true,
-  });
-};
-
 const createToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET_KEY, {
     expiresIn: 10 * 60 * 1000,
