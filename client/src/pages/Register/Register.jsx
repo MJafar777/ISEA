@@ -12,16 +12,9 @@ export default function Register() {
   const navigate = useNavigate();
   const enterEmail = async (e) => {
     e.preventDefault();
-    const config = {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-      },
-      // withCredentials: true,
-    };
 
     const email = emailRef.current.value;
-    const response = await axios.post(url + "/users/signup", { email }, config);
+    const response = await axios.post(url + "/users/signup", { email });
     console.log(response);
     setStatus(response.data.status === "Succes" ? true : false);
   };
@@ -29,13 +22,11 @@ export default function Register() {
   const verifyHandler = async (e) => {
     e.preventDefault();
     const verifyCode = verifyRef.current.value;
-    const response = await axios.post(
-      url + "/users/verify",
-      {
-        verify: verifyCode,
-      },
-      { withCredentials: true }
-    );
+    const response = await axios.post(url + "/users/verify", {
+      code: 240314,
+      token:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZmRlYjkyMGEwYWI0YzA5OGI4ZGFhMSIsImlhdCI6MTY2MDgwODA4MiwiZXhwIjoxNjYxNDA4MDgyfQ.8HBjf1in6IjOT6Ss1yRilf7-PTLcsC8Kq9XGZrpGAco",
+    });
     response.data.status === "success"
       ? navigate("/signup")
       : alert("Siz hatto narsa kiritingiz");
