@@ -3,6 +3,8 @@ const User = require("../models/userModel");
 const catchErrLittle = require("../utility/catchErrorLitlle");
 const Email = require("../utility/mail");
 const jwt = require("jsonwebtoken");
+const AppError = require("../utility/appError");
+const bcrypt = require("bcryptjs");
 
 const saveCookie = (req, res, token) => {
   res.cookie("code", token, {
@@ -12,9 +14,23 @@ const saveCookie = (req, res, token) => {
   });
 };
 
+const saveCookieAfterEntering = (req, res, token) => {
+  res.cookie("afterEnter", token, {
+    maxAge: 10 * 24 * 60 * 60 * 1000,
+    httpOnly: true,
+    secure: process.env.NODE_ENV == "DEVELOPMENT" ? false : true,
+  });
+};
+
 const createToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET_KEY, {
     expiresIn: 10 * 60 * 1000,
+  });
+};
+
+const createTokenAfterEntering = (id) => {
+  return jwt.sign({ id }, process.env.JWT_SECRET_KEY, {
+    expiresIn: 10 * 24 * 60 * 60 * 1000,
   });
 };
 
@@ -33,13 +49,11 @@ const signUp = catchErrLittle(async (req, res, next) => {
     });
 
     if (hasEmail) {
-      await Code.findByIdAndUpdate(hasEmail._id, {
-        code: randomCode,
-        expired_date: Number(Date.now()) + 600000,
-        verified: false,
-      });
-
-      token = createToken(hasEmail._id);
+      return next(
+        new AppError(
+          "Siz bu email bilan royhatdan otgansiz.Iltimos tizimga kirishni bosing."
+        )
+      );
     } else {
       const newUser = await Code.create({
         email_or_phone: user.email,
@@ -105,29 +119,82 @@ const register = catchErrLittle(async (req, res, next) => {
     );
   }
 
-  const check = user.email_or_phone.includes("@");
-
-  const data = await User.create({
+  const newUser = await User.create({
     name: req.body.name,
     surname: req.body.surname,
     name_of_father: req.body.name_of_father,
-    date_of_birth: req.body.date_of_birth,
     gender: req.body.gender,
     photo: req.body.photo,
-    phone: check ? "" : user.email_or_phone,
-    email: check ? user.email_or_phone : "",
+    email: user.email_or_phone,
     password: req.body.password,
     passwordConfirm: req.body.passwordConfirm,
     role: req.body.role,
-    phone_active: check ? false : true,
-    email_active: check ? true : false,
   });
+
+  const token = createTokenAfterEntering(newUser._id);
+
+  saveCookieAfterEntering(req, res, token);
 
   res.status(200).json({
     status: "success",
     message: "Siz muvaffaqiyatli royhatdan otdingiz",
-    data: data,
+    data: newUser,
   });
 });
 
-module.exports = { signUp, verify, register };
+const login = catchErrLittle(async (req, res, next) => {
+  // 1.Email bilan password borligini tekshirish
+
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    // or har doim trueni qidirardi
+    return next(new AppError("Email yoki password kiriting xato!", 401));
+  }
+
+  // 2.Shunaqa odam bormi yoqmi
+
+  const user = await User.findOne({
+    email,
+  }).select("+password");
+
+  if (!user) {
+    return next(
+      new AppError("Bunday user mavjud emas.Iltimos royhatdan oting")
+    );
+  }
+
+  // 3.Passwordni solishtirish
+
+  const tekshirHashga = async (oddiyPassword, hashPAssword) => {
+    return await bcrypt.compare(oddiyPassword, hashPAssword);
+  };
+
+  if (!(await tekshirHashga(password, user.password))) {
+    return next(
+      new AppError(
+        "Sizning email yoki parolingiz xato iltimos qayta urining",
+        401
+      )
+    );
+  }
+
+  // 4.JWT token yasab berish
+
+  const token = createTokenAfterEntering(user._id);
+  console.log(token);
+
+  saveCookieAfterEntering(req, res, token);
+
+  // Response qaytarish
+
+  res.status(200).json({
+    status: "succes",
+    token: token,
+    message: "Muvaffaqiyatli otdingiz",
+  });
+
+  next();
+});
+
+module.exports = { signUp, verify, register, login };

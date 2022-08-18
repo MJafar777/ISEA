@@ -1,10 +1,17 @@
 const mongoose = require("mongoose");
+const validator = require("validator");
 
 const codeSchema = new mongoose.Schema(
   {
     email_or_phone: {
       type: String,
       required: true,
+      validate: {
+        validator: function (val) {
+          return validator.isEmail(val);
+        },
+        message: "Iltimos togri email kiriting",
+      },
     },
     code: {
       type: Number,
