@@ -1,25 +1,25 @@
-import AwesomeSlider from "react-awesome-slider";
-import "react-awesome-slider/dist/styles.css";
+// import AwesomeSlider from "react-awesome-slider";
+// import "react-awesome-slider/dist/styles.css";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import React, { useState, useEffect } from "react";
 import {} from "react-icons";
 import slider from "./slider-data";
 import s from "./heroslider.module.css";
+  
+// import img1 from "../../img/hero-Slider/1.jpg";
+// import img2 from "../../img/hero-Slider/2.jpg";
+// import img3 from "../../img/hero-Slider/3.jpg";
+// import img4 from "../../img/hero-Slider/4.jpg";
+// import img5 from "../../img/hero-Slider/5.jpg";
+// import img6 from "../../img/hero-Slider/6.jpg";
+// import img7 from "../../img/hero-Slider/7.jpg";
+// import img8 from "../../img/hero-Slider/8.jpg";
 
-import img1 from "../../img/hero-Slider/1.jpg";
-import img2 from "../../img/hero-Slider/2.jpg";
-import img3 from "../../img/hero-Slider/3.jpg";
-import img4 from "../../img/hero-Slider/4.jpg";
-import img5 from "../../img/hero-Slider/5.jpg";
-import img6 from "../../img/hero-Slider/6.jpg";
-import img7 from "../../img/hero-Slider/7.jpg";
-import img8 from "../../img/hero-Slider/8.jpg";
-
-const AutoplaySlider = withAutoplay(AwesomeSlider);
+// const AutoplaySlider = withAutoplay(AwesomeSlider);
 function HeroSlider() {
   return (
     <div className={s.slider}>
-      <AutoplaySlider
+      {/* <AutoplaySlider
         play={true}
         cancelOnInteraction={false}
         interval={3000}
@@ -49,7 +49,7 @@ function HeroSlider() {
         <div className={s.sliders}>
           <img src={img8} alt="img8" />
         </div>
-      </AutoplaySlider>
+      </AutoplaySlider> */}
     </div>
   );
 
