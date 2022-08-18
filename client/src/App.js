@@ -15,6 +15,7 @@ import Renewables from "./pages/Renewables/Renewables";
 import "./pages/Renewables/renewables.module.css";
 import PublicationBook from "./pages/Publication/PublicationBook/PublicationBook";
 import Slider from "./components/Slider/Slider";
+import Benefits from "./components/RenewablesComponents/BENEFITS/Benefits";
 
 const App = () => {
   return (
@@ -28,6 +29,10 @@ const App = () => {
         {/* about page child comonents finished */}
         <Route path="/ourwork" element={<OurWork />} />
         <Route path="/renewables" element={<Renewables />} />
+        {/* renewables page child comonents started  */}
+        <Route path="/benefits" element={<Benefits />} />
+
+        {/* renewables page child comonents finished  */}
         <Route path="/newroom" element={<Newsroom />} />
         <Route path="/publications" element={<Publication />} />
         <Route path="/education" element={<Education />} />
