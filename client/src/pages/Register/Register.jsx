@@ -77,8 +77,10 @@ export default function Register() {
             </>
           )}
           <div className={s.remember}>
-            <input type="checkbox" />
-            <p>Remember me</p>
+            <div className={s.rememberCheck}>
+              <input type="checkbox" />
+              <p>Remember me</p>
+            </div>
             <p className={s.forgot}>Forgot Password?</p>
           </div>
         </form>

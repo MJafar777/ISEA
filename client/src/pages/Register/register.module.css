@@ -71,7 +71,7 @@ h1 {
   padding: 1rem 2rem;
   border: none;
   font-size: 18px;
-  background-color: rgba(128, 128, 128, 0.362);
+  background-color: rgba(128, 128, 128, 0.109);
   color: black;
 }
 .inputOne::placeholder {
@@ -87,4 +87,21 @@ h1 {
   color: var(--color-green);
   border: 2px solid var(--color-green);
   border-radius: 2rem;
+}
+.rememberCheck {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.remember {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.forgot {
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--color-primary);
 }
