@@ -15,7 +15,9 @@ import Renewables from "./pages/Renewables/Renewables";
 import "./pages/Renewables/renewables.module.css";
 import PublicationBook from "./pages/Publication/PublicationBook/PublicationBook";
 import Slider from "./components/Slider/Slider";
+
 import Benefits from "./components/RenewablesComponents/BENEFITS/Benefits";
+
 import Register from "./pages/Register/Register";
 
 const App = () => {
@@ -32,6 +34,17 @@ const App = () => {
         <Route path="/renewables" element={<Renewables />} />
         {/* renewables page child comonents started  */}
         <Route path="/benefits" element={<Benefits />} />
+        <Route path="/climate-change" element={<Benefits />} />
+        <Route path="/energy-transition" element={<Benefits />} />
+        <Route path="/finance-and-investment" element={<Benefits />} />
+        <Route path="/benefitsheating-and-cooling" element={<Benefits />} />
+        <Route path="/innovation-technology" element={<Benefits />} />
+        <Route path="/off-grid" element={<Benefits />} />
+        <Route path="/policy" element={<Benefits />} />
+        <Route path="/inductry-transport" element={<Benefits />} />
+        <Route path="/costs" element={<Benefits />} />
+        <Route path="/islands" element={<Benefits />} />
+        <Route path="/power" element={<Benefits />} />
 
         {/* renewables page child comonents finished  */}
         <Route path="/newroom" element={<Newsroom />} />
