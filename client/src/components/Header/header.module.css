@@ -25,6 +25,7 @@
 }
 .menuIcon {
   margin-left: 3rem;
+  display: flex;
 }
 
 .lang {
@@ -59,6 +60,30 @@
   color: darkblue;
   font-size: 16px;
 }
+
+/* dropdown started */
+.renewables {
+  position: relative;
+}
+.dropdownChild {
+  transition: all 1s;
+  width: 20rem;
+  z-index: 10;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  margin-left: -3rem;
+  border-bottom: 3px solid var(--color-primary);
+}
+.dropdownChild:hover {
+  color: #0073ab;
+}
+.renewables:hover .dropdownChild {
+  display: block;
+}
+/* dropdown finished */
 
 @keyframes logo {
   0% {
