@@ -4,6 +4,7 @@ const catchErrLittle = require("../utility/catchErrorLitlle");
 const Email = require("../utility/mail");
 const jwt = require("jsonwebtoken");
 const AppError = require("../utility/appError");
+const bcrypt = require("bcryptjs");
 
 const saveCookie = (req, res, token) => {
   res.cookie("code", token, {
@@ -141,16 +142,59 @@ const register = catchErrLittle(async (req, res, next) => {
   });
 });
 
-const login = async (req, res, next) => {
+const login = catchErrLittle(async (req, res, next) => {
+  // 1.Email bilan password borligini tekshirish
+
   const { email, password } = req.body;
 
-  if (!email && !password) {
-    return next("Email yoki passwordni kiriting", 404);
+  if (!email || !password) {
+    // or har doim trueni qidirardi
+    return next(new AppError("Email yoki password kiriting xato!", 401));
   }
 
-  const user = await User.find({
-    email: email,
+  // 2.Shunaqa odam bormi yoqmi
+
+  const user = await User.findOne({
+    email,
+  }).select("+password");
+
+  if (!user) {
+    return next(
+      new AppError("Bunday user mavjud emas.Iltimos royhatdan oting")
+    );
+  }
+
+  // 3.Passwordni solishtirish
+
+  const tekshirHashga = async (oddiyPassword, hashPAssword) => {
+    return await bcrypt.compare(oddiyPassword, hashPAssword);
+  };
+
+  if (!(await tekshirHashga(password, user.password))) {
+    return next(
+      new AppError(
+        "Sizning email yoki parolingiz xato iltimos qayta urining",
+        401
+      )
+    );
+  }
+
+  // 4.JWT token yasab berish
+
+  const token = createTokenAfterEntering(user._id);
+  console.log(token);
+
+  saveCookieAfterEntering(req, res, token);
+
+  // Response qaytarish
+
+  res.status(200).json({
+    status: "succes",
+    token: token,
+    message: "Muvaffaqiyatli otdingiz",
   });
-};
+
+  next();
+});
 
 module.exports = { signUp, verify, register, login };
