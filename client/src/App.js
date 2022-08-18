@@ -30,6 +30,8 @@ import InductryTransport from "./components/RenewablesComponents/INDUCTRY-TRANSP
 import Costs from "./components/RenewablesComponents/COSTS/Costs";
 import Island from "./components/RenewablesComponents/ISLANDS/Island";
 import Power from "./components/RenewablesComponents/POWER/Power";
+import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
+
 const App = () => {
   return (
     <>
@@ -44,6 +46,7 @@ const App = () => {
         <Route path="/renewables" element={<Renewables />} />
         {/* renewables page child comonents started  */}
 
+        <Route path="/benefits" element={<Benefits />} />
         <Route path="/climate-change" element={<ClimateChange />} />
         <Route path="/energy-transition" element={<EnergyTransition />} />
         <Route path="/finance-and-investment" element={<FinanceInvestment />} />
@@ -60,9 +63,10 @@ const App = () => {
         <Route path="/inductry-transport" element={<InductryTransport />} />
         <Route path="/costs" element={<Costs />} />
         <Route path="/islands" element={<Island />} />
-        <Route path="/power" element={<Power  />} />
+        <Route path="/power" element={<Power />} />
 
         {/* renewables page child comonents finished  */}
+
         <Route path="/newroom" element={<Newsroom />} />
         <Route path="/publications" element={<Publication />} />
         <Route path="/education" element={<Education />} />
