@@ -19,6 +19,7 @@ import Slider from "./components/Slider/Slider";
 import Benefits from "./components/RenewablesComponents/BENEFITS/Benefits";
 
 import Register from "./pages/Register/Register";
+import Signup from "./pages/Signup/Signup";
 
 const App = () => {
   return (
@@ -64,6 +65,7 @@ const App = () => {
           }
         />
         <Route path={"/register"} element={<Register />} />
+        <Route path={"/signup"} element={<Signup />} />
       </Routes>
       <Footer />
     </>
