@@ -86,10 +86,10 @@ export default function Register() {
         </form>
       </div>
       <div className={s.rightRegister}>
-        <h1>Hello , Friend</h1>
-        <div className={s.bottom}></div>
+        <h1 className={s.rightTitle}>Hello , Friend</h1>
+        <div className={s.bottom2}></div>
         <p>fill up personal information and start journey with us.</p>
-        <button>Sign Up</button>
+        <button className={s.btn2}>Sign Up</button>
       </div>
     </div>
   );

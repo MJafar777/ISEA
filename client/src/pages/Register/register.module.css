@@ -21,6 +21,7 @@
   padding: 4rem 7rem;
   width: 30%;
   border-radius: 2rem 0 0 2rem;
+  height: 70vh;
 }
 .leftRegister h3 {
   font-size: 24px;
@@ -41,6 +42,14 @@ h1 {
   height: 0.5rem;
   background-color: var(--color-green);
   margin: 1rem auto;
+  border-radius: 2rem;
+}
+.bottom2 {
+  width: 8rem;
+  height: 0.5rem;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  background-color: #fff;
 }
 .links {
   width: 100%;
@@ -78,15 +87,21 @@ h1 {
   color: black;
   font-size: 18px;
 }
-.btns {
+.btns,
+.btn2 {
   padding: 1rem 4rem;
   display: block;
   background-color: rgba(255, 255, 255, 0);
   font-size: 20px;
   margin: 0 auto;
-  color: var(--color-green);
   border: 2px solid var(--color-green);
   border-radius: 2rem;
+  cursor: pointer;
+}
+.btn2 {
+  border: 2px solid #fff;
+  color: #fff;
+  margin: 3rem auto;
 }
 .rememberCheck {
   display: flex;
@@ -104,4 +119,23 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   color: var(--color-primary);
+}
+.rightRegister {
+  color: #fff !important;
+  width: 25%;
+  background-color: var(--color-green);
+  height: 70vh;
+  border-radius: 0 2rem 2rem 0;
+}
+.rightTitle {
+  color: #fff;
+  margin: 8rem 0 1rem 0;
+}
+.rightRegister p {
+  text-align: center;
+  font-size: 16px;
+  width: 70%;
+  margin: 2rem auto;
+}
+.btn2 {
 }
