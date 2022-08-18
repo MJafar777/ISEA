@@ -15,11 +15,8 @@ import Renewables from "./pages/Renewables/Renewables";
 import "./pages/Renewables/renewables.module.css";
 import PublicationBook from "./pages/Publication/PublicationBook/PublicationBook";
 import Slider from "./components/Slider/Slider";
-<<<<<<< HEAD
 import Benefits from "./components/RenewablesComponents/BENEFITS/Benefits";
-=======
 import Register from "./pages/Register/Register";
->>>>>>> 2990388bef4f794d07175fa12ccf7044e4138930
 
 const App = () => {
   return (
