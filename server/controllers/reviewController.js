@@ -1,5 +1,4 @@
 const Reviews = require("../models/reviewModel");
-const User = require("../models/userModel");
 
 const {
   getAll,
@@ -25,25 +24,40 @@ const getAllReviews = async (req, res, next) => {
 
 const addReviews = async (req, res, next) => {
   // add(req, res, next, Reviews);
+  let data;
 
-  const hasUser = await User.findOne({
+  const hasUser = await Reviews.findOne({
     userId: req.body.userId,
   });
 
   if (hasUser) {
-    const reviewBook = await Reviews.findByIdAndUpdate(
-      req.params.id,
-      req.body,
+    data = await Reviews.findByIdAndUpdate(
+      hasUser._id,
+      {
+        userId: req.body.userId,
+        bookId: req.body.bookId,
+        projectId: req.body.projectId,
+        reviewBook: req.body.reviewBook,
+        reviewProject: req.body.reviewProject,
+      },
       {
         new: true,
       }
     );
+  } else {
+    data = await Reviews.create({
+      userId: req.body.userId,
+      bookId: req.body.bookId,
+      projectId: req.body.projectId,
+      reviewBook: req.body.reviewBook,
+      reviewProject: req.body.reviewProject,
+    });
   }
 
-  console.log(hasUser);
-
   res.status(200).json({
-    message: "hasUser",
+    status: "succes",
+    message: "Review qoshildi",
+    data: data,
   });
 };
 

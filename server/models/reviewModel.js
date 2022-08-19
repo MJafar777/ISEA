@@ -16,11 +16,9 @@ const schema = new mongoose.Schema(
     },
     reviewBook: {
       type: String,
-      required: [true, "Siz reviewBookni kiritishingiz kerak"],
     },
     reviewProject: {
       type: String,
-      required: [true, "Siz reviewProjectni kiritishingiz kerak"],
     },
   },
   {
