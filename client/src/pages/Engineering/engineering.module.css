@@ -119,3 +119,49 @@
   font-size: 18px;
   transition: all 1s;
 }
+.DESIGNINGIMG {
+  width: 100%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+.DESIGNINGIMG img {
+  width: 30rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.left {
+  width: 40%;
+  margin: 2rem;
+}
+.src {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: space-around;
+}
+.rightServices {
+  width: 60%;
+}
+.left h2 {
+  font-size: 24px;
+  color: #2569f0;
+}
+.left p {
+  font-size: 16px;
+  width: 80%;
+  margin: 1rem 0;
+}
+.designing,
+.designing2 {
+  width: 100%;
+}
+.designing {
+  background-color: #fff;
+}
+.designing2 {
+  background-color: #f0f0f0;
+}
+.textContent {
+  font-size: 16px;
+}
