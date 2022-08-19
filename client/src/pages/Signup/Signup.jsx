@@ -52,7 +52,6 @@ export default function Signup() {
               placeholder="Email"
             />
           </div>
-          <div></div>
           <div className={s.password}>
             <label className={s.form__label} for="password">
               Password{" "}

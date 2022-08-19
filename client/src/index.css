@@ -71,3 +71,7 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: flex-start;
 }
+
+.main {
+  min-height: 70vh;
+}
