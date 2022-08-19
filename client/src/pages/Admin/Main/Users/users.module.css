@@ -59,8 +59,14 @@
 
 .editing {
   display: flex;
+  opacity: 0;
   gap: 20px;
 }
+
+.user:hover .editing {
+  opacity: 1;
+}
+
 .deleteIcon {
   font-size: 24px;
   color: #fff;
