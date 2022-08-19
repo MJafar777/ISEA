@@ -34,6 +34,7 @@ class FeatureAPI {
     this.dataBaseQuery = this.dataBaseQuery.find(queryData);
     return this;
   }
+
   sorting() {
     console.log(this.cleintQuery);
     if (this.cleintQuery.sort) {
