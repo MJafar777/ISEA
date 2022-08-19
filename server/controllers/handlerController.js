@@ -16,38 +16,51 @@ const responseFunction = (res, statusCode, data) => {
   }
 };
 
-const getAll = catchErrBig(async (req, res, next, Model, options, options2) => {
-  let datas;
-  const filter = new FeatureAPI(req.query, Model)
-    .filter()
-    .sorting()
-    .field()
-    .pagination();
-  if (options2) {
-    datas = await filter.dataBaseQuery.populate(options).populate(options2);
-  } else if (options) {
-    datas = await filter.dataBaseQuery.populate(options);
-  } else {
-    datas = await filter.dataBaseQuery;
-  }
+const getAll = catchErrBig(
+  async (req, res, next, Model, options, options2, options3) => {
+    let datas;
+    const filter = new FeatureAPI(req.query, Model)
+      .filter()
+      .sorting()
+      .field()
+      .pagination();
+    if (options3) {
+      datas = await filter.dataBaseQuery
+        .populate(options)
+        .populate(options2)
+        .populate(options3);
+    } else if (options2) {
+      datas = await filter.dataBaseQuery.populate(options).populate(options2);
+    } else if (options) {
+      datas = await filter.dataBaseQuery.populate(options);
+    } else {
+      datas = await filter.dataBaseQuery;
+    }
 
-  responseFunction(res, 200, datas);
-});
-
-const getOne = catchErrBig(async (req, res, next, Model, options, options2) => {
-  let datas;
-  if (options) {
-    datas = await Model.findById(req.params.id).populate(options);
-  } else if (options2) {
-    datas = await Model.findById(req.params.id)
-      .populate(options)
-      .populate(options2);
-    options2;
-  } else {
-    datas = await Model.find();
+    responseFunction(res, 200, datas);
   }
-  responseFunction(res, 200, datas);
-});
+);
+
+const getOne = catchErrBig(
+  async (req, res, next, Model, options, options2, options3) => {
+    let datas;
+    if (options3) {
+      datas = await Model.findById(req.params.id)
+        .populate(options)
+        .populate(options2)
+        .populate(options3);
+    } else if (options2) {
+      datas = await Model.findById(req.params.id)
+        .populate(options)
+        .populate(options2);
+    } else if (options) {
+      datas = await Model.findById(req.params.id).populate(options);
+    } else {
+      datas = await Model.find();
+    }
+    responseFunction(res, 200, datas);
+  }
+);
 
 const add = catchErrBig(async (req, res, next, Model) => {
   const datas = await Model.create(req.body);

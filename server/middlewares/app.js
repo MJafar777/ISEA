@@ -9,6 +9,10 @@ app.use(cookie());
 const newsRouter = require("../routes/newsRouter");
 const booksRouter = require("../routes/booksRouter");
 const userRouter = require("../routes/userRouter");
+const accountRouter = require("../routes/accountRouter");
+const advancedProfil = require("../routes/advancedProfile");
+const projectRouter = require("../routes/projectRouter");
+const reviewRouter = require("../routes/reviewRouter");
 
 //---- Routes -----
 
@@ -24,6 +28,10 @@ app.use(express.json());
 app.use("/api/v1/news", newsRouter);
 app.use("/api/v1/books", booksRouter);
 app.use("/api/v1/users", userRouter);
+app.use("/api/v1/accounts", accountRouter);
+app.use("/api/v1/advancedProfil", advancedProfil);
+app.use("/api/v1/projects", projectRouter);
+app.use("/api/v1/reviews", reviewRouter);
 
 app.all("*", (req, res, next) => {
   return next(new AppError("This page has not defined", 404));
