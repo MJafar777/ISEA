@@ -2,12 +2,19 @@ import React from "react";
 import Title from "../Title/Title";
 import s from "./energySources.module.css";
 
-import img1 from "../../img/energySources/Wind.png";
-import img2 from "../../img/energySources/Bioenergy.png";
-import img3 from "../../img/energySources/Geothermal.png";
-import img4 from "../../img/energySources/Hydro.png";
-import img5 from "../../img/energySources/Marine.png";
-import img6 from "../../img/energySources/Solar.png";
+// import img1 from "../../img/energySources/Wind.png";
+// import img2 from "../../img/energySources/Bioenergy.png";
+// import img3 from "../../img/energySources/Geothermal.png";
+// import img4 from "../../img/energySources/Hydro.png";
+// import img5 from "../../img/energySources/Marine.png";
+// import img6 from "../../img/energySources/Solar.png";
+
+import img1 from "../../img/energySources/icon/wind-power.png";
+import img2 from "../../img/energySources/icon/renewable.png";
+import img3 from "../../img/energySources/icon/geothermal-energy.png";
+import img4 from "../../img/energySources/icon/water.png";
+import img5 from "../../img/energySources/icon/waves.png";
+import img6 from "../../img/energySources/icon/solar-energy.png";
 
 const EnergySources = () => {
   return (
