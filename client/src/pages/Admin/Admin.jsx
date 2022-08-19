@@ -6,6 +6,7 @@ import Users from "./Main/Users/Users";
 import Projects from "./Main/Projects/Projects";
 import News from "./Main/News/News";
 import Sidebar from "./Sidebar/Sidebar";
+import AddUser from "./Main/Users/AddUser/AddUser";
 
 export default function Admin() {
   const navigate = useLocation();
@@ -22,6 +23,8 @@ export default function Admin() {
           <News />
         ) : navigate.hash === "#projects" ? (
           <Projects />
+        ) : "#addusers" ? (
+          <AddUser />
         ) : (
           ""
         )}
