@@ -1,10 +1,12 @@
+import Benefits from "../../components/RenewablesComponents/Benefits/Benefits";
 import s from "./renewables.module.css";
-import Router from "../../components/Router/Router";
+// import Router from "../../components/Router/Router";
 
 const Renewables = () => {
   return (
     <div className={s.container}>
-      <Router name={"BENEFITS"} route={"/benefits"} />
+      <Benefits />
+      {/* <Router name={"BENEFITS"} route={"/benefits"} />
       <Router name={"CLIMATE CHANGE"} route={"/climate-change"} />
       <Router name={"ENERGY TRANSITION"} route={"/energy-transition"} />
       <Router name={"FINANCE & INVESTMENT"} route={"/finance-and-investment"} />
@@ -21,7 +23,7 @@ const Renewables = () => {
       <Router name={"INDUCTRY & TRANSPORT"} route={"/inductry-transport"} />
       <Router name={"COSTS"} route={"/costs"} />
       <Router name={"ISLANDS"} route={"/islands"} />
-      <Router name={"POWER"} route={"/power"} />
+      <Router name={"POWER"} route={"/power"} /> */}
     </div>
   );
 };

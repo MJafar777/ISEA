@@ -1,3 +1,6 @@
+const User = require("../models/userModel");
+
+const catchErrBig = require("../utility/catchErrBig");
 const {
   getAll,
   getOne,
@@ -6,4 +9,8 @@ const {
   deleteData,
 } = require("./handlerController");
 
-const getAllUser = (req, res, next) => {};
+const getAllUser = catchErrBig(async (req, res, next) => {
+  getAll(req, res, next, User);
+});
+
+module.exports = { getAllUser };

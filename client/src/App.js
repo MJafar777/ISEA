@@ -15,10 +15,9 @@ import Renewables from "./pages/Renewables/Renewables";
 import "./pages/Renewables/renewables.module.css";
 import PublicationBook from "./pages/Publication/PublicationBook/PublicationBook";
 // import Slider from "./components/Slider/Slider";
-
 // import Benefits from "./components/RenewablesComponents/ShablonRenewables/Shablon";
-
 import Register from "./pages/Register/Register";
+import Signup from "./pages/Signup/Signup";
 import Benefitsheating from "./components/RenewablesComponents/BENEFITSHEATING-COOLING/Benefitsheating";
 import ClimateChange from "./components/RenewablesComponents/CLIMATECHANGE/ClimateChange";
 import EnergyTransition from "./components/RenewablesComponents/ENERGY-TRANSITION/EnergyTransition";
@@ -45,7 +44,6 @@ const App = () => {
         <Route path="/ourwork" element={<OurWork />} />
         <Route path="/renewables" element={<Renewables />} />
         {/* renewables page child comonents started  */}
-
         <Route path="/benefits" element={<Benefits />} />
         <Route path="/climate-change" element={<ClimateChange />} />
         <Route path="/energy-transition" element={<EnergyTransition />} />
@@ -64,9 +62,7 @@ const App = () => {
         <Route path="/costs" element={<Costs />} />
         <Route path="/islands" element={<Island />} />
         <Route path="/power" element={<Power />} />
-
         {/* renewables page child comonents finished  */}
-
         <Route path="/newroom" element={<Newsroom />} />
         <Route path="/publications" element={<Publication />} />
         <Route path="/education" element={<Education />} />
@@ -84,6 +80,7 @@ const App = () => {
           }
         />
         <Route path={"/register"} element={<Register />} />
+        <Route path={"/signup"} element={<Signup />} />
       </Routes>
       <Footer />
     </>
