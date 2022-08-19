@@ -60,6 +60,7 @@ const verify = async (req, res, next) => {
   try {
     const { token } = req.body;
     console.log(token);
+
     const getCode = await jwt.verify(
       req.body?.token,
       process.env.JWT_SECRET_KEY
@@ -92,10 +93,7 @@ const verify = async (req, res, next) => {
 };
 
 const register = catchErrLittle(async (req, res, next) => {
-  const getCode = await jwt.verify(
-    req.cookies.code,
-    process.env.JWT_SECRET_KEY
-  );
+  const getCode = await jwt.verify(req.body.token, process.env.JWT_SECRET_KEY);
 
   const user = await Code.findById(getCode.id);
 
@@ -122,10 +120,9 @@ const register = catchErrLittle(async (req, res, next) => {
 
   const token = createTokenAfterEntering(newUser._id);
 
-  saveCookieAfterEntering(req, res, token);
-
   res.status(200).json({
     status: "success",
+    token: token,
     message: "Siz muvaffaqiyatli royhatdan otdingiz",
     data: newUser,
   });
@@ -177,6 +174,7 @@ const login = catchErrLittle(async (req, res, next) => {
   res.status(200).json({
     status: "succes",
     token: token,
+    user: user,
     message: "Muvaffaqiyatli otdingiz",
   });
 
