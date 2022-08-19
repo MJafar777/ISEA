@@ -6,7 +6,7 @@
 .sidebar {
   width: 100%;
   background-color: #f0f0f0;
-  height: 70vh;
+  min-height: 70vh;
   z-index: 9;
 }
 

@@ -2,7 +2,7 @@
   display: flex;
   padding: 20px;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.479); */
   margin-bottom: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.267);
@@ -62,12 +62,12 @@
   gap: 20px;
 }
 .deleteIcon {
-  font-size: 32px;
+  font-size: 24px;
   color: #fff;
 }
 
 .editIcon {
-  font-size: 32px;
+  font-size: 24px;
   color: #fff;
 }
 
@@ -75,4 +75,18 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.plus {
+  padding: 10px;
+  font-size: 24px;
+  background-color: rgb(42, 226, 42);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.about {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
