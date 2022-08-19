@@ -77,7 +77,7 @@ const Header = () => {
 
             <Navbar name="PUBLICATIONS" route={"/publications"} />
             <Navbar name="EDUCATION" route={"/education"} />
-            <Navbar name="PUBLICATION" route={"/engineering"} />
+            <Navbar name="ENGINEERING" route={"/engineering"} />
             <Navbar name="PROJECT" route={"/project"} />
           </div>
           {/* <div className={s.selector}>
