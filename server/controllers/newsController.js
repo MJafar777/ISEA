@@ -1,46 +1,29 @@
 const News = require("../models/newsModel");
 
-exports.getNews = async (req, res, next) => {
-  const news = await News.find();
+const {
+  getAll,
+  getOne,
+  add,
+  update,
+  deleteData,
+} = require("./handlerController");
 
-  res.status(200).json({
-    status: "success",
-    length: news.length,
-    news,
-  });
+exports.getNews = async (req, res, next) => {
+  getAll(req, res, next, News);
 };
 
 exports.addNews = async (req, res, next) => {
-  const { section, title, category, publisher } = req.body;
-  const news = await News.create({ section, title, category, publisher });
-  res.status(201).json({
-    status: "success",
-    news,
-  });
+  add(req, res, next, News);
 };
 
 exports.getOne = async (req, res, next) => {
-  const { id } = req.params;
-  const news = await News.findById(id);
-
-  res.status(201).json({
-    status: "success",
-    news,
-  });
+  getOne(req, res, next, News);
 };
 
 exports.updateNews = async (req, res, next) => {
-  const { id } = req.params;
-  const news = await News.findByIdAndUpdate(id, req.body);
-  res.status(203).json({
-    status: "success",
-  });
+  update(req, res, next, News);
 };
 
 exports.deleteNews = async (req, res, next) => {
-  const { id } = req.params;
-  const news = await News.findByIdAndRemove(id);
-  res.status(203).json({
-    status: "success",
-  });
+  deleteData(req, res, next, News);
 };
