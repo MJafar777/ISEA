@@ -13,7 +13,7 @@ userRouter.route("/login").post(authController.login);
 userRouter
   .route("/")
   .get(userController.getAllUser)
-  .post(userController.addUser);
+  .post(multer.uploadUserImage, multer.resizeImage, userController.addUser);
 
 userRouter
   .route("/:id")

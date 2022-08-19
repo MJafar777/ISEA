@@ -1,7 +1,10 @@
+:root {
+  --color-primary-dark: #e0e0e0;
+}
 .background {
   background-image: url(../../img/enginier/backEnergy.jpg);
   width: 100%;
-  height: 65vh;
+  height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: content-box;
@@ -9,6 +12,8 @@
   border-radius: 0 0 60% 60%;
   background-attachment: fixed;
   overflow: hidden;
+  z-index: 2;
+  position: relative;
 }
 .engineeringTitle {
   width: 100%;
@@ -22,4 +27,95 @@
   margin-top: 4rem;
   color: rgb(37, 105, 240);
   text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+}
+.paragrof {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  color: #2569f0;
+  text-align: center;
+  user-select: none;
+}
+.link2 {
+  width: 35rem;
+  background-color: rgb(37, 105, 240);
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 4rem auto;
+  z-index: 2;
+  user-select: none;
+}
+.linkAboutMenu {
+  width: 90%;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+.linkAboutMenu:hover {
+  color: rgb(37, 105, 240);
+}
+.btns {
+  width: 3rem;
+  transform: translateX(-6rem);
+  color: white;
+}
+.right {
+  margin-left: -2rem;
+  width: 4rem;
+  color: #fff;
+  transform: scale(2);
+}
+.link2:hover .right {
+  transform: scale(2);
+  transform: translateX(-3rem);
+  transition: all 1s;
+  opacity: 0;
+  color: rgba(37, 105, 240, 0.833);
+}
+.link2:hover {
+  background-color: white;
+}
+
+/* count div started */
+
+.count {
+  width: 70%;
+  z-index: 9;
+  margin: 2rem auto;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  position: sticky;
+}
+.grid {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.cell {
+  height: 20rem;
+}
+.imgs1 {
+  width: 35rem;
+  height: 90%;
+}
+.text {
+  font-size: 16px;
+  color: #fff;
+}
+.textParent {
+  width: 35rem;
+  margin-top: -1rem;
+  padding: 1rem;
+  background-color: #2569f0;
+}
+.cell:hover .text {
+  font-size: 18px;
+  transition: all 1s;
 }
