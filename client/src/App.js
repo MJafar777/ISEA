@@ -30,6 +30,7 @@ import Costs from "./components/RenewablesComponents/COSTS/Costs";
 import Island from "./components/RenewablesComponents/ISLANDS/Island";
 import Power from "./components/RenewablesComponents/POWER/Power";
 import Admin from "./pages/Admin/Admin";
+import Login from "./pages/Login/Login";
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 
 const App = () => {
@@ -85,6 +86,7 @@ const App = () => {
             }
           />
           <Route path={"/register"} element={<Register />} />
+          <Route path={"/login"} element={<Login />} />
           <Route path={"/signup"} element={<Signup />} />
           <Route path={"/admin"} element={<Admin />} />
         </Routes>
