@@ -83,8 +83,6 @@ const userScheme = new mongoose.Schema(
 );
 
 userScheme.pre("save", async function (next) {
-  console.log("pre ga kirish", this.password);
-
   if (!this.isModified("password")) {
     return next();
   }
