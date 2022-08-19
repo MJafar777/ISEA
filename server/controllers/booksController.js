@@ -1,54 +1,29 @@
 const Books = require("../models/bookModels");
 
-exports.getBooks = async (req, res, next) => {
-  const books = await Books.find();
+const {
+  getAll,
+  getOne,
+  add,
+  update,
+  deleteData,
+} = require("./handlerController");
 
-  res.status(200).json({
-    status: "success",
-    length: books.length,
-    books,
-  });
+exports.getBooks = async (req, res, next) => {
+  getAll(req, res, next, Books);
 };
 
 exports.addBooks = async (req, res, next) => {
-  const { section, title, language, description, category, publisher } =
-    req.body;
-  const books = await Books.create({
-    section,
-    title,
-    category,
-    publisher,
-    description,
-    language,
-  });
-  res.status(201).json({
-    status: "success",
-    books,
-  });
+  add(req, res, next, Books);
 };
 
 exports.getOne = async (req, res, next) => {
-  const { id } = req.params;
-  const books = await Books.findById(id);
-
-  res.status(201).json({
-    status: "success",
-    books,
-  });
+  getOne(req, res, next, Books);
 };
 
 exports.updateBooks = async (req, res, next) => {
-  const { id } = req.params;
-  const books = await Books.findByIdAndUpdate(id, req.body);
-  res.status(203).json({
-    status: "success",
-  });
+  update(req, res, next, Books);
 };
 
 exports.deleteBooks = async (req, res, next) => {
-  const { id } = req.params;
-  const books = await Books.findByIdAndRemove(id);
-  res.status(203).json({
-    status: "success",
-  });
+  deleteData(req, res, next, Books);
 };

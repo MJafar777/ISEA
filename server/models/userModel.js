@@ -4,6 +4,10 @@ const bcrypt = require("bcryptjs");
 
 const userScheme = new mongoose.Schema(
   {
+    accountId: {
+      type: mongoose.Schema.ObjectId,
+      ref: "accounts",
+    },
     name: {
       type: String,
       trim: true,
@@ -79,8 +83,20 @@ const userScheme = new mongoose.Schema(
   },
   {
     timestamps: true,
+    toJSON: { virtuals: true },
   }
 );
+
+userScheme.virtual("advanced_profile", {
+  ref: "advanced_profiles", // collection nomi
+  localField: "_id", // ozini id sini olib ketib
+  foreignField: "userId", // tour fieldi bilan tekshiradi
+});
+userScheme.virtual("user_projects", {
+  ref: "projects", // collection nomi
+  localField: "_id", // ozini id sini olib ketib
+  foreignField: "userId", // tour fieldi bilan tekshiradi
+});
 
 userScheme.pre("save", async function (next) {
   if (!this.isModified("password")) {
@@ -95,6 +111,7 @@ userScheme.pre("save", async function (next) {
 
   next();
 });
+
 const User = mongoose.model("users1", userScheme);
 
 module.exports = User;
