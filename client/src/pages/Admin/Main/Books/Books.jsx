@@ -5,7 +5,7 @@ export default function Books() {
   return (
     <div className={s.container}>
       <div className={s.header}>
-        <h2 className={s.title}>Books</h2>
+        <h2 className={s.title}>BOOKS</h2>
         <div>
           <p>Select Category</p>
           <select>

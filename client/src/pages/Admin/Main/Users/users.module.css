@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  gap: 20px;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.479); */
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.267);
+}
+
+.title {
+  font-size: 24px;
+  color: #222;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.301);
+  transition: all 5000;
+}
+
+.user:hover {
+  transform: scale(1.001);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.37);
+}
+
+.image {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.delete {
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.356);
+  background-color: rgb(238, 51, 51);
+  border-radius: 5px;
+}
+
+.edit {
+  padding: 10px;
+  background-color: rgb(54, 149, 238);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.356);
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.editing {
+  display: flex;
+  gap: 20px;
+}
+.deleteIcon {
+  font-size: 32px;
+  color: #fff;
+}
+
+.editIcon {
+  font-size: 32px;
+  color: #fff;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

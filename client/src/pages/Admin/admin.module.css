@@ -7,6 +7,7 @@
   width: 100%;
   background-color: #f0f0f0;
   height: 70vh;
+  z-index: 9;
 }
 
 .main {
@@ -33,14 +34,22 @@
 
 .item {
   font-size: 18px;
-
-  padding: 15px 30px;
+  font-weight: 700;
 }
 
 .items a {
   text-decoration: none;
+  display: flex;
+  padding: 15px 30px;
+  align-items: center;
+  gap: 10px;
 }
 
-.item:hover {
+.items a:hover {
   background-color: #868383;
+}
+
+.icon {
+  /* color: var(--color-primary); */
+  font-size: 18px;
 }
