@@ -5,15 +5,11 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  section: [
-    {
-      description: {
-        type: String,
-        required: true,
-      },
-      image: { type: String },
-    },
-  ],
+  description: {
+    type: String,
+    required: true,
+  },
+  photo: { type: String },
   category: {
     type: String,
     required: true,

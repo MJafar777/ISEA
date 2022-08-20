@@ -2,15 +2,17 @@ const projectRouter = require("express").Router();
 
 const projectController = require("../controllers/projectController");
 
+const projectMulter = require("../utility/projectMulter");
+
 projectRouter
   .route("/")
   .get(projectController.getAllProject)
-  .post(projectController.addProject);
+  .post(projectMulter.uploadProjectFile, projectController.addProject);
 
 projectRouter
   .route("/:id")
   .get(projectController.getOneProject)
-  .patch(projectController.updateProject)
+  .patch(projectMulter.uploadProjectFile, projectController.updateProject)
   .delete(projectController.deleteProject);
 
 module.exports = projectRouter;

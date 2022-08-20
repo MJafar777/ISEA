@@ -7,7 +7,11 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  section: { description: { type: String, required: true } },
+  book: {
+    type: String,
+    required: true,
+  },
+  section: { description: { type: String } },
   description: { type: String, required: true },
   publisher: { type: String, required: true },
   createdAt: { type: Date, default: Date.now() },

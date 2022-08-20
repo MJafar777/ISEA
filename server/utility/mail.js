@@ -6,7 +6,6 @@ class Email {
     this.code = code;
     this.from = process.env.EMAIL_FROM;
   }
-
   transport() {
     return nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
