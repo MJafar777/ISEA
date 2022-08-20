@@ -1,5 +1,11 @@
 const nodemailer = require("nodemailer");
 const pug = require("pug");
+const client = require("@sendgrid/mail");
+
+client.setApiKey(process.env.SENDGRID_API_KEY);
+
+client;
+
 class Email {
   constructor(user, code) {
     this.user = user;
@@ -39,6 +45,15 @@ class Email {
   }
   sendCode() {
     this.sendMessage("code", "code has been delivered");
+  }
+  async sendgridMessage(template, message) {
+    const msg = {
+      to: this.user.email,
+      from: "niyozbekpulatov@gmail.com",
+      subject: message,
+      html: `<h1>YOUR CODE IS: ${this.code}</h1>`,
+    };
+    await client.send(msg);
   }
 }
 
