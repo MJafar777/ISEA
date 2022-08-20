@@ -32,6 +32,7 @@ import Power from "./components/RenewablesComponents/POWER/Power";
 import Admin from "./pages/Admin/Admin";
 import Login from "./pages/Login/Login";
 import Shablon2 from "./components/EngineeringComponents/Shablon2/Shablon2";
+import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 
 const App = () => {
@@ -48,7 +49,7 @@ const App = () => {
           <Route path="/ourwork" element={<OurWork />} />
           <Route path="/renewables" element={<Renewables />} />
           {/* renewables page child comonents started  */}
-          {/* <Route path="/benefits" element={<Benefits />} /> */}
+          <Route path="/benefits" element={<Benefits />} />
           <Route path="/climate-change" element={<ClimateChange />} />
           <Route path="/energy-transition" element={<EnergyTransition />} />
           <Route
