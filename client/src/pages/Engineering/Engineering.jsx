@@ -10,11 +10,19 @@ import img3 from "../../img/enginier/shamolEnergy.jpg";
 import a from "./engineering.module.css";
 import Title from "../../components/Title/Title";
 
-import img11 from "../../img/hero-Slider/3.jpg";
-import img22 from "../../img/hero-Slider/4.jpg";
-import img33 from "../../img/hero-Slider/5.jpg";
-import img44 from "../../img/hero-Slider/6.jpg";
-
+import img111 from "../../img/hero-Slider/3.jpg";
+import img222 from "../../img/hero-Slider/4.jpg";
+import img333 from "../../img/hero-Slider/5.jpg";
+import img444 from "../../img/hero-Slider/6.jpg";
+import img11 from "../../img/factory/1.jpg";
+import img22 from "../../img/factory/2.jpg";
+import img33 from "../../img/factory/3.jpg";
+import img44 from "../../img/factory/4.jpg";
+import img55 from "../../img/factory/5.jpg";
+import img66 from "../../img/factory/6.jpg";
+import img77 from "../../img/factory/7.jpg";
+import img88 from "../../img/factory/8.jpg";
+import img99 from "../../img/factory/9.jpg";
 const Engineering = () => {
   const Component = a.engineeringTitle + " " + "container";
   const Component2 = a.DESIGNING + " " + "container";
@@ -41,9 +49,9 @@ const Engineering = () => {
         <Title name={"Engineering"} />
       </div>
       <div className={a.count}>
-        <NavLink to={"/company-info"} className={a.grid}>
+        <NavLink to={"/shablon2"} className={a.grid}>
           <div className={a.cell}>
-            <img className={a.imgs1} src={img} alt="img" />
+            <img className={a.imgs1} src={img11} alt="img" />
             <div className={a.textParent}>
               <p className={a.text}>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
@@ -51,7 +59,7 @@ const Engineering = () => {
         </NavLink>
         <NavLink to={"/company-info"} className={a.grid}>
           <div className={a.cell}>
-            <img className={a.imgs1} src={img2} alt="img2" />
+            <img className={a.imgs1} src={img22} alt="img2" />
             <div className={a.textParent}>
               <p className={a.text}>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
@@ -59,7 +67,7 @@ const Engineering = () => {
         </NavLink>
         <NavLink to={"/company-info"} className={a.grid}>
           <div className={a.cell}>
-            <img className={a.imgs1} src={img3} alt="img3" />
+            <img className={a.imgs1} src={img33} alt="img3" />
             <div className={a.textParent}>
               <p className={a.text}>Lorem ipsum dolor sit amet consectetur</p>
             </div>
@@ -67,7 +75,7 @@ const Engineering = () => {
         </NavLink>
         <NavLink to={"/company-info"} className={a.grid}>
           <div className={a.cell}>
-            <img className={a.imgs1} src={img} alt="img" />
+            <img className={a.imgs1} src={img44} alt="img" />
             <div className={a.textParent}>
               <p className={a.text}>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
@@ -75,7 +83,7 @@ const Engineering = () => {
         </NavLink>
         <NavLink to={"/company-info"} className={a.grid}>
           <div className={a.cell}>
-            <img className={a.imgs1} src={img2} alt="img2" />
+            <img className={a.imgs1} src={img55} alt="img2" />
             <div className={a.textParent}>
               <p className={a.text}>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
@@ -83,7 +91,7 @@ const Engineering = () => {
         </NavLink>
         <NavLink to={"/company-info"} className={a.grid}>
           <div className={a.cell}>
-            <img className={a.imgs1} src={img3} alt="img3" />
+            <img className={a.imgs1} src={img66} alt="img3" />
             <div className={a.textParent}>
               <p className={a.text}>Lorem ipsum dolor sit amet consectetur</p>
             </div>
@@ -91,7 +99,7 @@ const Engineering = () => {
         </NavLink>
         <NavLink to={"/company-info"} className={a.grid}>
           <div className={a.cell}>
-            <img className={a.imgs1} src={img} alt="img" />
+            <img className={a.imgs1} src={img77} alt="img" />
             <div className={a.textParent}>
               <p className={a.text}>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
@@ -99,7 +107,7 @@ const Engineering = () => {
         </NavLink>
         <NavLink to={"/company-info"} className={a.grid}>
           <div className={a.cell}>
-            <img className={a.imgs1} src={img2} alt="img2" />
+            <img className={a.imgs1} src={img88} alt="img2" />
             <div className={a.textParent}>
               <p className={a.text}>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
@@ -107,7 +115,7 @@ const Engineering = () => {
         </NavLink>
         <NavLink to={"/company-info"} className={a.grid}>
           <div className={a.cell}>
-            <img className={a.imgs1} src={img3} alt="img3" />
+            <img className={a.imgs1} src={img99} alt="img3" />
             <div className={a.textParent}>
               <p className={a.text}>Lorem ipsum dolor sit amet consectetur</p>
             </div>
@@ -144,10 +152,10 @@ const Engineering = () => {
               </div>
             </div>
             <div className={a.DESIGNINGIMG}>
-              <img src={img11} alt="img11" />
+              <img src={img99} alt="img11" />
               <img src={img22} alt="img22" />
-              <img src={img33} alt="img33" />
-              <img src={img44} alt="img44" />
+              <img src={img333} alt="img33" />
+              <img src={img111} alt="img44" />
             </div>
           </div>
         </div>
@@ -181,10 +189,10 @@ const Engineering = () => {
               </div>
             </div>
             <div className={a.DESIGNINGIMG}>
-              <img src={img11} alt="img11" />
-              <img src={img22} alt="img22" />
-              <img src={img33} alt="img33" />
-              <img src={img44} alt="img44" />
+              <img src={img55} alt="img11" />
+              <img src={img66} alt="img22" />
+              <img src={img77} alt="img33" />
+              <img src={img88} alt="img44" />
             </div>
           </div>
         </div>
@@ -255,10 +263,10 @@ const Engineering = () => {
               </div>
             </div>
             <div className={a.DESIGNINGIMG}>
-              <img src={img11} alt="img11" />
-              <img src={img22} alt="img22" />
-              <img src={img33} alt="img33" />
-              <img src={img44} alt="img44" />
+              <img src={img111} alt="img11" />
+              <img src={img222} alt="img22" />
+              <img src={img333} alt="img33" />
+              <img src={img444} alt="img44" />
             </div>
           </div>
         </div>
