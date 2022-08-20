@@ -10,9 +10,18 @@
     rgba(4, 189, 228, 1) 0%,
     rgba(2, 83, 185, 1) 100.2%
   );
+  color: #fff;
 }
 .titleSection {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.imgTitle {
+  width: 45rem;
+  margin: 2rem;
+  margin-left: 0;
+}
+.text {
+  font-size: 30px;
 }
