@@ -23,14 +23,13 @@ import img66 from "../../img/factory/6.jpg";
 import img77 from "../../img/factory/7.jpg";
 import img88 from "../../img/factory/8.jpg";
 import img99 from "../../img/factory/9.jpg";
-import Shablon2 from "../../components/EngineeringComponents/Shablon2/Shablon2";
+
 const Engineering = () => {
   const Component = a.engineeringTitle + " " + "container";
   const Component2 = a.DESIGNING + " " + "container";
 
   return (
     <>
-      <Shablon2 />
       <div>
         <div className={a.background}>
           <div className={Component}>
@@ -59,7 +58,7 @@ const Engineering = () => {
             </div>
           </div>
         </NavLink>
-        <NavLink to={"/company-info"} className={a.grid}>
+        <NavLink to={"/shablon2"} className={a.grid}>
           <div className={a.cell}>
             <img className={a.imgs1} src={img22} alt="img2" />
             <div className={a.textParent}>
@@ -67,7 +66,7 @@ const Engineering = () => {
             </div>
           </div>
         </NavLink>
-        <NavLink to={"/company-info"} className={a.grid}>
+        <NavLink to={"/shablon2"} className={a.grid}>
           <div className={a.cell}>
             <img className={a.imgs1} src={img33} alt="img3" />
             <div className={a.textParent}>
@@ -75,7 +74,7 @@ const Engineering = () => {
             </div>
           </div>
         </NavLink>
-        <NavLink to={"/company-info"} className={a.grid}>
+        <NavLink to={"/shablon2"} className={a.grid}>
           <div className={a.cell}>
             <img className={a.imgs1} src={img44} alt="img" />
             <div className={a.textParent}>
@@ -83,7 +82,7 @@ const Engineering = () => {
             </div>
           </div>
         </NavLink>
-        <NavLink to={"/company-info"} className={a.grid}>
+        <NavLink to={"/shablon2"} className={a.grid}>
           <div className={a.cell}>
             <img className={a.imgs1} src={img55} alt="img2" />
             <div className={a.textParent}>
@@ -91,7 +90,7 @@ const Engineering = () => {
             </div>
           </div>
         </NavLink>
-        <NavLink to={"/company-info"} className={a.grid}>
+        <NavLink to={"/shablon2"} className={a.grid}>
           <div className={a.cell}>
             <img className={a.imgs1} src={img66} alt="img3" />
             <div className={a.textParent}>
@@ -99,7 +98,7 @@ const Engineering = () => {
             </div>
           </div>
         </NavLink>
-        <NavLink to={"/company-info"} className={a.grid}>
+        <NavLink to={"/shablon2"} className={a.grid}>
           <div className={a.cell}>
             <img className={a.imgs1} src={img77} alt="img" />
             <div className={a.textParent}>
@@ -107,7 +106,7 @@ const Engineering = () => {
             </div>
           </div>
         </NavLink>
-        <NavLink to={"/company-info"} className={a.grid}>
+        <NavLink to={"/shablon2"} className={a.grid}>
           <div className={a.cell}>
             <img className={a.imgs1} src={img88} alt="img2" />
             <div className={a.textParent}>
@@ -115,7 +114,7 @@ const Engineering = () => {
             </div>
           </div>
         </NavLink>
-        <NavLink to={"/company-info"} className={a.grid}>
+        <NavLink to={"/shablon2"} className={a.grid}>
           <div className={a.cell}>
             <img className={a.imgs1} src={img99} alt="img3" />
             <div className={a.textParent}>

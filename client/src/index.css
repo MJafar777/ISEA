@@ -75,3 +75,14 @@ ul {
 .main {
   min-height: 70vh;
 }
+.testing {
+  font-size: 18px;
+  padding: 0.5rem 2rem;
+}
+.testSite {
+  background-color: rgba(255, 255, 255, 0);
+}
+.testSite span {
+  margin: 0 30rem;
+  background-color: yellow;
+}

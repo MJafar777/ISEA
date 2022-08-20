@@ -43,7 +43,7 @@ const signUp = async (req, res, next) => {
         });
         token = createToken(newUser._id);
       }
-      await new Email(user, randomCode).sendCode();
+      await new Email(user, randomCode).sendgridMessage("Verify code");
     }
 
     res.status(200).json({
