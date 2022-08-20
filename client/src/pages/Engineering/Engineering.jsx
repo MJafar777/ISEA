@@ -23,12 +23,14 @@ import img66 from "../../img/factory/6.jpg";
 import img77 from "../../img/factory/7.jpg";
 import img88 from "../../img/factory/8.jpg";
 import img99 from "../../img/factory/9.jpg";
+import Shablon2 from "../../components/EngineeringComponents/Shablon2/Shablon2";
 const Engineering = () => {
   const Component = a.engineeringTitle + " " + "container";
   const Component2 = a.DESIGNING + " " + "container";
 
   return (
     <>
+      <Shablon2 />
       <div>
         <div className={a.background}>
           <div className={Component}>
