@@ -7,6 +7,13 @@ import img2 from "../../img/education/icons/earth.svg";
 import img3 from "../../img/education/icons/energy.svg";
 import img4 from "../../img/education/icons/sun.svg";
 
+import icon1 from "../../img/education/FEATURES/bubble.svg";
+import icon2 from "../../img/education/FEATURES/player.svg";
+import icon3 from "../../img/education/FEATURES/hat.svg";
+import icon4 from "../../img/education/FEATURES/messages.svg";
+import icon5 from "../../img/education/FEATURES/settings.svg";
+import icon6 from "../../img/education/FEATURES/question.svg";
+
 const Education = () => {
   const children = s.main2 + " " + "container";
   return (
@@ -98,6 +105,91 @@ const Education = () => {
             solar radiation.
           </p>
           <p className={s.description}>LEARN MORE & ENROLL NOW</p>
+        </div>
+      </div>
+      <div className={s.features}>
+        <div >
+          <h2 className={s.title2} style={{ color: "black" }}>
+            ISEA ONLINE FEATURES
+          </h2>
+          <div
+            className={s.bottom2}
+            style={{ backgroundColor: "black", width: "20%" }}
+          ></div>
+          <div className={s.bottomGrid}>
+            <div className={s.textType}>
+              <div className={s.colMd}>
+                <img src={icon1} alt="icons" className={s.icons} />
+                <h3>Instructional Support from Live Instructors</h3>
+              </div>
+              <p>
+                Our online courses are taught by many of the same instructors
+                that teach our in-person sessions. All of our instructors are
+                actively working in the solar industry and are experts in the
+                field.
+              </p>
+            </div>
+            <div className={s.textType}>
+              <div className={s.colMd}>
+                <img src={icon2} alt="icons" className={s.icons} />
+                <h3>Instructional Support from Live Instructors</h3>
+              </div>
+              <p>
+                Our online courses are taught by many of the same instructors
+                that teach our in-person sessions. All of our instructors are
+                actively working in the solar industry and are experts in the
+                field.
+              </p>
+            </div>
+            <div className={s.textType}>
+              <div className={s.colMd}>
+                <img src={icon3} alt="icons" className={s.icons} />
+                <h3>Instructional Support from Live Instructors</h3>
+              </div>
+              <p>
+                Our online courses are taught by many of the same instructors
+                that teach our in-person sessions. All of our instructors are
+                actively working in the solar industry and are experts in the
+                field.
+              </p>
+            </div>
+            <div className={s.textType}>
+              <div className={s.colMd}>
+                <img src={icon4} alt="icons" className={s.icons} />
+                <h3>Instructional Support from Live Instructors</h3>
+              </div>
+              <p>
+                Our online courses are taught by many of the same instructors
+                that teach our in-person sessions. All of our instructors are
+                actively working in the solar industry and are experts in the
+                field.
+              </p>
+            </div>
+            <div className={s.textType}>
+              <div className={s.colMd}>
+                <img src={icon5} alt="icons" className={s.icons} />
+                <h3>Instructional Support from Live Instructors</h3>
+              </div>
+              <p>
+                Our online courses are taught by many of the same instructors
+                that teach our in-person sessions. All of our instructors are
+                actively working in the solar industry and are experts in the
+                field.
+              </p>
+            </div>
+            <div className={s.textType} >
+              <div className={s.colMd}>
+                <img src={icon6} alt="icons" className={s.icons} />
+                <h3>Instructional Support from Live Instructors</h3>
+              </div>
+              <p>
+                Our online courses are taught by many of the same instructors
+                that teach our in-person sessions. All of our instructors are
+                actively working in the solar industry and are experts in the
+                field.
+              </p>
+            </div>       
+          </div>
         </div>
       </div>
     </div>

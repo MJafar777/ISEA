@@ -33,6 +33,9 @@ import Power from "./components/RenewablesComponents/POWER/Power";
 import Admin from "./pages/Admin/Admin";
 import Login from "./pages/Login/Login";
 import Shablon2 from "./components/EngineeringComponents/Shablon2/Shablon2";
+
+import MyProjects from "./pages/MyProjects/MyProjects";
+
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 
@@ -105,6 +108,7 @@ const App = () => {
           <Route path={"/login"} element={<Login />} />
           <Route path={"/signup"} element={<Signup />} />
           <Route path={"/me"} element={<Admin />} />
+          <Route path={"/myProjects"} element={<MyProjects />} />
         </Routes>
       </main>
       <Footer />
