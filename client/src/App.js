@@ -33,11 +33,10 @@ import Power from "./components/RenewablesComponents/POWER/Power";
 import Admin from "./pages/Admin/Admin";
 import Login from "./pages/Login/Login";
 import Shablon2 from "./components/EngineeringComponents/Shablon2/Shablon2";
-<<<<<<< HEAD
-import MyProjects from "./pages/MyProjects/MyProjects";
 
-=======
->>>>>>> dde369dde029b7736c4e75433730ccfd90e413b5
+import MyProjects from "./pages/MyProjects/MyProjects";
+import OneProject from "./pages/OneProject/OneProject";
+
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 
@@ -47,12 +46,9 @@ const App = () => {
       <Header />
       <div className="testing">
         <Marquee speed="100" className="testSite">
-
-
           <span>Sayt test rejimida</span> {"  "}{" "}
           <span>The site is in test mode</span>{" "}
           <span>Сайт находится в тестовом режиме</span>
-
           <span>Sayt test rejimida !</span> {"  "}{" "}
           <span>The site is in test mode !</span>{" "}
           <span>Сайт находится в тестовом режиме !</span>
@@ -97,7 +93,6 @@ const App = () => {
           {/* engineering page child comonents started */}
           <Route path="/shablon2" element={<Shablon2 />} />
           {/* engineering page child comonents finished */}
-          <Route path="/project" element={<Project />} />
           <Route path="/renewables" element={<Renewables />} />
           <Route
             path="/publications/:id"
@@ -109,6 +104,8 @@ const App = () => {
               />
             }
           />
+          <Route path="/project/:id" element={<OneProject />} />
+          <Route path="/project" element={<Project />} />
           <Route path={"/register"} element={<Register />} />
           <Route path={"/login"} element={<Login />} />
           <Route path={"/signup"} element={<Signup />} />

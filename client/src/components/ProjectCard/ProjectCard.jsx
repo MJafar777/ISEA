@@ -6,7 +6,7 @@ const ProjectCard = function () {
     <div>
       <div className={s.card}>
         <div className={s.main}>
-          <a href="#" className={"btn" + " " + s.btn}>
+          <a href="/project/1" className={"btn" + " " + s.btn}>
             Get info
           </a>
           <p className={s.title}>This is Project title </p>
