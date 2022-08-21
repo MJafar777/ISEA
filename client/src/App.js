@@ -42,7 +42,7 @@ const App = () => {
       <Header />
       <div className="testing">
         <Marquee speed="100" className="testSite">
-          <span>Sayt test rejimida</span> {"  "} <span>The site is in test mode</span> <span>Сайт находится в тестовом режиме</span>
+          <span>Sayt test rejimida !</span> {"  "} <span>The site is in test mode !</span> <span>Сайт находится в тестовом режиме !</span>
         </Marquee>
       </div>
       <main className="main">
