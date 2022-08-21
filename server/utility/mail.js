@@ -1,6 +1,7 @@
 const nodemailer = require("nodemailer");
 const pug = require("pug");
 const client = require("@sendgrid/mail");
+
 client.setApiKey(process.env.SENDGRID_API_KEY);
 
 class Email {
