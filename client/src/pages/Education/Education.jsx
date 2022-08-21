@@ -108,7 +108,7 @@ const Education = () => {
         </div>
       </div>
       <div className={s.features}>
-        <div>
+        <div >
           <h2 className={s.title2} style={{ color: "black" }}>
             ISEA ONLINE FEATURES
           </h2>
@@ -118,7 +118,7 @@ const Education = () => {
           ></div>
           <div className={s.bottomGrid}>
             <div className={s.textType}>
-              <div>
+              <div className={s.colMd}>
                 <img src={icon1} alt="icons" className={s.icons} />
                 <h3>Instructional Support from Live Instructors</h3>
               </div>
@@ -188,8 +188,7 @@ const Education = () => {
                 actively working in the solar industry and are experts in the
                 field.
               </p>
-            </div>
-            
+            </div>       
           </div>
         </div>
       </div>
