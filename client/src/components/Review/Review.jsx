@@ -2,10 +2,10 @@ import React from "react";
 import s from "./review.module.css";
 import userImage from "../../img/SignUp/75.jpg";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Review = () => {
   const user = useSelector((store) => store.auth.user);
-
   return (
     <>
       <div className={s.review}>
@@ -21,7 +21,7 @@ const Review = () => {
               </div>
               <div className={s.contentComment}>
                 <div>
-                  <span className={s.username}>{user.name}</span>
+                  <span className={s.username}>{user?.name}</span>
                   <span className={s.date}>12 March</span>
                 </div>
                 <h4>Zur kitob ekan</h4>

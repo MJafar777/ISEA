@@ -1,11 +1,14 @@
 import React from "react";
 import s from "../publicationLanding.module.css";
 
-export default function Card({ image, title }) {
+import { NavLink } from "react-router-dom";
+export default function Card({ image, title, id }) {
   return (
-    <div className={s.content}>
-      <img className={s.image} src={image} alt={title} />
-      <h3>{title}</h3>
-    </div>
+    <NavLink to={"/publications/" + id}>
+      <div className={s.content}>
+        <img className={s.image} src={image} alt={title} />
+        <h3>{title}</h3>
+      </div>
+    </NavLink>
   );
 }
