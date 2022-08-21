@@ -5,7 +5,7 @@ import s from "./education.module.css";
 import img1 from "../../img/education/icons/calendar.svg";
 import img2 from "../../img/education/icons/earth.svg";
 import img3 from "../../img/education/icons/energy.svg";
-import img4 from "../../img/education/icons/solar.svg";
+import img4 from "../../img/education/icons/sun.svg";
 
 const Education = () => {
   const children = s.main2 + " " + "container";
@@ -51,25 +51,53 @@ const Education = () => {
         <div className={s.card}>
           <div>
             <img className={s.imgs} src={img1} alt="img1" />
-            
+
             <h2>SOLAR ELECTRIC COURSES</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eligendi ipsum odio doloribus quo ad, voluptatum rem. Exercitationem sunt</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              eligendi ipsum odio doloribus quo ad, voluptatum rem.
+              Exercitationem sunt
+            </p>
           </div>
           <div>
             <img className={s.imgs} src={img2} alt="img2" />
             <h2>SOLAR HEATING COURSES</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eligendi ipsum odio doloribus quo ad, voluptatum rem. Exercitationem sunt</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              eligendi ipsum odio doloribus quo ad, voluptatum rem.
+              Exercitationem sunt
+            </p>
           </div>
           <div>
             <img className={s.imgs} src={img3} alt="img3" />
             <h2>DEVELOPING WORLD COURSES</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eligendi ipsum odio doloribus quo ad, voluptatum rem. Exercitationem sunt</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              eligendi ipsum odio doloribus quo ad, voluptatum rem.
+              Exercitationem sunt
+            </p>
           </div>
           <div>
             <img className={s.imgs} src={img4} alt="img4" />
             <h2>VIEW TRAINING SCHEDULE</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eligendi ipsum odio doloribus quo ad, voluptatum rem. Exercitationem sunt</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+              eligendi ipsum odio doloribus quo ad, voluptatum rem.
+              Exercitationem sunt
+            </p>
           </div>
+        </div>
+      </div>
+      <div className={s.training}>
+        <div className={s.news}>
+          <h2 className={s.title2}>START TRAINING FOR FREE!</h2>
+          <div className={s.bottom2}></div>
+          <p>
+            Solar technologies convert sunlight into electrical energy either
+            through photovoltaic (PV) panels or through mirrors that concentrate
+            solar radiation.
+          </p>
+          <p className={s.description}>LEARN MORE & ENROLL NOW</p>
         </div>
       </div>
     </div>

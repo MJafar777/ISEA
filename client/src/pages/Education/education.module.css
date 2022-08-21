@@ -61,6 +61,78 @@
   font-size: 20px;
 }
 .imgs {
-  width: 5rem;
-  color: red;
+  width: 8rem;
+  height: 8rem;
+  display: block;
+  margin: 1rem auto;
+}
+.card {
+  display: flex;
+  width: 80%;
+  margin: 2rem auto;
+  text-align: center;
+}
+.card div {
+  width: 20%;
+  margin: 1rem auto;
+}
+.card div h2 {
+  font-size: 16px;
+  width: 80%;
+  margin: 1rem auto;
+  color: #328fbb;
+}
+.card div p {
+  font-size: 14px;
+}
+.card div:hover .imgs {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+.training {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  margin: 2rem 0;
+}
+.news {
+  width: 80%;
+  padding: 2rem;
+  background-color: #328fbb;
+}
+
+.title2 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+.bottom2 {
+  width: 20%;
+  height: 2px;
+  margin: 1rem auto;
+  background-color: rgb(255, 255, 255);
+}
+.news p {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+.description {
+  margin: 2rem auto;
+  background-color: #2181ae;
+  padding: 1rem 2rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 1rem;
+  user-select: none;
+}
+.description:active {
+  transition: all 0.1s;
+  transform: scale(1.06);
+}
+.news {
+  text-align: center;
 }
