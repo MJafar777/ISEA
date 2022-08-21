@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../Title/Title";
 import s from "./companyMembers.module.css";
 
-import one from "../../img/CompanyMembers/1.jpg";
+import one from "../../img/CompanyMembers/1.aiff";
 import two from "../../img/CompanyMembers/2.jpg";
 import three from "../../img/CompanyMembers/3.jpg";
 
