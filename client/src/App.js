@@ -33,6 +33,11 @@ import Power from "./components/RenewablesComponents/POWER/Power";
 import Admin from "./pages/Admin/Admin";
 import Login from "./pages/Login/Login";
 import Shablon2 from "./components/EngineeringComponents/Shablon2/Shablon2";
+<<<<<<< HEAD
+import MyProjects from "./pages/MyProjects/MyProjects";
+
+=======
+>>>>>>> dde369dde029b7736c4e75433730ccfd90e413b5
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 
@@ -42,9 +47,12 @@ const App = () => {
       <Header />
       <div className="testing">
         <Marquee speed="100" className="testSite">
+
+
           <span>Sayt test rejimida</span> {"  "}{" "}
           <span>The site is in test mode</span>{" "}
           <span>Сайт находится в тестовом режиме</span>
+
           <span>Sayt test rejimida !</span> {"  "}{" "}
           <span>The site is in test mode !</span>{" "}
           <span>Сайт находится в тестовом режиме !</span>
@@ -105,6 +113,7 @@ const App = () => {
           <Route path={"/login"} element={<Login />} />
           <Route path={"/signup"} element={<Signup />} />
           <Route path={"/admin"} element={<Admin />} />
+          <Route path={"/myProjects"} element={<MyProjects />} />
         </Routes>
       </main>
       <Footer />
