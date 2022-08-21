@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import s from "./project.module.css";
 
 const ProjectCard = function () {
@@ -6,9 +7,9 @@ const ProjectCard = function () {
     <div>
       <div className={s.card}>
         <div className={s.main}>
-          <a href="/project/1" className={"btn" + " " + s.btn}>
+          <NavLink to="/project/1" className={"btn" + " " + s.btn}>
             Get info
-          </a>
+          </NavLink>
           <p className={s.title}>This is Project title </p>
           <p className={s.desc}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,

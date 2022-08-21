@@ -17,6 +17,19 @@ const reviewRouter = require("../routes/reviewRouter");
 const cors = require("cors");
 const AppError = require("../utility/AppError");
 const errController = require("../controllers/errController");
+const { nextTick } = require("process");
+app.use(
+  "/test",
+  (req, res, next) => {
+    console.log("kirdi");
+    next();
+  },
+  express.static(`${__dirname}/../` + "public"),
+  (req, res, next) => {
+    console.log("chiqdi");
+    next();
+  }
+);
 
 app.use(cors());
 
@@ -24,8 +37,6 @@ app.use(morgan("dev"));
 app.use(express.json());
 
 // app.set("view engine", "html");
-
-app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api/v1/news", newsRouter);
 app.use("/api/v1/books", booksRouter);

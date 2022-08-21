@@ -5,6 +5,10 @@ const projectController = require("../controllers/projectController");
 const projectMulter = require("../utility/projectMulter");
 
 projectRouter
+  .route("/download/:project")
+  .get(projectController.downloadProject);
+
+projectRouter
   .route("/")
   .get(projectController.getAllProject)
   .post(projectMulter.uploadProjectFile, projectController.addProject);

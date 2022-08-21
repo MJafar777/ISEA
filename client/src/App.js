@@ -37,8 +37,6 @@ import Shablon2 from "./components/EngineeringComponents/Shablon2/Shablon2";
 import MyProjects from "./pages/MyProjects/MyProjects";
 import OneProject from "./pages/OneProject/OneProject";
 
-import MyProjects from "./pages/MyProjects/MyProjects";
-
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 

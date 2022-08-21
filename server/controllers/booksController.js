@@ -17,11 +17,10 @@ exports.addBooks = async (req, res, next) => {
     title: req.body.title,
     language: req.body.language,
     category: req.body.category,
-    section: {
-      description: req.body.category.description,
-    },
+    sub_description: req.body.sub_description,
     description: req.body.description,
-    book: req.file.filename,
+    book: req.files.book[0].filename,
+    bookImage: req.files.bookImage[0].filename,
     publisher: req.body.publisher,
   };
   const file = [data, "key"];
@@ -37,11 +36,10 @@ exports.updateBooks = async (req, res, next) => {
     title: req.body.title,
     language: req.body.language,
     category: req.body.category,
-    section: {
-      description: req.body.description,
-    },
+    sub_description: req.body.sub_description,
     description: req.body.description,
-    book: req.file.filename,
+    book: req.files.book[0].filename,
+    bookImage: req.files.bookImage[0].filename,
     publisher: req.body.publisher,
   };
   const file = [data, "key"];
@@ -50,4 +48,11 @@ exports.updateBooks = async (req, res, next) => {
 
 exports.deleteBooks = async (req, res, next) => {
   deleteData(req, res, next, Books);
+};
+
+exports.downloadBook = async (req, res, next) => {
+  const { book } = req.params;
+  res.download(`${__dirname}/../public/img/books/${book}`, function (error) {
+    console.log("Error : ", error);
+  });
 };

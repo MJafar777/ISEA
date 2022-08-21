@@ -3,6 +3,8 @@ const controller = require("../controllers/booksController");
 
 const bookMulter = require("../utility/bookMulter");
 
+router.route("/download/:book").get(controller.downloadBook);
+
 router
   .route("/")
   .get(controller.getBooks)

@@ -28,12 +28,21 @@ const filterImage = (req, file, cb) => {
 
   console.log(ext);
 
-  if (ext == "pptx" || ext == "pptm" || ext == "ppt" || ext == "pdf") {
+  if (
+    ext == "pptx" ||
+    ext == "pptm" ||
+    ext == "ppt" ||
+    ext == "pdf" ||
+    ext == "png" ||
+    ext == "jpg" ||
+    ext == "gif" ||
+    ext == "jpeg"
+  ) {
     return cb(null, true);
   } else {
     cb(
       new AppError(
-        "You can upload only Presentation format! Sorry about unconvinience",
+        "You can upload only Presentation and Image format! Sorry about unconvinience",
         false
       )
     );
@@ -48,7 +57,16 @@ const upload = multer({
   },
 });
 
-const uploadProjectFile = upload.single("presentation");
+const uploadProjectFile = upload.fields([
+  {
+    name: "presentation",
+    maxCount: 1,
+  },
+  {
+    name: "projectImage",
+    maxCount: 1,
+  },
+]);
 
 module.exports = {
   uploadProjectFile,
