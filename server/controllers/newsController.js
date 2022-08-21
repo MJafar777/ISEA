@@ -13,7 +13,16 @@ exports.getNews = async (req, res, next) => {
 };
 
 exports.addNews = async (req, res, next) => {
-  add(req, res, next, News);
+  const data = {
+    title: req.body.title,
+    description: req.body.description,
+    photo: req.file.filename,
+    publisher: req.body.publisher,
+    category: req.body.category,
+  };
+  const file = [data, "key"];
+
+  add(req, res, next, News, file);
 };
 
 exports.getOne = async (req, res, next) => {
@@ -21,7 +30,15 @@ exports.getOne = async (req, res, next) => {
 };
 
 exports.updateNews = async (req, res, next) => {
-  update(req, res, next, News);
+  const data = {
+    title: req.body.title,
+    description: req.body.description,
+    photo: req.file.filename,
+    publisher: req.body.publisher,
+    category: req.body.category,
+  };
+  const file = [data, "key"];
+  update(req, res, next, News, file);
 };
 
 exports.deleteNews = async (req, res, next) => {

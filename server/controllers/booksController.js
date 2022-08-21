@@ -13,7 +13,19 @@ exports.getBooks = async (req, res, next) => {
 };
 
 exports.addBooks = async (req, res, next) => {
-  add(req, res, next, Books);
+  const data = {
+    title: req.body.title,
+    language: req.body.language,
+    category: req.body.category,
+    section: {
+      description: req.body.category.description,
+    },
+    description: req.body.description,
+    book: req.file.filename,
+    publisher: req.body.publisher,
+  };
+  const file = [data, "key"];
+  add(req, res, next, Books, file);
 };
 
 exports.getOne = async (req, res, next) => {
@@ -21,7 +33,19 @@ exports.getOne = async (req, res, next) => {
 };
 
 exports.updateBooks = async (req, res, next) => {
-  update(req, res, next, Books);
+  const data = {
+    title: req.body.title,
+    language: req.body.language,
+    category: req.body.category,
+    section: {
+      description: req.body.description,
+    },
+    description: req.body.description,
+    book: req.file.filename,
+    publisher: req.body.publisher,
+  };
+  const file = [data, "key"];
+  update(req, res, next, Books, file);
 };
 
 exports.deleteBooks = async (req, res, next) => {

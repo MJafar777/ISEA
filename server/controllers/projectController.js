@@ -17,11 +17,31 @@ const getAllProject = async (req, res, next) => {
 };
 
 const addProject = async (req, res, next) => {
-  add(req, res, next, Project);
+  console.log(req.file);
+  const data = {
+    title: req.body.title,
+    description: req.body.description,
+    presentation: req.file.filename,
+    userId: req.body.userId,
+    publisher: req.body.publisher,
+    category: req.body.category,
+  };
+  const file = [data, "key"];
+
+  add(req, res, next, Project, file);
 };
 
 const updateProject = async (req, res, next) => {
-  update(req, res, next, Project);
+  const data = {
+    title: req.body.title,
+    description: req.body.description,
+    presentation: req.file.filename,
+    userId: req.body.userId,
+    publisher: req.body.publisher,
+    category: req.body.category,
+  };
+  const file = [data, "key"];
+  update(req, res, next, Project, file);
 };
 const getOneProject = async (req, res, next) => {
   getOne(req, res, next, Project, options);

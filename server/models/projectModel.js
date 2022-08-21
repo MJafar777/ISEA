@@ -24,6 +24,9 @@ const projectScheme = new mongoose.Schema(
       enum: [1, 2, -1],
       default: 1,
     },
+    category: {
+      type: String,
+    },
   },
   {
     timestamps: true,

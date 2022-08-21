@@ -5,8 +5,9 @@ const multer = require("multer"); // -->Fayllarni yuklash uchun req.file
 const multerStorage = multer.memoryStorage(); // buffer ga saqlab qoyadi tezkor hotiraga
 
 const filterImage = (req, file, cb) => {
-  if (file.mimetype.startsWith("image")) {
-    cb(null, true);
+  const ext = file.mimetype.split("/")[1];
+  if (ext == "png" || ext == "jpg" || ext == "gif" || ext == "jpeg") {
+    return cb(null, true);
   } else {
     cb(
       new AppError(

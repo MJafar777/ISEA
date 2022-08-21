@@ -56,21 +56,33 @@ const getOne = catchErrBig(
     } else if (options) {
       datas = await Model.findById(req.params.id).populate(options);
     } else {
-      datas = await Model.find();
+      datas = await Model.findById(req.params.id);
     }
     responseFunction(res, 200, datas);
   }
 );
 
-const add = catchErrBig(async (req, res, next, Model) => {
-  const datas = await Model.create(req.body);
+const add = catchErrBig(async (req, res, next, Model, file) => {
+  let datas;
+  if (file[1] == "key") {
+    datas = await Model.create(file[0]);
+  } else {
+    datas = await Model.create(req.body);
+  }
   responseFunction(res, 201, datas);
 });
 
-const update = catchErrBig(async (req, res, next, Model) => {
-  const data = await Model.findByIdAndUpdate(req.params.id, req.body, {
-    new: true,
-  });
+const update = catchErrBig(async (req, res, next, Model, file) => {
+  let data;
+  if (file[1] == "key") {
+    data = await Model.findByIdAndUpdate(req.params.id, file[0], {
+      new: true,
+    });
+  } else {
+    data = await Model.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
+  }
   responseFunction(res, 201, data);
 });
 
