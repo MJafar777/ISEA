@@ -1,13 +1,13 @@
 import React from "react";
 import s from "./publicationBook.module.css";
 import Title from "../../../components/Title/Title";
-import Menu from "../../../components/Menu/Menu";
-import Router from "../../../components/Router/Router";
 import PublicationImage from "../PublicationImage/PublicationImage";
 import image from "../../../img/Publications/3.jpg";
+import Review from "../../../components/Review/Review";
 
 export default function PublicationBook({ name, date, isbn }) {
   const container = s.content + " " + "container";
+
   return (
     <div className={container}>
       <div>
@@ -67,15 +67,7 @@ export default function PublicationBook({ name, date, isbn }) {
         </div>
       </div>
       <div>
-        <div className={s.review}>
-          <div>
-            <form>
-              <input type="text" placeholder="Leave a comment" />
-              <button>OK</button>
-            </form>
-            <div className={s.comments}></div>
-          </div>
-        </div>
+        <Review />
       </div>
     </div>
   );
