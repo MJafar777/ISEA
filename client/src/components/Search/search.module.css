@@ -11,7 +11,7 @@
 
 .search {
   width: 500px;
-  height: 50px;
+  height: 40px;
   border: none;
   padding: 10px;
 }
@@ -22,6 +22,10 @@
 
 .button {
   border: none;
-  height: 50px;
+  height: 40px;
   width: 50px;
+}
+
+.icon {
+  font-size: 20px;
 }

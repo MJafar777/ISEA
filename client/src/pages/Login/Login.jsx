@@ -1,6 +1,8 @@
 import axios from "axios";
-import React, { useState, useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { loginSlice } from "../../store/authSlice";
 import { url } from "../../configs/config";
 import s from "./login.module.css";
 
@@ -8,29 +10,43 @@ export default function Login() {
   const emailRef = useRef();
   const passwordRef = useRef();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const isAuth = useSelector((store) => store.auth.isAuth);
+
   const handlerLogin = async (e) => {
     e.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-    const response = await axios.post(url + "/users/login", {
-      email,
-      password,
-    });
-    response.data.status === "succes"
-      ? navigate("/")
-      : alert("Bunday user akkaunti tiplmadi,Iltimos qayta urinib kurin");
+    dispatch(loginSlice({ email, password }));
   };
+
+  useEffect(() => {
+    if (isAuth) navigate("/");
+  }, [isAuth]);
+
+  //mamur7191.J@
   return (
     <div className={s.container}>
       <form className={s.content}>
-        <input ref={emailRef} type="email" required placeholder="email" />
+        <label className={s.label}>Email</label>
         <input
+          className={s.input}
+          ref={emailRef}
+          type="email"
+          required
+          placeholder="email"
+        />
+        <label className={s.label}>Password</label>
+        <input
+          className={s.input}
           ref={passwordRef}
           type="password"
           required
           placeholder="password"
         />
-        <button onClick={handlerLogin}>Login</button>
+        <div className={s.btn}>
+          <button onClick={handlerLogin}>Login</button>
+        </div>
       </form>
     </div>
   );
