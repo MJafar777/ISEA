@@ -14,19 +14,19 @@ export default function Sidebar() {
       <nav className={s.sidebar}>
         <h1 className={s.title}>Admin</h1>
         <ul className={s.items}>
-          <NavLink to={"/admin#users"}>
+          <NavLink to={"/me#users"}>
             <AiFillProfile className={s.icon} />
             <li className={s.item}>Users</li>
           </NavLink>
-          <NavLink to={"/admin#books"}>
+          <NavLink to={"/me#books"}>
             <AiFillBook className={s.icon} />
             <li className={s.item}>Books</li>
           </NavLink>
-          <NavLink to={"/admin#news"}>
+          <NavLink to={"/me#news"}>
             <AiFillAlert className={s.icon} />
             <li className={s.item}>News</li>
           </NavLink>
-          <NavLink to={"/admin#projects"}>
+          <NavLink to={"/me#projects"}>
             <AiFillProject className={s.icon} />
             <li className={s.item}>Projects</li>
           </NavLink>
