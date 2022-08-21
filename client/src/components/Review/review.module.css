@@ -1,0 +1,32 @@
+.imageUser {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.comments {
+  height: 60vh;
+  overflow-y: scroll;
+  margin-top: 15px;
+}
+
+.contentComment {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
