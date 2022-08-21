@@ -24,13 +24,16 @@ export default function PublicationBook({ name, isbn }) {
               image={"http://localhost:8000/img/books/" + book.bookImage}
             />
             <p className={s.date}>{Date.now(book.createdAt)}</p>
-            <p className={s.isbn}>ISBN: {isbn}</p>
             <form action="/" method="post">
-              <button type="submit">Download</button>
+              <button type="submit">
+                <a href={"http://localhost:8000/img/books" + book.book}>
+                  Download
+                </a>
+              </button>
             </form>
           </div>
           <div>
-            <h2 className={s.title}>Download Renewable energy highlights</h2>
+            <h2 className={s.title}>{book.title}</h2>
             <p className={s.text}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint
               officiis tempore illo mollitia. Recusandae eos quod molestiae,
