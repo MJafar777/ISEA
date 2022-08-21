@@ -73,6 +73,7 @@ export const loginSlice = createAsyncThunk(
         email,
         password,
       });
+      console.log(response.data);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.message);
@@ -133,7 +134,7 @@ const authSlice = createSlice({
       store.status = "resolved";
       store.error = null;
       store.isAuth = true;
-      store.user = action.payload.data;
+      store.user = action.payload.user;
       localStorage.setItem("userToken", action.payload.token);
     },
     [loginSlice.rejected]: errorFunc,

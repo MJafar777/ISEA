@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState, useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginSlice } from "../../store/authSlice";
@@ -11,6 +11,7 @@ export default function Login() {
   const passwordRef = useRef();
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const isAuth = useSelector((store) => store.auth.isAuth);
 
   const handlerLogin = async (e) => {
     e.preventDefault();
@@ -18,6 +19,10 @@ export default function Login() {
     const password = passwordRef.current.value;
     dispatch(loginSlice({ email, password }));
   };
+
+  useEffect(() => {
+    if (isAuth) navigate("/");
+  }, [isAuth]);
 
   //mamur7191.J@
   return (
