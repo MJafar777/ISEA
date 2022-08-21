@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="92" viewBox="0 0 92 92">
+  <g id="earth" transform="translate(-19 -19)">
+    <line id="Line_1" data-name="Line 1" x1="88" transform="translate(21 65)" fill="none" stroke="#328fbb" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <line id="Line_2" data-name="Line 2" y2="88" transform="translate(65 21)" fill="none" stroke="#328fbb" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="44" cy="44" r="44" transform="translate(21 21)" fill="none" stroke="#328fbb" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_10" data-name="Path 10" d="M65,109c-8.958,0-25-19.7-25-44S55.875,21,65,21" fill="none" stroke="#328fbb" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_11" data-name="Path 11" d="M65,109c8.958,0,25-19.7,25-44S74.125,21,65,21" fill="none" stroke="#328fbb" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_12" data-name="Path 12" d="M65,21a44,44,0,0,1,0,88" fill="none" stroke="#328fbb" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+  </g>
+</svg>

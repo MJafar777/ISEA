@@ -1,0 +1,12 @@
+<svg id="calendar_1_" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="Path_13" data-name="Path 13" d="M29.334,3H25V1a1,1,0,0,0-2,0V3H17V1a1,1,0,0,0-2,0V3H9V1A1,1,0,0,0,7,1V3H2.667A2.666,2.666,0,0,0,0,5.666V29.333A2.667,2.667,0,0,0,2.667,32H29.334A2.666,2.666,0,0,0,32,29.333V5.666A2.665,2.665,0,0,0,29.334,3ZM30,29.333a.667.667,0,0,1-.666.667H2.667A.667.667,0,0,1,2,29.333V5.666A.667.667,0,0,1,2.667,5H7V7A1,1,0,0,0,9,7V5h6V7a1,1,0,0,0,2,0V5h6V7a1,1,0,0,0,2,0V5h4.334A.667.667,0,0,1,30,5.666Z" fill="#328fbb"/>
+  <rect id="Rectangle_1" data-name="Rectangle 1" width="4" height="3" transform="translate(7 12)" fill="#328fbb"/>
+  <rect id="Rectangle_2" data-name="Rectangle 2" width="4" height="3" transform="translate(7 17)" fill="#328fbb"/>
+  <rect id="Rectangle_3" data-name="Rectangle 3" width="4" height="3" transform="translate(7 22)" fill="#328fbb"/>
+  <rect id="Rectangle_4" data-name="Rectangle 4" width="4" height="3" transform="translate(14 22)" fill="#328fbb"/>
+  <rect id="Rectangle_5" data-name="Rectangle 5" width="4" height="3" transform="translate(14 17)" fill="#328fbb"/>
+  <rect id="Rectangle_6" data-name="Rectangle 6" width="4" height="3" transform="translate(14 12)" fill="#328fbb"/>
+  <rect id="Rectangle_7" data-name="Rectangle 7" width="4" height="3" transform="translate(21 22)" fill="#328fbb"/>
+  <rect id="Rectangle_8" data-name="Rectangle 8" width="4" height="3" transform="translate(21 17)" fill="#328fbb"/>
+  <rect id="Rectangle_9" data-name="Rectangle 9" width="4" height="3" transform="translate(21 12)" fill="#328fbb"/>
+</svg>
