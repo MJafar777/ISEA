@@ -35,7 +35,6 @@ const Header = () => {
                 <Router name={"Statute, Vision & Mission"} route={"/asbout"} />
               </div>
             </div>
-            <Navbar className={s.acardion} name="OURWORK▼" route={"/ourwork"} />
 
             <div className={s.renewables}>
               <Navbar
@@ -77,6 +76,7 @@ const Header = () => {
               </div>
             </div>
 
+            <Navbar className={s.acardion} name="OURWORK" route={"/ourwork"} />
             <Navbar name="PUBLICATIONS" route={"/publications"} />
             <Navbar name="EDUCATION" route={"/education"} />
             <Navbar name="ENGINEERING" route={"/engineering"} />
