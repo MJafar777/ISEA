@@ -18,18 +18,7 @@ const cors = require("cors");
 const AppError = require("../utility/AppError");
 const errController = require("../controllers/errController");
 const { nextTick } = require("process");
-app.use(
-  "/test",
-  (req, res, next) => {
-    console.log("kirdi");
-    next();
-  },
-  express.static(`${__dirname}/../` + "public"),
-  (req, res, next) => {
-    console.log("chiqdi");
-    next();
-  }
-);
+app.use(express.static(`${__dirname}/../` + "public"));
 
 app.use(cors());
 

@@ -4,9 +4,15 @@ import Title from "../../../components/Title/Title";
 import PublicationImage from "../PublicationImage/PublicationImage";
 import image from "../../../img/Publications/3.jpg";
 import Review from "../../../components/Review/Review";
+import { GetOneBook } from "../../../store/bookSlice";
+import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-export default function PublicationBook({ name, date, isbn }) {
+export default function PublicationBook({ name, isbn }) {
   const container = s.content + " " + "container";
+  const { id } = useParams();
+  const books = useSelector((store) => store.books.books);
+  const book = books.find((val) => val._id === id);
 
   return (
     <div className={container}>
@@ -14,8 +20,10 @@ export default function PublicationBook({ name, date, isbn }) {
         <Title name={name} />
         <div className={s.book}>
           <div>
-            <PublicationImage image={image} />
-            <p className={s.date}>{date}</p>
+            <PublicationImage
+              image={"http://localhost:8000/img/books/" + book.bookImage}
+            />
+            <p className={s.date}>{Date.now(book.createdAt)}</p>
             <p className={s.isbn}>ISBN: {isbn}</p>
             <form action="/" method="post">
               <button type="submit">Download</button>
