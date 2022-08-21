@@ -2,9 +2,9 @@ import React from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Search from "../../components/Search/Search";
 
-import s from "./project.module.css";
+import s from "./myProjects.module.css";
 
-const Projects = function () {
+const MyProjects = function () {
   return (
     <div className="container">
       <Search placeholder="Search Your Projects..." />
@@ -20,4 +20,4 @@ const Projects = function () {
   );
 };
 
-export default Projects;
+export default MyProjects;

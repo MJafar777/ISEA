@@ -10,10 +10,15 @@ const projectScheme = new mongoose.Schema(
       type: String,
       required: true,
     },
-    description: {
+    sub_description: {
       type: String,
       required: true,
       maxlength: [50, "Siz 50 ta symboldan kop soz kirita olmaysiz"],
+    },
+    description: {
+      type: String,
+      required: true,
+      maxlength: [150, "Siz 50 ta symboldan kop soz kirita olmaysiz"],
     },
     presentation: {
       type: String,
