@@ -33,11 +33,10 @@ import Power from "./components/RenewablesComponents/POWER/Power";
 import Admin from "./pages/Admin/Admin";
 import Login from "./pages/Login/Login";
 import Shablon2 from "./components/EngineeringComponents/Shablon2/Shablon2";
-<<<<<<< HEAD
+
 import MyProjects from "./pages/MyProjects/MyProjects";
 
-=======
->>>>>>> dde369dde029b7736c4e75433730ccfd90e413b5
+
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 
