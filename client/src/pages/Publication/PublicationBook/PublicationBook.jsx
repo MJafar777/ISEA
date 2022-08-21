@@ -67,14 +67,15 @@ export default function PublicationBook({ name, date, isbn }) {
         </div>
       </div>
       <div>
-        <Menu title={"Browse by topic"}>
-          <Router route={"/benefits"} name={"Benefits"} />
-          <Router route={"/costs"} name={"Costs"} />
-          <Router route={"/gridenergy"} name={"Off-grid of energy"} />
-          <Router route={"/transition"} name={"Energy Transition"} />
-          <Router route={"/finances"} name={"Finance & Invesment"} />
-          <Router route={"/see"} name={"See all"} />
-        </Menu>
+        <div className={s.review}>
+          <div>
+            <form>
+              <input type="text" placeholder="Leave a comment" />
+              <button>OK</button>
+            </form>
+            <div className={s.comments}></div>
+          </div>
+        </div>
       </div>
     </div>
   );

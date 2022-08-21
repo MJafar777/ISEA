@@ -37,6 +37,8 @@ import Shablon2 from "./components/EngineeringComponents/Shablon2/Shablon2";
 import MyProjects from "./pages/MyProjects/MyProjects";
 import OneProject from "./pages/OneProject/OneProject";
 
+import MyProjects from "./pages/MyProjects/MyProjects";
+
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 // import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 
@@ -109,7 +111,7 @@ const App = () => {
           <Route path={"/register"} element={<Register />} />
           <Route path={"/login"} element={<Login />} />
           <Route path={"/signup"} element={<Signup />} />
-          <Route path={"/admin"} element={<Admin />} />
+          <Route path={"/me"} element={<Admin />} />
           <Route path={"/myProjects"} element={<MyProjects />} />
         </Routes>
       </main>
