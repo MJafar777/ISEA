@@ -46,7 +46,6 @@ import InstitutionalStructure from "./pages/AboutPage/InstitutionalStructure/Ins
 import IseaMembership from "./pages/AboutPage/IseaMembership/IseaMembership";
 import OfficialDocuments from "./pages/AboutPage/OfficialDocuments/OfficialDocuments";
 
-
 const App = () => {
   return (
     <>
@@ -105,7 +104,7 @@ const App = () => {
           <Route path="/power" element={<Power />} />
           {/* renewables page child comonents finished  */}
 
-          <Route path="/newroom" element={<Newsroom />} />
+          <Route path="/news" element={<Newsroom />} />
 
           <Route path="/publications" element={<Publication />} />
 
@@ -116,12 +115,9 @@ const App = () => {
           {/* engineering page child comonents started */}
           <Route path="/shablon2" element={<Shablon2 />} />
           {/* engineering page child comonents finished */}
-<<<<<<< HEAD
-=======
 
           <Route path="/project" element={<Project />} />
 
->>>>>>> a611b5a82737ad00092864d49a80816d31d4eb48
           <Route path="/renewables" element={<Renewables />} />
 
           <Route
