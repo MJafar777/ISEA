@@ -27,15 +27,21 @@ const Header = () => {
               <div className={s.dropdownChild}>
                 <Router name={"About ISEA"} route={"/about"} />
                 <Router name={"Contact"} route={"/contact"} />
-                <Router name={"History"} route={"/abo"} />
-                <Router name={"Institutional Structure"} route={"/bout"} />
-                <Router name={"ISEA Membership"} route={"/ut"} />
-                <Router name={"Official Documents"} route={"/ac"} />
-                <Router name={"Senior Management"} route={"/abodut"} />
-                <Router name={"Statute, Vision & Mission"} route={"/asbout"} />
+                <Router name={"History"} route={"/history"} />
+                <Router
+                  name={"Institutional Structure"}
+                  route={"/institutional-structure"}
+                />
+                <Router name={"ISEA Membership"} route={"/isea-membership"} />
+                <Router
+                  name={"OfficialDocuments"}
+                  route={"/official-documents"}
+                />
+                {/* <Router name={"Senior Management"} route={"/abodut"} /> */}
+                {/* <Router name={"Statute, Vision & Mission"} route={"/asbout"} /> */}
               </div>
             </div>
-
+            <Navbar name="NEWS" route={"/news"} />
             <div className={s.renewables}>
               <Navbar
                 className={dropdown}

@@ -32,18 +32,42 @@ export default function Topic() {
     <div className={s.background}>
       <Title name={"Topics"} />
       <div className={s.grid}>
-        <Card name={"BENEFITS"} image={image1} link={"/benefits"} />
-        <Card name={"CLIMATE CHANGE"} image={image2} />
-        <Card name={"ENERGY TRANSITION"} image={image3} />
-        <Card name={"FINANCE & INVESTMENT"} image={image4} />
-        <Card name={"HEATING & COOLING"} image={image5} />
-        <Card name={"INNOVATION & TECHNOLOGY"} image={image6} />
-        <Card name={"OFF-GRID FOR ENERGY ACCESS"} image={image7} />
-        <Card name={"POLICY"} image={image8} />
-        <Card name={"INDUCTRY & TRANSPORT"} image={image9} />
-        <Card name={"COSTS"} image={image10} />
-        <Card name={"ISLANDS"} image={image11} />
-        <Card name={"POWER"} image={image12} />
+        <Card link={"/benefits"} name={"BENEFITS"} image={image1} />
+        <Card link={"/climate-change"} name={"CLIMATE CHANGE"} image={image2} />
+        <Card
+          link={"/energy-transition"}
+          name={"ENERGY TRANSITION"}
+          image={image3}
+        />
+        <Card
+          link={"/finance-and-investment"}
+          name={"FINANCE & INVESTMENT"}
+          image={image4}
+        />
+        <Card
+          link={"/benefitsheating-and-cooling"}
+          name={"HEATING & COOLING"}
+          image={image5}
+        />
+        <Card
+          link={"/innovation-technology"}
+          name={"INNOVATION & TECHNOLOGY"}
+          image={image6}
+        />
+        <Card
+          link={"/off-grid"}
+          name={"OFF-GRID FOR ENERGY ACCESS"}
+          image={image7}
+        />
+        <Card link={"/policy"} name={"POLICY"} image={image8} />
+        <Card
+          link={"/inductry-transport"}
+          name={"INDUCTRY & TRANSPORT"}
+          image={image9}
+        />
+        <Card link={"/costs"} name={"COSTS"} image={image10} />
+        <Card link={"/islands"} name={"ISLANDS"} image={image11} />
+        <Card link={"/power"} name={"POWER"} image={image12} />
       </div>
     </div>
   );

@@ -35,11 +35,14 @@ import Login from "./pages/Login/Login";
 import Shablon2 from "./components/EngineeringComponents/Shablon2/Shablon2";
 import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 import MyProjects from "./pages/MyProjects/MyProjects";
+import History from "./pages/AboutPage/History/History";
+import InstitutionalStructure from "./pages/AboutPage/InstitutionalStructure/InstitutionalStructure";
+import IseaMembership from "./pages/AboutPage/IseaMembership/IseaMembership";
+import OfficialDocuments from "./pages/AboutPage/OfficialDocuments/OfficialDocuments";
 
 const App = () => {
   return (
     <>
-      <Header />
       <div className="testing">
         <Marquee speed="100" className="testSite">
           <span>Sayt test rejimida</span> {"  "}{" "}
@@ -50,15 +53,27 @@ const App = () => {
           <span>Сайт находится в тестовом режиме !</span>
         </Marquee>
       </div>
+      <Header />
+
       <main className="main">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           {/* about page child comonents started */}
           <Route path="/contact" element={<AboutContactPage />} />
+          <Route path="/history" element={<History />} />
+          <Route
+            path="/institutional-structure"
+            element={<InstitutionalStructure />}
+          />
+          <Route path="/isea-membership" element={<IseaMembership />} />
+          <Route path="/official-documents" element={<OfficialDocuments />} />
           {/* about page child comonents finished */}
+
           <Route path="/ourwork" element={<OurWork />} />
+
           {/* <Route path="/renewables" element={<Renewables />} /> */}
+
           {/* renewables page child comonents started  */}
           <Route path="/benefits" element={<Benefits />} />
           <Route path="/climate-change" element={<ClimateChange />} />
@@ -82,15 +97,23 @@ const App = () => {
           <Route path="/islands" element={<Island />} />
           <Route path="/power" element={<Power />} />
           {/* renewables page child comonents finished  */}
+
           <Route path="/newroom" element={<Newsroom />} />
+
           <Route path="/publications" element={<Publication />} />
+
           <Route path="/education" element={<Education />} />
+
           <Route path="/engineering" element={<Engineering />} />
+
           {/* engineering page child comonents started */}
           <Route path="/shablon2" element={<Shablon2 />} />
           {/* engineering page child comonents finished */}
+
           <Route path="/project" element={<Project />} />
+
           <Route path="/renewables" element={<Renewables />} />
+
           <Route
             path="/publications/:id"
             element={
