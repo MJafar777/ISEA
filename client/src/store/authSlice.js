@@ -65,6 +65,21 @@ const errorFunc = (store, action) => {
   store.error = action.payload;
 };
 
+export const loginSlice = createAsyncThunk(
+  "auth/loginSlice",
+  async ({ email, password }, { rejectWithValue }) => {
+    try {
+      const response = await axios.post(url + "/users/login", {
+        email,
+        password,
+      });
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.message);
+    }
+  }
+);
+
 const authSlice = createSlice({
   name: "auth",
   initialState: {
@@ -110,6 +125,18 @@ const authSlice = createSlice({
       store.error = null;
     },
     [registerSlice.rejected]: errorFunc,
+    [loginSlice.pending]: (store, action) => {
+      store.status = "loading";
+      store.error = null;
+    },
+    [loginSlice.fulfilled]: (store, action) => {
+      store.status = "resolved";
+      store.error = null;
+      store.isAuth = true;
+      store.user = action.payload.data;
+      localStorage.setItem("userToken", action.payload.token);
+    },
+    [loginSlice.rejected]: errorFunc,
   },
 });
 
