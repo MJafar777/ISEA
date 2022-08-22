@@ -20,17 +20,17 @@ const HomePage = () => {
 
   return (
     <main>
-      <div className="container">
+      {/* <div className="container"> */}
         {/* <HeroSlider /> */}
-        <IntroLanding />
+        {/* <IntroLanding />
         <AboutLanding />
         <NewsLanding />
       </div>
       <PublicationLanding />
-      <CompanyMembers />
-      {/* <div className="container">
+      <CompanyMembers /> */}
+      <div className="container">
         <Topic />
-      </div> */}
+      </div>
       {/* <EnergySources /> */}
     </main>
   );
