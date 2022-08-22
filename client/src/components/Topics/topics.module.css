@@ -19,6 +19,8 @@
 .content {
   cursor: pointer;
   text-align: center;
+  color: #328fbb;
+  text-decoration: none;
 }
 .links:hover {
   transform: rotateX(-3rem);

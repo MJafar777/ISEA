@@ -11,7 +11,7 @@ export default function LeftSide({ title, image, text, date }) {
         </h2>
         <p className={s.bigdate}>{date}</p>
         <img src={image} className={s.mainImg} alt={title} />
-        <p className="text">{text}</p>
+        <p className={s.text}>{text}</p>
       </div>
     </div>
   );

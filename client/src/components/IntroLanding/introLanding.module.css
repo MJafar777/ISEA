@@ -1,18 +1,19 @@
 .cards {
   width: 100%;
   margin: 4rem auto;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
   box-sizing: border-box;
+  justify-content: center;
   padding: 0;
 }
 .cardLevel img {
-  width: 26rem;
+  width: 100%;
 }
 .cardLevel {
   margin: 0px;
   padding: 0;
-  /* background-color: hsla(214, 7%, 52%, 0.8); */
   background-color: #ff8302;
 }
 .cardLevel:hover {
@@ -21,13 +22,42 @@
   z-index: 0;
 }
 .cardLevel p {
-  /* background-color: hsla(214, 7%, 52%, 0.8); */
-  width: 26rem;
-  height: 10.1rem;
   color: #fff;
   font-size: 16px;
   text-align: center;
   margin: 0;
   box-sizing: border-box;
   padding: 1rem;
+}
+@media (max-width: 1175px) {
+  .cards {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 1070px) {
+  .cards {
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 950px) {
+  .cards {
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 800px) {
+  .cards {
+    gap: 4rem;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    transform: scale(1.1);
+  }
+  .cardLevel {
+    margin-bottom: 4rem !important;
+  }
 }

@@ -19,10 +19,10 @@ const HomePage = () => {
       </div>
       <PublicationLanding />
       <CompanyMembers />
-      <div className="container">
+      {/* <div className="container">
         <Topic />
-      </div>
-      <EnergySources />
+      </div> */}
+      {/* <EnergySources /> */}
     </main>
   );
 };

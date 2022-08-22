@@ -9,7 +9,6 @@
   margin: 4rem auto;
   display: flex;
   justify-content: center;
-  /* overflow: scroll; */
   overflow: scroll;
 }
 .slayd {
@@ -27,4 +26,36 @@
 .control_Slider:active {
   transform: scale(1.05);
   transition: all 0.2s;
+}
+@media (max-width: 768px) {
+  .control_Slider {
+    transform: scale(0.5);
+  }
+
+  .parentContainer {
+    width: 90vw;
+  }
+}
+@media (max-width: 500px) {
+  .control_Slider {
+    transform: scale(0.5);
+  }
+
+  .parentContainer {
+    width: 95vw;
+    margin-left: -4rem;
+  }
+}
+@media (max-width: 400px) {
+  .control_Slider {
+    transform: scale(0.5);
+  }
+
+  .parentContainer {
+    width: 95vw;
+    margin-left: -3rem;
+  }
+  .slider {
+    width: 200%;
+  }
 }
