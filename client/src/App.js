@@ -35,6 +35,12 @@ import Login from "./pages/Login/Login";
 import Shablon2 from "./components/EngineeringComponents/Shablon2/Shablon2";
 import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 import MyProjects from "./pages/MyProjects/MyProjects";
+
+import OneProject from "./pages/OneProject/OneProject";
+
+// import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
+// import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
+
 import History from "./pages/AboutPage/History/History";
 import InstitutionalStructure from "./pages/AboutPage/InstitutionalStructure/InstitutionalStructure";
 import IseaMembership from "./pages/AboutPage/IseaMembership/IseaMembership";
@@ -107,9 +113,13 @@ const App = () => {
           <Route path="/power" element={<Power />} />
           {/* renewables page child comonents finished  */}
 
+
           {/* ---------------------------- */}
 
           <Route path="/newroom" element={<Newsroom />} />
+
+          <Route path="/news" element={<Newsroom />} />
+
 
           {/* ---------------------------- */}
 
@@ -144,6 +154,8 @@ const App = () => {
               />
             }
           />
+          <Route path="/project/:id" element={<OneProject />} />
+          <Route path="/project" element={<Project />} />
           <Route path={"/register"} element={<Register />} />
           <Route path={"/login"} element={<Login />} />
           <Route path={"/signup"} element={<Signup />} />

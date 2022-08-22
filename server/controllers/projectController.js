@@ -1,4 +1,5 @@
 const Project = require("../models/projectModel");
+const AppError = require("../utility/appError");
 
 const {
   getAll,
@@ -17,11 +18,13 @@ const getAllProject = async (req, res, next) => {
 };
 
 const addProject = async (req, res, next) => {
-  console.log(req.file);
+  console.log(req.files);
   const data = {
     title: req.body.title,
     description: req.body.description,
-    presentation: req.file.filename,
+    sub_description: req.body.sub_description,
+    presentation: req.files.presentation[0].filename,
+    projectImage: req.files.projectImage[0].filename,
     userId: req.body.userId,
     publisher: req.body.publisher,
     category: req.body.category,
@@ -35,7 +38,8 @@ const updateProject = async (req, res, next) => {
   const data = {
     title: req.body.title,
     description: req.body.description,
-    presentation: req.file.filename,
+    presentation: req.files.presentation[0].filename,
+    projectImage: req.files.projectImage[0].filename,
     userId: req.body.userId,
     publisher: req.body.publisher,
     category: req.body.category,
@@ -50,10 +54,21 @@ const deleteProject = async (req, res, next) => {
   deleteData(req, res, next, Project);
 };
 
+const downloadProject = async (req, res, next) => {
+  const { project } = req.params;
+  res.download(
+    `${__dirname}/../public/img/projects/${project}`,
+    function (error) {
+      console.log(error);
+    }
+  );
+};
+
 module.exports = {
   getAllProject,
   addProject,
   updateProject,
   getOneProject,
   deleteProject,
+  downloadProject,
 };

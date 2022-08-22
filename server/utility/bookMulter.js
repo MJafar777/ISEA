@@ -34,13 +34,17 @@ const filterImage = (req, file, cb) => {
     ext == "azw" ||
     ext == "txt" ||
     ext == "doc" ||
-    ext == "docx"
+    ext == "docx" ||
+    ext == "png" ||
+    ext == "jpg" ||
+    ext == "gif" ||
+    ext == "jpeg"
   ) {
     return cb(null, true);
   } else {
     cb(
       new AppError(
-        "You can upload only File format! Sorry about unconvinience",
+        "You can upload only File and Image format! Sorry about unconvinience",
         false
       )
     );
@@ -55,7 +59,16 @@ const upload = multer({
   },
 });
 
-const uploadProjectFile = upload.single("book");
+const uploadProjectFile = upload.fields([
+  {
+    name: "book",
+    maxCount: 1,
+  },
+  {
+    name: "bookImage",
+    maxCount: 1,
+  },
+]);
 
 module.exports = {
   uploadProjectFile,

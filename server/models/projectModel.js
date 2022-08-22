@@ -24,6 +24,10 @@ const projectScheme = new mongoose.Schema(
       type: String,
       required: true,
     },
+    projectImage: {
+      type: String,
+      required: true,
+    },
     state: {
       type: "Number",
       enum: [1, 2, -1],

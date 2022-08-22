@@ -23,7 +23,7 @@
 .card:hover {
   transition: 0.5s;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.639) 0 100%),
-    url("../../img//Projects/photo-02.jpg");
+    url("../../img/Projects/photo-02.jpg");
 }
 .btn {
   text-decoration: none;

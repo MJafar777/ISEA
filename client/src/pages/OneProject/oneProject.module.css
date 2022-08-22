@@ -1,0 +1,31 @@
+.oneProject {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.download_project {
+  line-height: 3rem;
+  width: 100%;
+  padding: 2rem;
+}
+.download_image {
+  width: 100%;
+  height: 200px;
+}
+.userImage {
+  width: 100%;
+}
+.date {
+  color: blue;
+  font-size: 1.6rem;
+}
+.publisher {
+  font-size: 1.6rem;
+}
+.pro_title {
+  color: rgba(0, 0, 255, 0.595);
+}
+.pro_des {
+  line-height: 3rem;
+  font-size: 1.6rem;
+}
