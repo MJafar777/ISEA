@@ -1,0 +1,12 @@
+.big {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 3rem;
+}
+.left_side {
+  border: 1px solid black;
+}
+.right_side {
+  border: 1px solid black;
+}

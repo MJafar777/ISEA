@@ -22,3 +22,19 @@
 .descrip {
   padding: 2rem;
 }
+.text {
+  font-size: 18px;
+  text-align: center;
+}
+
+@media (max-width: 1040px) {
+  .text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 802px) {
+  .content {
+    /* display: grid; */
+    grid-template-columns: 1fr;
+  }
+}

@@ -49,7 +49,7 @@ import OfficialDocuments from "./pages/AboutPage/OfficialDocuments/OfficialDocum
 const App = () => {
   return (
     <>
-      <div className="testing">
+      {/* <div className="testing">
         <Marquee speed="100" className="testSite">
           <span>Sayt test rejimida</span> {"  "}{" "}
           <span>The site is in test mode</span>{" "}
@@ -59,12 +59,15 @@ const App = () => {
           <span>Сайт находится в тестовом режиме !</span>
         </Marquee>
       </div>
-      <Header />
+      <Header /> */}
 
       <main className="main">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          {/* ---------------------------- */}
+
           <Route path="/about" element={<AboutPage />} />
+
           {/* about page child comonents started */}
           <Route path="/contact" element={<AboutContactPage />} />
           <Route path="/history" element={<History />} />
@@ -73,10 +76,16 @@ const App = () => {
             element={<InstitutionalStructure />}
           />
           <Route path="/isea-membership" element={<IseaMembership />} />
+
           <Route path="/official-documents" element={<OfficialDocuments />} />
+
           {/* about page child comonents finished */}
 
+          {/* ---------------------------- */}
+
           <Route path="/ourwork" element={<OurWork />} />
+
+          {/* ---------------------------- */}
 
           {/* <Route path="/renewables" element={<Renewables />} /> */}
 
@@ -104,11 +113,23 @@ const App = () => {
           <Route path="/power" element={<Power />} />
           {/* renewables page child comonents finished  */}
 
+
+          {/* ---------------------------- */}
+
           <Route path="/newroom" element={<Newsroom />} />
+
+          <Route path="/news" element={<Newsroom />} />
+
+
+          {/* ---------------------------- */}
 
           <Route path="/publications" element={<Publication />} />
 
+          {/* ---------------------------- */}
+
           <Route path="/education" element={<Education />} />
+
+          {/* ---------------------------- */}
 
           <Route path="/engineering" element={<Engineering />} />
 
@@ -116,9 +137,12 @@ const App = () => {
           <Route path="/shablon2" element={<Shablon2 />} />
           {/* engineering page child comonents finished */}
 
+          {/* ---------------------------- */}
+
           <Route path="/project" element={<Project />} />
 
-          <Route path="/renewables" element={<Renewables />} />
+          {/* ---------------------------- */}
+          {/* <Route path="/renewables" element={<Renewables />} /> */}
 
           <Route
             path="/publications/:id"
@@ -139,7 +163,7 @@ const App = () => {
           <Route path={"/myProjects"} element={<MyProjects />} />
         </Routes>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

@@ -32,8 +32,11 @@ export default function Topic() {
     <div className={s.background}>
       <Title name={"Topics"} />
       <div className={s.grid}>
+
         <Card link={"/benefits"} name={"BENEFITS"} image={image1} />
+
         <Card link={"/climate-change"} name={"CLIMATE CHANGE"} image={image2} />
+
         <Card
           link={"/energy-transition"}
           name={"ENERGY TRANSITION"}

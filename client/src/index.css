@@ -46,8 +46,10 @@ ul {
   background-color: var(--color-primary);
   color: white;
   border: none;
+  text-decoration: none;
   box-sizing: border-box;
   padding: 6px 8px;
+  font-size: 2rem;
 }
 
 .button {
