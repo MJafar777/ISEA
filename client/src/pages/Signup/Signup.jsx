@@ -54,9 +54,6 @@ export default function Signup() {
       <div className={s.form}>
         <div className={s.formBody}>
           <div className={s.username}>
-            <label className={s.form__label} htmlFor="firstName">
-              First Name{" "}
-            </label>
             <input
               ref={usernameRef}
               className="form__input"
@@ -66,9 +63,6 @@ export default function Signup() {
             />
           </div>
           <div className={s.lastname}>
-            <label className={s.form__label} htmlFor="lastName">
-              Last Name{" "}
-            </label>
             <input
               ref={surnameRef}
               type="text"
@@ -79,9 +73,6 @@ export default function Signup() {
             />
           </div>
           <div className={s.lastname}>
-            <label className={s.form__label} htmlFor="middleName">
-              Middle Name{" "}
-            </label>
             <input
               ref={middlenameRef}
               type="text"
@@ -91,9 +82,6 @@ export default function Signup() {
             />
           </div>
           <div className={s.email}>
-            <label className={s.form__label} htmlFor="email">
-              Email{" "}
-            </label>
             <input
               ref={emailRef}
               type="email"
@@ -103,9 +91,6 @@ export default function Signup() {
             />
           </div>
           <div className={s.password}>
-            <label className={s.form__label} htmlFor="password">
-              Password{" "}
-            </label>
             <input
               ref={passwordRef}
               className={s.form__input}
@@ -115,9 +100,6 @@ export default function Signup() {
             />
           </div>
           <div className={s.confirmPassword}>
-            <label className={s.form__label} htmlFor="confirmPassword">
-              Confirm Password{" "}
-            </label>
             <input
               ref={passwordConfirmRef}
               className={s.form__input}
