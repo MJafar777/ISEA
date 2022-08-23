@@ -104,16 +104,6 @@ const authSlice = createSlice({
       localStorage.setItem("token", action.payload.token);
     },
     [signupSlice.rejected]: errorFunc,
-    [verifySlice.pending]: (store, action) => {
-      store.status = "pending";
-      store.error = null;
-    },
-    [verifySlice.fulfilled]: (store, action) => {
-      store.status = "resolved";
-      store.isVerify = true;
-      store.error = null;
-    },
-    [verifySlice.rejected]: errorFunc,
     [registerSlice.fulfilled]: (store, action) => {
       store.status = "resolved";
       store.error = null;

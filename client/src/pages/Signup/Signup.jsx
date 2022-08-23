@@ -85,7 +85,6 @@ export default function Signup() {
             <input
               ref={middlenameRef}
               type="text"
-              name=""
               id="middleName"
               className={s.form__input}
               placeholder="midlleName"
