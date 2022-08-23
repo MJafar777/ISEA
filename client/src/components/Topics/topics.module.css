@@ -16,21 +16,25 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 60px;
 }
+
 .content {
   cursor: pointer;
   text-align: center;
   color: #328fbb;
   text-decoration: none;
 }
+
 .links:hover {
   transform: rotateX(-3rem);
   color: red !important;
 }
+
 .content:hover {
   border-radius: 20px;
   transition: all 0.5s;
   transform: scale(1.1);
 }
+
 @media (max-width: 1600px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
