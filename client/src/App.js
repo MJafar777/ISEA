@@ -49,7 +49,7 @@ import OfficialDocuments from "./pages/AboutPage/OfficialDocuments/OfficialDocum
 const App = () => {
   return (
     <>
-      {/* <div className="testing">
+      <div className="testing">
         <Marquee speed="100" className="testSite">
           <span>Sayt test rejimida</span> {"  "}{" "}
           <span>The site is in test mode</span>{" "}
@@ -59,7 +59,7 @@ const App = () => {
           <span>Сайт находится в тестовом режиме !</span>
         </Marquee>
       </div>
-      <Header /> */}
+      <Header />
 
       <main className="main">
         <Routes>
@@ -113,13 +113,11 @@ const App = () => {
           <Route path="/power" element={<Power />} />
           {/* renewables page child comonents finished  */}
 
-
           {/* ---------------------------- */}
 
           <Route path="/newroom" element={<Newsroom />} />
 
           <Route path="/news" element={<Newsroom />} />
-
 
           {/* ---------------------------- */}
 

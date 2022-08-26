@@ -4,6 +4,7 @@ import s from "./signup.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { registerSlice } from "../../store/authSlice";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Signup() {
   const navigate = useNavigate();
@@ -14,17 +15,11 @@ export default function Signup() {
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
   const genderRef = useRef();
+  const photoRef = useRef();
   const dispatch = useDispatch();
-  // {
-  //   name,
-  //   surname,
-  //   name_of_father,
-  //   gender,
-  //   email_or_phone,
-  //   password,
-  //   passwordConfrim,
-  // }
+
   const registerHandler = (e) => {
+    e.preventDefault();
     const username = usernameRef.current.value;
     const surname = surnameRef.current.value;
     const name_of_father = middlenameRef.current.value;
@@ -32,8 +27,6 @@ export default function Signup() {
     const email_or_phone = emailRef.current.value;
     const password = passwordRef.current.value;
     const passwordConfirm = passwordConfirmRef.current.value;
-
-    e.preventDefault();
     dispatch(
       registerSlice({
         username,
@@ -47,7 +40,8 @@ export default function Signup() {
     );
   };
 
-  const isAuth = useSelector((store) => store.auth.isAuth);
+  const isAuth = useSelector((store) => store.auth);
+  console.log(isAuth);
   if (isAuth) navigate("/");
   return (
     <>
@@ -81,6 +75,12 @@ export default function Signup() {
               placeholder="midlleName"
             />
           </div>
+          <select ref={genderRef}>
+            <option value="">Jinsingizni tanlang</option>
+            <option value="male">Ayol</option>
+            <option value="female">Erkak</option>
+          </select>
+
           <div className={s.email}>
             <input
               ref={emailRef}
@@ -117,4 +117,8 @@ export default function Signup() {
       </div>
     </>
   );
+}
+
+{
+  /* */
 }
