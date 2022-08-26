@@ -93,11 +93,9 @@ const verify = async (req, res, next) => {
 };
 
 const register = catchErrLittle(async (req, res, next) => {
-  // console.log(req.file);
-  // console.log(req.body);
-
+  console.log(req.body);
   const getCode = await jwt.verify(req.body.token, process.env.JWT_SECRET_KEY);
-
+  console.log(getCode);
   const user = await Code.findById(getCode.id);
 
   // if (!user.verified) {
@@ -114,7 +112,6 @@ const register = catchErrLittle(async (req, res, next) => {
     surname: req.body.surname,
     name_of_father: req.body.name_of_father,
     gender: req.body.gender,
-    photo: req.file.filename,
     email: user.email_or_phone,
     password: req.body.password,
     passwordConfirm: req.body.passwordConfirm,

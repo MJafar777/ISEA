@@ -14,26 +14,11 @@ export const signupSlice = createAsyncThunk(
   }
 );
 
-export const verifySlice = createAsyncThunk(
-  "auth/verifySlice",
-  async ({ verifyCode }, { rejectWithValue }) => {
-    try {
-      const token = localStorage.getItem("token");
-      const response = await axios.post(url + "/users/verify", {
-        code: verifyCode,
-        token,
-      });
-    } catch (error) {
-      return rejectWithValue(error.message);
-    }
-  }
-);
-
 export const registerSlice = createAsyncThunk(
   "auth/registerSlice",
   async (
     {
-      name,
+      username,
       surname,
       name_of_father,
       gender,
@@ -44,14 +29,17 @@ export const registerSlice = createAsyncThunk(
     { rejectWithValue }
   ) => {
     try {
+      const token = localStorage.getItem("token");
+      console.log(token);
       const response = axios.post(url + "/users/register", {
-        name: name,
+        name: username,
         surname,
         gender,
         email_or_phone,
         password,
         passwordConfirm,
         name_of_father,
+        token,
       });
       return response.data;
     } catch (error) {
@@ -105,6 +93,7 @@ const authSlice = createSlice({
     },
     [signupSlice.rejected]: errorFunc,
     [registerSlice.fulfilled]: (store, action) => {
+      console.log(action.payload);
       store.status = "resolved";
       store.error = null;
       store.isAuth = true;
