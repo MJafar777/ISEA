@@ -9,6 +9,7 @@ import PublicationLanding from "../../components/PublicationLanding/PublicationL
 import Topic from "../../components/Topics/Topic";
 import { useSelector, useDispatch } from "react-redux";
 import { BooksGet } from "../../store/bookSlice";
+import HeroSlider from "../../components/HeroSlider/HeroSlider";
 
 const HomePage = () => {
   const dispatch = useDispatch();
