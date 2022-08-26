@@ -79,3 +79,29 @@
     margin: 1rem auto;
   }
 }
+@media (max-width: 530px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    transform: scale(0.9);
+    gap: 7%;
+    margin-top: 2rem;
+    margin-left: -5%;
+  }
+}
+@media (max-width: 530px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2%;
+    margin-top: -10rem;
+    margin-left: -5%;
+  }
+}
+@media (max-width: 350px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2%;
+    margin-top: -10rem;
+    margin-left: -15%;
+  }
+  
+}
