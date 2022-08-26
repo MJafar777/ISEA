@@ -11,7 +11,9 @@
 .mainText {
   margin-bottom: 10px;
 }
-
+.text {
+  font-size: 1.6rem;
+}
 .mainImg {
   height: 36rem;
   width: 100%;
@@ -55,4 +57,131 @@
 .bigdate {
   margin-bottom: 30px;
   font-size: 1.4rem;
+}
+@media (max-width: 1211px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .text {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .right {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  .imageLeft {
+    transform: scale(1.2);
+    margin: 2rem;
+  }
+  .titleLeft {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1127px) {
+  .main {
+    /* display: block; */
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .mainText a {
+    text-align: center;
+    font-size: 3.4rem;
+  }
+  .text {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .titleLeft {
+    font-size: 1.4rem;
+  }
+  .date {
+    font-size: 1.4rem;
+  }
+  .right {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1064pc) {
+  .right {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+  .imageLeft {
+    transform: scale(1.5);
+    margin: 2rem;
+  }
+  .titleLeft {
+    font-size: 1.8rem;
+    margin: 1rem;
+  }
+  .date {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 651px) {
+  .mainText a {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+  .text {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .titleLeft {
+    font-size: 1.2rem;
+  }
+  .titleLeft {
+    font-size: 1.4rem;
+    margin: 1rem;
+  }
+  .date {
+    font-size: 1.6rem;
+  }
+  .imageLeft {
+    transform: scale(1.2);
+    margin: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .mainText a {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .mainImg {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  .date {
+    margin-left: 2rem;
+  }
+  .imageLeft {
+    transform: scale(1.5);
+    margin: 1rem;
+    margin-left: 4rem;
+  }
+  .contentLeft {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
 }

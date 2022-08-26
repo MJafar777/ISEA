@@ -43,7 +43,7 @@ const signUp = async (req, res, next) => {
         });
         token = createToken(newUser._id);
       }
-      await new Email(user, randomCode).sendCode("Verify code");
+      // await new Email(user, randomCode).sendCode("Verify code");
     }
 
     res.status(200).json({
@@ -96,26 +96,27 @@ const register = catchErrLittle(async (req, res, next) => {
   // console.log(req.file);
   // console.log(req.body);
 
-  const getCode = await jwt.verify(req.body.token, process.env.JWT_SECRET_KEY);
+  console.log(req.body);
 
+  const getCode = await jwt.verify(req.body.token, process.env.JWT_SECRET_KEY);
+  console.log(getCode);
   const user = await Code.findById(getCode.id);
   console.log(user);
 
-  if (!user.verified) {
-    return next(
-      new AppError(
-        "Siz verificationdan otmagansiz.Iltimos verificationdan oting !",
-        404
-      )
-    );
-  }
+  // if (!user.verified) {
+  //   return next(
+  //     new AppError(
+  //       "Siz verificationdan otmagansiz.Iltimos verificationdan oting !",
+  //       404
+  //     )
+  //   );
+  // }
 
   const newUser = await User.create({
     name: req.body.name,
     surname: req.body.surname,
     name_of_father: req.body.name_of_father,
     gender: req.body.gender,
-    photo: req.file.filename,
     email: user.email_or_phone,
     password: req.body.password,
     passwordConfirm: req.body.passwordConfirm,

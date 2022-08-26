@@ -4,7 +4,9 @@
   line-height: 1.5;
   text-align: center;
 }
-
+.background {
+  padding: 2rem;
+}
 .image {
   width: 100%;
 }
@@ -16,16 +18,121 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 60px;
 }
+
 .content {
   cursor: pointer;
   text-align: center;
+  color: #328fbb;
+  text-decoration: none;
 }
+
 .links:hover {
   transform: rotateX(-3rem);
   color: red !important;
 }
+
 .content:hover {
   border-radius: 20px;
   transition: all 0.5s;
   transform: scale(1.1);
+}
+
+@media (max-width: 1600px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    transform: scale(0.9);
+    gap: 25%;
+  }
+  .background {
+    padding-bottom: 40%;
+  }
+  .grid {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 950px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    transform: scale(0.7);
+    gap: 10%;
+    margin-top: -20rem;
+  }
+  .title {
+    font-size: 2rem;
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 660px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    transform: scale(0.9);
+    gap: 7%;
+    margin-top: 2rem;
+  }
+  .title {
+    font-size: 2rem;
+    margin: 1rem auto;
+  }
+  .background {
+    padding-bottom: 60%;
+  }
+  .grid {
+    margin-bottom: 30%;
+  }
+}
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    transform: scale(0.9);
+    gap: 7%;
+    margin-top: 2rem;
+  }
+  .title {
+    font-size: 2rem;
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 530px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    transform: scale(0.9);
+    gap: 7%;
+    margin-top: 2rem;
+    margin-left: -5%;
+  }
+  .background {
+    padding-bottom: 60%;
+  }
+  .grid {
+    margin-bottom: 70%;
+  }
+}
+@media (max-width: 530px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2%;
+    margin-top: -10rem;
+    margin-left: -5%;
+  }
+
+  .grid {
+    margin-bottom: 80%;
+  }
+}
+@media (max-width: 350px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2%;
+    margin-top: -10rem;
+    margin-left: -15%;
+  }
+  .grid {
+    margin-bottom: 100%;
+  }
+}
+@media (max-width: 309px) {
+  .grid {
+    margin-bottom: 140%;
+  }
 }
