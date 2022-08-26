@@ -49,7 +49,7 @@ import OfficialDocuments from "./pages/AboutPage/OfficialDocuments/OfficialDocum
 const App = () => {
   return (
     <>
-      <div className="testing">
+      {/* <div className="testing">
         <Marquee speed="100" className="testSite">
           <span>Sayt test rejimida</span> {"  "}{" "}
           <span>The site is in test mode</span>{" "}
@@ -58,9 +58,9 @@ const App = () => {
           <span>The site is in test mode !</span>{" "}
           <span>Сайт находится в тестовом режиме !</span>
         </Marquee>
-      </div>
+      </div> */}
 
-      <Header />
+      {/* <Header /> */}
 
       <main className="main">
         <Routes>
@@ -162,7 +162,7 @@ const App = () => {
           <Route path={"/myProjects"} element={<MyProjects />} />
         </Routes>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

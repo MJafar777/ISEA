@@ -56,7 +56,7 @@ const Education = () => {
           </p>
         </div>
         <div className={s.card}>
-          <div>
+          <div className={s.card_child}>
             <img className={s.imgs} src={img1} alt="img1" />
 
             <h2>SOLAR ELECTRIC COURSES</h2>
@@ -66,7 +66,7 @@ const Education = () => {
               Exercitationem sunt
             </p>
           </div>
-          <div>
+          <div className={s.card_child}>
             <img className={s.imgs} src={img2} alt="img2" />
             <h2>SOLAR HEATING COURSES</h2>
             <p>
@@ -75,7 +75,7 @@ const Education = () => {
               Exercitationem sunt
             </p>
           </div>
-          <div>
+          <div className={s.card_child}>
             <img className={s.imgs} src={img3} alt="img3" />
             <h2>DEVELOPING WORLD COURSES</h2>
             <p>
@@ -84,7 +84,7 @@ const Education = () => {
               Exercitationem sunt
             </p>
           </div>
-          <div>
+          <div className={s.card_child}>
             <img className={s.imgs} src={img4} alt="img4" />
             <h2>VIEW TRAINING SCHEDULE</h2>
             <p>
@@ -108,7 +108,7 @@ const Education = () => {
         </div>
       </div>
       <div className={s.features}>
-        <div >
+        <div>
           <h2 className={s.title2} style={{ color: "black" }}>
             ISEA ONLINE FEATURES
           </h2>
@@ -177,7 +177,7 @@ const Education = () => {
                 field.
               </p>
             </div>
-            <div className={s.textType} >
+            <div className={s.textType}>
               <div className={s.colMd}>
                 <img src={icon6} alt="icons" className={s.icons} />
                 <h3>Instructional Support from Live Instructors</h3>
@@ -188,7 +188,7 @@ const Education = () => {
                 actively working in the solar industry and are experts in the
                 field.
               </p>
-            </div>       
+            </div>
           </div>
         </div>
       </div>
