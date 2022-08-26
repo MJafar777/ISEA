@@ -93,10 +93,15 @@ const verify = async (req, res, next) => {
 };
 
 const register = catchErrLittle(async (req, res, next) => {
+  // console.log(req.file);
+  // console.log(req.body);
+
   console.log(req.body);
+
   const getCode = await jwt.verify(req.body.token, process.env.JWT_SECRET_KEY);
   console.log(getCode);
   const user = await Code.findById(getCode.id);
+  console.log(user);
 
   // if (!user.verified) {
   //   return next(
