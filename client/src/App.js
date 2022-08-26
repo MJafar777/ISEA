@@ -161,7 +161,7 @@ const App = () => {
           <Route path={"/myProjects"} element={<MyProjects />} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
