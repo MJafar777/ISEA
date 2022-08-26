@@ -58,8 +58,8 @@ const App = () => {
           <span>The site is in test mode !</span>{" "}
           <span>Сайт находится в тестовом режиме !</span>
         </Marquee>
-      </div>
-      <Header /> */}
+      </div> */}
+      <Header />
 
       <main className="main">
         <Routes>
