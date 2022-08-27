@@ -39,10 +39,12 @@
 .card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-radius: 5px;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 2px 6px rgba(40, 40, 40, 0.486);
+  gap: 300px;
 }
 
 .deleteIcon {
@@ -64,10 +66,12 @@
 .card:hover .editing {
   opacity: 1;
 }
+
 .form2 {
   display: flex;
   justify-content: center;
 }
+
 .form1 {
   width: 50%;
   display: grid;
@@ -75,9 +79,55 @@
   grid-template-columns: 1fr;
   justify-content: center;
 }
+
 .form1 textarea {
   border: 1px solid black;
   resize: none;
   height: 10vh;
   outline: none;
+}
+
+.image img {
+  width: 100px;
+  height: 130px;
+}
+
+.left {
+  gap: 20px;
+  display: flex;
+}
+.delete {
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.356);
+  background-color: rgb(238, 51, 51);
+  border-radius: 5px;
+  height: max-content;
+}
+
+.edit {
+  padding: 10px;
+  background-color: rgb(54, 149, 238);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.356);
+  border-radius: 5px;
+  height: max-content;
+}
+
+.text {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about {
+  font-size: 14px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 20px;
 }

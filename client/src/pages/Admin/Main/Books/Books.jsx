@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addBook } from "../../../../store/bookSlice";
 import s from "./books.module.css";
 import { BooksGet } from "../../../../store/bookSlice";
+import images from "../../../../img/Publications/1.jpg";
 
 export default function Books() {
   const titleRef = useRef();
@@ -100,12 +101,20 @@ export default function Books() {
         <div className={s.card}>
           <div className={s.left}>
             <div className={s.image}>
-              <img src="" />
+              <img src={images} />
             </div>
-            <div>
-              <h2>Mamurjon kitob</h2>
-              <h3>Fantastika</h3>
-              <p>12-03-2004</p>
+            <div className={s.data}>
+              <div>
+                <h2 className={s.title}>Mamurjon kitob</h2>
+                <p className={s.text}>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Distinctio, repellendus laborum voluptatem ad quibusdam veniam
+                  aspernatur velit at omnis ipsum.
+                </p>
+              </div>
+              <div>
+                <p className={s.about}>12-03-2004 | fantastika | English</p>
+              </div>
             </div>
           </div>
           <div className={s.editing}>
