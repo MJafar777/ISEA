@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import image from "../../../../img/SignUp/75.jpg";
 import User from "./User/User";
 import { usersGet } from "../../../../store/usersSlice";
+import AddUser from "./AddUser/AddUser";
 
 export default function Users() {
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ export default function Users() {
           <p to={"#addusers"}>+</p>
         </div>
       </div>
+      <AddUser />
       {userss &&
         userss.map((val, key) => {
           return (
