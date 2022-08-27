@@ -11,6 +11,8 @@ userRouter
   .route("/upload")
   .post(multer.uploadUserImage, multer.resizeImage, userController.updateImage);
 
+userRouter.route("/checkme").post(userController.checkMe);
+
 userRouter
   .route("/")
   .get(userController.getAllUser)

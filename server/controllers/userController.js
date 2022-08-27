@@ -67,6 +67,18 @@ const updateImage = async (req, res, next) => {
   }
 };
 
+const checkMe = async (req, res, next) => {
+  const { token } = req.body;
+  const checkVerify = jwt.verify(token, process.env.JWT_SECRET_KEY);
+
+  if (!checkVerify) next(new AppError("Sizning exprires datetis tugagan"));
+  const user = await User.findById(checkVerify.id);
+
+  if (!user) next(new AppError("Bunday user mavjud emas", 401));
+
+  res.status(201).json({ status: "success", user });
+};
+
 module.exports = {
   getAllUser,
   addUser,
@@ -74,4 +86,5 @@ module.exports = {
   getOneUser,
   deleteUser,
   updateImage,
+  checkMe,
 };
