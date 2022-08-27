@@ -13,6 +13,7 @@ exports.getBooks = async (req, res, next) => {
 };
 
 exports.addBooks = async (req, res, next) => {
+  console.log(req.files);
   const data = {
     title: req.body.title,
     language: req.body.language,
