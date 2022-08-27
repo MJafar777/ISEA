@@ -8,6 +8,7 @@ import Projects from "./Main/Projects/Projects";
 import News from "./Main/News/News";
 import Sidebar from "./Sidebar/Sidebar";
 import { updateImage } from "../../store/usersSlice";
+import { checkMe } from "../../store/authSlice";
 
 export default function Admin() {
   const navigate = useLocation();

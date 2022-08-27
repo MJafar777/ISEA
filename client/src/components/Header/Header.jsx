@@ -5,13 +5,19 @@ import logo from "../../img/Logo/neu.png";
 import lang from "../../img/icons/lang.svg";
 import Navbar from "../Navbar/Navbar";
 import Profile from "../Profile/Profile";
-import { useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
 import Router from "../../components/Router/Router";
+import { useEffect } from "react";
+import { checkMe } from "../../store/authSlice";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(checkMe());
+  }, []);
   const container = s.header + " " + "container";
   const dropdown = s.acardion + " " + "dropdown";
+
   const isAuth = useSelector((store) => store.auth.isAuth);
   return (
     <div className={s.main}>
@@ -99,7 +105,7 @@ const Header = () => {
         </div>
         <div className={s.profile}>
           {isAuth ? (
-            <Profile name={"Niyozbek Pulatov"} image={"111"} />
+            <Profile />
           ) : (
             <>
               <NavLink to={"/login"}>Login</NavLink>

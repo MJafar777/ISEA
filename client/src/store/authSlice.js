@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-import { checkMe } from "../../../server/controllers/userController";
 import { url } from "../configs/config";
 
 export const signupSlice = createAsyncThunk(
@@ -70,11 +69,11 @@ export const loginSlice = createAsyncThunk(
   }
 );
 
-const checkMe = createAsyncThunk(
+export const checkMe = createAsyncThunk(
   "users/checkMe",
   async (_, { rejectwithValue }) => {
     const token = localStorage.getItem("userToken");
-    const response = await axios.post(url + "/users/checkMe", token);
+    const response = await axios.post(url + "/users/checkMe", { token });
     return response.data;
   }
 );
