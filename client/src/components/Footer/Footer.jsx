@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
         <div className={s.footerTitle}>
           <h3>Subscribe to our newsletter</h3>
-          <form onSubmit={prevent}>
+          <form className={s.forms} onSubmit={prevent}>
             <input maxLength={30} type="text" placeholder="Email Address" />
             <button>OK</button>
           </form>
