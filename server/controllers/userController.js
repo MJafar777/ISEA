@@ -1,7 +1,7 @@
 const User = require("../models/userModel");
-
+const jwt = require("jsonwebtoken");
 const catchErrBig = require("../utility/catchErrBig");
-
+const AppError = require("../utility/AppError");
 const {
   getAll,
   getOne,
@@ -51,5 +51,27 @@ const getOneUser = async (req, res, next) => {
 const deleteUser = async (req, res, next) => {
   deleteData(req, res, next, User);
 };
+const updateImage = async (req, res, next) => {
+  try {
+    const { token } = req.body;
+    console.log(token, req.file);
+    const verify = jwt.verify(token, process.env.JWT_SECRET_KEY);
+    if (!verify) next(new AppError("Siz ruyhatdan utmagansiz", 401));
+    const user = await User.findById(verify.id);
+    if (!user) next("Bunday user mavjud emas", 403);
+    user.photo = req.file.filename;
+    await user.save({ validateBeforeSave: false });
+    res.status(203).json({ status: "success" });
+  } catch (e) {
+    next(e.message, 404);
+  }
+};
 
-module.exports = { getAllUser, addUser, updateUser, getOneUser, deleteUser };
+module.exports = {
+  getAllUser,
+  addUser,
+  updateUser,
+  getOneUser,
+  deleteUser,
+  updateImage,
+};
