@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import s from "./addUser.module.css";
 
-export default function AddUser() {
+function AddUser() {
   const nameRef = useRef();
   const surnameRef = useRef();
   const middlenameRef = useRef();
@@ -46,3 +46,5 @@ export default function AddUser() {
     </div>
   );
 }
+
+export default AddUser;

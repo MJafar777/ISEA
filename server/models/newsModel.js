@@ -13,7 +13,7 @@ const schema = new mongoose.Schema({
   category: {
     type: String,
     required: true,
-    enum: ["articles", "presses", "experts"],
+    enum: ["Articles", "Presses", "Experts"],
   },
   publisher: { type: String, required: true },
   createdAt: {
