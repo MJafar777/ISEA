@@ -5,7 +5,7 @@ import { BsFillPencilFill } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { usersDelete } from "../../../../../store/usersSlice";
 
-export default function User({ image, username, gender, email, role, id }) {
+export default function User({ photo, username, gender, email, role, id }) {
   const dispatch = useDispatch();
   const deleteHandler = () => {
     dispatch(usersDelete({ id }));
@@ -15,7 +15,10 @@ export default function User({ image, username, gender, email, role, id }) {
     <div className={s.user}>
       <div className={s.info}>
         <div>
-          <img src={image} className={s.image} />
+          <img
+            src={"http://localhost:8000/img/users/" + photo}
+            className={s.image}
+          />
         </div>
         <div className={s.about}>
           <h3 className={s.name}>{username}</h3>

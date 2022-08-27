@@ -1,5 +1,4 @@
 const sharp = require("sharp");
-
 const multer = require("multer"); // -->Fayllarni yuklash uchun req.file
 const AppError = require("./appError");
 
