@@ -58,12 +58,43 @@ const AboutContactPage = () => {
                 <h4>+16467382014</h4>
                 <h4>info@irena.org</h4>
               </div>
+              <div className={s.contactTitleChild}>
+                <img className={s.city} src={city3} alt="city3" />
+                <h2>
+                  ISEA Office of the Permanent Observer to the United Nations
+                </h2>
+                <p>Uganda House</p>
+                <p>P.O. Box 236, Abu Dhabi</p>
+                <p>United Arab Emirates</p>
+                <h4>+16467382014</h4>
+                <h4>info@irena.org</h4>
+              </div>
+              <div className={s.contactTitleChild}>
+                <img className={s.city} src={city2} alt="city2" />
+                <h2>ISEA Innovation and Technology Centre</h2>
+                <p>Willy-Brandt-Allee 20</p>
+                <p>P.O. Box 236, Abu Dhabi</p>
+                <p>United Arab Emirates</p>
+                <h4>+49 228 391 79085</h4>
+                <h4>info@irena.org</h4>
+              </div>
+              <div className={s.contactTitleChild}>
+                <img className={s.city} src={city3} alt="city3" />
+                <h2>
+                  ISEA Office of the Permanent Observer to the United Nations
+                </h2>
+                <p>Uganda House</p>
+                <p>P.O. Box 236, Abu Dhabi</p>
+                <p>United Arab Emirates</p>
+                <h4>+16467382014</h4>
+                <h4>info@irena.org</h4>
+              </div>
             </div>
-            <hr className={s.hrr} />
+            {/* <hr className={s.hrr} /> */}
             <div>
               <Title name={"Plan Your Visit"} />
               <div className={s.titleTeam}>
-                <img src={team} alt="team" />
+                <img className={s.team} src={team} alt="team" />
                 <div>
                   <p>
                     A visit to the IRENA Abu Dhabi Headquarters is customised to
@@ -79,21 +110,38 @@ const AboutContactPage = () => {
                   </p>
                 </div>
               </div>
+              <div className={s.titleTeam}>
+                <div>
+                  <p>
+                    A visit to the IRENA Abu Dhabi Headquarters is customised to
+                    the visitors’ interests and needs, and can include hearing
+                    from IRENA experts in various fields of renewable energy and
+                    the global energy transition.
+                  </p>
+                  <p>Download and complete the Visit Request Form.</p>
+                  <p>
+                    E-mail the completed form to communications@irena.org to
+                    arrange your visit and learn more about who we are and what
+                    we do.
+                  </p>
+                </div>
+                <img className={s.team} src={team} alt="team" />
+              </div>
             </div>
           </div>
-          <hr />
-          <div className={s.RightContainer}>
+          {/* <hr /> */}
+          {/* <div className={s.RightContainer}>
             <Title name={"Contact"} />
             <Menu />
-          </div>
+          </div> */}
         </div>
-        <hr />
-        <div className={s.otherContact}>
+        {/* <hr /> */}
+        {/* <div className={s.otherContact}>
           <Title name={"Other contacts"} />
           <div className={s.otherContactInfo}>
             <div className={s.contactInfo1}></div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
