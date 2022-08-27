@@ -1,3 +1,7 @@
+.subText {
+  color: black;
+  border: 1px solid black;
+}
 .news {
   margin-top: 4rem;
   display: grid;
@@ -25,6 +29,7 @@
   position: relative;
   height: 30vh;
   overflow: hidden;
+  margin-top: 3rem;
 }
 
 .box1 {
@@ -59,4 +64,22 @@
 .text1 p {
   color: white;
   font-size: 1.2rem;
+}
+.one {
+  margin: 4rem 4rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+.oneTitle {
+  font-size: 2rem;
+}
+.date {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.newsInfo p {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }

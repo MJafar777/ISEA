@@ -188,6 +188,9 @@
 }
 
 @media (max-width: 1085px) {
+  .education {
+    margin-top: 2rem;
+  }
   .card {
     display: grid;
     grid-template-columns: 1fr 1fr !important;

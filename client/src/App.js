@@ -46,6 +46,7 @@ import InstitutionalStructure from "./pages/AboutPage/InstitutionalStructure/Ins
 import IseaMembership from "./pages/AboutPage/IseaMembership/IseaMembership";
 import OfficialDocuments from "./pages/AboutPage/OfficialDocuments/OfficialDocuments";
 import { useDispatch } from "react-redux";
+import OneNews from "./pages/Newsroom/OneNew/OneNews";
 
 const App = () => {
   return (
@@ -117,9 +118,8 @@ const App = () => {
 
           {/* ---------------------------- */}
 
-          <Route path="/newroom" element={<Newsroom />} />
-
           <Route path="/news" element={<Newsroom />} />
+          <Route path="/news/:id" element={<OneNews />} />
 
           {/* ---------------------------- */}
 
@@ -163,7 +163,7 @@ const App = () => {
           <Route path={"/myProjects"} element={<MyProjects />} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
