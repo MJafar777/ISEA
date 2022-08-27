@@ -72,23 +72,30 @@ export default function Books() {
       </div>
       <div className={s.main}>
         <form className={s.form} style={style}>
-          <h2>Add book</h2>
-          <input ref={titleRef} type="text" placeholder="Sarlavha" />
-          <input ref={categoryRef} type="text" placeholder="category" />
-          <input ref={publisherRef} type="text" placeholder="publisher" />
-          <select ref={langRef}>
-            <option value="eng">Ingliz tili</option>
-            <option value="rus">Rus tili</option>
-            <option value="uzb">Uzbek tili</option>
-          </select>
-          <textarea
-            ref={subDescripRef}
-            placeholder="asosiy maluomot"
-          ></textarea>
-          <textarea ref={descripRef} placeholder="description"></textarea>
-          <input type="file" onChange={(e) => setImage(e.target.files[0])} />
-          <input type="file" onChange={(e) => setFile(e.target.files[0])} />
-          <button onClick={submitHandler}>submit</button>
+          <div className={s.form2}>
+            <div className={s.form1}>
+              <h2>Add book</h2>
+              <input ref={titleRef} type="text" placeholder="Sarlavha" />
+              <input ref={categoryRef} type="text" placeholder="category" />
+              <input ref={publisherRef} type="text" placeholder="publisher" />
+              <select ref={langRef}>
+                <option value="eng">Ingliz tili</option>
+                <option value="rus">Rus tili</option>
+                <option value="uzb">Uzbek tili</option>
+              </select>
+              <textarea
+                ref={subDescripRef}
+                placeholder="asosiy maluomot"
+              ></textarea>
+              <textarea ref={descripRef} placeholder="description"></textarea>
+              <input
+                type="file"
+                onChange={(e) => setImage(e.target.files[0])}
+              />
+              <input type="file" onChange={(e) => setFile(e.target.files[0])} />
+              <button onClick={submitHandler}>submit</button>
+            </div>
+          </div>
         </form>
         <div className={s.card}>
           <div className={s.left}>
