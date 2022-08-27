@@ -60,7 +60,7 @@ const App = () => {
         </Marquee>
       </div> */}
 
-      {/* <Header /> */}
+      <Header />
 
       <main className="main">
         <Routes>
@@ -162,7 +162,7 @@ const App = () => {
           <Route path={"/myProjects"} element={<MyProjects />} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
