@@ -37,6 +37,7 @@ const Header = () => {
               </div>
               <div className={s.dropdownChild}>
                 <Router name={"About ISEA"} route={"/about"} />
+                <Router name={"ISEA LIDERSHIP"} route={"/isea-leadership"} />
                 <Router name={"Contact"} route={"/contact"} />
                 <Router name={"OURWORK"} route={"/ourwork"} />
 
@@ -101,14 +102,14 @@ const Header = () => {
 
             {/* <Navbar className={s.acardion1} name="OURWORK" route={"/ourwork"} /> */}
 
-            <div className={s.topParent}>
+            {/* <div className={s.topParent}>
               <Navbar
                 className={s.acardion1}
                 name="PRESS-CENTER"
                 route={"/press-center"}
               />
               <img src={top} className="bottomTop" alt="" />
-            </div>
+            </div> */}
             <Navbar name="NEWS" route={"/news"} />
             <Navbar name="PUBLICATIONS" route={"/publications"} />
             <Navbar name="EDUCATION" route={"/education"} />

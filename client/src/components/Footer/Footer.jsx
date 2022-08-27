@@ -13,7 +13,7 @@ const Footer = () => {
     <div className={s.footer}>
       <div className={s.foot}>
         <div className={s.footerTitle}>
-          <h4>NEW IT</h4>
+          <h4>ISEA</h4>
           <h6>© Energy Sources</h6>
         </div>
         <div className={s.footerTitle}>
@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div className={s.footerTitle}>
           <p>497 Evergreen Rd. Roseville, CA 95673</p>
-          <p>+44 345 678 903</p>
+          <p>+998977773767</p>
           <a href="/">mirzaraximovjafar2001@gmail.com</a>
         </div>
       </div>
