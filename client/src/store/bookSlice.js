@@ -29,6 +29,50 @@ export const GetOneBook = createAsyncThunk(
   }
 );
 
+export const addBook = createAsyncThunk(
+  "books/addBook",
+  async (
+    {
+      title,
+      publisher,
+      sub_description,
+      description,
+      language,
+      file,
+      image,
+      category,
+    },
+    { rejectWithValue }
+  ) => {
+    console.log(image, file);
+    const response = await axios.post(
+      url + "/books",
+      {
+        title,
+        publisher,
+        sub_description,
+        description,
+        language,
+        category,
+        bookImage: image,
+        book: file,
+      },
+      { headers: { "content-type": "multipart/form-data" } }
+    );
+    return response.data;
+  }
+);
+
+const pending = (store, action) => {
+  store.status = "loading";
+  store.error = null;
+};
+
+const rejected = (store, action) => {
+  store.error = action.payload;
+  store.status = "rejected";
+};
+
 const booksSlice = createSlice({
   name: "books",
   initialState: {
@@ -44,25 +88,19 @@ const booksSlice = createSlice({
       store.status = "resolved";
       store.error = null;
     },
-    [BooksGet.pending]: (store, action) => {
-      store.status = "loading";
-      store.error = null;
-    },
-    [BooksGet.rejected]: (store, action) => {
-      store.error = action.payload;
-      store.status = "rejected";
-    },
+    [BooksGet.pending]: pending,
+    [BooksGet.rejected]: rejected,
+
     [GetOneBook.fulfilled]: (store, action) => {
       store.book = action.payload.data;
       store.status = "resolved";
       store.error = null;
     },
-    [GetOneBook.rejected]: (store, action) => {
-      store.error = action.payload;
-      store.status = "rejected";
-    },
-    [BooksGet.pending]: (store, action) => {
-      store.status = "loading";
+    [GetOneBook.rejected]: rejected,
+    [BooksGet.pending]: pending,
+
+    [addBook.fulfilled]: (store, action) => {
+      store.status = "resolved";
       store.error = null;
     },
   },

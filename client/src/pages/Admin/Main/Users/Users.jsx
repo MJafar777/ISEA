@@ -23,7 +23,7 @@ export default function Users() {
       <div className={s.header}>
         <h2 className={s.title}>USERS</h2>
         <div className={s.plus}>
-          <NavLink to={"#addusers"}>+</NavLink>
+          <p to={"#addusers"}>+</p>
         </div>
       </div>
       {userss &&
@@ -37,6 +37,7 @@ export default function Users() {
               key={key}
               email={val.email}
               id={val._id}
+              photo={val.photo}
             />
           );
         })}
