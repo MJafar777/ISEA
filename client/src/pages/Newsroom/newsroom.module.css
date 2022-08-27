@@ -3,6 +3,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .text {
@@ -39,6 +41,7 @@
   transition: 1s;
 }
 .box img:hover {
+  filter: brightness(90%);
   transform: scale(1.2);
 }
 
