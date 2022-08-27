@@ -15,10 +15,10 @@ const AboutPage = () => {
       <img src={batary} alt="batary" className={s.batary} />
       <div className={s.containerInfo}>
         <About />
-        <hr />
-        <div className={s.RightContainer}>
-          <Title name={"About ISEA"} />
-          {/* <Menu>
+        {/* <hr /> */}
+        {/* <div className={s.RightContainer}>
+          <Menu>
+            <Title name={"About ISEA"} />
             <Router name={"About ISEA"} route={"/about"} />
             <Router name={"Contact"} route={"/contact"} />
             <Router name={"History"} route={"/abo"} />
@@ -27,8 +27,8 @@ const AboutPage = () => {
             <Router name={"Official Documents"} route={"/ac"} />
             <Router name={"Senior Management"} route={"/abodut"} />
             <Router name={"Statute, Vision & Mission"} route={"/asbout"} />
-          </Menu> */}
-        </div>
+          </Menu>
+        </div> */}
       </div>
     </div>
   );

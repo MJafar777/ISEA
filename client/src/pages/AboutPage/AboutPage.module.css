@@ -5,7 +5,7 @@
 }
 
 .leftContainer {
-  width: 60%;
+  width: 100%;
   font-size: 16px;
   color: #328fbb;
   font-weight: bold;
@@ -34,4 +34,10 @@ hr {
   height: 50vh;
   object-fit: cover;
   margin: 0 auto 4rem;
+}
+@media (max-width: 450px) {
+  .leftContainer p {
+    font-size: 16px;
+    margin-top: -2rem;
+  }
 }
