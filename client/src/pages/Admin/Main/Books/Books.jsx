@@ -1,14 +1,12 @@
 import React from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
-import { AiFillDelete } from "react-icons/ai";
-import { BsFillPencilFill } from "react-icons/bs";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addBook } from "../../../../store/bookSlice";
 import s from "./books.module.css";
 import { BooksGet } from "../../../../store/bookSlice";
-import images from "../../../../img/Publications/1.jpg";
+import Book from "./Book/Book";
 
 export default function Books() {
   const titleRef = useRef();
@@ -57,11 +55,12 @@ export default function Books() {
     }
   };
 
-  const deleteHandler = () => {};
   useEffect(() => {
     dispatch(BooksGet());
   }, []);
+
   const books = useSelector((store) => store.books.books);
+  const status = useSelector((store) => store.books.status);
 
   return (
     <div className={s.container}>
@@ -98,34 +97,17 @@ export default function Books() {
             </div>
           </div>
         </form>
-        <div className={s.card}>
-          <div className={s.left}>
-            <div className={s.image}>
-              <img src={images} />
-            </div>
-            <div className={s.data}>
-              <div>
-                <h2 className={s.title}>Mamurjon kitob</h2>
-                <p className={s.text}>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Distinctio, repellendus laborum voluptatem ad quibusdam veniam
-                  aspernatur velit at omnis ipsum.
-                </p>
-              </div>
-              <div>
-                <p className={s.about}>12-03-2004 | fantastika | English</p>
-              </div>
-            </div>
-          </div>
-          <div className={s.editing}>
-            <div onClick={deleteHandler} className={s.delete}>
-              <AiFillDelete className={s.deleteIcon} />
-            </div>
-            <div className={s.edit}>
-              <BsFillPencilFill className={s.editIcon} />
-            </div>
-          </div>
-        </div>
+        {status === "resolved" &&
+          books.map((val) => {
+            return (
+              <Book
+                title={val.title}
+                text={val.sub_description}
+                category={val.category}
+                language={val.language}
+              />
+            );
+          })}
       </div>
     </div>
   );
