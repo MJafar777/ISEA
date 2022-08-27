@@ -6,8 +6,7 @@ export const BooksGet = createAsyncThunk(
   "books/BooksGet",
   async (_, { rejectWithValue }) => {
     try {
-      console.log(11);
-      const response = await axios.get(url + "/books?limit=6&sort=-1");
+      const response = await axios.get(url + "/books?limit=6&sort=-_id");
       console.log(response);
       return response.data;
     } catch (error) {
@@ -44,7 +43,6 @@ export const addBook = createAsyncThunk(
     },
     { rejectWithValue }
   ) => {
-    console.log(image, file);
     const response = await axios.post(
       url + "/books",
       {
