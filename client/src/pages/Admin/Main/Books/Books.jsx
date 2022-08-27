@@ -1,9 +1,11 @@
 import React from "react";
 import { useRef } from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addBook } from "../../../../store/bookSlice";
 import s from "./books.module.css";
+import {} from "../../../../store/bookSlice";
 
 export default function Books() {
   const titleRef = useRef();
@@ -52,6 +54,9 @@ export default function Books() {
     }
   };
 
+  useEffect(() => {
+    dispatch();
+  }, []);
   return (
     <div className={s.container}>
       <div className={s.header}>
@@ -61,8 +66,8 @@ export default function Books() {
         </div>
       </div>
       <div className={s.main}>
-        <h2>Add book</h2>
         <form className={s.form} style={style}>
+          <h2>Add book</h2>
           <input ref={titleRef} type="text" placeholder="Sarlavha" />
           <input ref={categoryRef} type="text" placeholder="category" />
           <input ref={publisherRef} type="text" placeholder="publisher" />
@@ -81,7 +86,11 @@ export default function Books() {
           <button onClick={submitHandler}>submit</button>
         </form>
         <div className={s.card}>
-          <div></div>
+          <div className={s.left}>
+            <div className={s.image}>
+              <img src="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
