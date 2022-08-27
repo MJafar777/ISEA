@@ -1,11 +1,13 @@
 import React from "react";
 import { useRef } from "react";
 import { useEffect } from "react";
+import { AiFillDelete } from "react-icons/ai";
+import { BsFillPencilFill } from "react-icons/bs";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addBook } from "../../../../store/bookSlice";
 import s from "./books.module.css";
-import {} from "../../../../store/bookSlice";
+import { BooksGet } from "../../../../store/bookSlice";
 
 export default function Books() {
   const titleRef = useRef();
@@ -54,9 +56,12 @@ export default function Books() {
     }
   };
 
+  const deleteHandler = () => {};
   useEffect(() => {
-    dispatch();
+    dispatch(BooksGet());
   }, []);
+  const books = useSelector((store) => store.books.books);
+
   return (
     <div className={s.container}>
       <div className={s.header}>
@@ -89,6 +94,19 @@ export default function Books() {
           <div className={s.left}>
             <div className={s.image}>
               <img src="" />
+            </div>
+            <div>
+              <h2>Mamurjon kitob</h2>
+              <h3>Fantastika</h3>
+              <p>12-03-2004</p>
+            </div>
+          </div>
+          <div className={s.editing}>
+            <div onClick={deleteHandler} className={s.delete}>
+              <AiFillDelete className={s.deleteIcon} />
+            </div>
+            <div className={s.edit}>
+              <BsFillPencilFill className={s.editIcon} />
             </div>
           </div>
         </div>

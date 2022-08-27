@@ -27,3 +27,32 @@
   opacity: 0;
   transition: all 0.5s;
 }
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(40, 40, 40, 0.486);
+}
+
+.deleteIcon {
+  font-size: 24px;
+  color: #fff;
+}
+
+.editIcon {
+  font-size: 24px;
+  color: #fff;
+}
+
+.editing {
+  display: flex;
+  opacity: 0;
+  gap: 20px;
+}
+
+.card:hover .editing {
+  opacity: 1;
+}
