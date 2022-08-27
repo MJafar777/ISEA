@@ -83,6 +83,20 @@
 .renewables:hover .dropdownChild {
   display: block;
 }
+.topParent {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+.topParent img {
+  transition: all 1s;
+  width: 16px;
+  margin-left: -0.7rem;
+  transform: rotateX(180deg);
+}
+.topParent:hover img {
+  transform: rotateX(0);
+}
 /* dropdown finished */
 
 @keyframes logo {

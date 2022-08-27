@@ -46,6 +46,10 @@ import InstitutionalStructure from "./pages/AboutPage/InstitutionalStructure/Ins
 import IseaMembership from "./pages/AboutPage/IseaMembership/IseaMembership";
 import OfficialDocuments from "./pages/AboutPage/OfficialDocuments/OfficialDocuments";
 import { useDispatch } from "react-redux";
+
+import PressCenter from "./pages/PressCenter/PressCenter";
+import Announcement from "./pages/Announcement/Announcement";
+
 import OneNews from "./pages/Newsroom/OneNew/OneNews";
 
 const App = () => {
@@ -61,6 +65,7 @@ const App = () => {
           <span>Сайт находится в тестовом режиме !</span>
         </Marquee>
       </div> */}
+
 
       <Header />
 
@@ -124,6 +129,12 @@ const App = () => {
           {/* ---------------------------- */}
 
           <Route path="/publications" element={<Publication />} />
+
+          {/* ---------------------------- */}
+          <Route path="/press-center" element={<PressCenter />} />
+
+          {/* ---------------------------- */}
+          <Route path="/Announcement" element={<Announcement />} />
 
           {/* ---------------------------- */}
 

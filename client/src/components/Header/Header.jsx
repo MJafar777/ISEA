@@ -10,6 +10,8 @@ import Router from "../../components/Router/Router";
 import { useEffect } from "react";
 import { checkMe } from "../../store/authSlice";
 
+import top from "../../img/icons/chevron-top.svg";
+
 const Header = () => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -29,10 +31,15 @@ const Header = () => {
         <div className={s.links}>
           <div className={s.menuIcon}>
             <div className={s.renewables}>
-              <Navbar className={s.acardion} name="ABOUT▼" route={"/about"} />
+              <div className={s.topParent}>
+                <Navbar className={s.acardion} name="ABOUT" route={"/about"} />
+                <img src={top} className="bottomTop" alt="top" />
+              </div>
               <div className={s.dropdownChild}>
                 <Router name={"About ISEA"} route={"/about"} />
                 <Router name={"Contact"} route={"/contact"} />
+                <Router name={"OURWORK"} route={"/ourwork"} />
+
                 <Router name={"History"} route={"/history"} />
                 <Router
                   name={"Institutional Structure"}
@@ -47,13 +54,16 @@ const Header = () => {
                 {/* <Router name={"Statute, Vision & Mission"} route={"/asbout"} /> */}
               </div>
             </div>
-            <Navbar name="NEWS" route={"/news"} />
+
             <div className={s.renewables}>
-              <Navbar
-                className={dropdown}
-                name="RENEWABLES▼"
-                route={"/renewables"}
-              />
+              <div className={s.topParent}>
+                <Navbar
+                  className={dropdown}
+                  name="RENEWABLES"
+                  route={"/renewables"}
+                />
+                <img src={top} className="bottomTop" alt="top" />
+              </div>
               <div className={s.dropdownChild}>
                 <Router name={"BENEFITS"} route={"/benefits"} />
                 <Router name={"CLIMATE CHANGE"} route={"/climate-change"} />
@@ -73,6 +83,7 @@ const Header = () => {
                   name={"INNOVATION & TECHNOLOGY"}
                   route={"/innovation-technology"}
                 />
+                <Router name={"Announcement"} route={"/Announcement"} />
                 <Router
                   name={"OFF-GRID FOR ENERGY ACCESS"}
                   route={"/off-grid"}
@@ -88,7 +99,17 @@ const Header = () => {
               </div>
             </div>
 
-            <Navbar className={s.acardion} name="OURWORK" route={"/ourwork"} />
+            {/* <Navbar className={s.acardion1} name="OURWORK" route={"/ourwork"} /> */}
+
+            <div className={s.topParent}>
+              <Navbar
+                className={s.acardion1}
+                name="PRESS-CENTER"
+                route={"/press-center"}
+              />
+              <img src={top} className="bottomTop" alt="" />
+            </div>
+            <Navbar name="NEWS" route={"/news"} />
             <Navbar name="PUBLICATIONS" route={"/publications"} />
             <Navbar name="EDUCATION" route={"/education"} />
             <Navbar name="ENGINEERING" route={"/engineering"} />
