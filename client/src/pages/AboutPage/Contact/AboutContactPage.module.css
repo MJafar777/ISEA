@@ -95,6 +95,33 @@ hr {
     width: 80%;
   }
 }
+@media (max-width: 892px) {
+  .team {
+    width: 25rem !important;
+  }
+  .titleTeam div {
+    width: 60%;
+    margin: 0 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .titleTeam {
+    display: block;
+    margin-bottom: 4rem;
+  }
+
+  .titleTeam img {
+    width: 90% !important;
+    height: 40vh;
+    margin-bottom: 4rem;
+    display: block !important;
+    margin: 0 auto;
+  }
+  .titleTeam div {
+    width: 100%;
+    margin: 0 1rem;
+  }
+}
 @media (max-width: 680px) {
   .contactTitle {
     display: grid;
@@ -108,8 +135,14 @@ hr {
   .contactTitleChild h2 {
     width: 80%;
   }
+  .titleTeam img {
+    height: 35vh;
+  }
 }
 @media (max-width: 450px) {
+  .titleTeam img {
+    height: 25vh;
+  }
   .contactTitle {
     display: grid;
     grid-template-columns: 1fr;
