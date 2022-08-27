@@ -73,6 +73,24 @@ export const usersAdd = createAsyncThunk(
   }
 );
 
+export const updateImage = createAsyncThunk(
+  "users/updateImage",
+  async ({ file }, { rejectWithValue }) => {
+    try {
+      const token = localStorage.getItem("userToken");
+      console.log(token, file);
+      const response = await axios.post(
+        url + "/users/upload",
+        { photo: file, token },
+        { headers: { "content-type": "multipart/form-data" } }
+      );
+      return response.data;
+    } catch (e) {
+      return rejectWithValue(e.message);
+    }
+  }
+);
+
 const usersSlice = createSlice({
   name: "users",
   initialState: {
@@ -115,6 +133,19 @@ const usersSlice = createSlice({
     [usersDelete.pending]: (state, action) => {
       state.error = null;
       state.status = "loading";
+    },
+    [updateImage.fulfilled]: (state, action) => {
+      state.user = action.payload.user;
+      state.error = null;
+      state.status = "resolved";
+    },
+    [usersDelete.pending]: (state, action) => {
+      state.error = null;
+      state.status = "loading";
+    },
+    [usersAdd.rejected]: (state, action) => {
+      state.status = "failed";
+      state.error = action.payload;
     },
   },
 });
