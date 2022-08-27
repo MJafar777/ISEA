@@ -52,86 +52,51 @@ const signUp = async (req, res, next) => {
       message: "Emailingizga kod jo'natildi",
     });
   } catch (e) {
-    res.status(400).json({ status: "failed" });
+    res.status(400).json({ message: e.message });
   }
 };
 
-const verify = async (req, res, next) => {
+const register = async (req, res, next) => {
   try {
-    const { token } = req.body;
-    console.log(token);
-
     const getCode = await jwt.verify(
-      req.body?.token,
+      req.body.token,
       process.env.JWT_SECRET_KEY
     );
 
     const user = await Code.findById(getCode.id);
 
-    if (!user) {
-      return next(new AppError("User has not defined", 400));
-    }
+    // if (!user.verified) {
+    //   return next(
+    //     new AppError(
+    //       "Siz verificationdan otmagansiz.Iltimos verificationdan oting !",
+    //       404
+    //     )
+    //   );
+    // }
 
-    console.log(user);
+    const newUser = await User.create({
+      name: req.body.name,
+      surname: req.body.surname,
+      name_of_father: req.body.name_of_father,
+      gender: req.body.gender,
+      email: user.email_or_phone,
+      password: req.body.password,
+      passwordConfirm: req.body.passwordConfirm,
+      role: req.body.role,
+    });
 
-    if (!(user.code == req.body.code && user.expired_date > Date.now())) {
-      return next(
-        new AppError("Your code is invalid or your code has expired date", 400)
-      );
-    }
-
-    user.verified = true;
-    user.save();
+    const token = createTokenAfterEntering(newUser._id);
 
     res.status(200).json({
       status: "success",
-      message: "Email tasdiqlandi",
+      token: token,
+      message: "Siz muvaffaqiyatli royhatdan otdingiz",
+      data: newUser,
     });
   } catch (e) {
-    res.status(400).json({ status: "failed", message: e.message });
+    console.log(e.message);
   }
 };
-
-const register = catchErrLittle(async (req, res, next) => {
-  // console.log(req.file);
-  // console.log(req.body);
-
-  console.log(req.body);
-
-  const getCode = await jwt.verify(req.body.token, process.env.JWT_SECRET_KEY);
-  console.log(getCode);
-  const user = await Code.findById(getCode.id);
-  console.log(user);
-
-  // if (!user.verified) {
-  //   return next(
-  //     new AppError(
-  //       "Siz verificationdan otmagansiz.Iltimos verificationdan oting !",
-  //       404
-  //     )
-  //   );
-  // }
-
-  const newUser = await User.create({
-    name: req.body.name,
-    surname: req.body.surname,
-    name_of_father: req.body.name_of_father,
-    gender: req.body.gender,
-    email: user.email_or_phone,
-    password: req.body.password,
-    passwordConfirm: req.body.passwordConfirm,
-    role: req.body.role,
-  });
-
-  const token = createTokenAfterEntering(newUser._id);
-
-  res.status(200).json({
-    status: "success",
-    token: token,
-    message: "Siz muvaffaqiyatli royhatdan otdingiz",
-    data: newUser,
-  });
-});
 
 const login = catchErrLittle(async (req, res, next) => {
   // 1.Email bilan password borligini tekshirish
@@ -186,4 +151,4 @@ const login = catchErrLittle(async (req, res, next) => {
   next();
 });
 
-module.exports = { signUp, verify, register, login };
+module.exports = { signUp, register, login };

@@ -9,7 +9,7 @@ export default function Newsroom() {
       <div className={s.news}>
         <div className={s.box1 + " " + s.box}>
           <img src={image1} alt="" />
-          <a href="1">
+          <a href="news/1">
             <div className={s.bottom}>
               <div className={s.text}>
                 <p>22:10 18.05.2022</p>
