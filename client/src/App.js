@@ -45,6 +45,7 @@ import History from "./pages/AboutPage/History/History";
 import InstitutionalStructure from "./pages/AboutPage/InstitutionalStructure/InstitutionalStructure";
 import IseaMembership from "./pages/AboutPage/IseaMembership/IseaMembership";
 import OfficialDocuments from "./pages/AboutPage/OfficialDocuments/OfficialDocuments";
+import { useDispatch } from "react-redux";
 
 const App = () => {
   return (
@@ -162,7 +163,7 @@ const App = () => {
           <Route path={"/myProjects"} element={<MyProjects />} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

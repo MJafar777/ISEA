@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import {
   AiFillBook,
   AiFillProfile,
@@ -6,19 +7,36 @@ import {
   AiFillAlert,
   AiFillSetting,
 } from "react-icons/ai";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { checkMe } from "../../../store/authSlice";
 import s from "../admin.module.css";
 
 export default function Sidebar() {
-  const role = useSelector((store) => store.auth.user.role);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    console.log(11);
+    dispatch(checkMe());
+  }, []);
 
-  //  const role = "admin";
+  const role = useSelector((store) => store.auth.user?.role) || "user";
+
   return (
     <>
       <nav className={s.sidebar}>
         {role === "admin" ? (
           <>
+            <h1 className={s.title}>User</h1>
+            <ul className={s.items}>
+              <NavLink to={"/me"}>
+                <AiFillSetting className={s.icon} />
+                <li className={s.item}>Settings</li>
+              </NavLink>
+              <NavLink to={"/me#myproject"}>
+                <AiFillProject className={s.icon} />
+                <li className={s.item}>My Projects</li>
+              </NavLink>
+            </ul>
             <h1 className={s.title}>Admin</h1>
             <ul className={s.items}>
               <NavLink to={"/me#users"}>
@@ -41,6 +59,7 @@ export default function Sidebar() {
           </>
         ) : (
           <>
+            {" "}
             <h1 className={s.title}>User</h1>
             <ul className={s.items}>
               <NavLink to={"/me"}>

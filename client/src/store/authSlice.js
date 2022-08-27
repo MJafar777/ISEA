@@ -69,6 +69,15 @@ export const loginSlice = createAsyncThunk(
   }
 );
 
+export const checkMe = createAsyncThunk(
+  "users/checkMe",
+  async (_, { rejectwithValue }) => {
+    const token = localStorage.getItem("userToken");
+    const response = await axios.post(url + "/users/checkMe", { token });
+    return response.data;
+  }
+);
+
 const authSlice = createSlice({
   name: "auth",
   initialState: {
@@ -117,6 +126,16 @@ const authSlice = createSlice({
       localStorage.setItem("userToken", action.payload.token);
     },
     [loginSlice.rejected]: errorFunc,
+    [checkMe.fulfilled]: (store, action) => {
+      store.user = action.payload.user;
+      store.isAuth = true;
+      store.status = "resolved";
+    },
+    [checkMe.rejected]: errorFunc,
+    [checkMe.pending]: (store, action) => {
+      store.status = "loading";
+      store.error = null;
+    },
   },
 });
 
