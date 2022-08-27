@@ -47,10 +47,10 @@ import IseaMembership from "./pages/AboutPage/IseaMembership/IseaMembership";
 import OfficialDocuments from "./pages/AboutPage/OfficialDocuments/OfficialDocuments";
 import { useDispatch } from "react-redux";
 
-import PressCenter from "./pages/PressCenter/PressCenter";
 import Announcement from "./pages/Announcement/Announcement";
 
 import OneNews from "./pages/Newsroom/OneNew/OneNews";
+import IseaLiderShip from "./pages/IseaLiderShip/IseaLiderShip";
 
 const App = () => {
   return (
@@ -66,8 +66,7 @@ const App = () => {
         </Marquee>
       </div> */}
 
-
-      <Header />
+      {/* <Header /> */}
 
       <main className="main">
         <Routes>
@@ -77,6 +76,7 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
 
           {/* about page child comonents started */}
+          <Route path="/isea-leadership" element={<IseaLiderShip />} />
           <Route path="/contact" element={<AboutContactPage />} />
           <Route path="/history" element={<History />} />
           <Route
@@ -129,9 +129,6 @@ const App = () => {
           {/* ---------------------------- */}
 
           <Route path="/publications" element={<Publication />} />
-
-          {/* ---------------------------- */}
-          <Route path="/press-center" element={<PressCenter />} />
 
           {/* ---------------------------- */}
           <Route path="/Announcement" element={<Announcement />} />
