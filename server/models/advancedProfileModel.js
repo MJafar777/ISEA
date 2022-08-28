@@ -9,24 +9,17 @@ const advancedProfileScheme = new mongoose.Schema(
     type_of_activity: {
       type: String,
       required: true,
-      enum: [
-        "businessman",
-        "farmer",
-        "state authorities",
-        "student",
-        "pensioner",
-        "other",
-      ],
+      enum: ["Businessman", "Farmer", "Student", "Pensioner", "Other"],
     },
     academic_degree: {
       type: String,
       required: true,
-      enum: ["candidate of science", "doctor of science", "not"],
+      enum: ["Candidate", "Doctor", "none"],
     },
     degree: {
       type: String,
       required: true,
-      enum: ["middle degree", "high degree", "none"],
+      enum: ["middle", "high", "none"],
     },
     work_place: {
       type: String,
