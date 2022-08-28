@@ -61,8 +61,9 @@ const Header = () => {
                 <Navbar
                   className={dropdown}
                   name="RENEWABLES"
-                  route={"/renewables"}
+                  route={"/benefits"}
                 />
+
                 <img src={top} className="bottomTop" alt="top" />
               </div>
               <div className={s.dropdownChild}>

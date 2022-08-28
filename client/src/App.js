@@ -12,7 +12,7 @@ import Publication from "./pages/Publication/Publication";
 import Education from "./pages/Education/Education";
 import Engineering from "./pages/Engineering/Engineering";
 import Project from "./pages/Project/Project";
-import Renewables from "./pages/Renewables/Renewables";
+// import Renewables from "./pages/Renewables/Renewables";
 import "./pages/Renewables/renewables.module.css";
 import PublicationBook from "./pages/Publication/PublicationBook/PublicationBook";
 // import Slider from "./components/Slider/Slider";
