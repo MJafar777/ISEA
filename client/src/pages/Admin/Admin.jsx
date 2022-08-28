@@ -10,6 +10,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import { updateImage } from "../../store/usersSlice";
 import { checkMe } from "../../store/authSlice";
 import MyProjects from "./Main/MyProjects/MyProjects";
+import AdvancedSettings from "./Main/AdvancedSettings/AdvancedSettings";
 
 export default function Admin() {
   const navigate = useLocation();
@@ -33,6 +34,8 @@ export default function Admin() {
           <Projects />
         ) : navigate.hash === "#myproject" ? (
           <MyProjects />
+        ) : navigate.hash == "#advanced_settings" ? (
+          <AdvancedSettings />
         ) : (
           <>
             <form>
