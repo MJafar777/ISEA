@@ -7,7 +7,7 @@ const Shablon = ({ imgUrl, title = "", content = "" }) => {
     <div className="container">
       <div className={s.cardInfo}>
         <div className={s.info}>
-          <img src={imgUrl} alt="imgUrl" />
+          <img className={s.images} src={imgUrl} alt="imgUrl" />
           <div className={a.content}>
             <h3>{title}</h3>
             <p>{content}</p>

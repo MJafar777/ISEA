@@ -7,9 +7,9 @@
 .cardInfo {
   display: grid;
   gap: 4rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: flex-start;
+  grid-template-columns: 1fr;
 }
+
 .info h3 {
   font-size: 24px;
   text-align: center;
@@ -33,4 +33,36 @@
 }
 .info {
   margin-bottom: 2rem;
+}
+@media (max-width: 700px) {
+  .images {
+    height: 40vh;
+  }
+  .content h3 {
+    font-size: 20px;
+  }
+  .content p {
+    font-size: 16px;
+  }
+  .info {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 638px) {
+  .images {
+    height: 40vh;
+  }
+  .content h3 {
+    font-size: 20px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .info {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
 }
