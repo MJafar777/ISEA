@@ -28,7 +28,7 @@ export default function Sidebar() {
           <>
             <h1 className={s.title}>User</h1>
             <ul className={s.items}>
-              <NavLink to={"/me"}>
+              <NavLink to={"/me#advanced_settings"}>
                 <AiFillSetting className={s.icon} />
                 <li className={s.item}>Settings</li>
               </NavLink>
