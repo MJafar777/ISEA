@@ -4,10 +4,9 @@ import { url } from "../configs/config";
 
 export const GetNews = createAsyncThunk(
   "news/GetNews",
-  async ({}, { rejectWithValue }) => {
+  async (_, { rejectWithValue }) => {
     try {
       const response = await axios.get(url + "/news");
-      console.log(response.data);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.message);
@@ -27,6 +26,18 @@ export const AddNews = createAsyncThunk(
         { title, photo: image, category, description, publisher },
         { headers: { "content-type": "multipart/form-data" } }
       );
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.message);
+    }
+  }
+);
+
+export const GetOne = createAsyncThunk(
+  "news/GetOne",
+  async ({ id }, { rejectWithValue }) => {
+    try {
+      const response = await axios.get(url + "/news/" + id);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.message);
@@ -61,13 +72,20 @@ const newsSlice = createSlice({
     },
     [GetNews.pending]: pending,
     [GetNews.rejected]: rejected,
+    [AddNews.fulfilled]: (store, action) => {
+      store.status = "resolved";
+      store.error = null;
+    },
+    [AddNews.pending]: pending,
+    [AddNews.rejected]: rejected,
+    [GetOne.fulfilled]: (store, action) => {
+      store.oneNews = action.payload.data;
+      store.status = "resolved";
+      store.error = null;
+    },
+    [GetOne.rejected]: rejected,
+    [GetOne.pending]: pending,
   },
-  [AddNews.fulfilled]: (store, action) => {
-    store.status = "resolved";
-    store.error = null;
-  },
-  [AddNews.pending]: pending,
-  [AddNews.rejected]: rejected,
 });
 
 export default newsSlice.reducer;

@@ -83,3 +83,8 @@
   font-size: 1.6rem;
   line-height: 1.6;
 }
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
