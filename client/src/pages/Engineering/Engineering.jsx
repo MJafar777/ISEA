@@ -30,7 +30,7 @@ const Engineering = () => {
 
   return (
     <>
-      <div>
+      <div className={a.parnet}>
         <div className={a.background}>
           <div className={Component}>
             <h1 className={a.titleH1}>THE ENGINEERING organisation</h1>
