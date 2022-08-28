@@ -1,5 +1,4 @@
-import React from "react";
-import Date from "../../components/Date/Date";
+import React, { useEffect } from "react";
 import Search from "../../components/Search/Search";
 import Title from "../../components/Title/Title";
 import s from "./publication.module.css";
@@ -8,19 +7,49 @@ import Menu from "../../components/Menu/Menu";
 import Router from "../../components/Router/Router";
 import PublicationImage from "./PublicationImage/PublicationImage";
 import image from "../../img/Publications/2.jpg";
+import { useDispatch, useSelector } from "react-redux";
+import { BooksGet } from "../../store/bookSlice";
 
 export default function Publication() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(BooksGet());
+  }, []);
+  const books = useSelector((store) => store.books.books);
+
   return (
     <div className="container">
       <Search placeholder={"search publications"} />
       <Title name={"Latest Publications"} />
       <div className={s.latest}>
-        <PublicationCard />
-        <PublicationCard />
+        {books?.map((val, key) => {
+          if (key < 2) {
+            return (
+              <PublicationCard
+                key={key}
+                title={val.title}
+                category={val.category}
+                sub_title={val.sub_description}
+                language={val.language}
+                image={val.bookImage}
+                id={val._id}
+              />
+            );
+          }
+        })}
+
+        {/* <PublicationCard /> */}
       </div>
       <Title name={"Featured Publications"} />
       <div className={s.featured}>
-        <PublicationCard />
+        <PublicationCard
+          title={books[0].title}
+          category={books[0].category}
+          sub_title={books[0].sub_description}
+          language={books[0].language}
+          image={books[0].bookImage}
+          id={books[0]._id}
+        />
         <Menu title={"Browse by topic"}>
           <Router route={"/benefits"} name={"Benefits"} />
           <Router route={"/benefits"} name={"Costs"} />

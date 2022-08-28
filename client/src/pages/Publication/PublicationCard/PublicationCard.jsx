@@ -2,24 +2,25 @@ import React from "react";
 import Date from "../../../components/Date/Date";
 import PublicationImage from "../PublicationImage/PublicationImage";
 import s from "./publicationcard.module.css";
-import image from "../../../img/Publications/1.jpg";
 import { NavLink } from "react-router-dom";
 
-export default function PublicationCard() {
+export default function PublicationCard({
+  id,
+  language,
+  title,
+  sub_title,
+  category,
+  image,
+}) {
   return (
     <div className={s.container}>
-      <PublicationImage image={image} />
+      <PublicationImage image={"http://localhost:8000/img/books/" + image} />
       <div className={s.info}>
-        <NavLink to={"/publications/1"}>
-          <h2 className={s.info}>Title</h2>
+        <NavLink to={"/publications/" + id}>
+          <h2 className={s.info}>{title}</h2>
         </NavLink>
-        <p className={s.inform}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
-          repellendus, sapiente quo inventore error voluptatem, dolorem, id eos
-          impedit consequuntur nisi provident veniam blanditiis dolore quam?
-          Pariatur sapiente non rerum?
-        </p>
-        <Date lang={"english"} date={"March 2004"} category={"Benefits"} />
+        <p className={s.inform}>{sub_title}</p>
+        <Date lang={language} date={"March 2004"} category={category} />
       </div>
     </div>
   );
