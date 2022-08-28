@@ -21,7 +21,7 @@
   border-radius: 5px;
 }
 .form {
-  display: grid;
+  display: none;
   justify-content: center;
   gap: 2rem;
   margin: 4rem 0;
