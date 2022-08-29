@@ -44,17 +44,17 @@ nav {
   transition: all 1s !important;
   animation-name: menu;
   animation-duration: 1s;
-
-  /* z-index: -1; */
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
 }
 @keyframes menu {
   0% {
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 0.7s ease-in-out;
   }
   100% {
     transform: translateX(0%);
-    transition: all 1s;
+    transition: all 0.7s ease-out;
   }
 }
 
