@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { GetNews } from "../../store/newsSlice";
 import NewsCard from "./NewsCard/NewsCard";
+import { NavLink } from "react-router-dom";
 
 export default function Newsroom() {
   const dispatch = useDispatch();
@@ -17,22 +18,22 @@ export default function Newsroom() {
     <div className="container">
       <div className={s.news}>
         {news && (
-          <div className={s.box1 + " " + s.box}>
+          <NavLink to={"/news/1"} className={s.box1 + " " + s.box}>
             <img
               src={"http://localhost:8000/img/news/" + news[0]?.photo}
               alt={news[0]?.title}
             />
-            <a href="news/1">
+            <div>
               <div className={s.bottom}>
                 <div className={s.text}>
-                  <p>J22:10 18.05.2022</p>
+                  <p>22:10 18.05.2022</p>
                 </div>
                 <div className={s.subTitle}>
                   <h1>{news[0]?.title}</h1>
                 </div>
               </div>
-            </a>
-          </div>
+            </div>
+          </NavLink>
         )}
         {news.map((val, key) => (
           <NewsCard

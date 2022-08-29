@@ -66,10 +66,13 @@
   font-size: 1.2rem;
 }
 .one {
-  margin: 4rem 4rem;
+  margin: 4rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
+}
+.box1 {
+  border: 2px solid black;
 }
 .oneTitle {
   font-size: 2rem;
@@ -87,4 +90,29 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media (max-width: 1033px) {
+  .one {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .leftSide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 575px) {
+  .one {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .leftSide {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
 }

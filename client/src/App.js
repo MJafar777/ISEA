@@ -124,7 +124,7 @@ const App = () => {
           {/* ---------------------------- */}
 
           <Route path="/news" element={<Newsroom />} />
-          <Route path="/news/:id" element={<OneNews />} />
+          <Route path="news/:id" element={<OneNews />} />
 
           {/* ---------------------------- */}
 
