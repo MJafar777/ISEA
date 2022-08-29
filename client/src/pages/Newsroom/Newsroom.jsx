@@ -25,7 +25,7 @@ export default function Newsroom() {
             <a href="news/1">
               <div className={s.bottom}>
                 <div className={s.text}>
-                  <p>22:10 18.05.2022</p>
+                  <p>J22:10 18.05.2022</p>
                 </div>
                 <div className={s.subTitle}>
                   <h1>{news[0]?.title}</h1>
