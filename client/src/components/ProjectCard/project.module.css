@@ -40,3 +40,46 @@
   font-size: 1.4rem;
   color: rgb(223, 171, 171);
 }
+
+@media (max-width: 800px) {
+  .btn {
+    font-size: 16px !important;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .desc {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 750px) {
+  .btn {
+    font-size: 20px !important;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .desc {
+    font-size: 16px;
+  }
+}
+@media (max-width: 549px) {
+  .main {
+    bottom: -7rem;
+  }
+}
+@media (max-width: 437px) {
+  .main {
+    bottom: -5rem;
+  }
+  .btn {
+    font-size: 16px !important;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .desc {
+    font-size: 12px;
+  }
+}
