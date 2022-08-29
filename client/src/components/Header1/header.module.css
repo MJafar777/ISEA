@@ -1,3 +1,10 @@
+.menuParent {
+  display: flex;
+  justify-content: space-between !important;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +12,8 @@
 }
 
 .navMenu {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
 }
 
@@ -36,9 +44,14 @@
   justify-content: space-between;
   padding: 0 24px;
 }
+.headerWidth {
+  display: grid;
+}
 .menuIcon {
   margin-left: 3rem;
-  display: flex;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .lang {
@@ -110,11 +123,6 @@
 .topParent:hover img {
   transform: rotateX(0);
 }
-/* dropdown finished */
-
-/* hamburger */
-
-/* hamburger */
 
 @keyframes logo {
   0% {

@@ -51,6 +51,7 @@ import Announcement from "./pages/Announcement/Announcement";
 
 import OneNews from "./pages/Newsroom/OneNew/OneNews";
 import IseaLiderShip from "./pages/IseaLiderShip/IseaLiderShip";
+import Header1 from "./components/Header1/Header1";
 
 const App = () => {
   return (
@@ -66,7 +67,8 @@ const App = () => {
         </Marquee>
       </div> */}
 
-      <Header />
+      {/* <Header /> */}
+      <Header1 />
 
       <main className="main">
         <Routes>
