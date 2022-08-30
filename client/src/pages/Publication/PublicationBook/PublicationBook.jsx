@@ -7,6 +7,7 @@ import Review from "../../../components/Review/Review";
 import { GetOneBook } from "../../../store/bookSlice";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import Loading from "../../../components/Loading/Loading";
 
 export default function PublicationBook({ name, isbn }) {
   const container = s.content + " " + "container";
@@ -16,7 +17,6 @@ export default function PublicationBook({ name, isbn }) {
     dispatch(GetOneBook({ id }));
   }, []);
 
-  const books = useSelector((store) => store.books.books);
   const book = useSelector((store) => store.books.book);
   const status = useSelector((store) => store.books.status);
 
@@ -24,7 +24,7 @@ export default function PublicationBook({ name, isbn }) {
     <div className={container}>
       <div>
         <Title name={name} />
-        {book && (
+        {status === "resolved" ? (
           <div className={s.book}>
             <div>
               <PublicationImage
@@ -32,21 +32,24 @@ export default function PublicationBook({ name, isbn }) {
               />
               <p className={s.date}>{Date.now(book.createdAt)}</p>
               <form action="/" method="post">
-                <button type="submit">
-                  <a
-                    href={
-                      "http://localhost:8000/api/v1/books/download/" + book.book
-                    }
-                  >
-                    Download
-                  </a>
-                </button>
+                <a
+                  className="btn"
+                  href={
+                    "http://localhost:8000/api/v1/books/download/" + book.book
+                  }
+                >
+                  Download
+                </a>
               </form>
             </div>
             <div>
               <h2 className={s.title}>{book.title}</h2>
               <p className={s.text}>{book.description}</p>
             </div>
+          </div>
+        ) : (
+          <div className="load">
+            <Loading color={"#fff"} width={"60px"} heigth={"60px"} />
           </div>
         )}
       </div>
