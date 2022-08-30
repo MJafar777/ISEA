@@ -43,6 +43,7 @@ import OneNews from "./pages/Newsroom/OneNew/OneNews";
 import IseaLiderShip from "./pages/IseaLiderShip/IseaLiderShip";
 import Header1 from "./components/Header1/Header1";
 import { checkMe } from "./store/authSlice";
+import OneLidership from "./pages/IseaLiderShip/OneLidership/OneLidership";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -74,6 +75,7 @@ const App = () => {
 
           {/* about page child comonents started */}
           <Route path="/isea-leadership" element={<IseaLiderShip />} />
+          <Route path="/isea-leadership/:id" element={<OneLidership />} />
           <Route path="/contact" element={<AboutContactPage />} />
           <Route path="/history" element={<History />} />
           <Route
