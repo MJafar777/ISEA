@@ -3,7 +3,8 @@
   margin: 1.5rem 0;
   font-weight: 600;
   text-decoration: none;
-  color: #0073ab;
+  /* color: #0073ab; */
+  color: var(--color-primary);
   user-select: none;
   font-size: 14px !important;
 }
@@ -13,3 +14,4 @@
   text-decoration: underline;
   text-decoration-color: black;
 }
+
