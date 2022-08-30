@@ -43,6 +43,20 @@ const Header1 = () => {
       </NavLink>
       <div className={s.headerWidth} style={{ width: "50%", height: "10vh" }}>
         <nav>
+          <div className={s.profile}>
+            {isAuth ? (
+              <Profile />
+            ) : (
+              <div className={s.register}>
+                <NavLink className={s.registerChild} to={"/login"}>
+                  Login
+                </NavLink>
+                <NavLink className={s.registerChild} to={"/register"}>
+                  Register
+                </NavLink>
+              </div>
+            )}
+          </div>
           <div className="burger-menu" onClick={updateMenu}>
             <div className={burger_class}></div>
             <div className={burger_class}></div>
@@ -52,18 +66,55 @@ const Header1 = () => {
 
         <div className={menu_class}>
           <div className={s.navMenu}>
-            <div className={s.profile}>
-              {isAuth ? (
-                <Profile />
-              ) : (
-                <>
-                  <NavLink to={"/login"}>Login</NavLink>
-                  <NavLink to={"/register"}>Register</NavLink>
-                </>
-              )}
-            </div>
             <div className={s.links}>
               <div className={s.menuIcon}>
+                <Navbar name="HOME" route={"/"} />
+
+                <div className={s.renewables}>
+                  <div className={s.topParent}>
+                    <Navbar
+                      className={dropdown}
+                      name="RENEWABLES"
+                      route={"/benefits"}
+                    />
+
+                    <img src={top} className="bottomTop" alt="top" />
+                  </div>
+                  <div className={s.dropdownChild + " " + s.firstDropChild}>
+                    <Router name={"BENEFITS"} route={"/benefits"} />
+                    <Router name={"CLIMATE CHANGE"} route={"/climate-change"} />
+                    <Router
+                      name={"ENERGY TRANSITION"}
+                      route={"/energy-transition"}
+                    />
+                    <Router
+                      name={"FINANCE & INVESTMENT"}
+                      route={"/finance-and-investment"}
+                    />
+                    <Router
+                      name={"BENEFITSHEATING & COOLING"}
+                      route={"/benefitsheating-and-cooling"}
+                    />
+                    <Router
+                      name={"INNOVATION & TECHNOLOGY"}
+                      route={"/innovation-technology"}
+                    />
+                    <Router name={"Announcement"} route={"/Announcement"} />
+                    <Router
+                      name={"OFF-GRID FOR ENERGY ACCESS"}
+                      route={"/off-grid"}
+                    />
+                    <Router name={"POLICY"} route={"/policy"} />
+                    <Router
+                      name={"INDUCTRY & TRANSPORT"}
+                      route={"/inductry-transport"}
+                    />
+                    <Router name={"COSTS"} route={"/costs"} />
+                    <Router name={"ISLANDS"} route={"/islands"} />
+                    <Router name={"POWER"} route={"/power"} />
+                  </div>
+                </div>
+
                 <div className={s.renewables}>
                   <div className={s.topParent}>
                     <Navbar
@@ -97,51 +148,6 @@ const Header1 = () => {
                     />
                     {/* <Router name={"Senior Management"} route={"/abodut"} /> */}
                     {/* <Router name={"Statute, Vision & Mission"} route={"/asbout"} /> */}
-                  </div>
-                </div>
-
-                <div className={s.renewables}>
-                  <div className={s.topParent}>
-                    <Navbar
-                      className={dropdown}
-                      name="RENEWABLES"
-                      route={"/benefits"}
-                    />
-
-                    <img src={top} className="bottomTop" alt="top" />
-                  </div>
-                  <div className={s.dropdownChild}>
-                    <Router name={"BENEFITS"} route={"/benefits"} />
-                    <Router name={"CLIMATE CHANGE"} route={"/climate-change"} />
-                    <Router
-                      name={"ENERGY TRANSITION"}
-                      route={"/energy-transition"}
-                    />
-                    <Router
-                      name={"FINANCE & INVESTMENT"}
-                      route={"/finance-and-investment"}
-                    />
-                    <Router
-                      name={"BENEFITSHEATING & COOLING"}
-                      route={"/benefitsheating-and-cooling"}
-                    />
-                    <Router
-                      name={"INNOVATION & TECHNOLOGY"}
-                      route={"/innovation-technology"}
-                    />
-                    <Router name={"Announcement"} route={"/Announcement"} />
-                    <Router
-                      name={"OFF-GRID FOR ENERGY ACCESS"}
-                      route={"/off-grid"}
-                    />
-                    <Router name={"POLICY"} route={"/policy"} />
-                    <Router
-                      name={"INDUCTRY & TRANSPORT"}
-                      route={"/inductry-transport"}
-                    />
-                    <Router name={"COSTS"} route={"/costs"} />
-                    <Router name={"ISLANDS"} route={"/islands"} />
-                    <Router name={"POWER"} route={"/power"} />
                   </div>
                 </div>
 

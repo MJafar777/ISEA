@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 .link {
-  z-index: 200;
+  margin-left: 10%;
 }
 .navMenu {
   display: grid;
@@ -48,10 +48,11 @@
   display: grid;
 }
 .menuIcon {
-  margin-left: 3rem;
+  margin-top: -11rem;
+  margin-left: 4rem;
   display: grid;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: 1fr;
+  text-align: left;
 }
 
 .lang {
@@ -70,7 +71,7 @@
 }
 .links {
   display: flex;
-  align-items: center;
+  height: 45vh;
 }
 .bottom {
   width: 10rem;
@@ -90,18 +91,24 @@
 /* dropdown started */
 .renewables {
   position: relative;
+  left: 0;
 }
 .dropdownChild {
   transition: all 1s;
   width: 20rem;
   z-index: 10;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
   background-color: #fff;
   position: absolute;
   overflow: hidden;
   display: none;
-  margin-left: -3rem;
+  margin-left: 8rem;
+  margin-top: -8rem;
   border-bottom: 3px solid var(--color-primary);
+}
+.firstDropChild {
+  margin-top: -12rem !important;
+  margin-left: 13rem;
 }
 .dropdownChild:hover {
   color: #0073ab;
@@ -112,17 +119,30 @@
 .topParent {
   display: flex;
   align-items: center;
-  margin: 0 0.5rem;
 }
 .topParent img {
   transition: all 1s;
   width: 16px;
   margin-left: -0.7rem;
-  transform: rotateX(180deg);
+  transform: rotate(90deg);
 }
 .topParent:hover img {
-  transform: rotateX(0);
+  transform: rotate(-90deg);
 }
+
+/* registers */
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 4rem;
+  padding: 1rem;
+  margin-left: 0rem;
+}
+.registerChild {
+  margin: 1rem;
+}
+/* registers */
 
 @keyframes logo {
   0% {
