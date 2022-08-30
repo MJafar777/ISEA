@@ -61,10 +61,10 @@ export const loginSlice = createAsyncThunk(
         email,
         password,
       });
-      console.log(response.data);
       return response.data;
     } catch (error) {
-      return rejectWithValue(error.message);
+      console.log(error?.response.data.message);
+      return rejectWithValue(error?.response?.data?.message);
     }
   }
 );
@@ -83,6 +83,7 @@ export const logout = createAsyncThunk("auth/logout", async () => {
   localStorage.removeItem("token");
   return {};
 });
+
 const authSlice = createSlice({
   name: "auth",
   initialState: {
@@ -136,7 +137,9 @@ const authSlice = createSlice({
       store.isAuth = true;
       store.status = "resolved";
     },
-    [checkMe.rejected]: errorFunc,
+    [checkMe.rejected]: (store, action) => {
+      store.error = null;
+    },
     [checkMe.pending]: (store, action) => {
       store.status = "loading";
       store.error = null;

@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 60px;
-
 }
 
 .content {
@@ -40,4 +39,13 @@
   color: #fff;
   border-radius: 5px;
   background-color: var(--color-primary);
+}
+
+.error {
+  background: rgba(255, 0, 0, 0.377);
+  padding: 10px;
+}
+
+.red {
+  color: rgb(230, 39, 39);
 }
