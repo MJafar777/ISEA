@@ -78,6 +78,11 @@ export const checkMe = createAsyncThunk(
   }
 );
 
+export const logout = createAsyncThunk("auth/logout", async () => {
+  localStorage.removeItem("userToken");
+  localStorage.removeItem("token");
+  return {};
+});
 const authSlice = createSlice({
   name: "auth",
   initialState: {
@@ -135,6 +140,15 @@ const authSlice = createSlice({
     [checkMe.pending]: (store, action) => {
       store.status = "loading";
       store.error = null;
+    },
+    [logout.pending]: (store, action) => {
+      store.status = "loading";
+      store.error = null;
+    },
+    [logout.fulfilled]: (store, action) => {
+      store.status = "resolved";
+      store.isAuth = false;
+      store.isVerify = false;
     },
   },
 });
