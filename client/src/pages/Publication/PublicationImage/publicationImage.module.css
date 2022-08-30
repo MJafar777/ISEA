@@ -2,3 +2,9 @@
   height: 280px;
   width: 200px;
 }
+
+.image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
