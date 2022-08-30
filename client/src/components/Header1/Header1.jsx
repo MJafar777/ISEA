@@ -34,7 +34,7 @@ const Header1 = () => {
   }, []);
   const container = s.header + " " + "container";
   const dropdown = s.acardion + " " + "dropdown";
-
+  const status = useSelector((store) => store.auth.status);
   const isAuth = useSelector((store) => store.auth.isAuth);
   return (
     <div className={s.menuParent}>
@@ -46,6 +46,8 @@ const Header1 = () => {
           <div className={s.profile}>
             {isAuth ? (
               <Profile />
+            ) : status === "loading" ? (
+              ""
             ) : (
               <div className={s.register}>
                 <NavLink className={s.registerChild} to={"/login"}>

@@ -9,18 +9,10 @@ import {
 } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { checkMe } from "../../../store/authSlice";
 import s from "../admin.module.css";
 
 export default function Sidebar() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    console.log(11);
-    dispatch(checkMe());
-  }, []);
-
   const role = useSelector((store) => store.auth.user?.role) || "user";
-
   return (
     <>
       <nav className={s.sidebar}>

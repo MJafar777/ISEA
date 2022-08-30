@@ -13,10 +13,6 @@ import { checkMe } from "../../store/authSlice";
 import top from "../../img/icons/chevron-top.svg";
 
 const Header = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(checkMe());
-  }, []);
   const container = s.header + " " + "container";
   const dropdown = s.acardion + " " + "dropdown";
 
