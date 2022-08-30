@@ -5,7 +5,7 @@
 :root {
   /* --color-primary: #0073ab; */
   --color-primary: #104cad;
-  --color-secondary: ##328fbb;
+  --color-secondary: #328fbb;
   --color-gray: #777777;
   --color-green: #22c55e;
 }
@@ -94,4 +94,13 @@ ul {
 .testSite span {
   margin: 0 30rem;
   background-color: yellow;
+}
+
+.load {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

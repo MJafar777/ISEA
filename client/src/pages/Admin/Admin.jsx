@@ -8,18 +8,21 @@ import Projects from "./Main/Projects/Projects";
 import News from "./Main/News/News";
 import Sidebar from "./Sidebar/Sidebar";
 import { updateImage } from "../../store/usersSlice";
-import { checkMe } from "../../store/authSlice";
 import MyProjects from "./Main/MyProjects/MyProjects";
 import AdvancedSettings from "./Main/AdvancedSettings/AdvancedSettings";
+import { checkMe } from "../../store/authSlice";
 
 export default function Admin() {
   const navigate = useLocation();
   const dispatch = useDispatch();
+
   const [image, setImage] = React.useState("");
   const updateHandler = (e) => {
     e.preventDefault();
     dispatch(updateImage({ file: image }));
+    dispatch(checkMe());
   };
+
   return (
     <div className={s.container}>
       <Sidebar />
@@ -34,10 +37,9 @@ export default function Admin() {
           <Projects />
         ) : navigate.hash === "#myproject" ? (
           <MyProjects />
-        ) : navigate.hash == "#advanced_settings" ? (
-          <AdvancedSettings />
         ) : (
           <>
+            <AdvancedSettings />
             <form>
               <input
                 type="file"

@@ -9,18 +9,16 @@ import {
 } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { checkMe } from "../../../store/authSlice";
 import s from "../admin.module.css";
+import { logout } from "../../../store/authSlice";
 
 export default function Sidebar() {
   const dispatch = useDispatch();
-  useEffect(() => {
-    console.log(11);
-    dispatch(checkMe());
-  }, []);
+  const logoutHandler = (e) => {
+    dispatch(logout());
+  };
 
   const role = useSelector((store) => store.auth.user?.role) || "user";
-
   return (
     <>
       <nav className={s.sidebar}>
@@ -36,6 +34,11 @@ export default function Sidebar() {
                 <AiFillProject className={s.icon} />
                 <li className={s.item}>My Projects</li>
               </NavLink>
+              <div className={s.logout}>
+                <NavLink className={s.item} to="/login" onClick={logoutHandler}>
+                  Logout
+                </NavLink>
+              </div>
             </ul>
             <h1 className={s.title}>Admin</h1>
             <ul className={s.items}>
@@ -70,6 +73,11 @@ export default function Sidebar() {
                 <AiFillProject className={s.icon} />
                 <li className={s.item}>My Projects</li>
               </NavLink>
+              <div className={s.logout}>
+                <NavLink className={s.item} to="/login" onClick={logoutHandler}>
+                  Logout
+                </NavLink>
+              </div>
             </ul>
           </>
         )}

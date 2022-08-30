@@ -15,7 +15,11 @@
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.3.5",
     "react-icons": "^4.4.0",
+<<<<<<< HEAD
     "react-iframe": "^1.8.0",
+=======
+    "react-loading": "^2.0.3",
+>>>>>>> a0fce30fd634f25c0b195698fc999098525326a9
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",

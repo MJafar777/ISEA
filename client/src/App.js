@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header/Header";
 import Marquee from "react-fast-marquee";
 import { Routes, Route } from "react-router-dom";
@@ -12,11 +12,8 @@ import Publication from "./pages/Publication/Publication";
 import Education from "./pages/Education/Education";
 import Engineering from "./pages/Engineering/Engineering";
 import Project from "./pages/Project/Project";
-// import Renewables from "./pages/Renewables/Renewables";
 import "./pages/Renewables/renewables.module.css";
 import PublicationBook from "./pages/Publication/PublicationBook/PublicationBook";
-// import Slider from "./components/Slider/Slider";
-// import Benefits from "./components/RenewablesComponents/ShablonRenewables/Shablon";
 import Register from "./pages/Register/Register";
 import Signup from "./pages/Signup/Signup";
 import Benefitsheating from "./components/RenewablesComponents/BENEFITSHEATING-COOLING/Benefitsheating";
@@ -35,25 +32,24 @@ import Login from "./pages/Login/Login";
 import Shablon2 from "./components/EngineeringComponents/Shablon2/Shablon2";
 import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
 import MyProjects from "./pages/MyProjects/MyProjects";
-
 import OneProject from "./pages/OneProject/OneProject";
-
-// import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
-// import Benefits from "./components/RenewablesComponents/Benefits/Benefits";
-
 import History from "./pages/AboutPage/History/History";
 import InstitutionalStructure from "./pages/AboutPage/InstitutionalStructure/InstitutionalStructure";
 import IseaMembership from "./pages/AboutPage/IseaMembership/IseaMembership";
 import OfficialDocuments from "./pages/AboutPage/OfficialDocuments/OfficialDocuments";
 import { useDispatch } from "react-redux";
-
 import Announcement from "./pages/Announcement/Announcement";
-
 import OneNews from "./pages/Newsroom/OneNew/OneNews";
 import IseaLiderShip from "./pages/IseaLiderShip/IseaLiderShip";
 import Header1 from "./components/Header1/Header1";
+import { checkMe } from "./store/authSlice";
+import OneLidership from "./pages/IseaLiderShip/OneLidership/OneLidership";
 
 const App = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(checkMe());
+  }, []);
   return (
     <>
       {/* <div className="testing">
@@ -79,6 +75,7 @@ const App = () => {
 
           {/* about page child comonents started */}
           <Route path="/isea-leadership" element={<IseaLiderShip />} />
+          <Route path="/isea-leadership/:id" element={<OneLidership />} />
           <Route path="/contact" element={<AboutContactPage />} />
           <Route path="/history" element={<History />} />
           <Route

@@ -19,6 +19,8 @@
 
 .image {
   object-fit: cover;
+  width: 200px;
+  height: 280px;
 }
 @media (max-width: 1092px) {
   .container {
