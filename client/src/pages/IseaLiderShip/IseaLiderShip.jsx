@@ -4,7 +4,7 @@ import s from "./iseaLiderShip.module.css";
 import img1 from "../../img/ISEA_Lidership/niyozbek.png";
 import img2 from "../../img/ISEA_Lidership/jafar.PNG";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 
 const IseaLiderShip = () => {
   return (
@@ -18,14 +18,14 @@ const IseaLiderShip = () => {
         <div className={s.it}>
           <div className={s.member}>
             <NavLink to="/isea-leadership/1">
-              <img src={img1} alt="member" />
+              <img src={img2} alt="member" />
               <h1 className={s.memberName}>Member name goes here</h1>
               <h2 className={s.memberPosition}>Member position goes here</h2>
             </NavLink>
           </div>
           <div className={s.member}>
             <NavLink to="/isea-leadership/2">
-              <img src={img2} alt="member" />
+              <img src={img1} alt="member" />
               <h1 className={s.memberName}>Member name goes here</h1>
               <h2 className={s.memberPosition}>Member position goes here</h2>
             </NavLink>
