@@ -3,7 +3,8 @@ import s from "./oneLidership.module.css";
 
 import img from "../../../img/ISEA_Lidership/jafar.PNG";
 
-const OneLidership = function () {
+const OneLidership = function (props) {
+  console.log(props.obj);
   return (
     <>
       <div className={s.big}>

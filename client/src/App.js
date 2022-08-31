@@ -45,6 +45,27 @@ import Header1 from "./components/Header1/Header1";
 import { checkMe } from "./store/authSlice";
 import OneLidership from "./pages/IseaLiderShip/OneLidership/OneLidership";
 
+const obj = [
+  {
+    id: 1,
+    name: "Jafar Mirzaraximov",
+    status: "Team Leader",
+    about: "Jafar",
+  },
+  {
+    id: 2,
+    name: "Niyozbek Polatov",
+    status: "Full-Stack Developer",
+    about: "Niyozbek",
+  },
+  {
+    id: 3,
+    name: "Mamurjon Ibragimov",
+    status: "Full-Stack Developer",
+    about: "Mamurjon",
+  },
+];
+
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -75,7 +96,10 @@ const App = () => {
 
           {/* about page child comonents started */}
           <Route path="/isea-leadership" element={<IseaLiderShip />} />
-          <Route path="/isea-leadership/:id" element={<OneLidership />} />
+          <Route
+            path="/isea-leadership/:id"
+            element={<OneLidership obj={obj} />}
+          />
           <Route path="/contact" element={<AboutContactPage />} />
           <Route path="/history" element={<History />} />
           <Route
