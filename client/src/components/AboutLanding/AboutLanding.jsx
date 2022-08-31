@@ -6,15 +6,28 @@ import image1 from "../../img/hero-Slider/2.jpg";
 
 import image2 from "../../img/hero-Slider/3.jpg";
 
+import img11 from "../../img/About/about isea/1.jpg";
+import img22 from "../../img/About/about isea/2.jpg";
+import img33 from "../../img/About/about isea/3.jpg";
+import img44 from "../../img/About/about isea/4.jpg";
+
 export default function AboutLanding() {
-  const text =
-    "With 168 Members, IRENA plays a leading role in the energy transformation as a centre of excellence for knowledge and innovation, a global voice for renewables, a network hub and a source of advice and support for countries.";
+  const text1 =
+    "With 168 Members, ISEA plays a leading role in the energy transformation as a centre of excellence for knowledge and innovation, a global voice for renewables, a network hub and a source of advice and support for countries.";
+  const text2 =
+    "As a part of its contribution to the Climate Investment Platform, ISEA invites financial institutions, development organisations and private investors prepared to support the realisation of projects and projects in need of support to register their interest.";
+  const text3 =
+    "With 168 Members, ISEA plays a leading role in the energy transformation as a centre of excellence for knowledge and innovation, a global voice for renewables, a network hub and a source of advice and support for countries.";
+  const text4 =
+    "As a part of its contribution to the Climate Investment Platform, ISEA invites financial institutions, development organisations and private investors prepared to support the realisation of projects and projects in need of support to register their interest.";
   return (
     <section className={s.container}>
       <Title className={s.title} name="About us" />
       <div className={s.content}>
-        <AboutLandingCard image={image1} text={text} />
-        <AboutLandingCard image={image2} text={text} />
+        <AboutLandingCard image={img11} text={text1} />
+        <AboutLandingCard image={img33} text={text2} />
+        <AboutLandingCard image={img22} text={text3} />
+        <AboutLandingCard image={img44} text={text4} />
       </div>
     </section>
   );
