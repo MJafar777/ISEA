@@ -10,6 +10,7 @@ import Topic from "../../components/Topics/Topic";
 import { useSelector, useDispatch } from "react-redux";
 import { BooksGet } from "../../store/bookSlice";
 import HeroSlider from "../../components/HeroSlider/HeroSlider";
+import HeaderVideo from "../../components/HeaderVideo/HeaderVideo";
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ const HomePage = () => {
 
   return (
     <main>
+      <HeaderVideo />
       <div className="container">
         {/* <HeroSlider /> */}
         <IntroLanding />

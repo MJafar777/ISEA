@@ -19,6 +19,7 @@ body {
   background-color: #f0f0f0;
   /* background-color: var(--color-secondary) !important; */
   margin: 0;
+  padding: 0;
   width: 100%;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;

@@ -3,11 +3,17 @@ import Title from "../Title/Title";
 import LeftSide from "./Left/LeftSide";
 import s from "./NewsLanding.module.css";
 import RightSide from "./Right/RightSide";
-import image from "../../img/New/1.jpg";
-import image1 from "../../img/New/2.png";
-import image2 from "../../img/New/3.jpg";
-import image3 from "../../img/New/4.jpg";
-import image4 from "../../img/New/5.jpg";
+// import image from "../../img/New/1.jpg";
+import image from "../../img/New/stalba.jpg";
+
+// import image1 from "../../img/New/2.png";
+// import image2 from "../../img/New/3.jpg";
+// import image3 from "../../img/New/4.jpg";
+// import image4 from "../../img/New/5.jpg";
+import image1 from "../../img/New/22.jpg";
+import image2 from "../../img/New/44.jpg";
+import image3 from "../../img/New/22.jpg";
+import image4 from "../../img/New/44.jpg";
 
 export default function NewsLanding({}) {
   return (
