@@ -34,6 +34,9 @@
   font-size: 2rem;
   color: #fff;
 }
+.title {
+  text-align: center;
+}
 @media (max-width: 768px) {
   .control_Slider {
     transform: scale(0.5);
