@@ -3,6 +3,12 @@ import s from "./companyMembers.module.css";
 import one from "../../img/CompanyMembers/1.jpg";
 import two from "../../img/CompanyMembers/2.jpg";
 import three from "../../img/CompanyMembers/3.jpg";
+import img11 from "../../img/OrganisationLogos/adliyaVazirligi.png";
+import img22 from "../../img/OrganisationLogos/niresUz.png";
+import img33 from "../../img/OrganisationLogos/SavdoSanoatPlatasi.png";
+import img44 from "../../img/OrganisationLogos/texUnver.png";
+import img55 from "../../img/OrganisationLogos/uzlidep.jpg";
+import img66 from "../../img/OrganisationLogos/fti.png";
 
 import React, { Component } from "react";
 import Slider from "react-slick";
@@ -61,23 +67,29 @@ export default class CompanyMembers extends Component {
       <div className={s.big}>
         <div className={"container"}>
           <Slider ref={(slider) => (this.slider = slider)} {...settings}>
-            <div>
-              <img src={one} alt="one" className={s.box} />
+            <div className={s.CompanyImgs}>
+              <img src={img11} alt="one" className={s.box} />
+              {/* <h2>tashkilot</h2> */}
             </div>
-            <div>
-              <img src={two} alt="one" className={s.box} />
+            <div className={s.CompanyImgs}>
+              <img src={img22} alt="one" className={s.box} />
+              {/* <h2>tashkilot</h2> */}
             </div>
-            <div>
-              <img src={three} alt="one" className={s.box} />
+            <div className={s.CompanyImgs}>
+              <img src={img33} alt="one" className={s.box} />
+              {/* <h2>tashkilot</h2> */}
             </div>
-            <div>
-              <img src={one} alt="one" className={s.box} />
+            <div className={s.CompanyImgs}>
+              <img src={img44} alt="one" className={s.box} />
+              {/* <h2>tashkilot</h2> */}
             </div>
-            <div>
-              <img src={two} alt="one" className={s.box} />
+            <div className={s.CompanyImgs}>
+              <img src={img55} alt="one" className={s.box} />
+              {/* <h2>tashkilot</h2> */}
             </div>
-            <div>
-              <img src={three} alt="one" className={s.box} />
+            <div className={s.CompanyImgs}>
+              <img src={img66} alt="one" className={s.box} />
+              {/* <h2>tashkilot</h2> */}
             </div>
           </Slider>
         </div>
