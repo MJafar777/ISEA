@@ -59,3 +59,12 @@
     width: 200%;
   }
 }
+.box {
+  height: 30vh;
+  width: 100%;
+  padding: 1rem;
+}
+.big {
+  padding: 5rem 0;
+  background-color: #98b2db;
+}
