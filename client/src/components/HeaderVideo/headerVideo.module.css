@@ -1,0 +1,44 @@
+#myVideo {
+  position: relative;
+  width: 100% !important;
+  object-fit: contain;
+
+  margin: 0;
+  padding: 0;
+  object-position: center;
+}
+
+.headerVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10%;
+  width: 100%;
+  margin-left: -0.5%;
+}
+.title {
+  font-size: 26px;
+}
+.content {
+  position: absolute;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 60%;
+  padding: 2rem;
+}
+.description {
+  font-size: 18px;
+}
+#myBtn {
+  font-size: 18px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
