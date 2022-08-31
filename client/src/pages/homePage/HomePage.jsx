@@ -27,7 +27,7 @@ const HomePage = () => {
         {/* <HeroSlider /> */}
         <IntroLanding />
         <AboutLanding />
-        {/* <NewsLanding /> */}
+        <NewsLanding />
       </div>
       <PublicationLanding />
       <CompanyMembers />
