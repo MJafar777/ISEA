@@ -41,7 +41,7 @@ const Header1 = () => {
       <NavLink className={s.link} to={"/"}>
         <img className={s.logo} src={logo} alt="logo" />
       </NavLink>
-      <div className={s.headerWidth} style={{ width: "50%", height: "10vh" }}>
+      <div className={s.headerWidth}>
         <nav>
           <div className={s.profile}>
             {isAuth ? (
