@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import image from "../../img/Projects/photo-02.jpg";
-
 import s from "./oneProject.module.css";
-
 import Review from "../../components/Review/Review";
+import { useParams } from "react-router-dom";
+import { getOneProject } from "../../store/projectSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const OneProject = function () {
+  const { id } = useParams();
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getOneProject({ id }));
+  }, []);
+  const project = useSelector((store) => store.projects.project);
+  console.log(project);
   return (
     <div className="container">
       <div className={s.oneProject}>
@@ -22,15 +30,8 @@ const OneProject = function () {
           </form>
         </div>
         <div className={s.project}>
-          <h1 className={s.pro_title}>Project title goes here</h1>
-          <p className={s.pro_des}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex
-            quaerat ut, dolores officiis soluta magnam aut iste commodi in,
-            quasi est culpa eius, sit non mollitia doloremque eligendi unde
-            aperiam aliquid esse voluptate error? Alias asperiores optio
-            eligendi quasi aut, laboriosam libero fugit? Odio accusamus saepe
-            blanditiis fugiat omnis.
-          </p>
+          <h1 className={s.pro_title}>{project.title}</h1>
+          <p className={s.pro_des}>{project.description}</p>
         </div>
         <Review />
       </div>

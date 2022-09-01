@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Search from "../../components/Search/Search";
-
 import s from "./myProjects.module.css";
 
 const MyProjects = function () {
