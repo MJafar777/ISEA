@@ -2,7 +2,7 @@ import React from "react";
 import s from "../books.module.css";
 import { AiFillDelete } from "react-icons/ai";
 import { BsFillPencilFill } from "react-icons/bs";
-import images from "../../../../../img/Publications/1.jpg";
+import images from "../../../../../img/Publications/1.avif";
 
 const Book = ({ title, text, category, language }) => {
   const deleteHandler = () => {};

@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./review.module.css";
-import userImage from "../../img/SignUp/75.jpg";
+import userImage from "../../img/SignUp/75.avif";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 

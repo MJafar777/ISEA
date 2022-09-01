@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import s from "./users.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-import image from "../../../../img/SignUp/75.jpg";
+import image from "../../../../img/SignUp/75.avif";
 import User from "./User/User";
 import { usersGet } from "../../../../store/usersSlice";
 import AddUser from "./AddUser/AddUser";

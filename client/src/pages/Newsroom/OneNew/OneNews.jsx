@@ -1,6 +1,4 @@
 import React from "react";
-import RightSide from "../../../components/NewsLanding/Right/RightSide";
-import image1 from "../../../img/News/download.jpg";
 import s from "./oneNews.module.css";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";

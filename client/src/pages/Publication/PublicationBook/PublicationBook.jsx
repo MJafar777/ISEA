@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import s from "./publicationBook.module.css";
 import Title from "../../../components/Title/Title";
 import PublicationImage from "../PublicationImage/PublicationImage";
-import image from "../../../img/Publications/3.jpg";
 import Review from "../../../components/Review/Review";
 import { GetOneBook } from "../../../store/bookSlice";
 import { useParams } from "react-router-dom";
