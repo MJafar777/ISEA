@@ -3,11 +3,10 @@
   width: 100%;
   height: 200px;
   overflow: hidden;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.376) 0 100%),
-    url("../../img//Projects/photo-02.jpg");
   background-size: cover;
   transition: 0.5s;
   cursor: pointer;
+  margin-top: 5%;
 }
 
 .main {

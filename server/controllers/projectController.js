@@ -1,5 +1,7 @@
 const Project = require("../models/projectModel");
 const AppError = require("../utility/appError");
+const jwt = require("jsonwebtoken");
+const User = require("../models/userModel");
 
 const {
   getAll,
@@ -18,7 +20,12 @@ const getAllProject = async (req, res, next) => {
 };
 
 const addProject = async (req, res, next) => {
-  console.log(req.files);
+  const { token } = req.body;
+  const userCheck = await jwt.verify(token, process.env.JWT_SECRET_KEY);
+  const user = await User.findById(userCheck.id);
+  if (!user) next(new AppError("Bunday user mavjud emas", 403));
+  if (!user.advanced) next(new AppError("Proyect qushish uchun", 404));
+
   const data = {
     title: req.body.title,
     description: req.body.description,

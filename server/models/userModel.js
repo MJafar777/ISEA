@@ -80,6 +80,10 @@ const userScheme = new mongoose.Schema(
       type: Date,
       default: null,
     },
+    advanced: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,

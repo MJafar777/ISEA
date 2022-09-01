@@ -1,12 +1,15 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import s from "../NewsLanding.module.css";
 
-export default function RightSide({ title, image, date }) {
+export default function RightSide({ title, image, date, id }) {
   return (
     <div className={s.grids}>
       <div className={s.contentLeft}>
         <div>
-          <h2 className={s.titleLeft}>{title}</h2>
+          <NavLink to={"/news/" + id} className={s.titleLeft}>
+            {title}
+          </NavLink>
           <p className={s.date}>{date}</p>
         </div>
         <div>

@@ -27,6 +27,16 @@
   transform: scale(1.05);
   transition: all 0.2s;
 }
+.CompanyImgs {
+  text-align: center;
+}
+.CompanyImgs h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.title {
+  text-align: center;
+}
 @media (max-width: 768px) {
   .control_Slider {
     transform: scale(0.5);
@@ -61,10 +71,12 @@
 }
 .box {
   height: 25vh;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   padding: 1rem;
 }
 .big {
   padding: 5rem 0;
-  background-color: #98b2db;
+  background-color: #98b2db93;
+  margin: 4rem 0;
 }
