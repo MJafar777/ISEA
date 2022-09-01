@@ -9,7 +9,7 @@
       rgba(54, 54, 66, 0.216) 100%,
       rgba(2, 0, 36, 1) 100%
     ),
-    url(../../img/hero-Slider/5.jpg);
+    url(../../img/hero-Slider/5.avif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,7 +35,7 @@
 .main2 {
   width: 100%;
   background-attachment: fixed;
-  background-image: url(../../img/hero-Slider/1.jpg);
+  background-image: url(../../img/hero-Slider/1.avif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
