@@ -6,7 +6,7 @@ import s from "./project.module.css";
 
 const Projects = function () {
   return (
-    <div className="container">
+    <div className={"container" + " " + s.top}>
       <Search placeholder="Search Your Projects..." />
       <div className={s.cards}>
         <ProjectCard />

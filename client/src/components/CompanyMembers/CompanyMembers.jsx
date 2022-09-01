@@ -69,6 +69,7 @@ export default class CompanyMembers extends Component {
         <div className={"container"}>
           <div className={s.title}>
             <Title name={"Our Partners"} />
+            
           </div>
           <Slider ref={(slider) => (this.slider = slider)} {...settings}>
             <div className={s.CompanyImgs}>

@@ -273,6 +273,9 @@
     font-size: 16px;
     padding: 1rem;
   }
+  .heroTitle {
+    transform: scale(0.8);
+  }
 }
 @media (max-width: 431px) {
   .card {
@@ -292,6 +295,9 @@
 @media (max-width: 350px) {
   .card_child {
     transform: scale(0.8);
+  }
+  .heroTitle {
+    margin-top: 5rem;
   }
 }
 @media (max-width: 310px) {

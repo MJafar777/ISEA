@@ -8,6 +8,7 @@
   background-size: cover;
   transition: 0.5s;
   cursor: pointer;
+  margin-top: 5%;
 }
 
 .main {
