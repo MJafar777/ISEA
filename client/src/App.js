@@ -48,7 +48,7 @@ import OneLidership from "./pages/IseaLiderShip/OneLidership/OneLidership";
 // ---- Lidership page niki teymela
 import img1 from "./img/ISEA_Lidership/jafar.PNG";
 import img2 from "./img/ISEA_Lidership/niyozbek.png";
-import img3 from "./img/ISEA_Lidership/jafar.PNG";
+import img3 from "./img/ISEA_Lidership/mamur.png";
 
 const obj = [
   {
@@ -56,21 +56,21 @@ const obj = [
     name: "Jafar Mirzaraximov",
     status: "Team Leader",
     about: "Jafar",
-    img: "jafar.PNG",
+    img: img1,
   },
   {
     id: 2,
     name: "Niyozbek Polatov",
     status: "Full-Stack Developer",
     about: "Niyozbek",
-    img: "niyozbek.png",
+    img: img2,
   },
   {
     id: 3,
     name: "Mamurjon Ibragimov",
     status: "Full-Stack Developer",
     about: "Mamurjon",
-    img: "jafar.PNG",
+    img: img3,
   },
 ];
 

@@ -2,31 +2,18 @@ import React, { useState, useEffect } from "react";
 import s from "./oneLidership.module.css";
 import { NavLink, useParams } from "react-router-dom";
 
-import img1 from "../../../img/ISEA_Lidership/jafar.PNG";
-import img2 from "../../../img/ISEA_Lidership/niyozbek.png";
-import img3 from "../../../img/ISEA_Lidership/jafar.PNG";
-
 const OneLidership = function (props) {
   let userId = useParams().id;
-  let arr = [img1, img2, img3];
+
+  // img larni arrayga olib keyin app.js dan props qilib berganman
+
   const [count, setCount] = useState("{}");
-  const [img, setImg] = useState("");
   useEffect(() => {
     props.obj.forEach((element) => {
       if (element.id == userId) {
         setCount(element);
       } else {
         return;
-      }
-    });
-    arr.forEach((arr) => {
-      let len = arr.split("/").length;
-      let img =
-        arr.split("/")[len - 1].split(".")[0] +
-        "." +
-        arr.split("/")[len - 1].split(".")[2];
-      if (count.img == img) {
-        setImg(arr);
       }
     });
   });
@@ -44,7 +31,7 @@ const OneLidership = function (props) {
             <p>{count.status}</p>
           </div>
           <div className={s.topBoxRight}>
-            <img src={img} alt="member" />
+            <img src={count.img} alt="member" />
           </div>
         </div>
         <div className={"container" + " " + s.info}>

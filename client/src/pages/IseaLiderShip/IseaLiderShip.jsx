@@ -3,6 +3,7 @@ import s from "./iseaLiderShip.module.css";
 
 import img1 from "../../img/ISEA_Lidership/niyozbek.png";
 import img2 from "../../img/ISEA_Lidership/jafar.PNG";
+import img3 from "../../img/ISEA_Lidership/mamur.png";
 
 import { NavLink, useParams } from "react-router-dom";
 
@@ -17,6 +18,13 @@ const IseaLiderShip = () => {
         <h1 className={s.title2}>IT Department</h1>
         <div className={s.it}>
           <div className={s.member}>
+            <NavLink to="/isea-leadership/3">
+              <img src={img3} alt="member" className={s.mamur} />
+              <h1 className={s.memberName}>Member name goes here</h1>
+              <h2 className={s.memberPosition}>Member position goes here</h2>
+            </NavLink>
+          </div>
+          <div className={s.member}>
             <NavLink to="/isea-leadership/1">
               <img src={img2} alt="member" />
               <h1 className={s.memberName}>Member name goes here</h1>
@@ -25,13 +33,6 @@ const IseaLiderShip = () => {
           </div>
           <div className={s.member}>
             <NavLink to="/isea-leadership/2">
-              <img src={img1} alt="member" />
-              <h1 className={s.memberName}>Member name goes here</h1>
-              <h2 className={s.memberPosition}>Member position goes here</h2>
-            </NavLink>
-          </div>
-          <div className={s.member}>
-            <NavLink to="/isea-leadership/3">
               <img src={img1} alt="member" />
               <h1 className={s.memberName}>Member name goes here</h1>
               <h2 className={s.memberPosition}>Member position goes here</h2>
