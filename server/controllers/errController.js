@@ -8,35 +8,17 @@ module.exports = (err, req, res, next) => {
   }
 
   if (process.env.NODE_ENV == "DEVELOPMENT") {
-    if (req.originalUrl.startsWith("/api/")) {
-      res.status(err.statusCode).json({
-        error: err,
-        status: err.status,
-        statusCode: err.statusCode,
-        message: err.message,
-        stack: err.stack,
-      });
-    } else {
-      res.status(404).render("error", { message: err.message });
-    }
-  } else {
     res.status(err.statusCode).json({
+      error: err,
       status: err.status,
+      statusCode: err.statusCode,
       message: err.message,
+      stack: err.stack,
     });
   }
   if (process.env.NODE_ENV == "PRODUCTION") {
-    if (req.originalUrl.startsWith("/api/")) {
-      res.status(err.statusCode).json({
-        error: err,
-        status: err.status,
-        message: err.message,
-      });
-    } else {
-      res.status(404).render("error", { message: "Please try again" });
-    }
-  } else {
     res.status(err.statusCode).json({
+      error: err,
       status: err.status,
       message: err.message,
     });

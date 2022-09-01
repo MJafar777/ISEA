@@ -116,7 +116,7 @@ const login = catchErrLittle(async (req, res, next) => {
 
   if (!user) {
     return next(
-      new AppError("Bunday user mavjud emas.Iltimos royhatdan oting")
+      new AppError("Bunday user mavjud emas.Iltimos royhatdan oting", 401)
     );
   }
 

@@ -1,0 +1,38 @@
+.topBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.topBoxRight img {
+  width: 70%;
+}
+.topBoxLeft h1 {
+  font-size: 3rem;
+}
+.topBoxLeft p {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.big {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  background-color: azure;
+}
+.title1 {
+  font-size: 2.4rem;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+}
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+.info p {
+  line-height: 1.6;
+}

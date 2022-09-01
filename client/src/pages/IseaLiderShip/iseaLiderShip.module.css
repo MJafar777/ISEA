@@ -1,0 +1,38 @@
+.liderShip {
+  margin-top: 15vh;
+}
+.title1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.row {
+  font-size: black;
+}
+.title2 {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.it {
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.member img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.member h1 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: blueviolet;
+}
+.member h2 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.member {
+  cursor: pointer;
+}

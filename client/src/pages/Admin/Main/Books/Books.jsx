@@ -7,6 +7,7 @@ import { addBook } from "../../../../store/bookSlice";
 import s from "./books.module.css";
 import { BooksGet } from "../../../../store/bookSlice";
 import Book from "./Book/Book";
+import Loading from "../../../../components/Loading/Loading";
 
 export default function Books() {
   const titleRef = useRef();
@@ -49,7 +50,12 @@ export default function Books() {
     setEvent(event ? false : true);
 
     if (!event) {
-      setStyle({ display: "block", transform: "translateY(0)", opacity: "1" });
+      setStyle({
+        display: "block",
+        transform: "translateY(0)",
+        opacity: "1",
+        width: "100%",
+      });
     } else {
       setStyle({});
     }
@@ -97,17 +103,27 @@ export default function Books() {
             </div>
           </div>
         </form>
-        {status === "resolved" &&
-          books.map((val) => {
+        {status === "resolved" ? (
+          books.map((val, key) => {
             return (
               <Book
+                key={key}
                 title={val.title}
                 text={val.sub_description}
                 category={val.category}
                 language={val.language}
               />
             );
-          })}
+          })
+        ) : (
+          <Loading
+            color={"#333"}
+            type={"cylon"}
+            width={"60px"}
+            heigth={"60px"}
+            classname={"load"}
+          />
+        )}
       </div>
     </div>
   );

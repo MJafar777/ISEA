@@ -12,6 +12,8 @@ export default function Login() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const isAuth = useSelector((store) => store.auth.isAuth);
+  const error = useSelector((store) => store.auth.error);
+  const status = useSelector((store) => store.auth.status);
 
   const handlerLogin = async (e) => {
     e.preventDefault();
@@ -28,6 +30,13 @@ export default function Login() {
   return (
     <div className={s.container}>
       <form className={s.content}>
+        {status === "rejected" ? (
+          <div className={s.error}>
+            <p className={s.red}>{error}</p>
+          </div>
+        ) : (
+          ""
+        )}
         <label className={s.label}>Email</label>
         <input
           className={s.input}

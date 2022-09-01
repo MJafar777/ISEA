@@ -36,10 +36,10 @@ app.use("/api/v1/advancedProfil", advancedProfil);
 app.use("/api/v1/projects", projectRouter);
 app.use("/api/v1/reviews", reviewRouter);
 
-// app.all("*", (req, res, next) => {
-//   return next(new AppError("This page has not defined", 404));
-// });
+app.all("*", (req, res, next) => {
+  return next(new AppError("This page has not defined", 404));
+});
 
-// app.use(errController);
+app.use(errController);
 
 module.exports = app;

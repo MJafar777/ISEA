@@ -33,11 +33,13 @@
 
 .form input {
   padding: 1rem;
+  width: 100%;
   border: 1px solid black;
   height: 100%;
 }
 
 .card {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,6 +72,7 @@
 }
 
 .form2 {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -132,4 +135,12 @@
 
 .title {
   font-size: 20px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }

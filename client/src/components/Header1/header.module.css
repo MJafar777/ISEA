@@ -1,0 +1,140 @@
+.menuParent {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 15px 0;
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 20;
+}
+.link {
+  width: 100%;
+  margin-left: 10%;
+}
+.navMenu {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+/* .main {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #f0f0f0;
+  background-color: #262626;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  z-index: 10;
+  top: 0;
+} */
+.header {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+.headerWidth {
+  display: grid;
+}
+.menuIcon {
+  margin-top: -11rem;
+  margin-left: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.lang {
+  width: 2rem;
+  display: inline-block;
+  color: #0073ab;
+}
+.selector {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.select {
+  margin-top: 0rem;
+  padding: 0;
+}
+.links {
+  display: flex;
+  height: 45vh;
+}
+.bottom {
+  width: 10rem;
+}
+
+.profile {
+  display: flex;
+  gap: 20px;
+}
+
+.profile a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: 16px;
+}
+
+/* dropdown started */
+.renewables {
+  position: relative;
+  left: 0;
+}
+.dropdownChild {
+  transition: all 1s;
+  width: 20rem;
+  z-index: 10;
+  padding: 0.5rem 3rem;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  margin-left: 8rem;
+  margin-top: -8rem;
+  border-bottom: 3px solid var(--color-primary);
+}
+.firstDropChild {
+  margin-top: -12rem !important;
+  margin-left: 13rem;
+}
+.dropdownChild:hover {
+  color: #0073ab;
+}
+.renewables:hover .dropdownChild {
+  display: block;
+}
+.topParent {
+  display: flex;
+  align-items: center;
+}
+.topParent img {
+  transition: all 1s;
+  width: 16px;
+  margin-left: -0.7rem;
+  transform: rotate(90deg);
+}
+.topParent:hover img {
+  transform: rotate(-90deg);
+}
+
+/* registers */
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 4rem;
+  padding: 1rem;
+  margin-left: 0rem;
+}
+.registerChild {
+  margin: 1rem;
+}
+/* registers */

@@ -1,17 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   width: 150px;
   cursor: pointer;
-  /* animation-name: logo;
+  animation-name: logo;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
 }
 
 .main {
   width: 100%;
   padding: 2rem 0;
-  background-color: white;
+  background-color: #f0f0f0;
+  /* background-color: #262626; */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
   position: sticky;
   z-index: 10;
@@ -22,6 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 24px;
 }
 .menuIcon {
   margin-left: 3rem;
@@ -99,19 +112,21 @@
 }
 /* dropdown finished */
 
+/* hamburger */
+
+/* hamburger */
+
 @keyframes logo {
   0% {
     opacity: 1;
-    transform: rotateY(360deg) scale(1.05);
+    transform: scale(1.02);
   }
   50% {
-    opacity: 0.5;
-    transform: rotateY(320deg);
-    transform: rotateZ(350deg);
+    opacity: 0.8;
+    transform: scale(1);
   }
   100% {
     opacity: 1;
-    box-shadow: 0 1.5px 3px 6px #0072ab70;
-    transform: rotateY(360deg) scale(1.05);
+    transform: scale(1.02);
   }
 }

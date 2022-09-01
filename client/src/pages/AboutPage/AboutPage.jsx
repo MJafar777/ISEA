@@ -3,6 +3,7 @@ import Title from "../../components/Title/Title";
 import s from "./AboutPage.module.css";
 import AboutContactPage from "./Contact/AboutContactPage";
 import batary from "../../img/hero-Slider/aboutAdd.jpg";
+import about from "../../img/About/about isea/628A3294.JPG";
 import About from "./About/About";
 import Router from "../../components/Router/Router";
 
@@ -12,7 +13,7 @@ const AboutPage = () => {
   return (
     <div className="container">
       <Title name={"About ISES"} />
-      <img src={batary} alt="batary" className={s.batary} />
+      <img src={about} alt="batary" className={s.batary} />
       <div className={s.containerInfo}>
         <About />
         {/* <hr /> */}

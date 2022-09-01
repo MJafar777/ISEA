@@ -14,7 +14,8 @@
 .cardLevel {
   margin: 0px;
   padding: 0;
-  background-color: #ff8302;
+  /* background-color: #ff8302; */
+  background-color: var(--color-secondary);
 }
 .cardLevel:hover {
   transform: scale(1.05);

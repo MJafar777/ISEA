@@ -78,7 +78,6 @@ export const updateImage = createAsyncThunk(
   async ({ file }, { rejectWithValue }) => {
     try {
       const token = localStorage.getItem("userToken");
-      console.log(token, file);
       const response = await axios.post(
         url + "/users/upload",
         { photo: file, token },
