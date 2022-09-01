@@ -1,14 +1,11 @@
 import s from "./companyMembers.module.css";
 
-import one from "../../img/CompanyMembers/1.jpg";
-import two from "../../img/CompanyMembers/2.jpg";
-import three from "../../img/CompanyMembers/3.jpg";
-import img11 from "../../img/OrganisationLogos/adliyaVazirligi.png";
-import img22 from "../../img/OrganisationLogos/niresUz.png";
-import img33 from "../../img/OrganisationLogos/SavdoSanoatPlatasi.png";
-import img44 from "../../img/OrganisationLogos/texUnver.png";
-import img55 from "../../img/OrganisationLogos/uzlidep.jpg";
-import img66 from "../../img/OrganisationLogos/fti.png";
+import img11 from "../../img/OrganisationLogos/adliyaVazirligi.avif";
+import img22 from "../../img/OrganisationLogos/niresUz.avif";
+import img33 from "../../img/OrganisationLogos/SavdoSanoatPlatasi.avif";
+import img44 from "../../img/OrganisationLogos/texUnver.avif";
+import img55 from "../../img/OrganisationLogos/uzlidep.avif";
+import img66 from "../../img/OrganisationLogos/fti.avif";
 
 import React, { Component } from "react";
 import Slider from "react-slick";
@@ -69,7 +66,6 @@ export default class CompanyMembers extends Component {
         <div className={"container"}>
           <div className={s.title}>
             <Title name={"Our Partners"} />
-            
           </div>
           <Slider ref={(slider) => (this.slider = slider)} {...settings}>
             <div className={s.CompanyImgs}>

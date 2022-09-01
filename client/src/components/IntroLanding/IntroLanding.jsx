@@ -2,14 +2,10 @@ import React from "react";
 
 import s from "./introLanding.module.css";
 
-// import img1 from "../../img/MainNew/EuroSun.jpg";
-import img1 from "../../img/introLanding/1.jpg";
-// import img2 from "../../img/MainNew/InCore.jpg";
-import img2 from "../../img/introLanding/2.jpg";
-// import img3 from "../../img/MainNew/photovoltaic.jpg";
-import img3 from "../../img/introLanding/3.jpg";
-// import img4 from "../../img/MainNew/SWC_YearOf.jpg";
-import img4 from "../../img/introLanding/4.jpg";
+import img1 from "../../img/introLanding/1.avif";
+import img2 from "../../img/introLanding/2.avif";
+import img3 from "../../img/introLanding/3.avif";
+import img4 from "../../img/introLanding/4.avif";
 
 const IntroLanding = () => {
   return (
