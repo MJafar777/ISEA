@@ -14,7 +14,7 @@ const Projects = function () {
   const projects = useSelector((store) => store.projects.projects);
 
   return (
-    <div className="container">
+    <div className={"container" + " " + s.top}>
       <Search placeholder="Search Your Projects..." />
       <div className={s.cards}>
         {projects.map((val, key) => {

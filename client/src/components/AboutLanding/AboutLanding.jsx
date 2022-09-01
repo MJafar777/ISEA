@@ -2,14 +2,11 @@ import React from "react";
 import Title from "../Title/Title.jsx";
 import s from "./AboutLanding.module.css";
 import AboutLandingCard from "./AboutLandingCard/AboutLandingCard";
-import image1 from "../../img/hero-Slider/2.jpg";
 
-import image2 from "../../img/hero-Slider/3.jpg";
-
-import img11 from "../../img/About/about isea/1.jpg";
-import img22 from "../../img/About/about isea/2.jpg";
-import img33 from "../../img/About/about isea/3.jpg";
-import img44 from "../../img/About/about isea/4.jpg";
+import img11 from "../../img/About/about-isea/1.avif";
+import img22 from "../../img/About/about-isea/2.avif";
+import img33 from "../../img/About/about-isea/3.avif";
+import img44 from "../../img/About/about-isea/4.avif";
 
 export default function AboutLanding() {
   const text1 =
