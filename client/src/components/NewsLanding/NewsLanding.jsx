@@ -3,12 +3,6 @@ import Title from "../Title/Title";
 import LeftSide from "./Left/LeftSide";
 import s from "./NewsLanding.module.css";
 import RightSide from "./Right/RightSide";
-<<<<<<< HEAD
-import image from "../../img/New/1.jpg";
-import image1 from "../../img/New/2.png";
-import image2 from "../../img/New/3.jpg";
-import image3 from "../../img/New/4.jpg";
-import image4 from "../../img/New/5.jpg";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { GetNews } from "../../store/newsSlice";
@@ -20,19 +14,6 @@ export default function NewsLanding() {
   }, []);
 
   const news = useSelector((store) => store.news.news);
-=======
-// import image from "../../img/New/1.jpg";
-import image from "../../img/New/stalba.jpg";
-
-// import image1 from "../../img/New/2.png";
-// import image2 from "../../img/New/3.jpg";
-// import image3 from "../../img/New/4.jpg";
-// import image4 from "../../img/New/5.jpg";
-import image1 from "../../img/New/22.jpg";
-import image2 from "../../img/New/44.jpg";
-import image3 from "../../img/New/22.jpg";
-import image4 from "../../img/New/44.jpg";
->>>>>>> 475e5a46d7eb6dcd9ff90ef35fce89d899145de8
 
   return (
     <div className={s.container}>
