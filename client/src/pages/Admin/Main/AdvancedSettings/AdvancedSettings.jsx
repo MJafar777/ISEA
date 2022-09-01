@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+
 import s from "./advanced.module.css";
 
 export default function AdvancedSettings() {
+  const cardNumRef = useRef();
+  const workPlaceRef = useRef();
+  const stirRef = useRef();
+  const positionRef = useRef();
+  const typeOfActivityRef = useRef();
+  const academicDegreeRef = useRef();
+  const degreeRef = useRef();
+
   return (
     <>
       <div className={s.header}>
@@ -11,7 +20,7 @@ export default function AdvancedSettings() {
         </div>
       </div>
       <div className={s.input}>
-        <form action="" className={s.form}>
+        <form className={s.form}>
           <input
             type="text"
             name="work_place"
