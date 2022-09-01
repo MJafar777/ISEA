@@ -8,33 +8,19 @@ import a from "./engineering.module.css";
 
 import Title from "../../components/Title/Title";
 
-// import img111 from "../../img/hero-Slider/3.jpg";
-// import img222 from "../../img/hero-Slider/4.jpg";
-// import img333 from "../../img/hero-Slider/5.jpg";
-// import img444 from "../../img/hero-Slider/6.jpg";
-import img11 from "../../img/factory/1.jpg";
-import img22 from "../../img/factory/2.jpg";
-import img33 from "../../img/factory/3.jpg";
-import img44 from "../../img/factory/4.jpg";
-import img55 from "../../img/factory/5.jpg";
-import img66 from "../../img/factory/6.jpg";
-import img77 from "../../img/factory/7.jpg";
-import img88 from "../../img/factory/8.jpg";
-import img99 from "../../img/factory/9.jpg";
-
 import img111 from "../../img/hero-Slider/3.avif";
 import img222 from "../../img/hero-Slider/4.avif";
 import img333 from "../../img/hero-Slider/5.avif";
 import img444 from "../../img/hero-Slider/6.avif";
-// import img11 from "../../img/factory/1.avif";
-// import img22 from "../../img/factory/2.avif";
-// import img33 from "../../img/factory/3.avif";
-// import img44 from "../../img/factory/4.avif";
-// import img55 from "../../img/factory/5.avif";
-// import img66 from "../../img/factory/6.avif";
-// import img77 from "../../img/factory/7.avif";
-// import img88 from "../../img/factory/8.avif";
-// import img99 from "../../img/factory/9.avif";
+import img11 from "../../img/factory/1.avif";
+import img22 from "../../img/factory/2.avif";
+import img33 from "../../img/factory/3.avif";
+import img44 from "../../img/factory/4.avif";
+import img55 from "../../img/factory/5.avif";
+import img66 from "../../img/factory/6.avif";
+import img77 from "../../img/factory/7.avif";
+import img88 from "../../img/factory/8.avif";
+import img99 from "../../img/factory/9.avif";
 
 const Engineering = () => {
   const Component = a.engineeringTitle + " " + "container";

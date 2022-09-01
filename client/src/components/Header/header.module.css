@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +23,6 @@
   width: 100%;
   padding: 2rem 0;
   background-color: #f0f0f0;
-  /* background-color: #262626; */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
   position: sticky;
   z-index: 10;
@@ -72,10 +71,10 @@
   text-decoration: none;
   color: darkblue;
   font-size: 16px;
-}
+} */
 
 /* dropdown started */
-.renewables {
+/* .renewables {
   position: relative;
 }
 .dropdownChild {
@@ -109,14 +108,14 @@
 }
 .topParent:hover img {
   transform: rotateX(0);
-}
+} */
 /* dropdown finished */
 
 /* hamburger */
 
 /* hamburger */
 
-@keyframes logo {
+/* @keyframes logo {
   0% {
     opacity: 1;
     transform: scale(1.02);
@@ -129,4 +128,4 @@
     opacity: 1;
     transform: scale(1.02);
   }
-}
+} */

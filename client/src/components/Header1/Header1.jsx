@@ -8,7 +8,7 @@ import s from "./header.module.css";
 import Profile from "../Profile/Profile";
 import Router from "../Router/Router";
 import top from "../../img/icons/chevron-top.svg";
-import logo from "../../img/Logo/neu.png";
+import logo from "../../img/Logo/neu.avif";
 
 const Header1 = () => {
   // to change burger classes
@@ -32,7 +32,6 @@ const Header1 = () => {
   useEffect(() => {
     dispatch(checkMe());
   }, []);
-  const container = s.header + " " + "container";
   const dropdown = s.acardion + " " + "dropdown";
   const status = useSelector((store) => store.auth.status);
   const isAuth = useSelector((store) => store.auth.isAuth);
