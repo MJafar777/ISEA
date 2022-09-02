@@ -1,40 +1,34 @@
-.cardInfos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin-bottom: 4rem;
-  justify-content: space-between;
+.benefits {
+  background-image: linear-gradient(to top, #328fbb, #f0f0f0);
+  padding: 2rem;
 }
-@media (max-width: 1130px) {
-  .cardInfos {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-@media (max-width: 632px) {
-  .cardInfos {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
 
-  .titleTop {
-    margin-left: 3rem;
-  }
+h1 {
+  font-size: 26px;
+  color: black;
+  margin-bottom: 1rem;
+  margin-top: -2rem !important;
 }
-@media (max-width: 632px) {
-  .titleTop {
-    margin-left: 0rem;
-  }
-  .cardInfos {
-    margin-left: -4rem;
-  }
+
+.contentCard h2 {
+  font-size: 24px;
+  margin: 2rem 0;
+  font-weight: 700;
+  color: black;
 }
-@media (max-width: 454px) {
-  .titleTop {
-    margin-left: -1rem;
-    font-size: 10px;
-  }
-  .cardInfos {
-    margin-left: -7rem;
-  }
+.cardChild h3 {
+  font-size: 22px;
+  width: 45%;
+  color: rgba(0, 0, 0, 0.849);
+}
+.cardChild img {
+  width: 50%;
+  height: 50vh;
+  border-radius: 1rem;
+}
+.cardChild {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
