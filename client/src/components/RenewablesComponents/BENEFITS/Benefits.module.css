@@ -2,7 +2,6 @@
   background-image: linear-gradient(to top, #328fbb, #f0f0f0);
   padding: 2rem;
 }
-
 h1 {
   font-size: 26px;
   color: black;
@@ -17,9 +16,8 @@ h1 {
   color: black;
 }
 .cardChild h3 {
-  font-size: 22px;
+  font-size: 20px;
   width: 45%;
-
   color: rgba(0, 0, 0, 0.849);
 }
 .cardChild img {
@@ -32,4 +30,88 @@ h1 {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+}
+.right1 {
+  display: none !important;
+}
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 24px;
+  }
+  .contentCard h2 {
+    font-size: 22px;
+  }
+  .cardChild h3 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1001px) {
+  .cardChild h3 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 843px) {
+  h1 {
+    font-size: 22px;
+  }
+  .contentCard h2 {
+    font-size: 20px;
+  }
+  .cardChild h3 {
+    font-size: 1.4rem;
+  }
+  .cardChild img {
+    display: block;
+    width: 30%;
+    height: 30vh;
+    margin: 1rem;
+  }
+  .cardChild {
+    display: block;
+  }
+  .right {
+    display: none !important;
+  }
+  .right1 {
+    display: block !important;
+    float: left;
+  }
+  .left {
+    float: left !important;
+  }
+
+  .cardChild h3 {
+    width: 100%;
+  }
+}
+@media (max-width: 676px) {
+  .right1,
+  .left {
+    width: 150px !important;
+  }
+}
+@media (max-width: 424px) {
+  .right1,
+  .left {
+    width: 150px !important;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .contentCard h2 {
+    font-size: 16px;
+  }
+  .cardChild h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 381px) {
+  .right1,
+  .left {
+    width: 100% !important;
+    margin-left: -0.3rem !important;
+  }
+  .cardChild {
+    display: grid;
+  }
 }

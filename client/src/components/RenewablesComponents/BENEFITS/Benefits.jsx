@@ -24,6 +24,8 @@ const Benefits = () => {
           <div className={s.contentCard}>
             <h2>Impact on the Environment</h2>
             <div className={s.cardChild}>
+              <img className={s.right1} src={img1} alt="img1" />
+
               <h3>
                 Solar energy has the least negative impact on the environment
                 compared to any other energy source. It does not produce
@@ -34,13 +36,13 @@ const Benefits = () => {
                 benefit, since a lot of solar installations are in urban areas,
                 such as domestic solar panels.
               </h3>
-              <img src={img1} alt="img1" />
+              <img className={s.right} src={img1} alt="img1" />
             </div>
           </div>
           <div className={s.contentCard}>
             <h2>Reduce Your Energy Bill</h2>
             <div className={s.cardChild}>
-              <img src={img2} alt="img1" />
+              <img className={s.left} src={img2} alt="img1" />
               <h3>
                 Generating your own electricity means that you will be using
                 less from the utility supplier. This will immediately translate
@@ -56,6 +58,7 @@ const Benefits = () => {
           <div className={s.contentCard}>
             <h2>Energy Production during Peak Hours</h2>
             <div className={s.cardChild}>
+              <img className={s.right1} src={img3} alt="img1" />
               <h3>
                 Energy demand tends to be higher in the 11:00-16:00 time frame
                 and then early in the evening. Naturally, this is the period
@@ -66,13 +69,13 @@ const Benefits = () => {
                 solar energy, prices in those time frames could be driven down
                 to a level close to those of night hours.
               </h3>
-              <img src={img3} alt="img1" />
+              <img className={s.right} src={img3} alt="img1" />
             </div>
           </div>
           <div className={s.contentCard}>
             <h2>Solar Energy Is Applicable Everywhere</h2>
             <div className={s.cardChild}>
-              <img src={img4} alt="img1" />
+              <img className={s.left} src={img4} alt="img1" />
               <h3>
                 As long as there is sunshine, solar energy can be deployed
                 anywhere. This is particularly useful for remote regions with no
@@ -87,6 +90,7 @@ const Benefits = () => {
           <div className={s.contentCard}>
             <h2>Less Electricity Lost During Long-Distance Transport</h2>
             <div className={s.cardChild}>
+              <img className={s.right1} src={img2} alt="img1" />
               <h3>
                 Some of the energy, around 3-5%, is lost during transportation
                 and distribution. The longer the distances between the
@@ -97,13 +101,13 @@ const Benefits = () => {
                 significantly reduces this distance, therefore increasing the
                 efficiency of the solar panels.
               </h3>
-              <img src={img2} alt="img1" />
+              <img className={s.right} src={img2} alt="img1" />
             </div>
           </div>
           <div className={s.contentCard}>
             <h2>Improves Grid Security</h2>
             <div className={s.cardChild}>
-              <img src={img3} alt="img1" />
+              <img className={s.left} src={img3} alt="img1" />
               <h3>
                 The grid is less vulnerable to blackouts if there are many power
                 plants which are spread out. A grid with high penetration of
@@ -116,6 +120,7 @@ const Benefits = () => {
           <div className={s.contentCard}>
             <h2>Job Creation</h2>
             <div className={s.cardChild}>
+              <img className={s.right1} src={img5} alt="img1" />
               <h3>
                 The are many advantages of solar energy, and another one is job
                 creation. Large part of the cost associated with solar systems
@@ -125,7 +130,7 @@ const Benefits = () => {
                 form and get free non-obligation quotes from trusted suppliers
                 in your region!
               </h3>
-              <img src={img5} alt="img1" />
+              <img className={s.right} src={img5} alt="img1" />
             </div>
           </div>
         </div>
