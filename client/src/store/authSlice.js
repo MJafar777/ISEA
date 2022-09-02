@@ -125,9 +125,9 @@ const authSlice = createSlice({
     advanced: {},
     isAuth: false,
     status: null,
-    isSend: false,
     error: null,
     isVerify: false,
+    isAdvanced: null,
   },
   reducers: {},
   extraReducers: {
@@ -143,7 +143,6 @@ const authSlice = createSlice({
     },
     [signupSlice.rejected]: errorFunc,
     [registerSlice.fulfilled]: (store, action) => {
-      console.log(action.payload);
       store.status = "resolved";
       store.error = null;
       store.isAuth = true;
@@ -164,11 +163,13 @@ const authSlice = createSlice({
       store.error = null;
       store.isAuth = true;
       store.user = action.payload.user;
+      store.isAdvanced = action.payload.user.advanced;
       localStorage.setItem("userToken", action.payload.token);
     },
     [loginSlice.rejected]: errorFunc,
     [checkMe.fulfilled]: (store, action) => {
       store.user = action.payload.user;
+      store.isAdvanced = action.payload.user.advanced;
       store.isAuth = true;
       store.status = "resolved";
     },
@@ -187,9 +188,11 @@ const authSlice = createSlice({
       store.status = "resolved";
       store.isAuth = false;
       store.isVerify = false;
+      store.isAdvanced = null;
     },
     [advancedProfile.fulfilled]: (store, action) => {
       store.advanced = action.payload.data;
+      store.isAdvanced = true;
       store.status = "resolved";
       store.error = null;
     },

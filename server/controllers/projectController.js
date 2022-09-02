@@ -32,7 +32,7 @@ const addProject = async (req, res, next) => {
     sub_description: req.body.sub_description,
     presentation: req.files.presentation[0].filename,
     projectImage: req.files.projectImage[0].filename,
-    userId: req.body.userId,
+    userId: user._id,
     publisher: req.body.publisher,
     category: req.body.category,
   };
