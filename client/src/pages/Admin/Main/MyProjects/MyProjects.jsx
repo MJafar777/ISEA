@@ -1,8 +1,9 @@
-import React from "react";
-
+import React, { useEffect, useRef } from "react";
 import s from "./projects.module.css";
-
+import { useDispatch } from "react-redux";
 const MyProjects = () => {
+  const dispatch = useDispatch();
+
   return (
     <>
       <div className={s.header}>

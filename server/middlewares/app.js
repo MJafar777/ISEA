@@ -32,7 +32,7 @@ app.use("/api/v1/news", newsRouter);
 app.use("/api/v1/books", booksRouter);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/accounts", accountRouter);
-app.use("/api/v1/advancedProfil", advancedProfil);
+app.use("/api/v1/advanced", advancedProfil);
 app.use("/api/v1/projects", projectRouter);
 app.use("/api/v1/reviews", reviewRouter);
 

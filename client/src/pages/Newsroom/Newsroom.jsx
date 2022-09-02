@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { GetNews } from "../../store/newsSlice";
 import NewsCard from "./NewsCard/NewsCard";
 import { NavLink } from "react-router-dom";
+import Moment from "react-moment";
 
 export default function Newsroom() {
   const dispatch = useDispatch();
@@ -26,7 +27,9 @@ export default function Newsroom() {
             <div>
               <div className={s.bottom}>
                 <div className={s.text}>
-                  <p>22:10 18.05.2022</p>
+                  <p>
+                    <Moment format="YYYY/MM/DD" date={news[0]?.createdAt} />
+                  </p>
                 </div>
                 <div className={s.subTitle}>
                   <h1>{news[0]?.title}</h1>
@@ -41,6 +44,7 @@ export default function Newsroom() {
             title={val.title}
             image={val.photo}
             id={val._id}
+            date={val.createdAt}
           />
         ))}
       </div>

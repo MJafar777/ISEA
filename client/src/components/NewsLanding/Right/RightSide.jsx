@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import s from "../NewsLanding.module.css";
+import Moment from "react-moment";
 
 export default function RightSide({ title, image, date, id }) {
   return (
@@ -10,7 +11,9 @@ export default function RightSide({ title, image, date, id }) {
           <NavLink to={"/news/" + id} className={s.titleLeft}>
             {title}
           </NavLink>
-          <p className={s.date}>{date}</p>
+          <p className={s.date}>
+            <Moment format="YYYY/MM/DD" date={date} />
+          </p>
         </div>
         <div>
           <img className={s.imageLeft} src={image} alt={title} />

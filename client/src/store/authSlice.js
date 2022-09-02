@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
+import { unstable_renderSubtreeIntoContainer } from "react-dom";
 import { url } from "../configs/config";
 
 export const signupSlice = createAsyncThunk(
@@ -84,10 +85,44 @@ export const logout = createAsyncThunk("auth/logout", async () => {
   return {};
 });
 
+export const advancedProfile = createAsyncThunk(
+  "auth/advancedProfile",
+  async (
+    {
+      position,
+      stir,
+      type_of_activity,
+      academic_degree,
+      degree,
+      work_place,
+      cardNum,
+    },
+    { rejectWithValue }
+  ) => {
+    try {
+      const token = localStorage.getItem("userToken");
+      const response = await axios.post(url + "/advanced", {
+        position,
+        stir,
+        type_of_activity,
+        degree,
+        academic_degree,
+        work_place,
+        cardNum,
+        token,
+      });
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.message);
+    }
+  }
+);
+
 const authSlice = createSlice({
   name: "auth",
   initialState: {
-    user: null,
+    user: {},
+    advanced: {},
     isAuth: false,
     status: null,
     isSend: false,
@@ -152,6 +187,19 @@ const authSlice = createSlice({
       store.status = "resolved";
       store.isAuth = false;
       store.isVerify = false;
+    },
+    [advancedProfile.fulfilled]: (store, action) => {
+      store.advanced = action.payload.data;
+      store.status = "resolved";
+      store.error = null;
+    },
+    [advancedProfile.pending]: (store, action) => {
+      store.status = "loading";
+      store.error = null;
+    },
+    [advancedProfile.rejected]: (store, action) => {
+      store.status = "rejected";
+      store.error = action.payload;
     },
   },
 });

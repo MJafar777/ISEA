@@ -5,6 +5,7 @@ import Review from "../../components/Review/Review";
 import { useParams } from "react-router-dom";
 import { getOneProject } from "../../store/projectSlice";
 import { useDispatch, useSelector } from "react-redux";
+import Moment from "react-moment";
 
 const OneProject = function () {
   const { id } = useParams();
@@ -23,7 +24,9 @@ const OneProject = function () {
             alt="this is project image"
             className={s.download_image}
           />
-          <p className={s.date}>16.04.2002</p>
+          <p className={s.date}>
+            <Moment format="YYYY/MM/DD" date={project.createdAt} />
+          </p>
           <h3 className={s.publisher}>Publisher:Aqlli Jafar</h3>
           <form action="/">
             <button className="download">Download</button>
