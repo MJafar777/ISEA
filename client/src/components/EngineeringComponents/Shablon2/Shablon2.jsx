@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../../Title/Title";
 import a from "./shablon2.module.css";
-import imgTitle from "../../../img/factory/9.jpg";
+import imgTitle from "../../../img/factory/9.avif";
 const Shablon2 = (img, title, subtitle) => {
   const cont = "container" + " " + a.titleSection;
   return (

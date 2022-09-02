@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import image from "../../img/Projects/photo-02.jpg";
+import image from "../../img/Projects/photo-02.avif";
 import s from "./oneProject.module.css";
 import Review from "../../components/Review/Review";
 import { useParams } from "react-router-dom";

@@ -6,7 +6,7 @@ import PublicationCard from "./PublicationCard/PublicationCard";
 import Menu from "../../components/Menu/Menu";
 import Router from "../../components/Router/Router";
 import PublicationImage from "./PublicationImage/PublicationImage";
-import image from "../../img/Publications/2.jpg";
+import image from "../../img/Publications/2.avif";
 import { useDispatch, useSelector } from "react-redux";
 import { BooksGet } from "../../store/bookSlice";
 import Loading from "../../components/Loading/Loading";

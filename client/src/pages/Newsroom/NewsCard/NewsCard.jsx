@@ -1,6 +1,5 @@
 import React from "react";
 import s from "../newsroom.module.css";
-import image1 from "../../../img/News/download.jpg";
 import { NavLink } from "react-router-dom";
 
 const NewsCard = ({ title, image, id }) => {

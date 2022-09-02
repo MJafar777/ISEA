@@ -17,10 +17,12 @@
   margin-top: 2rem;
   display: grid;
   gap: 2rem;
+  align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .member img {
   width: 100%;
+  /* height: 80%; */
   border-radius: 1rem;
 }
 .member h1 {
