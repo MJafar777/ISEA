@@ -9,6 +9,7 @@ import { GetNews } from "../../store/newsSlice";
 
 export default function NewsLanding() {
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(GetNews());
   }, []);
@@ -34,7 +35,7 @@ export default function NewsLanding() {
                   id={val._id}
                   title={val.title}
                   image={"http://localhost:8000/img/news/" + val.photo}
-                  date={"12-04-2022"}
+                  date={val.createdAt}
                 />
               );
             }
