@@ -11,6 +11,13 @@ export default function AdvancedSettings() {
   const academicDegreeRef = useRef();
   const degreeRef = useRef();
 
+  const submitHandler = (e) => {
+    e.preventDefault();
+    const cardNum = cardNumRef.current.value;
+    const work_place = workPlaceRef.current.value;
+    const stir = stirRef.current.value;
+    const position = positionRef.current.value;
+  };
   return (
     <>
       <div className={s.header}>
