@@ -1,9 +1,9 @@
 import React from "react";
 import s from "./iseaLiderShip.module.css";
 
-import img1 from "../../img/ISEA_Lidership/niyozbek.png";
-import img2 from "../../img/ISEA_Lidership/jafar.PNG";
-import img3 from "../../img/ISEA_Lidership/mamur.png";
+import img1 from "../../img/ISEA_Lidership/niyozbek.avif";
+import img2 from "../../img/ISEA_Lidership/jafar.avif";
+import img3 from "../../img/ISEA_Lidership/mamur.avif";
 
 import { NavLink, useParams } from "react-router-dom";
 
