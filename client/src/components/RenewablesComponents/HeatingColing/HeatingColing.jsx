@@ -7,7 +7,7 @@ import img1 from "../../../img/Renewables/heating-coling/img1.jpg";
 const HeatingColing = () => {
   return (
     <div className="container">
-      <Title name={"Finance Investment"} />
+      <Title name={"Heating & Cooling"} />
       <div className={s.heatingcoling}>
         <div className={s.contentCard}>
           <div className={s.cardChild}>

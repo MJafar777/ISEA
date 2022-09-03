@@ -33,7 +33,7 @@ export default function Topic() {
           image={image4}
         />
         <Card
-          link={"/benefitsheating-and-cooling"}
+          link={"/heating-cooling"}
           name={"HEATING & COOLING"}
           image={image5}
         />

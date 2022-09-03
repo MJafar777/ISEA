@@ -10,7 +10,7 @@ export default function AboutLandingCard({ image, text }) {
       </div>
       <div className={s.descrip}>
         <p className={s.text}>{text}</p>
-        <Button />
+        <Button link="/news"/>
       </div>
     </div>
   );

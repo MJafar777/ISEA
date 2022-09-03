@@ -7,7 +7,6 @@
 nav {
   width: 5%;
   height: 5em;
-  /* background-color: rgb(37, 39, 53); */
   display: flex;
   padding: 1em;
   margin: 1rem auto;
@@ -33,11 +32,10 @@ nav {
 }
 
 .menu {
-  width: 20%;
   height: 100vh;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.758);
-  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
   position: absolute;
   top: 0;
   left: 0;

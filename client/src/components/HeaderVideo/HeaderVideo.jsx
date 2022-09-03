@@ -3,6 +3,7 @@ import React from "react";
 import s from "./headerVideo.module.css";
 
 import headerVideo from "../../img/headerVideo/isea.mp4";
+import Button from "../Button/Button";
 const HeaderVideo = () => {
   const btn = s.myBtn;
   return (
@@ -18,7 +19,7 @@ const HeaderVideo = () => {
           maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore
           latine molestiae, ad mutat oblique delicatissimi pro.
         </p>
-        <button id={btn}>Read more...</button>
+        <Button id={btn} link="/about" />
       </div>
     </div>
   );
