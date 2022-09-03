@@ -1,0 +1,88 @@
+.inductryTransport {
+  margin-bottom: 2rem;
+}
+.text {
+  font-size: 20px;
+  width: 45%;
+  color: rgba(0, 0, 0, 0.849);
+}
+.cardChild img {
+  width: 50%;
+  height: 50vh;
+  border-radius: 1rem;
+}
+.cardChild {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.right1 {
+  display: none !important;
+}
+.contentCard {
+  margin: 2rem 0;
+}
+@media (max-width: 1200px) {
+  .text {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1001px) {
+  .text {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 843px) {
+  .text {
+    font-size: 1.4rem;
+  }
+  .cardChild img {
+    display: block;
+    width: 30%;
+    height: 30vh;
+    margin: 1rem;
+  }
+  .cardChild {
+    display: block;
+  }
+  .right {
+    display: none !important;
+  }
+  .right1 {
+    display: block !important;
+    float: left;
+  }
+  .left {
+    float: left !important;
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+@media (max-width: 676px) {
+  .right1,
+  .left {
+    width: 150px !important;
+  }
+}
+@media (max-width: 424px) {
+  .right1,
+  .left {
+    width: 150px !important;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 381px) {
+  .right1,
+  .left {
+    width: 100% !important;
+    margin-left: -0.3rem !important;
+  }
+  .cardChild {
+    display: grid;
+  }
+}
