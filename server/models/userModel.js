@@ -74,7 +74,7 @@ const userScheme = new mongoose.Schema(
     },
     active_user: {
       type: Boolean,
-      default: true,
+      default: false,
     },
     password_change_date: {
       type: Date,

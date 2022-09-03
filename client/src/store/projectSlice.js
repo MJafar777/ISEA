@@ -29,6 +29,48 @@ export const getOneProject = createAsyncThunk(
   }
 );
 
+export const addProject = createAsyncThunk(
+  "projects/addProject",
+  async (
+    {
+      title,
+      description,
+      sub_description,
+      presentation,
+      projectImage,
+      publisher,
+      category,
+    },
+    { rejectWithValue }
+  ) => {
+    try {
+      const token = localStorage.getItem("userToken");
+      const response = await axios.post(
+        url + "/projects",
+        {
+          title,
+          description,
+          sub_description,
+          category,
+          publisher,
+          projectImage,
+          presentation,
+          description,
+          token,
+        },
+        {
+          headers: { "content-type": "multipart/form-data" },
+        }
+      );
+      console.log(response);
+      return response.data;
+    } catch (error) {
+      console.log(error);
+      return rejectWithValue(error.message);
+    }
+  }
+);
+
 const pending = (store, action) => {
   store.error = null;
   store.status = "loading";

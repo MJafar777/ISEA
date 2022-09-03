@@ -45,7 +45,7 @@ const addAdvancedProfile = async (req, res, next) => {
     cardNum,
   });
   user.advanced = true;
-  await user.save();
+  await user.save({ validateBeforeSave: false });
   res.status(200).json({ data: advancedProfile });
 };
 
