@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Header from "./components/Header/Header";
 import Marquee from "react-fast-marquee";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homePage/HomePage";
@@ -16,16 +15,12 @@ import "./pages/Renewables/renewables.module.css";
 import PublicationBook from "./pages/Publication/PublicationBook/PublicationBook";
 import Register from "./pages/Register/Register";
 import Signup from "./pages/Signup/Signup";
-import Benefitsheating from "./components/RenewablesComponents/BENEFITSHEATING-COOLING/Benefitsheating";
 import ClimateChange from "./components/RenewablesComponents/CLIMATECHANGE/ClimateChange";
 import EnergyTransition from "./components/RenewablesComponents/ENERGY-TRANSITION/EnergyTransition";
 import FinanceInvestment from "./components/RenewablesComponents/FINANCE-INVESTMENT/FinanceInvestment";
 import InnovationTechnology from "./components/RenewablesComponents/INNOVATION-TECHNOLOGY/InnovationTechnology";
-import OffGridFor from "./components/RenewablesComponents/OFF-GRID-FOR/OffGridFor";
-import Policy from "./components/RenewablesComponents/POLICY/Policy";
 import InductryTransport from "./components/RenewablesComponents/INDUCTRY-TRANSPORT/InductryTransport";
 import Costs from "./components/RenewablesComponents/COSTS/Costs";
-import Island from "./components/RenewablesComponents/ISLANDS/Island";
 import Power from "./components/RenewablesComponents/POWER/Power";
 import Admin from "./pages/Admin/Admin";
 import Login from "./pages/Login/Login";
@@ -50,6 +45,7 @@ import Pagination from "./pages/Pagination/Pagination";
 import img1 from "./img/ISEA_Lidership/jafar.avif";
 import img2 from "./img/ISEA_Lidership/niyozbek.avif";
 import img3 from "./img/ISEA_Lidership/mamur.avif";
+import HeatingColing from "./components/RenewablesComponents/HeatingColing/HeatingColing";
 
 const obj = [
   {
@@ -139,19 +135,13 @@ const App = () => {
             path="/finance-and-investment"
             element={<FinanceInvestment />}
           />
-          <Route
-            path="/benefitsheating-and-cooling"
-            element={<Benefitsheating />}
-          />
+          <Route path="/heating-cooling" element={<HeatingColing />} />
           <Route
             path="/innovation-technology"
             element={<InnovationTechnology />}
           />
-          <Route path="/off-grid" element={<OffGridFor />} />
-          <Route path="/policy" element={<Policy />} />
           <Route path="/inductry-transport" element={<InductryTransport />} />
           <Route path="/costs" element={<Costs />} />
-          <Route path="/islands" element={<Island />} />
           <Route path="/power" element={<Power />} />
           <Route path="/pagination" element={<Pagination />} />
           {/* renewables page child comonents finished  */}

@@ -35,6 +35,7 @@ const Header1 = () => {
   const dropdown = s.acardion + " " + "dropdown";
   const status = useSelector((store) => store.auth.status);
   const isAuth = useSelector((store) => store.auth.isAuth);
+  console.log(isAuth, status);
   return (
     <div className={s.menuParent}>
       <NavLink className={s.link} to={"/"}>
@@ -69,6 +70,7 @@ const Header1 = () => {
           <div className={s.navMenu}>
             <div className={s.links}>
               <div className={s.menuIcon}>
+                
                 <Navbar name="HOME" route={"/"} />
 
                 <div className={s.renewables}>
@@ -78,7 +80,6 @@ const Header1 = () => {
                       name="RENEWABLES"
                       route={"/benefits"}
                     />
-
                     <img src={top} className="bottomTop" alt="top" />
                   </div>
                   <div className={s.dropdownChild + " " + s.firstDropChild}>
@@ -93,26 +94,19 @@ const Header1 = () => {
                       route={"/finance-and-investment"}
                     />
                     <Router
-                      name={"BENEFITSHEATING & COOLING"}
-                      route={"/benefitsheating-and-cooling"}
+                      name={"HEATING & COOLING"}
+                      route={"/heating-cooling"}
                     />
                     <Router
                       name={"INNOVATION & TECHNOLOGY"}
                       route={"/innovation-technology"}
                     />
-                    <Router name={"Announcement"} route={"/Announcement"} />
-                    <Router
-                      name={"OFF-GRID FOR ENERGY ACCESS"}
-                      route={"/off-grid"}
-                    />
-                    <Router name={"POLICY"} route={"/policy"} />
+                    <Router name={"COSTS"} route={"/costs"} />
+                    <Router name={"POWER"} route={"/power"} />
                     <Router
                       name={"INDUCTRY & TRANSPORT"}
                       route={"/inductry-transport"}
                     />
-                    <Router name={"COSTS"} route={"/costs"} />
-                    <Router name={"ISLANDS"} route={"/islands"} />
-                    <Router name={"POWER"} route={"/power"} />
                   </div>
                 </div>
 
