@@ -92,10 +92,7 @@ const Header1 = () => {
                       name={"FINANCE & INVESTMENT"}
                       route={"/finance-and-investment"}
                     />
-                    <Router
-                      name={"BENEFITSHEATING & COOLING"}
-                      route={"/benefitsheating-and-cooling"}
-                    />
+
                     <Router
                       name={"INNOVATION & TECHNOLOGY"}
                       route={"/innovation-technology"}

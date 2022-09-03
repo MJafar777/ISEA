@@ -16,7 +16,6 @@ import "./pages/Renewables/renewables.module.css";
 import PublicationBook from "./pages/Publication/PublicationBook/PublicationBook";
 import Register from "./pages/Register/Register";
 import Signup from "./pages/Signup/Signup";
-import Benefitsheating from "./components/RenewablesComponents/BENEFITSHEATING-COOLING/Benefitsheating";
 import ClimateChange from "./components/RenewablesComponents/CLIMATECHANGE/ClimateChange";
 import EnergyTransition from "./components/RenewablesComponents/ENERGY-TRANSITION/EnergyTransition";
 import FinanceInvestment from "./components/RenewablesComponents/FINANCE-INVESTMENT/FinanceInvestment";
@@ -138,10 +137,7 @@ const App = () => {
             path="/finance-and-investment"
             element={<FinanceInvestment />}
           />
-          <Route
-            path="/benefitsheating-and-cooling"
-            element={<Benefitsheating />}
-          />
+
           <Route
             path="/innovation-technology"
             element={<InnovationTechnology />}
