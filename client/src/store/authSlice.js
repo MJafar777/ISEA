@@ -31,7 +31,7 @@ export const registerSlice = createAsyncThunk(
   ) => {
     try {
       const token = localStorage.getItem("token");
-      const response = axios.post(url + "/users/register", {
+      const response = await axios.post(url + "/users/register", {
         name: username,
         surname,
         gender,
