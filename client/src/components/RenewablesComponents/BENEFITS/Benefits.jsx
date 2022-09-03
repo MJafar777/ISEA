@@ -1,6 +1,5 @@
 import React from "react";
 import Title from "../../Title/Title";
-import Shablon from "../ShablonRenewables/Shablon";
 
 import s from "./Benefits.module.css";
 

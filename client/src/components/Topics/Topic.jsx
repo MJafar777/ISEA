@@ -3,18 +3,15 @@ import Title from "../Title/Title";
 import s from "./topics.module.css";
 import Card from "./Card/Card";
 
-import image1 from "../../img/topicsIcon/./icons/benefits-icon.svg";
-import image2 from "../../img/topicsIcon/./icons/climate-icon.svg";
-import image3 from "../../img/topicsIcon/./icons/reload-sync-icon.svg";
-import image4 from "../../img/topicsIcon/./icons/finance-icon.svg";
-import image5 from "../../img/topicsIcon/./icons/low-temperature-icon.svg";
-import image6 from "../../img/topicsIcon/./icons/ideas-icon.svg";
-import image7 from "../../img/topicsIcon/./icons/income-growth-icon.svg";
-import image8 from "../../img/topicsIcon/./icons/power-off-line-icon.svg";
-import image9 from "../../img/topicsIcon/./icons/sports-car-icon.svg";
-import image10 from "../../img/topicsIcon/./icons/palm-tree-icon.svg";
-import image11 from "../../img/topicsIcon/./icons/policy-icon.svg";
-import image12 from "../../img/topicsIcon/./icons/solar-panel-home-9387.svg";
+import image1 from "../../img/topicsIcon/benefits-icon.svg";
+import image2 from "../../img/topicsIcon/climate-icon.svg";
+import image3 from "../../img/topicsIcon/reload-sync-icon.svg";
+import image4 from "../../img/topicsIcon/finance-icon.svg";
+import image5 from "../../img/topicsIcon/low-temperature-icon.svg";
+import image6 from "../../img/topicsIcon/ideas-icon.svg";
+import image7 from "../../img/topicsIcon/income-growth-icon.svg";
+import image8 from "../../img/topicsIcon/power-off-line-icon.svg";
+import image9 from "../../img/topicsIcon/sports-car-icon.svg";
 
 export default function Topic() {
   return (
@@ -45,19 +42,12 @@ export default function Topic() {
           name={"INNOVATION & TECHNOLOGY"}
           image={image6}
         />
-        <Card link={"/off-grid"} name={"COSTS"} image={image7} />
-        <Card link={"/policy"} name={"POWER"} image={image8} />
+        <Card link={"/costs"} name={"COSTS"} image={image7} />
+        <Card link={"/power"} name={"POWER"} image={image8} />
         <Card
           link={"/inductry-transport"}
           name={"INDUCTRY & TRANSPORT"}
           image={image9}
-        />
-        <Card link={"/costs"} name={"POLICY"} image={image11} />
-        <Card link={"/islands"} name={"ISLANDS"} image={image10} />
-        <Card
-          link={"/power"}
-          name={"OFF-GRID FOR ENERGY ACCESS"}
-          image={image12}
         />
       </div>
     </div>
