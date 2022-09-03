@@ -8,6 +8,7 @@ import s from "./books.module.css";
 import { BooksGet } from "../../../../store/bookSlice";
 import Book from "./Book/Book";
 import Loading from "../../../../components/Loading/Loading";
+import PaginationNumbers from "../../../PaginationNumbers/Pagination";
 
 export default function Books() {
   const titleRef = useRef();
@@ -46,6 +47,12 @@ export default function Books() {
     );
   };
 
+  // change page
+
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   const clickHandler = (e) => {
     setEvent(event ? false : true);
 
@@ -67,6 +74,11 @@ export default function Books() {
 
   const books = useSelector((store) => store.books.books);
   const status = useSelector((store) => store.books.status);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(5);
+  const indexOfLastPost = currentPage * postsPerPage; // shu pagedagi tugaydigan postni raqami
+  const indexOfFirstPost = indexOfLastPost - postsPerPage; // shu pagedagi boshlanadigan postni raqami
+  const currentPosts = books.slice(indexOfFirstPost, indexOfLastPost);
 
   return (
     <div className={s.container}>
@@ -103,16 +115,19 @@ export default function Books() {
             </div>
           </div>
         </form>
+
         {status === "resolved" ? (
-          books.map((val, key) => {
+          currentPosts.map((val, key) => {
             return (
-              <Book
-                key={key}
-                title={val.title}
-                text={val.sub_description}
-                category={val.category}
-                language={val.language}
-              />
+              <>
+                <Book
+                  key={key}
+                  title={val.title}
+                  text={val.sub_description}
+                  category={val.category}
+                  language={val.language}
+                />
+              </>
             );
           })
         ) : (
@@ -124,6 +139,11 @@ export default function Books() {
             classname={"load"}
           />
         )}
+        <PaginationNumbers
+          postsPerPage={postsPerPage}
+          totalPosts={books.length}
+          paginate={paginate}
+        />
       </div>
     </div>
   );

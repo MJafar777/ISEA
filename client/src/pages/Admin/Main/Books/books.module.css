@@ -120,6 +120,8 @@
 .text {
   margin-top: 5px;
   font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   line-height: 1.5;
 }
 
