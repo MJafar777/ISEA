@@ -18,21 +18,21 @@ const IseaLiderShip = () => {
         <h1 className={s.title2}>IT Department</h1>
         <div className={s.it}>
           <div className={s.member}>
-            <NavLink to="/isea-leadership/3">
+            <NavLink to="/isea-leadership/3" className={s.jafar}>
               <img src={img3} alt="member" className={s.mamur} />
               <h1 className={s.memberName}>Member name goes here</h1>
               <h2 className={s.memberPosition}>Member position goes here</h2>
             </NavLink>
           </div>
           <div className={s.member}>
-            <NavLink to="/isea-leadership/1">
+            <NavLink to="/isea-leadership/1" className={s.jafar}>
               <img src={img2} alt="member" />
               <h1 className={s.memberName}>Member name goes here</h1>
               <h2 className={s.memberPosition}>Member position goes here</h2>
             </NavLink>
           </div>
           <div className={s.member}>
-            <NavLink to="/isea-leadership/2">
+            <NavLink to="/isea-leadership/2" className={s.jafar}>
               <img src={img1} alt="member" />
               <h1 className={s.memberName}>Member name goes here</h1>
               <h2 className={s.memberPosition}>Member position goes here</h2>
