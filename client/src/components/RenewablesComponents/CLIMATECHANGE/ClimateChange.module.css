@@ -24,9 +24,6 @@
   margin: 2rem 0;
 }
 @media (max-width: 1200px) {
-  h1 {
-    font-size: 24px;
-  }
   .text {
     font-size: 1.8rem;
   }
@@ -37,9 +34,6 @@
   }
 }
 @media (max-width: 843px) {
-  h1 {
-    font-size: 22px;
-  }
   .text {
     font-size: 1.4rem;
   }
@@ -78,10 +72,6 @@
   .left {
     width: 150px !important;
   }
-  h1 {
-    font-size: 18px;
-  }
-
   .text {
     font-size: 1.2rem;
   }
