@@ -49,7 +49,17 @@ const EnergyTransition = () => {
           <div className={s.cardChild}>
             <img className={s.right1} src={img3} alt="img1" />
             <h3 className={s.text}>
-            The large-scale deployment of PV power systems will require financial backing to enable it. Estimates for funding vary depending on the metrics used, but what is common is the magnitude of the forecasts.BloombergNEF reported in February at least $14 trillion must be invested in the electricity grid worldwide by 2050 to support new energy usages.ISEA estimated the solar sector alone will require as much as $237 billion in investment per year between today and 2050 to achieve its 1.5C scenario. That is a 106% increase from the $115 billion earmarked yearly in 2017-19. At the same time, none of this will be possible unless supply of raw materials can keep up with the pace of demand.
+              The large-scale deployment of PV power systems will require
+              financial backing to enable it. Estimates for funding vary
+              depending on the metrics used, but what is common is the magnitude
+              of the forecasts.BloombergNEF reported in February at least $14
+              trillion must be invested in the electricity grid worldwide by
+              2050 to support new energy usages.ISEA estimated the solar sector
+              alone will require as much as $237 billion in investment per year
+              between today and 2050 to achieve its 1.5C scenario. That is a
+              106% increase from the $115 billion earmarked yearly in 2017-19.
+              At the same time, none of this will be possible unless supply of
+              raw materials can keep up with the pace of demand.
             </h3>
             <img className={s.right} src={img3} alt="img1" />
           </div>
