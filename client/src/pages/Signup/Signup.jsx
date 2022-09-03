@@ -2,7 +2,7 @@ import React from "react";
 import { useRef } from "react";
 import s from "./signup.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { registerSlice } from "../../store/authSlice";
+import { checkMe, registerSlice } from "../../store/authSlice";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -40,9 +40,13 @@ export default function Signup() {
     );
   };
 
-  const isAuth = useSelector((store) => store.auth);
-  console.log(isAuth);
-  if (isAuth) navigate("/");
+  const isAuth = useSelector((store) => store.auth.isAuth);
+  useEffect(() => {
+    if (isAuth) {
+      dispatch(checkMe());
+      navigate("/");
+    }
+  }, [isAuth]);
   return (
     <>
       <div className={s.form}>
@@ -81,15 +85,6 @@ export default function Signup() {
             <option value="female">Erkak</option>
           </select>
 
-          <div className={s.email}>
-            <input
-              ref={emailRef}
-              type="email"
-              id="email"
-              className={s.form__input}
-              placeholder="Email"
-            />
-          </div>
           <div className={s.password}>
             <input
               ref={passwordRef}
@@ -99,6 +94,10 @@ export default function Signup() {
               placeholder="Password"
             />
           </div>
+          <div>
+            <input ref={emailRef} type="email" placeholder="email" />
+          </div>
+
           <div className={s.confirmPassword}>
             <input
               ref={passwordConfirmRef}

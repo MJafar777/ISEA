@@ -70,7 +70,6 @@ const Header1 = () => {
           <div className={s.navMenu}>
             <div className={s.links}>
               <div className={s.menuIcon}>
-                
                 <Navbar name="HOME" route={"/"} />
 
                 <div className={s.renewables}>
