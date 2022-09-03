@@ -44,6 +44,7 @@ import IseaLiderShip from "./pages/IseaLiderShip/IseaLiderShip";
 import Header1 from "./components/Header1/Header1";
 import { checkMe } from "./store/authSlice";
 import OneLidership from "./pages/IseaLiderShip/OneLidership/OneLidership";
+import Pagination from "./pages/Pagination/Pagination";
 
 // ---- Lidership page niki teymela
 import img1 from "./img/ISEA_Lidership/jafar.avif";
@@ -152,6 +153,7 @@ const App = () => {
           <Route path="/costs" element={<Costs />} />
           <Route path="/islands" element={<Island />} />
           <Route path="/power" element={<Power />} />
+          <Route path="/pagination" element={<Pagination />} />
           {/* renewables page child comonents finished  */}
 
           {/* ---------------------------- */}
