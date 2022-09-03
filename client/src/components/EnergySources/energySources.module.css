@@ -23,13 +23,18 @@
 }
 
 .energys img {
-  width: 15rem;
+  width: 10rem;
   margin: 0 1rem;
 }
 
+.energys {
+  text-align: center;
+}
 .energys p {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
+  color: #0874a4;
+  font-weight: 600;
 }
 @media (max-width: 1270px) {
   .energys img {

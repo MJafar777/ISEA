@@ -2,12 +2,12 @@ import React from "react";
 import Title from "../Title/Title";
 import s from "./energySources.module.css";
 
-import img1 from "../../img/energySources/wind-power.avif";
-import img2 from "../../img/energySources/renewable.avif";
-import img3 from "../../img/energySources/geothermal-energy.avif";
-import img4 from "../../img/energySources/water.avif";
-import img5 from "../../img/energySources/waves.avif";
-import img6 from "../../img/energySources/solar-energy.avif";
+import img1 from "../../img/energySources/wind.svg";
+import img2 from "../../img/energySources/Bioenergy.svg";
+import img3 from "../../img/energySources/volcano.svg";
+import img4 from "../../img/energySources/hydopower.svg";
+import img5 from "../../img/energySources/ocean.svg";
+import img6 from "../../img/energySources/solar.svg";
 
 const EnergySources = () => {
   return (
