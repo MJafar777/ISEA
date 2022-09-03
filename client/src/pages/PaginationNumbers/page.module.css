@@ -1,0 +1,7 @@
+.pagination {
+  display: flex;
+  border: 1px solid black;
+}
+.pagination .pageitem {
+  border: 1px solid black;
+}
