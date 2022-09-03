@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Header from "./components/Header/Header";
 import Marquee from "react-fast-marquee";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/homePage/HomePage";

@@ -78,7 +78,8 @@
 }
 .dropdownChild {
   transition: all 1s;
-  width: 20rem;
+  width: 22rem;
+  border-radius: 0 10px 10px 0;
   z-index: 10;
   padding: 0.5rem 3rem;
   background-color: #fff;
