@@ -9,7 +9,7 @@ export default function PublicationLanding() {
   return (
     <div className={s.background}>
       <div className="container">
-        <Title name="Recent Rublications" />
+        <Title name="Recent Publications" />
         <div className={s.container}>
           {books.map((val, key) => {
             if (key <= 3) {

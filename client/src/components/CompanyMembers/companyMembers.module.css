@@ -5,8 +5,8 @@
 }
 .slider {
   width: 80%;
-  height: 25rem;
-  margin: 4rem auto;
+  height: 23rem;
+  /* margin: 0rem auto; */
   display: flex;
   justify-content: center;
   overflow: scroll;
@@ -15,7 +15,7 @@
   width: 35rem;
   padding: 2rem;
   background-color: #fff;
-  margin: 2rem;
+  /* margin: 2rem; */
   user-select: none;
 }
 .control_Slider {
@@ -76,8 +76,7 @@
   padding: 1rem 0;
 }
 .big {
-  padding: 5rem 0;
-  /* background-color: #98b2db93; */
+  padding: 1rem 0 5rem 0;
   background-color: #0875a420;
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
