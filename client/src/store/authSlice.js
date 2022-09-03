@@ -174,14 +174,15 @@ const authSlice = createSlice({
     },
     [checkMe.rejected]: (store, action) => {
       store.error = null;
+      store.status = "rejected";
     },
     [checkMe.pending]: (store, action) => {
       store.status = "loading";
       store.error = null;
     },
-    [logout.pending]: (store, action) => {
-      store.status = "loading";
-      store.error = null;
+    [logout.rejected]: (store, action) => {
+      store.status = "rejected";
+      store.error = action.payload;
     },
     [logout.fulfilled]: (store, action) => {
       store.status = "resolved";

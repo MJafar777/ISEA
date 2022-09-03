@@ -35,6 +35,7 @@ const Header1 = () => {
   const dropdown = s.acardion + " " + "dropdown";
   const status = useSelector((store) => store.auth.status);
   const isAuth = useSelector((store) => store.auth.isAuth);
+  console.log(isAuth, status);
   return (
     <div className={s.menuParent}>
       <NavLink className={s.link} to={"/"}>
