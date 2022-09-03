@@ -9,6 +9,8 @@ import img2 from "../../../img/Renewables/benefits/2.jpg";
 import img3 from "../../../img/Renewables/benefits/3.jpg";
 import img4 from "../../../img/Renewables/benefits/4.jpg";
 import img5 from "../../../img/Renewables/benefits/5.jpg";
+import img6 from "../../../img/Renewables/benefits/benefitsOther.png";
+import img7 from "../../../img/Renewables/benefits/benefitsother2.jpg";
 
 const Benefits = () => {
   return (
@@ -90,7 +92,7 @@ const Benefits = () => {
           <div className={s.contentCard}>
             <h2>Less Electricity Lost During Long-Distance Transport</h2>
             <div className={s.cardChild}>
-              <img className={s.right1} src={img2} alt="img1" />
+              <img className={s.right1} src={img6} alt="img1" />
               <h3>
                 Some of the energy, around 3-5%, is lost during transportation
                 and distribution. The longer the distances between the
@@ -101,13 +103,13 @@ const Benefits = () => {
                 significantly reduces this distance, therefore increasing the
                 efficiency of the solar panels.
               </h3>
-              <img className={s.right} src={img2} alt="img1" />
+              <img className={s.right} src={img6} alt="img1" />
             </div>
           </div>
           <div className={s.contentCard}>
             <h2>Improves Grid Security</h2>
             <div className={s.cardChild}>
-              <img className={s.left} src={img3} alt="img1" />
+              <img className={s.left} src={img7} alt="img1" />
               <h3>
                 The grid is less vulnerable to blackouts if there are many power
                 plants which are spread out. A grid with high penetration of

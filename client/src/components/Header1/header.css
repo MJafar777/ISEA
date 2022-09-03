@@ -36,7 +36,9 @@ nav {
   width: 20%;
   height: 100vh;
   z-index: 10;
-  background-color: rgb(154, 181, 240);
+  /* background-color: rgb(154, 181, 240); */
+  background-color: rgba(255, 255, 255, 0.758);
+  /* background-color: #0874a4; */
   position: absolute;
   top: 0;
   left: 0;
