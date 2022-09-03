@@ -70,13 +70,14 @@
   }
 }
 .box {
-  height: 25vh;
-  width: 80%;
+  height: 20vh;
+  width: 50%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 .big {
   padding: 5rem 0;
-  background-color: #98b2db93;
+  /* background-color: #98b2db93; */
+  background-color: #0875a420;
   margin: 4rem 0;
 }
