@@ -46,6 +46,12 @@ import img1 from "./img/ISEA_Lidership/jafar.avif";
 import img2 from "./img/ISEA_Lidership/niyozbek.avif";
 import img3 from "./img/ISEA_Lidership/mamur.avif";
 import HeatingColing from "./components/RenewablesComponents/HeatingColing/HeatingColing";
+import Wind from "./pages/EnergySources/Wind/Wind";
+import Bioenergy from "./pages/EnergySources/Bioenergy/Bioenergy";
+import Geothermal from "./pages/EnergySources/Geothermal/Geothermal";
+import Hydopower from "./pages/EnergySources/Hydopower/Hydopower";
+import Ocean from "./pages/EnergySources/Ocean/Ocean";
+import Solar from "./pages/EnergySources/Solar/Solar";
 
 const obj = [
   {
@@ -194,6 +200,16 @@ const App = () => {
           <Route path={"/signup"} element={<Signup />} />
           <Route path={"/me"} element={<Admin />} />
           <Route path={"/myProjects"} element={<MyProjects />} />
+
+          {/* energy sources childrens */}
+          <Route path={"/wind"} element={<Wind />} />
+          <Route path={"/bioenergy"} element={<Bioenergy />} />
+          <Route path={"/geothermal"} element={<Geothermal />} />
+          <Route path={"/hydopower"} element={<Hydopower />} />
+          <Route path={"/ocean"} element={<Ocean />} />
+          <Route path={"/solar"} element={<Solar />} />
+
+          {/* energy sources childrens */}
         </Routes>
       </main>
       <Footer />

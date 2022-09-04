@@ -5,7 +5,6 @@ import s from "./headerVideo.module.css";
 import headerVideo from "../../img/headerVideo/isea.mp4";
 import Button from "../Button/Button";
 const HeaderVideo = () => {
-  const btn = s.myBtn;
   return (
     <div className={s.headerVideo}>
       <video autoPlay muted loop id={s.myVideo}>
@@ -19,7 +18,7 @@ const HeaderVideo = () => {
           maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore
           latine molestiae, ad mutat oblique delicatissimi pro.
         </p>
-        <Button id={btn} link="/about" />
+        <Button link="/about" />
       </div>
     </div>
   );

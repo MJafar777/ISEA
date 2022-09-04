@@ -49,10 +49,21 @@ ul {
   background-color: var(--color-primary);
   color: white;
   border: none;
+  padding: 0;
+  font-size: 2rem;
+}
+.btn2 {
+  text-align: center;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
   text-decoration: none;
-  box-sizing: border-box;
   padding: 6px 8px;
   font-size: 2rem;
+}
+.btn2:hover {
+  background: #ddd;
+  color: black;
 }
 
 .button {
