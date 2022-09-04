@@ -1,7 +1,7 @@
 import React from "react";
 
 const Geothermal = () => {
-  return <div>Geothermal</div>;
+  return <div className="container">Geothermal</div>;
 };
 
 export default Geothermal;

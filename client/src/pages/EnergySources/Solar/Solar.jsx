@@ -1,7 +1,7 @@
 import React from "react";
 
 const Solar = () => {
-  return <div>Solar</div>;
+  return <div className="container">Solar</div>;
 };
 
 export default Solar;

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hydopower = () => {
-  return <div>Hydopower</div>;
+  return <div className="container">Hydopower</div>;
 };
 
 export default Hydopower;
