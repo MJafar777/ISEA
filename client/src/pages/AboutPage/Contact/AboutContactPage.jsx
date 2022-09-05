@@ -24,7 +24,7 @@ const AboutContactPage = () => {
             </ul>
             <div>
               <Iframe
-                url="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5992.238977909958!2d69.291839!3d41.328015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x55ac32e5c2528644!2zNDHCsDE5JzQwLjkiTiA2OcKwMTcnMzAuNiJF!5e0!3m2!1sru!2s!4v1661855797858!5m2!1sru!2s"
+                url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.1672747214684!2d69.29453465219456!3d41.32780585214009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4ca6a3270d1%3A0xd5e89052d31aac5a!2z0JzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0LjQvdGB0YLQuNGC0YPRgiDRgdC-0LvQvdC10YfQvdC-0Lkg0Y3QvdC10YDQs9C40Lg!5e1!3m2!1sru!2s!4v1662359840726!5m2!1sru!2s"
                 width="450px"
                 height="450px"
                 id="myId"

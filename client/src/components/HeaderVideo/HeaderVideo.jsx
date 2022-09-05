@@ -13,10 +13,8 @@ const HeaderVideo = () => {
       <div class={s.content}>
         <h1 className={s.title}>ISEA ORGANISATION</h1>
         <p className={s.description}>
-          Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat
-          phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum
-          maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore
-          latine molestiae, ad mutat oblique delicatissimi pro.
+          Our ISEA organization serves to provide solar cells to the population
+          and to develop solar cells using solar energy effectively.
         </p>
         <Button link="/about" />
       </div>
