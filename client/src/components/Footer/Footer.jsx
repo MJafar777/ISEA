@@ -39,7 +39,7 @@ const Footer = () => {
             <img src={telegram} alt="telegram" />
             <span>telegram</span>
           </a>
-          <a href="https://instagram/@">
+          <a href="https://instagram/@isea_uz">
             <img src={Instagram} alt="Instagram" />
             <span>Instagram</span>
           </a>

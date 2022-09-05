@@ -13,8 +13,10 @@ const HeaderVideo = () => {
       <div class={s.content}>
         <h1 className={s.title}>ISEA ORGANISATION</h1>
         <p className={s.description}>
-          Our ISEA organization serves to provide solar cells to the population
-          and to develop solar cells using solar energy effectively.
+          The main purpose of the activity: training and retraining of personnel
+          at the international level in the field of solar energy, supporting
+          the effective use of advanced technologies in the field of solar
+          energy.
         </p>
         <Button link="/about" />
       </div>

@@ -6,11 +6,11 @@ export default function AboutLandingCard({ image, text }) {
   return (
     <div className={s.card}>
       <div className={s.image}>
-        <img className={s.image} src={image} />
+        <img className={s.image} alt="imgAboutLanding" src={image} />
       </div>
       <div className={s.descrip}>
         <p className={s.text}>{text}</p>
-        <Button link="/news"/>
+        <Button link="/news" />
       </div>
     </div>
   );
