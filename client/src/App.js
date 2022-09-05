@@ -41,10 +41,6 @@ import { checkMe } from "./store/authSlice";
 import OneLidership from "./pages/IseaLiderShip/OneLidership/OneLidership";
 import Pagination from "./pages/Pagination/Pagination";
 
-// ---- Lidership page niki teymela
-import img1 from "./img/ISEA_Lidership/jafar.avif";
-import img2 from "./img/ISEA_Lidership/niyozbek.avif";
-import img3 from "./img/ISEA_Lidership/mamur.avif";
 import HeatingColing from "./components/RenewablesComponents/HeatingColing/HeatingColing";
 import Wind from "./pages/EnergySources/Wind/Wind";
 import Bioenergy from "./pages/EnergySources/Bioenergy/Bioenergy";
@@ -52,32 +48,7 @@ import Geothermal from "./pages/EnergySources/Geothermal/Geothermal";
 import Hydopower from "./pages/EnergySources/Hydopower/Hydopower";
 import Ocean from "./pages/EnergySources/Ocean/Ocean";
 import Solar from "./pages/EnergySources/Solar/Solar";
-
-const obj = [
-  {
-    id: 1,
-    name: "Jafar Mirzaraximov",
-    status: "Team Leader",
-    about: "Jafar",
-    img: img1,
-  },
-  {
-    id: 2,
-    name: "Niyozbek Polatov",
-    status: "Full-Stack Developer",
-    about: "Niyozbek",
-    img: img2,
-  },
-  {
-    id: 3,
-    name: "Mamurjon Ibragimov",
-    status: "Full-Stack Developer",
-    about: "Mamurjon",
-    img: img3,
-  },
-];
-
-// ---- Lidership page niki teymela
+import obj from "./dataLidership";
 
 const App = () => {
   const dispatch = useDispatch();
