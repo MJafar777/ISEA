@@ -7,6 +7,7 @@ import "./header.css";
 import s from "./header.module.css";
 import Profile from "../Profile/Profile";
 import Router from "../Router/Router";
+
 import top from "../../img/icons/chevron-top.svg";
 import logo from "../../img/Logo/neu.avif";
 
@@ -16,6 +17,16 @@ const Header1 = () => {
   const [menu_class, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
+  // useEffect(() => {
+  //   const closeMenu = (e) => {
+  //     setIsMenuClicked(false);
+  //   };
+
+  //   document.body.addEventListener("click", closeMenu);
+  //   return () => {
+  //     document.body.removeEventListener("click", closeMenu);
+  //   };
+  // }, []);
   // toggle burger menu change
   const updateMenu = () => {
     if (!isMenuClicked) {
@@ -91,6 +102,7 @@ const Header1 = () => {
                       </div>
                     )}
                   </div>
+
                   <Navbar name="HOME" route={"/"} />
 
                   <div className={s.renewables}>

@@ -3,9 +3,11 @@
   justify-content: space-between;
   width: 90%;
   padding: 15px 0;
-  z-index: 20;
+  z-index: 10;
 }
-
+.link {
+  z-index: 10;
+}
 .navMenu {
   display: grid;
   grid-template-columns: 1fr;
@@ -64,8 +66,10 @@
 
 .profile a {
   text-decoration: none;
-  color: var(--color-primary);
-  font-size: 16px;
+  /* color: var(--color-primary); */
+  color: #104cad;
+  font-size: 18px;
+  z-index: 10;
 }
 
 /* dropdown started */
