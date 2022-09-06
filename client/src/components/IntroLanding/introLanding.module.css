@@ -1,39 +1,32 @@
 .cards {
-  width: 100%;
+  width: 90%;
+  padding: 2rem;
   margin: 4rem auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 3rem;
-  box-sizing: border-box;
-  justify-content: center;
-  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  justify-content: space-between;
 }
 .cardLevel img {
   width: 100%;
 }
 .cardLevel {
-  margin: 0px;
-  padding: 0;
-  /* background-color: #ff8302; */
   background-color: var(--color-secondary);
 }
 .cardLevel:hover {
   transform: scale(1.05);
   transition: all 0.5s;
-  z-index: 0;
 }
 .cardLevel p {
   color: #fff;
   font-size: 16px;
   text-align: center;
-  margin: 0;
-  box-sizing: border-box;
   padding: 1rem;
 }
 @media (max-width: 1175px) {
   .cards {
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10rem;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 1070px) {
@@ -45,20 +38,20 @@
 }
 @media (max-width: 950px) {
   .cards {
-    gap: 4rem;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
-    transform: scale(1.1);
   }
 }
 @media (max-width: 800px) {
   .cards {
-    gap: 4rem;
+    width: 100%;
+    gap: 1rem;
     grid-template-columns: 1fr;
-    justify-content: space-around;
-    transform: scale(1.1);
   }
   .cardLevel {
-    margin-bottom: 4rem !important;
+    margin-bottom: 4rem;
+  }
+  .cardLevel p {
+    font-size: 1.4rem;
   }
 }

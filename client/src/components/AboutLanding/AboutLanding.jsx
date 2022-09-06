@@ -18,7 +18,7 @@ export default function AboutLanding() {
   const text4 =
     "As a part of its contribution to the Climate Investment Platform, ISEA invites financial institutions, development organisations and private investors prepared to support the realisation of projects and projects in need of support to register their interest.";
   return (
-    <section className={s.container}>
+    <section>
       <Title className={s.title} name="About us" />
       <div className={s.content}>
         <AboutLandingCard image={img11} text={text1} />

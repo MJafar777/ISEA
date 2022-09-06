@@ -65,6 +65,16 @@ ul {
   background: #ddd;
   color: black;
 }
+@media (max-width: 768px) {
+  .btn2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 568px) {
+  .btn2 {
+    font-size: 1.6rem;
+  }
+}
 
 .button {
   text-align: center;
