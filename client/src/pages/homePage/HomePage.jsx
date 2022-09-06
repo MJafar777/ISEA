@@ -21,8 +21,8 @@ const HomePage = () => {
   return (
     <main>
       <HeaderVideo />
+      <IntroLanding />
       <div className="container">
-        <IntroLanding />
         <AboutLanding />
         <NewsLanding />
       </div>
