@@ -1,38 +1,31 @@
-.parentContainer {
+/* .parentContainer {
   display: flex !important;
   justify-content: center;
   align-items: center;
-}
+} */
 .slider {
   width: 80%;
-  height: 23rem;
-  /* margin: 0rem auto; */
-  display: flex;
-  justify-content: center;
+  /* height: 20rem; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   overflow: scroll;
 }
-.slayd {
+
+/* .slayd {
   width: 35rem;
   padding: 2rem;
   background-color: #fff;
-  /* margin: 2rem; */
   user-select: none;
-}
-.control_Slider {
+} */
+/* .control_Slider {
   width: 10rem;
   cursor: pointer;
   padding: 1rem;
-}
+} */
 .control_Slider:active {
   transform: scale(1.05);
   transition: all 0.2s;
-}
-.CompanyImgs {
-  text-align: center;
-}
-.CompanyImgs h2 {
-  font-size: 2rem;
-  color: #fff;
 }
 .title {
   text-align: center;
@@ -69,9 +62,10 @@
     width: 200%;
   }
 }
+.boxParent {
+  display: grid;
+}
 .box {
-  height: 20vh;
-  width: 50%;
   margin: 0 auto;
   padding: 1rem 0;
 }

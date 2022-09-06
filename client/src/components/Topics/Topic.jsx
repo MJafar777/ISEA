@@ -15,8 +15,9 @@ import image9 from "../../img/topicsIcon/sports-car-icon.svg";
 
 export default function Topic() {
   return (
-    <div className={s.background}>
+    <div className={s.background + " " + "container"}>
       <Title name={"Topics"} />
+
       <div className={s.grid}>
         <Card link={"/benefits"} name={"BENEFITS"} image={image1} />
 
@@ -29,24 +30,24 @@ export default function Topic() {
         />
         <Card
           link={"/finance-and-investment"}
-          name={"FINANCE & INVESTMENT"}
+          name={"FINANCE INVESTMENT"}
           image={image4}
         />
         <Card
           link={"/heating-cooling"}
-          name={"HEATING & COOLING"}
+          name={"HEATING COOLING"}
           image={image5}
         />
         <Card
           link={"/innovation-technology"}
-          name={"INNOVATION & TECHNOLOGY"}
+          name={"INNOVATION TECHNOLOGY"}
           image={image6}
         />
         <Card link={"/costs"} name={"COSTS"} image={image7} />
         <Card link={"/power"} name={"POWER"} image={image8} />
         <Card
           link={"/inductry-transport"}
-          name={"INDUCTRY & TRANSPORT"}
+          name={"INDUCTRY TRANSPORT"}
           image={image9}
         />
       </div>

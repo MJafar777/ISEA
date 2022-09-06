@@ -8,7 +8,7 @@ export default function AboutLandingCard({ image, text }) {
       <div className={s.image}>
         <img className={s.image} alt="imgAboutLanding" src={image} />
       </div>
-      
+
       <div className={s.descrip}>
         <p className={s.text}>{text}</p>
         <Button link="/news" />

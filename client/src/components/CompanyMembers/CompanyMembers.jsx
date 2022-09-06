@@ -67,31 +67,13 @@ export default class CompanyMembers extends Component {
           <div className={s.title}>
             <Title name={"Our Partners"} />
           </div>
-          <Slider ref={(slider) => (this.slider = slider)} {...settings}>
-            <div className={s.CompanyImgs}>
-              <img src={img11} alt="one" className={s.box} />
-              {/* <h2>tashkilot</h2> */}
-            </div>
-            <div className={s.CompanyImgs}>
-              <img src={img22} alt="one" className={s.box} />
-              {/* <h2>tashkilot</h2> */}
-            </div>
-            <div className={s.CompanyImgs}>
-              <img src={img33} alt="one" className={s.box} />
-              {/* <h2>tashkilot</h2> */}
-            </div>
-            <div className={s.CompanyImgs}>
-              <img src={img44} alt="one" className={s.box} />
-              {/* <h2>tashkilot</h2> */}
-            </div>
-            <div className={s.CompanyImgs}>
-              <img src={img55} alt="one" className={s.box} />
-              {/* <h2>tashkilot</h2> */}
-            </div>
-            <div className={s.CompanyImgs}>
-              <img src={img66} alt="one" className={s.box} />
-              {/* <h2>tashkilot</h2> */}
-            </div>
+          <Slider className={s.boxParent} ref={(slider) => (this.slider = slider)} {...settings}>
+            <img src={img11} alt="one" className={s.box} />
+            <img src={img22} alt="one" className={s.box} />
+            <img src={img33} alt="one" className={s.box} />
+            <img src={img44} alt="one" className={s.box} />
+            <img src={img55} alt="one" className={s.box} />
+            <img src={img66} alt="one" className={s.box} />
           </Slider>
         </div>
       </div>
