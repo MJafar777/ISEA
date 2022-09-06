@@ -1,19 +1,12 @@
 #myVideo {
-  position: relative;
-  width: 100% !important;
-  object-fit: contain;
-  margin: 0;
-  padding: 0;
-  object-position: center;
+  width: 100%;
 }
 
 .headerVideo {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -10%;
-  width: 100%;
-  margin-left: -0.5%;
+  margin-top: -12%;
 }
 .title {
   font-size: 26px;
