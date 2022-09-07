@@ -17,10 +17,3 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
-<<<<<<< HEAD
-
-// setInterval(() => {
-//   console.clear();
-// }, 3000);
-=======
->>>>>>> 8e8742fa407f0c3bad31b1de710ff3de991effd6
