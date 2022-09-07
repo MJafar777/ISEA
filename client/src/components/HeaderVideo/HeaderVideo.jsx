@@ -2,7 +2,7 @@ import React from "react";
 
 import s from "./headerVideo.module.css";
 
-import headerVideo from "../../img/headerVideo/isea.mp4";
+import headerVideo from "../../img/headerVideo/isea1.mp4";
 import Button from "../Button/Button";
 const HeaderVideo = () => {
   return (
