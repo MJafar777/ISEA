@@ -16,26 +16,23 @@
 .heroTitle {
   width: 50%;
   padding: 2rem;
-  box-sizing: border-box;
   border-radius: 1rem;
-  user-select: none;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
-}
-.title {
-  font-size: 36px;
-  margin: 1.5rem 0;
+  backdrop-filter: blur(3px);
   color: #fff;
 }
-.heroTitle p {
-  font-size: 20px;
-  color: #f0f0f0;
-  text-align: center;
+.title {
+  font-size: 26px;
+  margin: 1.5rem 0;
 }
 .heroTitle h4 {
   font-size: 18px;
   margin: 1rem 0;
-  color: #f0f0f0e9;
+}
+.heroTitle p {
+  font-size: 16px;
+  text-align: center;
 }
 .main {
   padding: 2rem;
@@ -47,11 +44,12 @@
   margin: 1rem auto;
   background-color: rgba(0, 0, 0, 1);
 }
+.main2 {
+  text-align: center;
+}
 .main2 h2 {
   font-size: 22px;
   margin-top: 4rem;
-  text-align: center;
-  user-select: none;
 }
 .main2 p {
   margin: 1.5rem 0;
@@ -63,30 +61,31 @@
 .imgs {
   width: 8rem;
   height: 8rem;
-  margin: 0rem 3rem;
 }
 .card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 80%;
-  margin: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem auto;
+  gap: 2rem;
 }
-.card div {
-  width: 25%;
-  margin: 1rem auto;
-  text-align: center;
+.card_child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.card div h2 {
+.card_child h2 {
   font-size: 16px;
-  width: 15rem;
   margin: 1rem auto;
   color: #328fbb;
 }
-.card div p {
+.card_child p {
   font-size: 14px;
-  width: 15rem;
+  width: 60%;
+  text-align: center;
 }
-.card div:hover .imgs {
+.card_child:hover .imgs {
   transform: scale(1.1);
   transition: all 1s;
 }
@@ -96,8 +95,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
-  margin: 2rem 0;
 }
 .news {
   width: 80%;

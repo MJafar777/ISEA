@@ -21,11 +21,11 @@ const Education = () => {
       <div className={s.hero}>
         <div className={s.heroTitle}>
           <h1 className={s.title}>ONLINE SOLAR TRAINING</h1>
+          <h4>SOLAR HEATING COURSES</h4>
           <p>
             Online Courses from the world's leading renewable energy technical
             training provider - Solar Energy International
           </p>
-          <h4>SOLAR HEATING COURSES</h4>
         </div>
       </div>
       <div className={s.main}>
@@ -37,11 +37,8 @@ const Education = () => {
             education, ISEA has been providing online solar training and
             in-person workshops to students from around the world. The ISEA
             provides anywhere / anytime access to our world-class curriculum and
-            highly trained instructors.
-          </p>
-          <p>
-            for upcoming online solar training and renewable energy education
-            opportunities!
+            highly trained instructors. For upcoming online solar training and
+            renewable energy education opportunities!
           </p>
           <h4>The (Solar) Power of our People</h4>
           <p>
@@ -58,7 +55,6 @@ const Education = () => {
         <div className={s.card}>
           <div className={s.card_child}>
             <img className={s.imgs} src={img1} alt="img1" />
-
             <h2>SOLAR ELECTRIC COURSES</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
