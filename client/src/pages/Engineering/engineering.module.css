@@ -1,36 +1,25 @@
 :root {
   --color-primary-dark: #e0e0e0;
 }
-.parnet {
-  width: 150%;
-  margin-left: -18%;
-  overflow: hidden;
-}
+
 .background {
-  background-image: url(../../img/enginier/backEnergy.avif);
-  width: 100%;
-  height: 60vh;
-  background-repeat: no-repeat;
+  padding: 10rem;
+  height: 80vh;
   background-size: cover;
-  background-clip: content-box;
-  background-position: bottom;
-  border-radius: 0 0 50% 50%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0.227) 0%,
+      rgba(9, 9, 121, 0.214) 35%,
+      rgba(0, 212, 255, 0.2) 100%
+    ),
+    url(../../img/enginier/pexels-pixabay-159397.avif);
   background-attachment: fixed;
-  overflow: hidden;
-  z-index: 2;
-  position: relative;
 }
-.engineeringTitle {
-  width: 100%;
-  height: 65vh;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 2rem;
-  box-shadow: 0 1.5rem 3rem 1rem rgba(255, 255, 255, 0.5);
-}
+
 .titleH1 {
   font-size: 4rem;
   margin-top: 4rem;
-  color: rgb(37, 105, 240);
+  color: rgb(253, 253, 253);
   text-align: center;
   text-transform: uppercase;
   user-select: none;
@@ -38,7 +27,7 @@
 .paragrof {
   font-size: 1.6rem;
   margin: 2rem 0;
-  color: #2569f0;
+  color: rgb(253, 253, 253);
   text-align: center;
   user-select: none;
 }
@@ -91,39 +80,36 @@
 /* count div started */
 
 .count {
-  width: 70%;
-  z-index: 9;
-  margin: 2rem auto;
   margin-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
-  position: sticky;
+  gap: 5rem;
 }
 .grid {
-  margin-left: 2rem;
-  cursor: pointer;
-}
-.cell {
-  height: 20rem;
+  width: 100%;
+  list-style: none;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
 }
 .imgs1 {
-  width: 35rem;
-  height: 90%;
+  height: 30vh;
+  width: 100%;
+  transition: 1.5s;
+  filter: brightness(0.7);
 }
+
 .text {
-  font-size: 16px;
+  position: absolute;
+  bottom: 20px;
+  margin-left: 2rem;
+  font-size: 1.6rem;
   color: #fff;
 }
-.textParent {
-  width: 35rem;
-  margin-top: -1rem;
-  padding: 1rem;
-  background-color: #2569f0;
-}
-.cell:hover .text {
-  font-size: 18px;
-  transition: all 1s;
+
+.cell:hover .imgs1 {
+  transform: scale(1.4);
+  filter: brightness(1);
 }
 .DESIGNINGIMG {
   width: 100%;
@@ -170,8 +156,4 @@
 }
 .textContent {
   font-size: 16px;
-}
-@media (max-width: 1131px) {
-  .parnet {
-  }
 }

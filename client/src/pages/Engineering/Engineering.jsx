@@ -16,7 +16,7 @@ import img11 from "../../img/factory/1.avif";
 import img22 from "../../img/factory/2.avif";
 import img33 from "../../img/factory/3.avif";
 import img44 from "../../img/factory/4.avif";
-import img55 from "../../img/factory/5.avif";
+import img55 from "../../img/factory/3.avif";
 import img66 from "../../img/factory/6.avif";
 import img77 from "../../img/factory/7.avif";
 import img88 from "../../img/factory/8.avif";
@@ -44,10 +44,10 @@ const Engineering = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="container">
         <Title name={"Engineering"} />
       </div>
-      <div className={a.count}>
+      <div className={"container" + " " + a.count}>
         <NavLink to={"/shablon2"} className={a.grid}>
           <div className={a.cell}>
             <img className={a.imgs1} src={img11} alt="img" />
@@ -121,7 +121,9 @@ const Engineering = () => {
           </div>
         </NavLink>
       </div>
-      <Title name={"SERVICES"} />
+      <div className="container">
+        <Title name={"SERVICES"} />
+      </div>
       <div className={a.designing}>
         <div className={Component2}>
           <div className="one">
