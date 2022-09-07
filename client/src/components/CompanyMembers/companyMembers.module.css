@@ -1,29 +1,61 @@
 .box {
-  height: 30vh;
-  /* mamur shu padding razmerida turvursin */
-  padding: 7rem 7rem;
-  /* shunaqa razmer yaxshi bo'masa kotta bo'p ketvoti */
+  height: 25rem;
+  padding: 5rem 5rem;
 }
 
 @media (max-width: 1395px) {
   .box {
-    height: 40vh;
+    height: 22rem;
   }
 }
 @media (max-width: 900px) {
   .box {
-    height: 30vh;
+    height: 20rem;
+  }
+}
+@media (max-width: 766px) {
+  .box {
+    height: 18rem;
+  }
+}
+@media (max-width: 677px) {
+  .box {
+    height: 15rem;
   }
 }
 @media (max-width: 600px) {
   .box {
-    height: 28vh;
+    height: 14rem;
+    padding: 3rem 5rem;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 471px) {
   .box {
-    height: 25vh;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    height: 14rem;
+    padding: 3rem 12rem;
+  }
+}
+@media (max-width: 442px) {
+  .box {
+    height: 12rem;
+    padding: 2rem 10rem;
+  }
+}
+@media (max-width: 400px) {
+  .box {
+    height: 12rem;
+    padding: 1rem 8rem;
+  }
+}
+@media (max-width: 375px) {
+  .box {
+    height: 10rem;
+    padding: 1rem 8rem;
+  }
+}
+@media (max-width: 336px) {
+  .box {
+    height: 8rem;
+    padding: 0rem 6rem;
   }
 }
