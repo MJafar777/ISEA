@@ -11,7 +11,7 @@ const HeaderVideo = () => {
         <source src={headerVideo} type="video/mp4" />
       </video>
       <div class={s.content}>
-        <h1 className={s.title}>ISEA ORGANISATION</h1>
+        <h1 className={s.title}>ISEA ASSOCIATION</h1>
         <p className={s.description}>
           The main purpose of the activity: training and retraining of personnel
           at the international level in the field of solar energy, supporting
