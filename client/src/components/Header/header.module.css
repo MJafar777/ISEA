@@ -46,6 +46,7 @@
   display: flex;
   align-items: center;
   margin-left: 2rem;
+  z-index: 20;
 }
 .select {
   margin-top: 0rem;
