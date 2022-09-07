@@ -17,7 +17,3 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
-
-setInterval(() => {
-  console.clear();
-}, 3000);
