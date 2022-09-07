@@ -40,7 +40,7 @@ const Education = () => {
             highly trained instructors. For upcoming online solar training and
             renewable energy education opportunities!
           </p>
-          <h4>The (Solar) Power of our People</h4>
+          <h4 className={s.titleSolor}>The (Solar) Power of our People</h4>
           <p>
             Solar Energy International takes pride in our decades of developing
             Solar Training and Renewable Energy curriculum, but what really sets
