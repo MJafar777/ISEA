@@ -36,7 +36,7 @@ import { useDispatch } from "react-redux";
 import Announcement from "./pages/Announcement/Announcement";
 import OneNews from "./pages/Newsroom/OneNew/OneNews";
 import IseaLiderShip from "./pages/IseaLiderShip/IseaLiderShip";
-import Header1 from "./components/Header1/Header1";
+import Header from "./components/Header/Header";
 import { checkMe } from "./store/authSlice";
 import OneLidership from "./pages/IseaLiderShip/OneLidership/OneLidership";
 import Pagination from "./pages/Pagination/Pagination";
@@ -69,7 +69,7 @@ const App = () => {
       </div> */}
 
       {/* <Header /> */}
-      <Header1 />
+      <Header />
 
       <main className="main">
         <Routes>

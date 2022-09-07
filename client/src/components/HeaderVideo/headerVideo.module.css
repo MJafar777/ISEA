@@ -1,11 +1,15 @@
-#myVideo {
+.myVideo {
   width: 100%;
+  height: auto;
+  /* position: absolute; */
+  top: 0;
 }
 
 .headerVideo {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   margin-top: -12%;
 }
 .title {
@@ -21,4 +25,40 @@
 }
 .description {
   font-size: 18px;
+}
+
+@media (max-width: 830px) {
+  .myVideo {
+    /* width: auto; */
+    /* height: 100%; */
+    /* position: sticky; */
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .description {
+    font-size: 1.6rem;
+  }
+  .content {
+    width: 70%;
+  }
+}
+@media (max-width: 735px) {
+  .title {
+    font-size: 2rem;
+  }
+  .content {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .description {
+    font-size: 1.4rem;
+  }
+  .content {
+    width: 100%;
+  }
 }
