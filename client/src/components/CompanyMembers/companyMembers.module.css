@@ -1,6 +1,8 @@
 .box {
   height: 30vh;
-  padding: 2rem 2rem;
+  /* mamur shu padding razmerida turvursin */
+  padding: 7rem 7rem;
+  /* shunaqa razmer yaxshi bo'masa kotta bo'p ketvoti */
 }
 
 @media (max-width: 1395px) {
@@ -21,7 +23,6 @@
 @media (max-width: 480px) {
   .box {
     height: 25vh;
-    /* width: 60% !important; */
     padding-left: 10rem;
     padding-right: 10rem;
   }
