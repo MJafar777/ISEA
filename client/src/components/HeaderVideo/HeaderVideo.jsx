@@ -7,7 +7,7 @@ import Button from "../Button/Button";
 const HeaderVideo = () => {
   return (
     <div className={s.headerVideo}>
-      <video autoPlay muted loop id={s.myVideo}>
+      <video autoPlay muted loop className={s.myVideo}>
         <source src={headerVideo} type="video/mp4" />
       </video>
       <div class={s.content}>

@@ -11,23 +11,13 @@ import Router from "../Router/Router";
 import top from "../../img/icons/chevron-top.svg";
 import logo from "../../img/Logo/neu.avif";
 
-const Header1 = () => {
+const Header = () => {
   // to change burger classes
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
   const [menu_class, setMenuClass] = useState("menu hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
-
-  // useEffect(() => {
-  //   const closeMenu = (e) => {
-  //     setIsMenuClicked(false);
-  //   };
-
-  //   document.body.addEventListener("click", closeMenu);
-  //   return () => {
-  //     document.body.removeEventListener("click", closeMenu);
-  //   };
-  // }, []);
   // toggle burger menu change
+
   const updateMenu = () => {
     if (!isMenuClicked) {
       setBurgerClass("burger-bar clicked");
@@ -39,6 +29,13 @@ const Header1 = () => {
     setIsMenuClicked(!isMenuClicked);
   };
 
+  const closeMenu = () => {
+    console.log("jafar");
+    setBurgerClass("burger-bar unclicked");
+    setMenuClass("menu hidden");
+    setIsMenuClicked(false);
+  };
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(checkMe());
@@ -46,7 +43,7 @@ const Header1 = () => {
   const dropdown = s.acardion + " " + "dropdown";
   const status = useSelector((store) => store.auth.status);
   const isAuth = useSelector((store) => store.auth.isAuth);
-  console.log(isAuth, status);
+  // console.log(isAuth, status);
   return (
     <div className="container">
       <div className={s.menuParent}>
@@ -102,8 +99,9 @@ const Header1 = () => {
                       </div>
                     )}
                   </div>
-
-                  <Navbar name="HOME" route={"/"} />
+                  <div onClick={closeMenu}>
+                    <Navbar name="HOME" route={"/"} />
+                  </div>
 
                   <div className={s.renewables}>
                     <div className={s.topParent}>
@@ -114,7 +112,10 @@ const Header1 = () => {
                       />
                       <img src={top} className="bottomTop" alt="top" />
                     </div>
-                    <div className={s.dropdownChild + " " + s.firstDropChild}>
+                    <div
+                      onClick={closeMenu}
+                      className={s.dropdownChild + " " + s.firstDropChild}
+                    >
                       <Router name={"BENEFITS"} route={"/benefits"} />
                       <Router
                         name={"CLIMATE CHANGE"}
@@ -154,7 +155,7 @@ const Header1 = () => {
                       />
                       <img src={top} className="bottomTop" alt="top" />
                     </div>
-                    <div className={s.dropdownChild}>
+                    <div onClick={closeMenu} className={s.dropdownChild}>
                       <Router name={"About ISEA"} route={"/about"} />
                       <Router
                         name={"ISEA LIDERSHIP"}
@@ -180,12 +181,21 @@ const Header1 = () => {
                       {/* <Router name={"Statute, Vision & Mission"} route={"/asbout"} /> */}
                     </div>
                   </div>
-
-                  <Navbar name="NEWS" route={"/news"} />
-                  <Navbar name="PUBLICATIONS" route={"/publications"} />
-                  <Navbar name="EDUCATION" route={"/education"} />
-                  <Navbar name="ENGINEERING" route={"/engineering"} />
-                  <Navbar name="PROJECT" route={"/project"} />
+                  <div onClick={closeMenu}>
+                    <Navbar name="NEWS" route={"/news"} />
+                  </div>
+                  <div onClick={closeMenu}>
+                    <Navbar name="PUBLICATIONS" route={"/publications"} />
+                  </div>
+                  <div onClick={closeMenu}>
+                    <Navbar name="EDUCATION" route={"/education"} />
+                  </div>
+                  <div onClick={closeMenu}>
+                    <Navbar name="ENGINEERING" route={"/engineering"} />
+                  </div>
+                  <div onClick={closeMenu}>
+                    <Navbar name="PROJECT" route={"/project"} />
+                  </div>
                 </div>
                 {/* <div className={s.selector}>
              <img className={s.lang} src={lang} alt="lang" />
@@ -204,4 +214,4 @@ const Header1 = () => {
   );
 };
 
-export default Header1;
+export default Header;
