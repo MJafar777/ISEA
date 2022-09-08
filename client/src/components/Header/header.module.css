@@ -1,12 +1,22 @@
+.head {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+  padding-bottom: 1rem;
+  position: sticky;
+  top: 0;
+}
 .menuParent {
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  padding: 15px 0;
-  z-index: 10;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  z-index: 150;
 }
 .link {
-  z-index: 10;
+  z-index: 200;
 }
 .navMenu {
   display: grid;
@@ -29,6 +39,7 @@
 .headerWidth {
   display: grid;
 }
+
 .menuIcon {
   margin-top: -5rem;
   margin-left: 2rem;
@@ -62,7 +73,7 @@
 
 .profile {
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 .profile a {
@@ -82,7 +93,6 @@
   transition: all 1s;
   width: 22rem;
   border-radius: 0 10px 10px 0;
-  z-index: 10;
   padding: 0.5rem 3rem;
   background-color: #fff;
   position: absolute;
@@ -118,12 +128,12 @@
 
 /* registers */
 .register {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-left: 4rem;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  /* margin-left: 4rem; */
   padding: 1rem;
-  margin-left: 0rem;
+  /* margin-left: 0rem; */
 }
 .registerChild {
   margin: 1rem;

@@ -60,6 +60,10 @@
 .content2 div h3 {
   margin: 2rem 0;
 }
+.videos {
+  width: 100%;
+  height: 650px;
+}
 @media (max-width: 1131px) {
   .content2 div h3 {
     font-size: 20px;

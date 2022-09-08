@@ -1,16 +1,14 @@
 .myVideo {
   width: 100%;
   height: auto;
-  /* position: absolute; */
-  top: 0;
 }
-
 .headerVideo {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  margin-top: -12%;
+  position: relative;
+  margin-top: -4%;
+  z-index: -2;
 }
 .title {
   font-size: 26px;
@@ -28,11 +26,6 @@
 }
 
 @media (max-width: 830px) {
-  .myVideo {
-    /* width: auto; */
-    /* height: 100%; */
-    /* position: sticky; */
-  }
   .title {
     font-size: 2.2rem;
   }
@@ -41,6 +34,12 @@
   }
   .content {
     width: 70%;
+  }
+}
+@media (max-width: 678px) {
+  .headerVideo {
+    margin-top: 5%;
+    margin-bottom: -8rem;
   }
 }
 @media (max-width: 735px) {
@@ -60,5 +59,39 @@
   }
   .content {
     width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .headerVideo {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 430px) {
+  .headerVideo {
+    margin-top: 15%;
+    margin-bottom: -6rem;
+  }
+}
+@media (max-width: 430px) {
+  .headerVideo {
+    margin-top: 16%;
+    margin-bottom: -6rem;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+  .description {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .headerVideo {
+    margin-top: 20%;
+  }
+  .title {
+    font-size: 16px;
+    margin-top: -5px;
   }
 }

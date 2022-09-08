@@ -45,13 +45,13 @@ const Header = () => {
   const isAuth = useSelector((store) => store.auth.isAuth);
   // console.log(isAuth, status);
   return (
-    <div className="container">
+    <div className={s.head}>
       <div className={s.menuParent}>
         <NavLink className={s.link} to={"/"}>
           <img className={s.logo} src={logo} alt="logo" />
         </NavLink>
         <div className={s.headerWidth}>
-          <nav>
+          <div className="nav">
             <div className={s.profile}>
               {isAuth ? (
                 <Profile />
@@ -77,7 +77,7 @@ const Header = () => {
               <div className={burger_class}></div>
               <div className={burger_class}></div>
             </div>
-          </nav>
+          </div>
 
           <div className={menu_class}>
             <div className={s.navMenu}>

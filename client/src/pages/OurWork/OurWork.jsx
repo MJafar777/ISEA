@@ -2,15 +2,25 @@ import React from "react";
 
 import s from "./ourWork.module.css";
 import Title from "../../components/Title/Title";
+import Iframe from "react-iframe";
 const OurWork = () => {
   return (
     <div className="container">
       <Title name={"Our Work"} />
-      <div className={s.img}>
+      <Iframe
+        className={s.videos}
+        src="https://www.youtube.com/embed/U6oaXQ_w0_g"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></Iframe>
+
+      {/* <div className={s.img}>
         <div className={s.imgBottom}>
           <p>Our Work</p>
         </div>
-      </div>
+      </div> */}
       <div className={s.main}>
         <div className={s.leftContainer}>
           <p>

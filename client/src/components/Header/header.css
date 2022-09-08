@@ -4,24 +4,25 @@
 }
 
 /* ---------------- Navbar and burger menu ------------------ */
-nav {
-  width: 5%;
+.nav {
+  /* width: 5%; */
   height: 5em;
   display: flex;
+  align-items: center;
   padding: 1em;
-  margin: 1rem auto;
+  margin: 0rem auto;
 }
 
 .burger-menu {
   height: 100%;
-  width: 4em;
+  /* width: 4em; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   cursor: pointer;
   z-index: 200;
-  margin-left: 90%;
+  /* margin-left: 90%; */
 }
 
 .burger-bar {
@@ -34,18 +35,17 @@ nav {
 
 .menu {
   height: 100vh;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(2px);
   position: absolute;
   top: 0;
   left: 0;
-  position: fixed;
   transition: all 1s !important;
   animation-name: menu;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
+  position: fixed;
 }
 @keyframes menu {
   0% {

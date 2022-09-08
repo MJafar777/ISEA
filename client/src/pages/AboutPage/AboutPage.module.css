@@ -1,15 +1,12 @@
 .AboutPage {
   position: relative;
-  margin-top: -3rem;
   background-image: linear-gradient(to top, #328fbb, #f0f0f0);
   border-bottom: 1px solid black;
 }
 .containerInfo {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 2rem; */
 }
-
 .leftContainer {
   width: 100%;
   font-size: 16px;
