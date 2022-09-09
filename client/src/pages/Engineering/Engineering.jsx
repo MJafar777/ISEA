@@ -2,8 +2,6 @@ import React from "react";
 
 import { NavLink } from "react-router-dom";
 
-import { AiOutlineArrowRight } from "react-icons/ai";
-
 import a from "./engineering.module.css";
 
 import Title from "../../components/Title/Title";
@@ -23,30 +21,22 @@ import img88 from "../../img/factory/8.avif";
 import img99 from "../../img/factory/9.avif";
 
 const Engineering = () => {
-  const Component = a.engineeringTitle + " " + "container";
   const Component2 = a.DESIGNING + " " + "container";
 
   return (
     <>
-      <div className={a.parnet}>
-        <div className={a.background}>
-          <div className={Component}>
-            <h1 className={a.titleH1}>THE ENGINEERING organisation</h1>
-            <p className={a.paragrof}>
-              INNOVATIVE SOLUTIONS FOR HUMAN AND ENVIRONMENTAL APPLICATION
-            </p>
-            <div className={a.link2}>
-              <NavLink className={a.linkAboutMenu} to={"/about"}>
-                more about the organisation
-              </NavLink>
-              <AiOutlineArrowRight className={a.right} />
-            </div>
-          </div>
-        </div>
+      <div className={a.background}>
+        <h1 className={a.titleH1}>THE ENGINEERING association</h1>
+        <p className={a.paragrof}>
+          INNOVATIVE SOLUTIONS FOR HUMAN AND ENVIRONMENTAL APPLICATION
+        </p>
+        <h2 className={a.title}>more about the association</h2>
       </div>
+
       <div className="container">
         <Title name={"Engineering"} />
       </div>
+
       <div className={"container" + " " + a.count}>
         <NavLink to={"/shablon2"} className={a.grid}>
           <div className={a.cell}>
@@ -121,6 +111,7 @@ const Engineering = () => {
           </div>
         </NavLink>
       </div>
+
       <div className="container">
         <Title name={"SERVICES"} />
       </div>
