@@ -18,7 +18,7 @@ const HeaderVideo = () => {
             supporting the effective use of advanced technologies in the field
             of solar energy.
           </p>
-          <button className={s.button}>Read more ...</button>
+          <button className={s.button}>Read more </button>
         </div>
       </div>
     </div>
