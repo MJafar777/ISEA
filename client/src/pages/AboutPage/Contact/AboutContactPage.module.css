@@ -104,8 +104,8 @@ ul {
   border-radius: 4px;
   font-size: 16px;
 }
-ul li,
-h3 {
+.contact ul li,
+.contact h3 {
   font-size: 16px;
   margin: 0.5rem 1rem;
 }
