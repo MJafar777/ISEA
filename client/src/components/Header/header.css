@@ -1,3 +1,7 @@
+header {
+  position: relative;
+  z-index: 9999;
+}
 .header-navbar {
   position: sticky;
   top: 0;
@@ -7,11 +11,12 @@
 
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
-header .navbarUl {
+header .navbarUl,
+.header-navbar {
   font-size: 1.4rem;
 }
-
-header .navbarUl ul li {
+header .navbarUl ul li,
+.header-navbar ul li {
   position: relative;
   float: left;
 }
@@ -22,41 +27,51 @@ header .navbarUl ul li img {
 header .navbarUl ul li span {
   color: white;
 }
-header .navbarUl ul li a {
+header .navbarUl ul li a,
+.header-navbar ul li a {
   padding: 1.6rem;
   width: 100%;
 }
-header .navbarUl ul li a:hover {
-  background-color: #333;
+header .navbarUl ul li a:hover,
+.header-navbar ul li a:hover {
+  background-color: #222;
 }
 header .navbarUl ul li:focus-within > ul,
-header .navbarUl ul li:hover > ul {
+header .navbarUl ul li:hover > ul,
+.header-navbar ul li:focus-within > ul,
+.header-navbar ul li:hover > ul {
   display: initial;
   z-index: 10000;
 }
-header .navbarUl ul li ul {
+header .navbarUl ul li ul,
+.header-navbar ul li ul {
   position: absolute;
   top: 100%;
   left: 0;
   width: 150px;
 
   background-color: #fff;
-  color: #000;
   display: none;
 }
-
-header .navbarUl ul li ul li span {
-  color: #000;
+.header-navbar ul li ul {
+  width: 300px;
 }
-header .navbarUl ul li ul li a:hover span {
+header .navbarUl ul li ul li span,
+.header-navbar ul li ul li a {
+  color: #222;
+}
+header .navbarUl ul li ul li a:hover span,
+.header-navbar ul li ul li a:hover {
   color: #fff;
 }
-header .navbarUl ul li ul li a {
+header .navbarUl ul li ul li a,
+.header-navbar ul li ul li a {
   width: 100%;
   display: flex;
   gap: 1rem;
 }
-header .navbarUl ul li ul li {
+header .navbarUl ul li ul li,
+.header-navbar ul li ul li {
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -70,9 +85,5 @@ header .navbarUl ul li ul li {
 .header-navbar ul li a {
   font-size: 1.4rem;
   color: #fff;
-  padding: 1rem 0;
   display: inline-block;
-}
-.header-navbar ul li a:hover {
-  color: #ccc;
 }

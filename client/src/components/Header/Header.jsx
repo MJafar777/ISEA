@@ -3,12 +3,15 @@ import React from "react";
 import "./header.css";
 import "./header.module.css";
 
+import Navbar from "../Navbar/Navbar";
+import Router from "../Router/Router";
+
 import logo from "../../img/Logo/neu.avif";
 import profile from "../../img/icons/profile.svg";
-import topArrow from "../../img/icons/chevron-top.svg";
 import flagUz from "../../img/flag/197416.png";
 import flagRu from "../../img/flag/323300.png";
 import flagEn from "../../img/flag/england-circle-512.webp";
+import burger from "../../img/icons/burger/4781852_burger_line_list_menu_nav_icon.svg";
 
 const Header = () => {
   return (
@@ -59,16 +62,83 @@ const Header = () => {
         <div className="container">
           <ul>
             <li>
-              <a href="/">home</a>
+              <Navbar className="hedaer-link" name="HOME" route={"/"} />
             </li>
             <li>
-              <a href="/">about us</a>
+              <Navbar className="hedaer-link" name="RENEWABLES" route={"/benefits"} />
+              <ul>
+                <li>
+                  <Router className="chlidLink" name={"BENEFITS"} route={"/benefits"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"CLIMATE CHANGE"} route={"/climate-change"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"ENERGY TRANSITION"} route={"/energy-transition"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"FINANCE & INVESTMENT"} route={"/finance-and-investment"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"HEATING & COOLING"} route={"/heating-cooling"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"INNOVATION & TECHNOLOGY"} route={"/innovation-technology"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"COSTS"} route={"/costs"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"POWER"} route={"/power"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"INDUCTRY & TRANSPORT"} route={"/inductry-transport"} />
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="/">terminal</a>
+              <Navbar className="hedaer-link" name="ABOUT" route={"/about"} />
+              <ul>
+                <li>
+                  <Router name={"About ISEA"} route={"/about"} />
+                </li>
+                <li>
+                  <Router name={"ISEA LIDERSHIP"} route={"/isea-leadership"} />
+                </li>
+                <li>
+                  <Router name={"Contact"} route={"/contact"} />
+                </li>
+                <li>
+                  <Router name={"OURWORK"} route={"/ourwork"} />
+                </li>
+                <li>
+                  <Router name={"History"} route={"/history"} />
+                </li>
+                <li>
+                  <Router name={"Institutional Structure"} route={"/institutional-structure"} />
+                </li>
+                <li>
+                  <Router name={"ISEA Membership"} route={"/isea-membership"} />
+                </li>
+                <li>
+                  <Router name={"OfficialDocuments"} route={"/official-documents"} />
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="/">help</a>
+              <Navbar className="hedaer-link" name="NEWS" route={"/news"} />
+            </li>
+            <li>
+              <Navbar className="hedaer-link" name="PUBLICATIONS" route={"/publications"} />
+            </li>
+            <li>
+              <Navbar className="hedaer-link" name="EDUCATION" route={"/education"} />
+            </li>
+            <li>
+              <Navbar className="hedaer-link" name="ENGINEERING" route={"/engineering"} />
+            </li>
+            <li>
+              <Navbar className="hedaer-link" name="PROJECT" route={"/project"} />
             </li>
           </ul>
         </div>
@@ -76,14 +146,21 @@ const Header = () => {
     </>
   );
 };
+//
+//
+//
+//
 
+//
+//
+//
+//
 export default Header;
 
 // import React, { useEffect, useState } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 // import { NavLink } from "react-router-dom";
 // import { checkMe } from "../../store/authSlice";
-// import Navbar from "../Navbar/Navbar";
 // import "./header.css";
 // import s from "./header.module.css";
 // import Profile from "../Profile/Profile";
@@ -179,12 +256,13 @@ export default Header;
 //                   <div onClick={closeMenu}>
 //                     <Navbar name="HOME" route={"/"} />
 //                   </div>
-
+//////////////////////////
 //                   <div className={s.renewables}>
 //                     <div className={s.topParent}>
 //                       <Navbar className={dropdown} name="RENEWABLES" route={"/benefits"} />
 //                       <img src={top} className="bottomTop" alt="top" />
 //                     </div>
+///////////////////////
 //                     <div onClick={closeMenu} className={s.dropdownChild + " " + s.firstDropChild}>
 //                       <Router name={"BENEFITS"} route={"/benefits"} />
 //                       <Router name={"CLIMATE CHANGE"} route={"/climate-change"} />
@@ -197,12 +275,13 @@ export default Header;
 //                       <Router name={"INDUCTRY & TRANSPORT"} route={"/inductry-transport"} />
 //                     </div>
 //                   </div>
-
 //                   <div className={s.renewables}>
+////////////////////////////////////
 //                     <div className={s.topParent}>
 //                       <Navbar className={s.acardion} name="ABOUT" route={"/about"} />
 //                       <img src={top} className="bottomTop" alt="top" />
 //                     </div>
+////////////////////////////////////
 //                     <div onClick={closeMenu} className={s.dropdownChild}>
 //                       <Router name={"About ISEA"} route={"/about"} />
 //                       <Router name={"ISEA LIDERSHIP"} route={"/isea-leadership"} />
@@ -217,6 +296,7 @@ export default Header;
 //                       {/* <Router name={"Statute, Vision & Mission"} route={"/asbout"} /> */}
 //                     </div>
 //                   </div>
+////////////////////////////
 //                   <div onClick={closeMenu}>
 //                     <Navbar name="NEWS" route={"/news"} />
 //                   </div>
@@ -233,6 +313,7 @@ export default Header;
 //                     <Navbar name="PROJECT" route={"/project"} />
 //                   </div>
 //                 </div>
+////////////////////////////
 //                 {/* <div className={s.selector}>
 //                   <img className={s.lang} src={lang} alt="lang" />
 //                   <select className="select" name="language" id="language">
