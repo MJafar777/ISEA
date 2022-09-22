@@ -1,4 +1,4 @@
-.head {
+/* .head {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(5px);
@@ -74,18 +74,17 @@
 .profile {
   display: flex;
   /* gap: 20px; */
-}
+/* } */
 
-.profile a {
+/* .profile a {
   text-decoration: none;
-  /* color: var(--color-primary); */
   color: #104cad;
   font-size: 18px;
   z-index: 10;
-}
+} */
 
 /* dropdown started */
-.renewables {
+/* .renewables {
   position: relative;
   left: 0;
 }
@@ -124,31 +123,31 @@
 }
 .topParent:hover img {
   transform: rotate(-90deg);
-}
+}  */
 
 /* registers */
-.register {
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: space-around; */
-  /* margin-left: 4rem; */
-  padding: 1rem;
-  /* margin-left: 0rem; */
-}
+/* .register { */
+/* display: flex; */
+/* align-items: center; */
+/* justify-content: space-around; */
+/* margin-left: 4rem; */
+/* padding: 1rem; */
+/* margin-left: 0rem; */
+/* }
 .registerChild {
   margin: 1rem;
-}
+} */
 /* registers */
 
 /* responive header */
 
 /* mobile response */
-#mobileProfile {
+/* #mobileProfile {
   display: none;
-}
+} */
 /* mobile response */
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .logo,
   .profile,
   .burgerMenu {
@@ -201,5 +200,5 @@
     display: flex;
     flex-direction: column;
   }
-}
+} */
 /* responive header */
