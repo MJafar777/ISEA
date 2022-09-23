@@ -38,8 +38,9 @@ header .navbarUl ul li a,
 }
 header .navbarUl ul li a:hover,
 .header-navbar ul li a:hover {
-  background-color: #222;
-  color: #fff;
+  /* background-color: #222; */
+  /* color: #fff; */
+  transform: translateY(-0.2rem);
 }
 header .navbarUl ul li:focus-within > ul,
 header .navbarUl ul li:hover > ul,
@@ -68,6 +69,10 @@ header .navbarUl ul li ul li span,
 header .navbarUl ul li ul li a:hover span,
 .header-navbar ul li ul li a:hover {
   color: #fff;
+}
+
+header .navbarUl ul li ul li a:hover {
+  background-color: #222;
 }
 header .navbarUl ul li ul li a,
 .header-navbar ul li ul li a {

@@ -80,6 +80,20 @@ const Header = () => {
                       <img className="" src={profile} alt="profile" />
                       <span>LOG IN</span>
                     </a>
+                    <ul>
+                      <li>
+                        <a href="/">
+                          <img className="" src={profile} alt="profile" />
+                          <span>LOG IN</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <img className="" src={profile} alt="profile" />
+                          <span>LOG IN</span>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
