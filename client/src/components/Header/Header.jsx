@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./header.css";
 import "./header.module.css";
@@ -11,55 +11,102 @@ import profile from "../../img/icons/profile.svg";
 import flagUz from "../../img/flag/197416.png";
 import flagRu from "../../img/flag/323300.png";
 import flagEn from "../../img/flag/england-circle-512.webp";
-import burger from "../../img/icons/burger/4781852_burger_line_list_menu_nav_icon.svg";
+import burger from "../../img/icons/burger/burger.svg";
+import findIcon from "../../img/icons/find.svg";
 
 const Header = () => {
+  const [burgerMenu, setBurgerMenu] = useState(true);
+
   return (
     <>
-      <header className="bg-[#222]">
-        <div className="container">
-          <div className="head flex justify-between">
-            <div className="left-head flex gap-4 items-center">
-              <img className="w-[100px]" src={logo} alt="logo_img" />
-              <p className="text-white capitalize text-lg tracking-[.1em]">
-                international solar <br /> energy system
-              </p>
-            </div>
-            <div className="right-head navbarUl">
-              <ul className="flex items-center">
-                <li>
-                  <a className="flex items-center gap-3" href="/">
-                    <img className="" src={flagEn} alt="arrow-down" />
-                    <span>EN</span>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="/">
-                        <img src={flagRu} alt="flagRu" />
-                        <span>RU</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <img src={flagUz} alt="flagUz" />
-                        <span>UZ</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a className="flex items-center gap-2" href="/">
-                    <img className="" src={profile} alt="profile" />
-                    <span>LOG IN</span>
-                  </a>
-                </li>
-              </ul>
+      <header className="">
+        <div className="bg-[#222]">
+          <div className="container">
+            <div className="head flex justify-between">
+              <div className="left-head flex gap-4 items-center header-logo-container">
+                <img className="w-[100px]" src={logo} alt="logo_img" />
+                <p className="text-white capitalize text-lg tracking-[.1em]">
+                  international solar <br /> energy system
+                </p>
+              </div>
+              <input
+                id="menu-burger"
+                type="checkbox"
+                onClick={() => setBurgerMenu(!burgerMenu)}
+                style={{ display: "none" }}
+              />
+              <label htmlFor="menu-burger" className="items-center menu-berger-label">
+                <img className="w-[3.2rem] h-[3.2rem]" src={burger} alt="burger_menu" />
+              </label>
+              <div className="right-head navbarUl">
+                <ul className="flex items-center">
+                  <li>
+                    <div className="relative m-[1.6rem]">
+                      <input
+                        className="bg-transparent text-white outline-none border-2 border-[#0057BD] rounded-xl p-2"
+                        type="text"
+                        name="findIcon"
+                        id="findIcon"
+                      />
+                      <img
+                        className="absolute right-1 top-1/2 -translate-y-1/2 headerFindIcon"
+                        src={findIcon}
+                        alt="findIcon"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <a className="flex items-center gap-3" href="/">
+                      <img className="" src={flagEn} alt="arrow-down" />
+                      <span>EN</span>
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="/">
+                          <img src={flagRu} alt="flagRu" />
+                          <span>RU</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <img src={flagUz} alt="flagUz" />
+                          <span>UZ</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a className="flex items-center gap-2" href="/">
+                      <img className="" src={profile} alt="profile" />
+                      <span>LOG IN</span>
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="/">
+                          <img className="" src={profile} alt="profile" />
+                          <span>LOG IN</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <img className="" src={profile} alt="profile" />
+                          <span>LOG IN</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </header>
-      <div className="header-navbar bg-[#0057BD] uppercase">
-        <div className="container">
+      <div
+        style={burgerMenu ? { display: "block" } : { display: "none" }}
+        className="header-navbar  md:bg-[#0057BD] md:w-full  uppercase "
+        // onClick={() => setBurgerMenu(!burgerMenu)}
+      >
+        <div className="sm:container inline">
           <ul>
             <li>
               <Navbar className="hedaer-link" name="HOME" route={"/"} />
@@ -146,15 +193,7 @@ const Header = () => {
     </>
   );
 };
-//
-//
-//
-//
 
-//
-//
-//
-//
 export default Header;
 
 // import React, { useEffect, useState } from "react";

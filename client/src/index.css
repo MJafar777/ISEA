@@ -49,12 +49,6 @@ ul {
   font-weight: 400;
 }
 
-.container {
-  max-width: 1320px;
-  width: 80%;
-  margin: 0 auto;
-}
-
 .btn {
   text-align: center;
   background-color: var(--color-primary);
@@ -98,9 +92,8 @@ ul {
 }
 
 .active {
-  transition: all 0.5s;
-  /* font-size: 22px; */
-  color: black !important;
+  background-color: #222 !important;
+  color: #fff !important;
 }
 
 .cardInfo {
