@@ -12,9 +12,10 @@ import flagUz from "../../img/flag/197416.png";
 import flagRu from "../../img/flag/323300.png";
 import flagEn from "../../img/flag/england-circle-512.webp";
 import burger from "../../img/icons/burger/burger.svg";
+import findIcon from "../../img/icons/find.svg";
 
 const Header = () => {
-  const [burgerMenu, setBurgerMenu] = useState(false);
+  const [burgerMenu, setBurgerMenu] = useState(true);
 
   return (
     <>
@@ -39,6 +40,21 @@ const Header = () => {
               </label>
               <div className="right-head navbarUl">
                 <ul className="flex items-center">
+                  <li>
+                    <div className="relative m-[1.6rem]">
+                      <input
+                        className="bg-transparent text-white outline-none border-2 border-[#0057BD] rounded-xl p-2"
+                        type="text"
+                        name="findIcon"
+                        id="findIcon"
+                      />
+                      <img
+                        className="absolute right-1 top-1/2 -translate-y-1/2 headerFindIcon"
+                        src={findIcon}
+                        alt="findIcon"
+                      />
+                    </div>
+                  </li>
                   <li>
                     <a className="flex items-center gap-3" href="/">
                       <img className="" src={flagEn} alt="arrow-down" />
@@ -72,94 +88,92 @@ const Header = () => {
         </div>
       </header>
       <div
-        style={burgerMenu ? { display: "initial" } : { display: "none" }}
-        onClick={() => setBurgerMenu(!burgerMenu)}
-        className="bg-[#000c] md:bg-[#0057BD] uppercase header-navbar"
+        style={burgerMenu ? { display: "block" } : { display: "none" }}
+        className="header-navbar  md:bg-[#0057BD] md:w-full  uppercase "
+        // onClick={() => setBurgerMenu(!burgerMenu)}
       >
-        <div className="bg-white md:bg-none inline-block">
-          <div className="md:container">
-            <ul>
-              <li>
-                <Navbar className="hedaer-link" name="HOME" route={"/"} />
-              </li>
-              <li>
-                <Navbar className="hedaer-link" name="RENEWABLES" route={"/"} />
-                <ul>
-                  <li>
-                    <Router className="chlidLink" name={"BENEFITS"} route={"/benefits"} />
-                  </li>
-                  <li>
-                    <Router className="chlidLink" name={"CLIMATE CHANGE"} route={"/climate-change"} />
-                  </li>
-                  <li>
-                    <Router className="chlidLink" name={"ENERGY TRANSITION"} route={"/energy-transition"} />
-                  </li>
-                  <li>
-                    <Router className="chlidLink" name={"FINANCE & INVESTMENT"} route={"/finance-and-investment"} />
-                  </li>
-                  <li>
-                    <Router className="chlidLink" name={"HEATING & COOLING"} route={"/heating-cooling"} />
-                  </li>
-                  <li>
-                    <Router className="chlidLink" name={"INNOVATION & TECHNOLOGY"} route={"/innovation-technology"} />
-                  </li>
-                  <li>
-                    <Router className="chlidLink" name={"COSTS"} route={"/costs"} />
-                  </li>
-                  <li>
-                    <Router className="chlidLink" name={"POWER"} route={"/power"} />
-                  </li>
-                  <li>
-                    <Router className="chlidLink" name={"INDUCTRY & TRANSPORT"} route={"/inductry-transport"} />
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Navbar className="hedaer-link" name="ABOUT" route={"/"} />
-                <ul>
-                  <li>
-                    <Router name={"About ISEA"} route={"/about"} />
-                  </li>
-                  <li>
-                    <Router name={"ISEA LIDERSHIP"} route={"/isea-leadership"} />
-                  </li>
-                  <li>
-                    <Router name={"Contact"} route={"/contact"} />
-                  </li>
-                  <li>
-                    <Router name={"OURWORK"} route={"/ourwork"} />
-                  </li>
-                  <li>
-                    <Router name={"History"} route={"/history"} />
-                  </li>
-                  <li>
-                    <Router name={"Institutional Structure"} route={"/institutional-structure"} />
-                  </li>
-                  <li>
-                    <Router name={"ISEA Membership"} route={"/isea-membership"} />
-                  </li>
-                  <li>
-                    <Router name={"OfficialDocuments"} route={"/official-documents"} />
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <Navbar className="hedaer-link" name="NEWS" route={"/news"} />
-              </li>
-              <li>
-                <Navbar className="hedaer-link" name="PUBLICATIONS" route={"/publications"} />
-              </li>
-              <li>
-                <Navbar className="hedaer-link" name="EDUCATION" route={"/education"} />
-              </li>
-              <li>
-                <Navbar className="hedaer-link" name="ENGINEERING" route={"/engineering"} />
-              </li>
-              <li>
-                <Navbar className="hedaer-link" name="PROJECT" route={"/project"} />
-              </li>
-            </ul>
-          </div>
+        <div className="sm:container inline">
+          <ul>
+            <li>
+              <Navbar className="hedaer-link" name="HOME" route={"/"} />
+            </li>
+            <li>
+              <Navbar className="hedaer-link" name="RENEWABLES" route={"/benefits"} />
+              <ul>
+                <li>
+                  <Router className="chlidLink" name={"BENEFITS"} route={"/benefits"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"CLIMATE CHANGE"} route={"/climate-change"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"ENERGY TRANSITION"} route={"/energy-transition"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"FINANCE & INVESTMENT"} route={"/finance-and-investment"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"HEATING & COOLING"} route={"/heating-cooling"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"INNOVATION & TECHNOLOGY"} route={"/innovation-technology"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"COSTS"} route={"/costs"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"POWER"} route={"/power"} />
+                </li>
+                <li>
+                  <Router className="chlidLink" name={"INDUCTRY & TRANSPORT"} route={"/inductry-transport"} />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Navbar className="hedaer-link" name="ABOUT" route={"/about"} />
+              <ul>
+                <li>
+                  <Router name={"About ISEA"} route={"/about"} />
+                </li>
+                <li>
+                  <Router name={"ISEA LIDERSHIP"} route={"/isea-leadership"} />
+                </li>
+                <li>
+                  <Router name={"Contact"} route={"/contact"} />
+                </li>
+                <li>
+                  <Router name={"OURWORK"} route={"/ourwork"} />
+                </li>
+                <li>
+                  <Router name={"History"} route={"/history"} />
+                </li>
+                <li>
+                  <Router name={"Institutional Structure"} route={"/institutional-structure"} />
+                </li>
+                <li>
+                  <Router name={"ISEA Membership"} route={"/isea-membership"} />
+                </li>
+                <li>
+                  <Router name={"OfficialDocuments"} route={"/official-documents"} />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Navbar className="hedaer-link" name="NEWS" route={"/news"} />
+            </li>
+            <li>
+              <Navbar className="hedaer-link" name="PUBLICATIONS" route={"/publications"} />
+            </li>
+            <li>
+              <Navbar className="hedaer-link" name="EDUCATION" route={"/education"} />
+            </li>
+            <li>
+              <Navbar className="hedaer-link" name="ENGINEERING" route={"/engineering"} />
+            </li>
+            <li>
+              <Navbar className="hedaer-link" name="PROJECT" route={"/project"} />
+            </li>
+          </ul>
         </div>
       </div>
     </>

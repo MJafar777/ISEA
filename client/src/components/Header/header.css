@@ -7,7 +7,11 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  width: 250px;
   z-index: 1000;
+
+  display: flex;
+  justify-content: center;
 
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -35,6 +39,7 @@ header .navbarUl ul li a,
 header .navbarUl ul li a:hover,
 .header-navbar ul li a:hover {
   background-color: #222;
+  color: #fff;
 }
 header .navbarUl ul li:focus-within > ul,
 header .navbarUl ul li:hover > ul,
@@ -75,6 +80,9 @@ header .navbarUl ul li ul li,
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+.headerFindIcon {
+  color: #fff;
+}
 .header-navbar ul {
   display: flex;
   align-items: center;
@@ -91,22 +99,7 @@ header .navbarUl ul li ul li,
 .menu-berger-label {
   display: none;
 }
-@media (max-width: 1024px) {
-  header .navbarUl {
-    font-size: 1rem;
-  }
-  header .navbarUl ul li img {
-    width: 1.6rem;
-    height: 1.6rem;
-  }
-  header .menu-berger-label img {
-    width: 2.8rem;
-    height: 2.8rem;
-  }
-  .header-navbar ul li a {
-    font-size: 1rem;
-  }
-}
+
 @media (max-width: 768px) {
   header .navbarUl ul li span {
     font-size: 1rem;
@@ -146,7 +139,7 @@ header .navbarUl ul li ul li,
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
-    width: 200px;
+    width: 100%;
   }
   .header-navbar ul li {
     border-bottom: 1px solid #0001;
@@ -166,6 +159,9 @@ header .navbarUl ul li ul li,
   .header-navbar ul li ul li ul {
     width: 100%;
     left: 0;
+  }
+  .kallangaSani {
+    background-color: white;
   }
 }
 @media (max-width: 640px) {
@@ -189,6 +185,4 @@ header .navbarUl ul li ul li,
   .header-navbar ul li a {
     font-size: 1rem;
   }
-}
-@media (max-width: 640px) {
 }
