@@ -87,3 +87,108 @@ header .navbarUl ul li ul li,
   color: #fff;
   display: inline-block;
 }
+
+.menu-berger-label {
+  display: none;
+}
+@media (max-width: 1024px) {
+  header .navbarUl {
+    font-size: 1rem;
+  }
+  header .navbarUl ul li img {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  header .menu-berger-label img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .header-navbar ul li a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  header .navbarUl ul li span {
+    font-size: 1rem;
+  }
+  header .navbarUl ul li img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  header .menu-berger-label img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .header-navbar ul li a {
+    font-size: 0.8rem;
+  }
+  /*  */
+
+  header .menu-berger-label {
+    display: flex;
+  }
+  header .header-logo-container {
+    display: none;
+  }
+  /*  */
+  .header-navbar {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  .header-navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    width: 200px;
+  }
+  .header-navbar ul li {
+    border-bottom: 1px solid #0001;
+    width: 100%;
+  }
+  .header-navbar ul li a {
+    color: #000;
+    width: 100%;
+  }
+  .header-navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  .header-navbar ul li ul li {
+    background-color: #eee;
+  }
+  .header-navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+  }
+}
+@media (max-width: 640px) {
+  header .navbarUl ul li span {
+    font-size: 1rem;
+  }
+  header .navbarUl ul li img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  header .navbarUl ul li a {
+    padding: 1rem;
+  }
+  header .menu-berger-label img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .header-navbar {
+    top: 3.2rem;
+  }
+  .header-navbar ul li a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 640px) {
+}
