@@ -22,11 +22,9 @@ const HomePage = () => {
     <main>
       <HeaderVideo />
       <IntroLanding />
-      <div className="container">
-        <AboutLanding />
-        <News />
-        {/* <NewsLanding /> */}
-      </div>
+      <AboutLanding />
+      <News />
+      {/* <NewsLanding /> */}
       <PublicationLanding />
       <CompanyMembers />
       <Topic />
