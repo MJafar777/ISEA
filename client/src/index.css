@@ -29,6 +29,13 @@ body {
   overflow-x: hidden;
   font-family: "Manrope", sans-serif;
 }
+body::-webkit-scrollbar {
+  width: 6px;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(186, 186, 186, 0.671);
+  border-radius: 10px;
+}
 
 h1,
 h2,
