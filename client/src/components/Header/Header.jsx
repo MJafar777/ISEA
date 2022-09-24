@@ -41,7 +41,7 @@ const Header = () => {
               <div className="right-head navbarUl">
                 <ul className="flex items-center">
                   <li>
-                    <div className="relative m-[1.6rem]">
+                    {/* <div className="relative m-[1.6rem]">
                       <input
                         className="bg-transparent text-white outline-none border-2 border-[#0057BD] rounded-xl p-2"
                         type="text"
@@ -53,7 +53,29 @@ const Header = () => {
                         src={findIcon}
                         alt="findIcon"
                       />
+                    </div> */}
+                    <div className="m-[1rem] p-[.4rem] border-2 border-[#0057BD] rounded-xl">
+                      <img className="headerFindIcon" src={findIcon} alt="findIcon" />
                     </div>
+                    <ul className="rounded-lg">
+                      <li className="bg-[#222] rounded-lg">
+                        <div className=" p-2   rounded-lg">
+                          <div className="relative">
+                            <input
+                              className="w-full bg-transparent text-white outline-none border-2 border-[#0057BD] rounded-xl p-2"
+                              type="text"
+                              name="findIcon"
+                              id="findIcon"
+                            />
+                            <img
+                              className="absolute right-1 top-1/2 -translate-y-1/2 headerFindIcon"
+                              src={findIcon}
+                              alt="findIcon"
+                            />
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </li>
                   <li>
                     <a className="flex items-center gap-3" href="/">
