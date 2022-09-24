@@ -150,3 +150,8 @@
   font-weight: 600;
 }
 /* this class popular_news left news container and finished*/
+
+/* media queries started */
+@media (max-width: 1024px) {
+}
+/* media queries finished */

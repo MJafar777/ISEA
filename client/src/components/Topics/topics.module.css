@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   row-gap: 50px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .background {
   padding: 0 0 2rem 0;

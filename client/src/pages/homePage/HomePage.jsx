@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import AboutLanding from "../../components/AboutLanding/AboutLanding";
 import CompanyMembers from "../../components/CompanyMembers/CompanyMembers";
 import EnergySources from "../../components/EnergySources/EnergySources";
-import IntroLanding from "../../components/IntroLanding/IntroLanding";
 import NewsLanding from "../../components/NewsLanding/NewsLanding";
 import PublicationLanding from "../../components/PublicationLanding/PublicationLanding";
 import Topic from "../../components/Topics/Topic";
@@ -21,7 +20,6 @@ const HomePage = () => {
   return (
     <main>
       <HeaderVideo />
-      <IntroLanding />
       <AboutLanding />
       <News />
       {/* <NewsLanding /> */}
