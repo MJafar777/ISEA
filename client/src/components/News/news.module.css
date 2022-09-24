@@ -50,10 +50,8 @@
   border-radius: 1rem;
 }
 .news_left__img {
-  /* width: 30rem; */
   width: 100%;
   height: 20rem;
-  /* object-position: center; */
   object-fit: cover;
 }
 .news_left__img_title {
