@@ -13,13 +13,11 @@
 * {
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   transition: 0.3s linear;
 }
-
 body {
   background-color: #f0f0f0;
   /* background-color: var(--color-secondary) !important; */
@@ -29,7 +27,6 @@ body {
   overflow-x: hidden;
   font-family: "Manrope", sans-serif;
 }
-
 h1,
 h2,
 h3,
