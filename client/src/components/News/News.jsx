@@ -74,7 +74,7 @@ const News = () => {
           </div>
         </div>
 
-        {/*  */}
+        {/* /////\\\\\  */}
 
         <div className={s.popular_news}>
           <div className={s.title}>

@@ -87,7 +87,7 @@
 .render_popular_news {
   display: grid;
   grid-template-columns: 1fr;
-  height: 80vh;
+  height: 70rem;
   overflow-y: scroll;
 }
 .render_popular_news::-webkit-scrollbar {
@@ -120,6 +120,7 @@
   cursor: pointer;
   border-radius: 0.5rem;
   padding: 1rem;
+  margin: 1rem 0;
 }
 .popular_news_card:hover {
   background-color: rgba(221, 221, 221, 0.5);
@@ -152,6 +153,202 @@
 /* this class popular_news left news container and finished*/
 
 /* media queries started */
-@media (max-width: 1024px) {
+@media (max-width: 1340px) {
+  /* left news started */
+  .news_parent__home {
+    gap: 0 4rem;
+  }
+
+  .news_left__img_title {
+    font-size: 1.6rem;
+  }
+  /* left news finished */
+
+  /* ////////////////////////////////////////// */
+
+  /* right news started */
+
+  .popular_news_card__right_text,
+  .popular_news_card__right_title {
+    font-size: 1.4rem;
+  }
+  /* right news finished */
+}
+@media (max-width: 1270px) {
+  /* left news started */
+  .news_parent__home {
+    gap: 0 2rem;
+  }
+  /* left news finished */
+
+  /* ////////////////////////////////////////// */
+
+  /* right news started */
+
+  /* right news finished */
+}
+@media (max-width: 1209px) {
+  /* left news started */
+  .news_parent__home {
+    gap: 0;
+  }
+  .render_news {
+    gap: 2rem;
+  }
+  .title {
+    width: 98%;
+  }
+  /* left news finished */
+
+  /* ////////////////////////////////////////// */
+
+  /* right news started */
+
+  /* right news finished */
+}
+@media (max-width: 1188px) {
+  /* left news started */
+  .render_news {
+    grid-template-columns: 1fr;
+  }
+  .news_left:last-child {
+    display: none;
+  }
+  /* left news finished */
+
+  /* ////////////////////////////////////////// */
+
+  /* right news started */
+  .popular_news {
+    width: 60%;
+  }
+  .render_popular_news {
+    height: 80rem;
+  }
+  /* right news finished */
+}
+@media (max-width: 960px) {
+  .news_parent__home {
+    width: 100%;
+  }
+
+  /* left news started */
+  .latest_news {
+    width: 50%;
+  }
+  /* left news finished */
+
+  /* ////////////////////////////////////////// */
+
+  /* right news started */
+
+  /* right news finished */
+}
+@media (max-width: 797px) {
+  .news_parent__home {
+    display: block;
+  }
+
+  /* left news started */
+  .latest_news {
+    width: 100%;
+  }
+  .render_news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .news_left:last-child {
+    display: block;
+  }
+  /* left news finished */
+
+  /* ////////////////////////////////////////// */
+
+  /* right news started */
+  .popular_news {
+    width: 100%;
+  }
+  .popular_news_card {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .news_popular_news_card__left {
+    margin-right: 0;
+  }
+  /* right news finished */
+}
+@media (max-width: 660px) {
+  /* left news started */
+  .news_left__img_title,
+  .news_left__img_content,
+  .title_data {
+    font-size: 1.4rem;
+  }
+  /* left news finished */
+
+  /* ////////////////////////////////////////// */
+
+  /* right news started */
+  .popular_news_card {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* right news finished */
+}
+@media (max-width: 600px) {
+  /* left news started */
+  .render_news {
+    grid-template-columns: 1fr;
+  }
+  /* left news finished */
+
+  /* ////////////////////////////////////////// */
+
+  /* right news started */
+
+  /* right news finished */
+}
+@media (max-width: 454px) {
+  /* left news started */
+
+  /* left news finished */
+
+  /* ////////////////////////////////////////// */
+
+  /* right news started */
+  .popular_news_card__right_text {
+    display: none;
+  }
+  .title_data,
+  .date {
+    display: block;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  .popular_news_card__left {
+    width: 40%;
+  }
+  .popular_news_card__right {
+    width: 60%;
+  }
+  .popular_news__img {
+    width: 100%;
+  }
+  .popular_news_card__right_title {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  /* right news finished */
+}
+@media (max-width: px) {
+  /* left news started */
+
+  /* left news finished */
+
+  /* ////////////////////////////////////////// */
+
+  /* right news started */
+
+  /* right news finished */
 }
 /* media queries finished */
