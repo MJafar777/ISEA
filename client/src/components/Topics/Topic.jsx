@@ -23,33 +23,13 @@ export default function Topic() {
 
         <Card link={"/climate-change"} name={"CLIMATE CHANGE"} image={image2} />
 
-        <Card
-          link={"/energy-transition"}
-          name={"ENERGY TRANSITION"}
-          image={image3}
-        />
-        <Card
-          link={"/finance-and-investment"}
-          name={"FINANCE INVESTMENT"}
-          image={image4}
-        />
-        <Card
-          link={"/heating-cooling"}
-          name={"HEATING COOLING"}
-          image={image5}
-        />
-        <Card
-          link={"/innovation-technology"}
-          name={"INNOVATION TECHNOLOGY"}
-          image={image6}
-        />
+        <Card link={"/energy-transition"} name={"ENERGY TRANSITION"} image={image3} />
+        <Card link={"/finance-and-investment"} name={"FINANCE INVESTMENT"} image={image4} />
+        <Card link={"/heating-cooling"} name={"HEATING COOLING"} image={image5} />
+        <Card link={"/innovation-technology"} name={"INNOVATION TECHNOLOGY"} image={image6} />
         <Card link={"/costs"} name={"COSTS"} image={image7} />
         <Card link={"/power"} name={"POWER"} image={image8} />
-        <Card
-          link={"/inductry-transport"}
-          name={"INDUCTRY TRANSPORT"}
-          image={image9}
-        />
+        <Card link={"/inductry-transport"} name={"INDUCTRY TRANSPORT"} image={image9} />
       </div>
     </div>
   );

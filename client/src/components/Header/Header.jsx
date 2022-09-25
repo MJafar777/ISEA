@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="">
+      <header id="header" className="">
         <div className="bg-[#222]">
           <div className="container">
             <div className="head flex justify-between">
