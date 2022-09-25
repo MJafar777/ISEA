@@ -1,6 +1,6 @@
 .myVideo {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .headerVideo {
   width: 100%;
@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  top: 0;
 }
 .title {
   font-size: 52px;
@@ -26,6 +27,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.heroVideo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .button {
   width: 220px;
@@ -44,6 +50,11 @@
   box-shadow: 0px 4px 36px rgba(0, 87, 189, 0.6);
   background: #0057bd;
   color: #ffffff;
+}
+.button:hover {
+  transform: translateY(-0.6rem);
+  transition: 0.3s ease-out;
+  box-shadow: 0 1rem 2rem rgba(0, 87, 189, 0.6);
 }
 .button:active {
   transform: translateY(1px);
@@ -114,8 +125,7 @@
 }
 @media (max-width: 678px) {
   .headerVideo {
-    margin-top: 5%;
-    margin-bottom: -8rem;
+    /* margin-bottom: -8rem; */
   }
 }
 @media (max-width: 735px) {
@@ -137,18 +147,15 @@
 }
 @media (max-width: 460px) {
   .headerVideo {
-    margin-top: 10%;
   }
 }
 @media (max-width: 430px) {
   .headerVideo {
-    margin-top: 15%;
     margin-bottom: -6rem;
   }
 }
 @media (max-width: 430px) {
   .headerVideo {
-    margin-top: 16%;
     margin-bottom: -6rem;
   }
   .description {
@@ -157,9 +164,6 @@
   }
 }
 @media (max-width: 320px) {
-  .headerVideo {
-    margin-top: 20%;
-  }
   .title {
     font-size: 16px;
     margin-top: -5px;
