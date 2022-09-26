@@ -58,17 +58,16 @@ const App = () => {
   }, []);
   return (
     <>
-      {/* <div className="testing">
+      <div className="testing">
         <Marquee speed="100" className="testSite">
-          <span>Sayt test rejimida</span> {"  "} <span>The site is in test mode</span>{" "}
+          <span>Sayt test rejimida</span> {"  "}{" "}
+          <span>The site is in test mode</span>{" "}
           <span>Сайт находится в тестовом режиме</span>
-          <span>Sayt test rejimida !</span> {"  "} <span>The site is in test mode !</span>{" "}
-          <span>Сайт находится в тестовом режиме !</span>
         </Marquee>
-      </div> */}
+      </div>
 
-      {/* <Header /> */}
       <Header />
+      {/* <Header /> */}
 
       <main className="main">
         <Routes>

@@ -14,13 +14,16 @@
 .row:hover {
   transform: scale(1.05);
   transition: all 0.5s;
-  box-shadow: 0px 1.5px 3px 3px rgba(128, 128, 128, 0.575);
-  border-radius: 20%;
+  -webkit-box-shadow: 0px 3px 58px 4px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 3px 58px 4px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 3px 58px 4px rgba(34, 60, 80, 0.2);
 }
 
 .row {
+  border-radius: 20px;
   margin: 1rem;
   text-decoration: none;
+  padding: 1rem;
 }
 
 .energys img {
