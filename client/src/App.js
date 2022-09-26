@@ -49,6 +49,7 @@ import Hydopower from "./pages/EnergySources/Hydopower/Hydopower";
 import Ocean from "./pages/EnergySources/Ocean/Ocean";
 import Solar from "./pages/EnergySources/Solar/Solar";
 import obj from "./dataLidership";
+import PublicationPage from "./pages/Publication2/PublicationPage";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -67,7 +68,7 @@ const App = () => {
       </div> */}
 
       {/* <Header /> */}
-      {/* <Header /> */}
+      <Header />
 
       <main className="main">
         <Routes>
@@ -78,10 +79,16 @@ const App = () => {
 
           {/* about page child comonents started */}
           <Route path="/isea-leadership" element={<IseaLiderShip />} />
-          <Route path="/isea-leadership/:id" element={<OneLidership obj={obj} />} />
+          <Route
+            path="/isea-leadership/:id"
+            element={<OneLidership obj={obj} />}
+          />
           <Route path="/contact" element={<AboutContactPage />} />
           <Route path="/history" element={<History />} />
-          <Route path="/institutional-structure" element={<InstitutionalStructure />} />
+          <Route
+            path="/institutional-structure"
+            element={<InstitutionalStructure />}
+          />
           <Route path="/isea-membership" element={<IseaMembership />} />
 
           <Route path="/official-documents" element={<OfficialDocuments />} />
@@ -100,9 +107,15 @@ const App = () => {
           <Route path="/benefits" element={<Benefits />} />
           <Route path="/climate-change" element={<ClimateChange />} />
           <Route path="/energy-transition" element={<EnergyTransition />} />
-          <Route path="/finance-and-investment" element={<FinanceInvestment />} />
+          <Route
+            path="/finance-and-investment"
+            element={<FinanceInvestment />}
+          />
           <Route path="/heating-cooling" element={<HeatingColing />} />
-          <Route path="/innovation-technology" element={<InnovationTechnology />} />
+          <Route
+            path="/innovation-technology"
+            element={<InnovationTechnology />}
+          />
           <Route path="/inductry-transport" element={<InductryTransport />} />
           <Route path="/costs" element={<Costs />} />
           <Route path="/power" element={<Power />} />
@@ -116,7 +129,8 @@ const App = () => {
 
           {/* ---------------------------- */}
 
-          <Route path="/publications" element={<Publication />} />
+          {/* <Route path="/publications" element={<Publication />} /> */}
+          <Route path="/publications" element={<PublicationPage />} />
 
           {/* ---------------------------- */}
           <Route path="/Announcement" element={<Announcement />} />
