@@ -1,0 +1,145 @@
+footer .footer {
+  width: 100%;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+footer .footerTitle h2 {
+  font-size: 18px;
+  color: #0057bd;
+  margin: 1rem 0;
+}
+footer .footerTitle p {
+  font-size: 14px;
+  display: block;
+}
+footer .footerTitle a {
+  text-decoration: none;
+  color: #fff;
+  user-select: none;
+  margin: 0.5rem 0;
+}
+footer .footerTitle a img {
+  /* height: 1.4rem; */
+  margin-right: 0.5rem;
+}
+footer .footerTitle form {
+  margin: 1.5rem 0;
+}
+
+footer .footerTitle form input {
+  background-color: #fff;
+  color: #222;
+  height: 4rem;
+  font-size: 14px;
+  padding-left: 3.2rem;
+  border-radius: 5px;
+  width: 90%;
+}
+footer .footerTitle form input:focus {
+  outline: none;
+}
+footer .footerTitle form input::placeholder {
+  color: #ccc;
+}
+footer .footerTitle form button {
+  font-size: 14px;
+  background-color: #0057bd;
+  color: #fff;
+  border-radius: 5px;
+  width: auto;
+  border: 0;
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+}
+
+footer .footerTitle form button:active {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+footer .footerTitle p {
+  margin-bottom: 1rem;
+}
+footer .forms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: text;
+}
+.topArrowcircle {
+  float: right;
+  animation: animaTopArrowcircle 2s ease-in-out infinite;
+}
+@keyframes animaTopArrowcircle {
+  0%,
+  100% {
+    transform: -translateY(1rem);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+}
+@media (max-width: 1200px) {
+  footer .forms {
+    margin-left: -3rem !important;
+  }
+  footer .footerTitle {
+    width: 100%;
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 1086px) {
+  footer .forms {
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 844px) {
+  footer .forms {
+    margin-left: -6rem !important;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 779px) {
+}
+
+@media (max-width: 628px) {
+  footer .forms {
+    margin-left: -27rem !important;
+    transform: scale(0.8);
+  }
+  footer .footerTitle {
+    margin: 1rem;
+    display: block;
+  }
+}
+
+@media (max-width: 574px) {
+  footer .forms {
+    width: 80%;
+    display: block;
+    margin: 0 auto !important;
+    margin-left: -5rem !important;
+    transform: scale(0.8);
+  }
+  footer .forms input {
+    width: 100%;
+    display: block !important;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+  footer .footerTitle form input {
+    width: 80%;
+  }
+}
+@media (max-width: 444px) {
+  footer .forms input {
+    width: 90%;
+    display: block;
+    margin-left: 3rem !important;
+    margin: 1rem auto;
+  }
+  footer .forms button {
+    margin-left: 3rem !important;
+  }
+}

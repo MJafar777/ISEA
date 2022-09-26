@@ -14,207 +14,209 @@ import flagEn from "../../img/flag/england-circle-512.webp";
 import burger from "../../img/icons/burger/burger.svg";
 import findIcon from "../../img/icons/find.svg";
 
-const Header = () => {
-  const [burgerMenu, setBurgerMenu] = useState(true);
+const Header = () => {};
 
-  return (
-    <>
-      <header className="">
-        <div className="bg-[#222]">
-          <div className="container">
-            <div className="head flex justify-between">
-              <div className="left-head flex gap-4 items-center header-logo-container">
-                <img className="w-[100px]" src={logo} alt="logo_img" />
-                <p className="text-white capitalize text-lg tracking-[.1em]">
-                  international solar <br /> energy system
-                </p>
-              </div>
-              <input
-                id="menu-burger"
-                type="checkbox"
-                onClick={() => setBurgerMenu(!burgerMenu)}
-                style={{ display: "none" }}
-              />
-              <label htmlFor="menu-burger" className="items-center menu-berger-label">
-                <img className="w-[3.2rem] h-[3.2rem]" src={burger} alt="burger_menu" />
-              </label>
-              <div className="right-head navbarUl">
-                <ul className="flex items-center">
-                  <li>
-                    {/* <div className="relative m-[1.6rem]">
-                      <input
-                        className="bg-transparent text-white outline-none border-2 border-[#0057BD] rounded-xl p-2"
-                        type="text"
-                        name="findIcon"
-                        id="findIcon"
-                      />
-                      <img
-                        className="absolute right-1 top-1/2 -translate-y-1/2 headerFindIcon"
-                        src={findIcon}
-                        alt="findIcon"
-                      />
-                    </div> */}
-                    <div className="m-[1rem] p-[.4rem] border-2 border-[#0057BD] rounded-xl">
-                      <img className="headerFindIcon" src={findIcon} alt="findIcon" />
-                    </div>
-                    <ul className="rounded-lg">
-                      <li className="bg-[#222] rounded-lg">
-                        <div className=" p-2   rounded-lg">
-                          <div className="relative">
-                            <input
-                              className="w-full bg-transparent text-white outline-none border-2 border-[#0057BD] rounded-xl p-2"
-                              type="text"
-                              name="findIcon"
-                              id="findIcon"
-                            />
-                            <img
-                              className="absolute right-1 top-1/2 -translate-y-1/2 headerFindIcon"
-                              src={findIcon}
-                              alt="findIcon"
-                            />
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a className="flex items-center gap-3" href="/">
-                      <img className="" src={flagEn} alt="arrow-down" />
-                      <span>EN</span>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="/">
-                          <img src={flagRu} alt="flagRu" />
-                          <span>RU</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/">
-                          <img src={flagUz} alt="flagUz" />
-                          <span>UZ</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a className="flex items-center gap-2" href="/">
-                      <img className="" src={profile} alt="profile" />
-                      <span>LOG IN</span>
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="/">
-                          <img className="" src={profile} alt="profile" />
-                          <span>LOG IN</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/">
-                          <img className="" src={profile} alt="profile" />
-                          <span>LOG IN</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <div
-        style={burgerMenu ? { display: "block" } : { display: "none" }}
-        className="header-navbar  md:bg-[#0057BD] md:w-full  uppercase "
-        // onClick={() => setBurgerMenu(!burgerMenu)}
-      >
-        <div className="sm:container inline">
-          <ul>
-            <li>
-              <Navbar className="hedaer-link" name="HOME" route={"/"} />
-            </li>
-            <li>
-              <Navbar className="hedaer-link" name="RENEWABLES" route={"/benefits"} />
-              <ul>
-                <li>
-                  <Router className="chlidLink" name={"BENEFITS"} route={"/benefits"} />
-                </li>
-                <li>
-                  <Router className="chlidLink" name={"CLIMATE CHANGE"} route={"/climate-change"} />
-                </li>
-                <li>
-                  <Router className="chlidLink" name={"ENERGY TRANSITION"} route={"/energy-transition"} />
-                </li>
-                <li>
-                  <Router className="chlidLink" name={"FINANCE & INVESTMENT"} route={"/finance-and-investment"} />
-                </li>
-                <li>
-                  <Router className="chlidLink" name={"HEATING & COOLING"} route={"/heating-cooling"} />
-                </li>
-                <li>
-                  <Router className="chlidLink" name={"INNOVATION & TECHNOLOGY"} route={"/innovation-technology"} />
-                </li>
-                <li>
-                  <Router className="chlidLink" name={"COSTS"} route={"/costs"} />
-                </li>
-                <li>
-                  <Router className="chlidLink" name={"POWER"} route={"/power"} />
-                </li>
-                <li>
-                  <Router className="chlidLink" name={"INDUCTRY & TRANSPORT"} route={"/inductry-transport"} />
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Navbar className="hedaer-link" name="ABOUT" route={"/about"} />
-              <ul>
-                <li>
-                  <Router name={"About ISEA"} route={"/about"} />
-                </li>
-                <li>
-                  <Router name={"ISEA LIDERSHIP"} route={"/isea-leadership"} />
-                </li>
-                <li>
-                  <Router name={"Contact"} route={"/contact"} />
-                </li>
-                <li>
-                  <Router name={"OURWORK"} route={"/ourwork"} />
-                </li>
-                <li>
-                  <Router name={"History"} route={"/history"} />
-                </li>
-                <li>
-                  <Router name={"Institutional Structure"} route={"/institutional-structure"} />
-                </li>
-                <li>
-                  <Router name={"ISEA Membership"} route={"/isea-membership"} />
-                </li>
-                <li>
-                  <Router name={"OfficialDocuments"} route={"/official-documents"} />
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Navbar className="hedaer-link" name="NEWS" route={"/news"} />
-            </li>
-            <li>
-              <Navbar className="hedaer-link" name="PUBLICATIONS" route={"/publications"} />
-            </li>
-            <li>
-              <Navbar className="hedaer-link" name="EDUCATION" route={"/education"} />
-            </li>
-            <li>
-              <Navbar className="hedaer-link" name="ENGINEERING" route={"/engineering"} />
-            </li>
-            <li>
-              <Navbar className="hedaer-link" name="PROJECT" route={"/project"} />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </>
-  );
-};
+// const Header = () => {
+//   const [burgerMenu, setBurgerMenu] = useState(true);
+
+//   return (
+//     <>
+//       <header id="header" className="">
+//         <div className="bg-[#222]">
+//           <div className="container">
+//             <div className="head flex justify-between">
+//               <div className="left-head flex gap-4 items-center header-logo-container">
+//                 <img className="w-[100px]" src={logo} alt="logo_img" />
+//                 <p className="text-white capitalize text-lg tracking-[.1em]">
+//                   international solar <br /> energy system
+//                 </p>
+//               </div>
+//               <input
+//                 id="menu-burger"
+//                 type="checkbox"
+//                 onClick={() => setBurgerMenu(!burgerMenu)}
+//                 style={{ display: "none" }}
+//               />
+//               <label htmlFor="menu-burger" className="items-center menu-berger-label">
+//                 <img className="w-[3.2rem] h-[3.2rem]" src={burger} alt="burger_menu" />
+//               </label>
+//               <div className="right-head navbarUl">
+//                 <ul className="flex items-center">
+//                   <li>
+//                     {/* <div className="relative m-[1.6rem]">
+//                       <input
+//                         className="bg-transparent text-white outline-none border-2 border-[#0057BD] rounded-xl p-2"
+//                         type="text"
+//                         name="findIcon"
+//                         id="findIcon"
+//                       />
+//                       <img
+//                         className="absolute right-1 top-1/2 -translate-y-1/2 headerFindIcon"
+//                         src={findIcon}
+//                         alt="findIcon"
+//                       />
+//                     </div> */}
+//                     <div className="m-[1rem] p-[.4rem] border-2 border-[#0057BD] rounded-xl">
+//                       <img className="headerFindIcon" src={findIcon} alt="findIcon" />
+//                     </div>
+//                     <ul className="rounded-lg">
+//                       <li className="bg-[#222] rounded-lg">
+//                         <div className=" p-2   rounded-lg">
+//                           <div className="relative">
+//                             <input
+//                               className="w-full bg-transparent text-white outline-none border-2 border-[#0057BD] rounded-xl p-2"
+//                               type="text"
+//                               name="findIcon"
+//                               id="findIcon"
+//                             />
+//                             <img
+//                               className="absolute right-1 top-1/2 -translate-y-1/2 headerFindIcon"
+//                               src={findIcon}
+//                               alt="findIcon"
+//                             />
+//                           </div>
+//                         </div>
+//                       </li>
+//                     </ul>
+//                   </li>
+//                   <li>
+//                     <a className="flex items-center gap-3" href="/">
+//                       <img className="" src={flagEn} alt="arrow-down" />
+//                       <span>EN</span>
+//                     </a>
+//                     <ul>
+//                       <li>
+//                         <a href="/">
+//                           <img src={flagRu} alt="flagRu" />
+//                           <span>RU</span>
+//                         </a>
+//                       </li>
+//                       <li>
+//                         <a href="/">
+//                           <img src={flagUz} alt="flagUz" />
+//                           <span>UZ</span>
+//                         </a>
+//                       </li>
+//                     </ul>
+//                   </li>
+//                   <li>
+//                     <a className="flex items-center gap-2" href="/">
+//                       <img className="" src={profile} alt="profile" />
+//                       <span>LOG IN</span>
+//                     </a>
+//                     <ul>
+//                       <li>
+//                         <a href="/">
+//                           <img className="" src={profile} alt="profile" />
+//                           <span>LOG IN</span>
+//                         </a>
+//                       </li>
+//                       <li>
+//                         <a href="/">
+//                           <img className="" src={profile} alt="profile" />
+//                           <span>LOG IN</span>
+//                         </a>
+//                       </li>
+//                     </ul>
+//                   </li>
+//                 </ul>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </header>
+//       <div
+//         style={burgerMenu ? { display: "block" } : { display: "none" }}
+//         className="header-navbar  md:bg-[#0057BD] md:w-full  uppercase "
+//         // onClick={() => setBurgerMenu(!burgerMenu)}
+//       >
+//         <div className="sm:container inline">
+//           <ul>
+//             <li>
+//               <Navbar className="hedaer-link" name="HOME" route={"/"} />
+//             </li>
+//             <li>
+//               <Navbar className="hedaer-link" name="RENEWABLES" route={"/benefits"} />
+//               <ul>
+//                 <li>
+//                   <Router className="chlidLink" name={"BENEFITS"} route={"/benefits"} />
+//                 </li>
+//                 <li>
+//                   <Router className="chlidLink" name={"CLIMATE CHANGE"} route={"/climate-change"} />
+//                 </li>
+//                 <li>
+//                   <Router className="chlidLink" name={"ENERGY TRANSITION"} route={"/energy-transition"} />
+//                 </li>
+//                 <li>
+//                   <Router className="chlidLink" name={"FINANCE & INVESTMENT"} route={"/finance-and-investment"} />
+//                 </li>
+//                 <li>
+//                   <Router className="chlidLink" name={"HEATING & COOLING"} route={"/heating-cooling"} />
+//                 </li>
+//                 <li>
+//                   <Router className="chlidLink" name={"INNOVATION & TECHNOLOGY"} route={"/innovation-technology"} />
+//                 </li>
+//                 <li>
+//                   <Router className="chlidLink" name={"COSTS"} route={"/costs"} />
+//                 </li>
+//                 <li>
+//                   <Router className="chlidLink" name={"POWER"} route={"/power"} />
+//                 </li>
+//                 <li>
+//                   <Router className="chlidLink" name={"INDUCTRY & TRANSPORT"} route={"/inductry-transport"} />
+//                 </li>
+//               </ul>
+//             </li>
+//             <li>
+//               <Navbar className="hedaer-link" name="ABOUT" route={"/about"} />
+//               <ul>
+//                 <li>
+//                   <Router name={"About ISEA"} route={"/about"} />
+//                 </li>
+//                 <li>
+//                   <Router name={"ISEA LIDERSHIP"} route={"/isea-leadership"} />
+//                 </li>
+//                 <li>
+//                   <Router name={"Contact"} route={"/contact"} />
+//                 </li>
+//                 <li>
+//                   <Router name={"OURWORK"} route={"/ourwork"} />
+//                 </li>
+//                 <li>
+//                   <Router name={"History"} route={"/history"} />
+//                 </li>
+//                 <li>
+//                   <Router name={"Institutional Structure"} route={"/institutional-structure"} />
+//                 </li>
+//                 <li>
+//                   <Router name={"ISEA Membership"} route={"/isea-membership"} />
+//                 </li>
+//                 <li>
+//                   <Router name={"OfficialDocuments"} route={"/official-documents"} />
+//                 </li>
+//               </ul>
+//             </li>
+//             <li>
+//               <Navbar className="hedaer-link" name="NEWS" route={"/news"} />
+//             </li>
+//             <li>
+//               <Navbar className="hedaer-link" name="PUBLICATIONS" route={"/publications"} />
+//             </li>
+//             <li>
+//               <Navbar className="hedaer-link" name="EDUCATION" route={"/education"} />
+//             </li>
+//             <li>
+//               <Navbar className="hedaer-link" name="ENGINEERING" route={"/engineering"} />
+//             </li>
+//             <li>
+//               <Navbar className="hedaer-link" name="PROJECT" route={"/project"} />
+//             </li>
+//           </ul>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
 
 export default Header;
 
