@@ -5,6 +5,7 @@
 .headerVideo {
   width: 100%;
   /* height: 90vh; */
+  /* margin-top: 5.6rem; */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -123,9 +124,9 @@
     font-size: 18px;
   }
 }
-@media (max-width: 678px) {
+@media (max-width: 767px) {
   .headerVideo {
-    /* margin-bottom: -8rem; */
+    /* margin-top: 4rem; */
   }
 }
 @media (max-width: 735px) {

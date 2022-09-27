@@ -67,7 +67,7 @@ const App = () => {
       </div> */}
 
       {/* <Header /> */}
-      {/* <Header /> */}
+      <Header />
 
       <main className="main">
         <Routes>

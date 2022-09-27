@@ -5,6 +5,7 @@ import "./header.module.css";
 
 import Navbar from "../Navbar/Navbar";
 import Router from "../Router/Router";
+import NavbarSection from "./Navbar/Navbar";
 
 import logo from "../../img/Logo/neu.avif";
 import profile from "../../img/icons/profile.svg";
@@ -13,8 +14,113 @@ import flagRu from "../../img/flag/323300.png";
 import flagEn from "../../img/flag/england-circle-512.webp";
 import burger from "../../img/icons/burger/burger.svg";
 import findIcon from "../../img/icons/find.svg";
+import lang from "./../../img/icons/lang.svg";
 
-const Header = () => {};
+const Header = () => {
+  const [burgerMenu, setBurgerMenu] = useState(false);
+  return (
+    <>
+      <header id="header relative">
+        <div className="bg-[#222]">
+          <div className="container">
+            <div className="head flex justify-between">
+              <div className="left-head flex gap-4 items-center header-logo-container">
+                <img className="w-[100px]" src={logo} alt="logo_img" />
+                <p className="text-white capitalize text-lg tracking-[.1em]">
+                  international solar <br /> energy system
+                </p>
+              </div>
+              <input
+                id="menu-burger"
+                type="checkbox"
+                onClick={() => setBurgerMenu(!burgerMenu)}
+                style={{ display: "none" }}
+              />
+              <label htmlFor="menu-burger" className="items-center menu-berger-label">
+                <img className="w-[3.2rem] h-[3.2rem]" src={burger} alt="burger_menu" />
+              </label>
+              <div className="right-head navbarUl">
+                <ul className="flex items-center">
+                  <li>
+                    <div className="m-[1rem] p-[.4rem] border-2 border-[#0057BD] rounded-xl">
+                      <img className="headerFindIcon" src={findIcon} alt="findIcon" />
+                    </div>
+                    <ul className="rounded-lg">
+                      <li className="bg-[#222] rounded-lg">
+                        <div className=" p-2   rounded-lg">
+                          <div className="relative">
+                            <input
+                              className="w-full bg-transparent text-white outline-none border-2 border-[#0057BD] rounded-xl p-2"
+                              type="text"
+                              name="findIcon"
+                              id="findIcon"
+                            />
+                            <img
+                              className="absolute right-1 top-1/2 -translate-y-1/2 headerFindIcon"
+                              src={findIcon}
+                              alt="findIcon"
+                            />
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a className="flex items-center gap-3" href="/">
+                      <img className="" src={lang} alt="arrow-down" />
+                      <span>LANG</span>
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="/">
+                          <img src={flagRu} alt="flagRu" />
+                          <span>RU</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <img src={flagUz} alt="flagUz" />
+                          <span>UZ</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <img src={flagEn} alt="flagEng" />
+                          <span>UZ</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a className="flex items-center gap-2" href="/">
+                      <img className="" src={profile} alt="profile" />
+                      <span>LOG IN</span>
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="/">
+                          <img className="" src={profile} alt="profile" />
+                          <span>LOG IN</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <img className="" src={profile} alt="profile" />
+                          <span>LOG IN</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <NavbarSection burgerMenu={burgerMenu} />
+    </>
+  );
+};
 
 // const Header = () => {
 //   const [burgerMenu, setBurgerMenu] = useState(true);
