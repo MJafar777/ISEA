@@ -25,20 +25,27 @@ const Footer = () => {
             </div>
             <div className="">
               <h2>About us</h2>
-              <p>Supporting the effective use of advanced technologies in the field of solar energy.</p>
+              <p>
+                Supporting the effective use of advanced technologies in the
+                field of solar energy.
+              </p>
             </div>
             <div>
               <h2>Contact Us</h2>
               <p>
-                <NavLink className="flex gap-2" to="tel:947101600">
-                  <img className="h-full fill-white" src={telephoneIcon} alt="telImg" />
+                <NavLink className="flex gap-2" to="tel:+998947101600">
+                  <img
+                    className="h-full fill-white"
+                    src={telephoneIcon}
+                    alt="telImg"
+                  />
                   <span>+988 94 710 16 00</span>
                 </NavLink>
               </p>
               <p>
                 <NavLink className="flex gap-2" to="info@isea.com">
                   <img className="h-full" src={emailIcon} alt="telImg" />
-                  <span>info@isea.com</span>
+                  <span>info@isea.uz</span>
                 </NavLink>
               </p>
             </div>
@@ -97,12 +104,22 @@ const Footer = () => {
                   src={emailIconBlack}
                   alt="emailIcon"
                 />
-                <input type="text" name="formInput" id="formInput" placeholder="Enter your email" />
+                <input
+                  type="text"
+                  name="formInput"
+                  id="formInput"
+                  placeholder="Enter your email"
+                />
               </div>
-              <button className="transition hover:shadow-blue-500/50">Subscribe</button>
+              <button className="transition hover:shadow-blue-500/50">
+                Subscribe
+              </button>
             </form>
           </div>
-          <div id="#header" className="topArrowcircle scroll-smooth absolute bottom-0 right-0">
+          <div
+            id="#header"
+            className="topArrowcircle scroll-smooth absolute bottom-0 right-0"
+          >
             <a href="#header">
               <img src={topArrow} alt="topArrow" />
             </a>

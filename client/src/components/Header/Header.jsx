@@ -20,7 +20,7 @@ const Header = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
   return (
     <>
-      <header id="header relative">
+      <header id="header ">
         <div className="bg-[#222]">
           <div className="container">
             <div className="head flex justify-between">
