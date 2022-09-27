@@ -14,7 +14,7 @@ import image8 from "../../img/topicsIcon/power-off-line-icon.svg";
 
 export default function Topic() {
   return (
-    <div className={s.background + " " + "container"}>
+    <div className={s.background}>
       <Title name={"Topics"} />
       <div className={s.grid}>
         <Card link={"/benefits"} name={"BENEFITS"} image={image1} />
