@@ -35,7 +35,7 @@ export default function PublicationLanding() {
         {/* /////////////////////// */}
 
         <div className={s.publication_card_render}>
-          <d className={s.publication_card_content}>
+          <div className={s.publication_card_content}>
             <div className={s.publication_card_content_img}>
               <img
                 className={s.publication_card_content_img_one}
@@ -66,7 +66,7 @@ export default function PublicationLanding() {
                 written and made available publicly
               </p>
             </div>
-          </d iv>
+          </div>
           <div className={s.publication_card_content}>
             <div className={s.publication_card_content_img}>
               <img
