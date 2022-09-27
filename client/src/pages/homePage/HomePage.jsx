@@ -20,7 +20,7 @@ const HomePage = () => {
   return (
     <main>
       <HeaderVideo />
-      <AboutLanding />
+     <AboutLanding />
       <News />
       {/* <NewsLanding /> */}
       <PublicationLanding />

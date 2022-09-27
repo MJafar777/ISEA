@@ -49,6 +49,7 @@ import Hydopower from "./pages/EnergySources/Hydopower/Hydopower";
 import Ocean from "./pages/EnergySources/Ocean/Ocean";
 import Solar from "./pages/EnergySources/Solar/Solar";
 import obj from "./dataLidership";
+import PublicationPage from "./pages/Publication2/PublicationPage";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -57,16 +58,13 @@ const App = () => {
   }, []);
   return (
     <>
-      {/* <div className="testing">
+      <div className="testing">
         <Marquee speed="100" className="testSite">
           <span>Sayt test rejimida</span> {"  "} <span>The site is in test mode</span>{" "}
           <span>Сайт находится в тестовом режиме</span>
-          <span>Sayt test rejimida !</span> {"  "} <span>The site is in test mode !</span>{" "}
-          <span>Сайт находится в тестовом режиме !</span>
         </Marquee>
-      </div> */}
+      </div>
 
-      {/* <Header /> */}
       <Header />
 
       <main className="main">
@@ -116,7 +114,8 @@ const App = () => {
 
           {/* ---------------------------- */}
 
-          <Route path="/publications" element={<Publication />} />
+          {/* <Route path="/publications" element={<Publication />} /> */}
+          <Route path="/publications" element={<PublicationPage />} />
 
           {/* ---------------------------- */}
           <Route path="/Announcement" element={<Announcement />} />
