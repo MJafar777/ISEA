@@ -11,7 +11,7 @@ import shack from "../../img/shack.jpg";
 const PublicationPage = () => {
   return (
     <div className="container">
-      <div className={s.category}>
+      {/* <div className={s.category}>
         <div className={s.title}>
           <h1 className={s.title_category}>Category</h1>
         </div>
@@ -23,7 +23,7 @@ const PublicationPage = () => {
           <h3 className={s.menu_type}>Fantasy</h3>
           <h3 className={s.menu_type}>Philosophy</h3>
         </div>
-      </div>
+      </div> */}
       <div className={s.publication_card_render}>
         <div className={s.publication_card_content}>
           <div className={s.publication_card_content_img}>
@@ -205,6 +205,9 @@ const PublicationPage = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className={s.button_more}>
+        <button className={s.button_more_child}>View More</button>
       </div>
     </div>
   );
