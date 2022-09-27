@@ -2,15 +2,26 @@
 .publication_card_content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
-  background-color: #fff;
-  border-radius: 0.5rem;
+  cursor: pointer;
+
   -webkit-box-shadow: 3px 8px 35px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 3px 8px 35px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 3px 8px 35px 0px rgba(34, 60, 80, 0.2);
-  cursor: pointer;
-  margin: 4rem;
+}
+.publication_card_content_text {
+  height: 100%;
+  padding: 1rem;
+  padding-left: 3rem;
+  position: relative;
+  border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+.mini_title {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.mini_title2 {
+  font-size: 1.4rem;
 }
 .arrow_right {
   width: 2rem;
@@ -19,24 +30,39 @@
   right: 1rem;
   top: 1rem;
 }
+.star_parent p {
+  font-size: 1.4rem;
+  margin: 0 1 rem;
+}
 .star {
   width: 1.5rem;
+  margin: 0 0.2rem;
 }
-.star_parent {
-  width: 17rem;
+.stars_gold {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+.star_parent {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.description_book {
+  font-size: 1.2rem;
+  width: 100%;
+  height: 3.5rem;
+  overflow: hidden;
   margin: 1rem 0;
 }
 .publication_card_content:hover .arrow_right {
   display: block;
 }
 .publication_card_content_img {
-  margin-right: 2rem;
+  z-index: 1;
 }
 .publication_card_content_img_one {
   width: 20rem;
+  height: 100%;
   transform: scale(1.2);
   border-radius: 0.5rem;
 }
@@ -49,7 +75,7 @@
   margin-top: 6rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  gap: 10rem;
 }
 .button_more {
   width: 100%;
