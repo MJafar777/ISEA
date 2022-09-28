@@ -65,7 +65,7 @@ const App = () => {
         </Marquee>
       </div>
 
-      <Header />
+      {/* <Header /> */}
 
       <main className="main">
         <Routes>

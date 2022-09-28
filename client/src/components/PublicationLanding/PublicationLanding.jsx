@@ -14,7 +14,7 @@ export default function PublicationLanding() {
 
   return (
     <div className={s.background}>
-      <div className="container">
+      <div className={s.container1}>
         <Title name="Recent Publications" />
 
         {/* <div className={s.container}>
@@ -42,24 +42,27 @@ export default function PublicationLanding() {
                 src={shack}
                 alt="shack"
               />
+              <div className={s.publication_card_content__hero1}>
+                <span className={s.arrow_right}>
+                  <img src={arrow_right} alt="arrow_right" />
+                </span>
+                <h2 className={s.mini_title}>The Shack</h2>
+                <p className={s.mini_title2}>by Wiliam P.Young</p>
+
+                <div className={s.star_parent}>
+                  <div className={s.stars_gold}>
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                  </div>
+                  <p>5.500.000 votes</p>
+                  <button className={s.button}>read more</button>
+                </div>
+              </div>
             </div>
             <div className={s.publication_card_content_text}>
-              <span className={s.arrow_right}>
-                <img src={arrow_right} alt="arrow_right" />
-              </span>
-              <h2 className={s.mini_title}>The Shack</h2>
-              <p className={s.mini_title2}>by Wiliam P.Young</p>
-
-              <div className={s.star_parent}>
-                <div className={s.stars_gold}>
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                </div>
-                <p>5.500.000 votes</p>
-              </div>
               <p className={s.description_book}>
                 The noun publication comes from the Latin word publicare,
                 meaning “make public.” Publication usually means something is
@@ -74,24 +77,27 @@ export default function PublicationLanding() {
                 src={shack}
                 alt="shack"
               />
+              <div className={s.publication_card_content__hero1}>
+                <span className={s.arrow_right}>
+                  <img src={arrow_right} alt="arrow_right" />
+                </span>
+                <h2 className={s.mini_title}>The Shack</h2>
+                <p className={s.mini_title2}>by Wiliam P.Young</p>
+
+                <div className={s.star_parent}>
+                  <div className={s.stars_gold}>
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                  </div>
+                  <p>5.500.000 votes</p>
+                  <button className={s.button}>read more</button>
+                </div>
+              </div>
             </div>
             <div className={s.publication_card_content_text}>
-              <span className={s.arrow_right}>
-                <img src={arrow_right} alt="arrow_right" />
-              </span>
-              <h2 className={s.mini_title}>The Shack</h2>
-              <p className={s.mini_title2}>by Wiliam P.Young</p>
-
-              <div className={s.star_parent}>
-                <div className={s.stars_gold}>
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                </div>
-                <p>5.500.000 votes</p>
-              </div>
               <p className={s.description_book}>
                 The noun publication comes from the Latin word publicare,
                 meaning “make public.” Publication usually means something is
@@ -106,24 +112,27 @@ export default function PublicationLanding() {
                 src={shack}
                 alt="shack"
               />
+              <div className={s.publication_card_content__hero1}>
+                <span className={s.arrow_right}>
+                  <img src={arrow_right} alt="arrow_right" />
+                </span>
+                <h2 className={s.mini_title}>The Shack</h2>
+                <p className={s.mini_title2}>by Wiliam P.Young</p>
+
+                <div className={s.star_parent}>
+                  <div className={s.stars_gold}>
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                  </div>
+                  <p>5.500.000 votes</p>
+                  <button className={s.button}>read more</button>
+                </div>
+              </div>
             </div>
             <div className={s.publication_card_content_text}>
-              <span className={s.arrow_right}>
-                <img src={arrow_right} alt="arrow_right" />
-              </span>
-              <h2 className={s.mini_title}>The Shack</h2>
-              <p className={s.mini_title2}>by Wiliam P.Young</p>
-
-              <div className={s.star_parent}>
-                <div className={s.stars_gold}>
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                </div>
-                <p>5.500.000 votes</p>
-              </div>
               <p className={s.description_book}>
                 The noun publication comes from the Latin word publicare,
                 meaning “make public.” Publication usually means something is
@@ -138,24 +147,97 @@ export default function PublicationLanding() {
                 src={shack}
                 alt="shack"
               />
+              <div className={s.publication_card_content__hero1}>
+                <span className={s.arrow_right}>
+                  <img src={arrow_right} alt="arrow_right" />
+                </span>
+                <h2 className={s.mini_title}>The Shack</h2>
+                <p className={s.mini_title2}>by Wiliam P.Young</p>
+
+                <div className={s.star_parent}>
+                  <div className={s.stars_gold}>
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                  </div>
+                  <p>5.500.000 votes</p>
+                  <button className={s.button}>read more</button>
+                </div>
+              </div>
             </div>
             <div className={s.publication_card_content_text}>
-              <span className={s.arrow_right}>
-                <img src={arrow_right} alt="arrow_right" />
-              </span>
-              <h2 className={s.mini_title}>The Shack</h2>
-              <p className={s.mini_title2}>by Wiliam P.Young</p>
+              <p className={s.description_book}>
+                The noun publication comes from the Latin word publicare,
+                meaning “make public.” Publication usually means something is
+                written and made available publicly
+              </p>
+            </div>
+          </div>
+          <div className={s.publication_card_content}>
+            <div className={s.publication_card_content_img}>
+              <img
+                className={s.publication_card_content_img_one}
+                src={shack}
+                alt="shack"
+              />
+              <div className={s.publication_card_content__hero1}>
+                <span className={s.arrow_right}>
+                  <img src={arrow_right} alt="arrow_right" />
+                </span>
+                <h2 className={s.mini_title}>The Shack</h2>
+                <p className={s.mini_title2}>by Wiliam P.Young</p>
 
-              <div className={s.star_parent}>
-                <div className={s.stars_gold}>
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
-                  <img className={s.star} src={star} alt="star" />
+                <div className={s.star_parent}>
+                  <div className={s.stars_gold}>
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                  </div>
+                  <p>5.500.000 votes</p>
+                  <button className={s.button}>read more</button>
                 </div>
-                <p>5.500.000 votes</p>
               </div>
+            </div>
+            <div className={s.publication_card_content_text}>
+              <p className={s.description_book}>
+                The noun publication comes from the Latin word publicare,
+                meaning “make public.” Publication usually means something is
+                written and made available publicly
+              </p>
+            </div>
+          </div>
+          <div className={s.publication_card_content}>
+            <div className={s.publication_card_content_img}>
+              <img
+                className={s.publication_card_content_img_one}
+                src={shack}
+                alt="shack"
+              />
+              <div className={s.publication_card_content__hero1}>
+                <span className={s.arrow_right}>
+                  <img src={arrow_right} alt="arrow_right" />
+                </span>
+                <h2 className={s.mini_title}>The Shack</h2>
+                <p className={s.mini_title2}>by Wiliam P.Young</p>
+
+                <div className={s.star_parent}>
+                  <div className={s.stars_gold}>
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                    <img className={s.star} src={star} alt="star" />
+                  </div>
+                  <p>5.500.000 votes</p>
+                  <button className={s.button}>read more</button>
+                </div>
+              </div>
+            </div>
+            <div className={s.publication_card_content_text}>
               <p className={s.description_book}>
                 The noun publication comes from the Latin word publicare,
                 meaning “make public.” Publication usually means something is
