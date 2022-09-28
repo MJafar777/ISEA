@@ -14,17 +14,18 @@
   justify-content: center;
 }
 .heroTitle {
-  width: 50%;
-  padding: 2rem;
-  border-radius: 1rem;
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
   color: #fff;
 }
 .title {
   font-size: 26px;
-  margin: 1.5rem 0;
 }
 .heroTitle h4 {
   font-size: 18px;
