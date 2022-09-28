@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import Title from "../Title/Title";
 import LeftSide from "./Left/LeftSide";
 import s from "./NewsLanding.module.css";
 import RightSide from "./Right/RightSide";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
 import { GetNews } from "../../store/newsSlice";
 
 export default function NewsLanding() {

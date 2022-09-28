@@ -53,9 +53,11 @@ import PublicationPage from "./pages/Publication2/PublicationPage";
 
 const App = () => {
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(checkMe());
   }, []);
+
   return (
     <>
       <div className="testing">

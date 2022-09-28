@@ -19,11 +19,17 @@ export default function AboutLanding() {
               <br /> {text2}
             </p>
             <NavLink
-              className="flex items-center gap-2 sm:pt-4 md:pt-8 lg:pt-10 sm:text-[1rem] md:text-[1.6rem] lg:text-[2rem] text-[#0057BD]"
+              className="flex items-center gap-2 float-left sm:pt-4 md:pt-8 lg:pt-10 sm:text-[1rem] md:text-[1.6rem] lg:text-[2rem] text-[#0057BD]   group"
               to="/about"
             >
               <span className="sm:text-[1.6rem] md:text-[2rem]">Read more</span>
-              <svg viewBox="0 0 32 32" width="24px" height="24px" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="transition-all group-hover:translate-x-2"
+                viewBox="0 0 32 32"
+                width="24px"
+                height="24px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <title />
                 <g data-name="Layer 2" id="Layer_2">
                   <path

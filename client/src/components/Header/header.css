@@ -104,6 +104,9 @@ header .navbarUl ul li ul li,
 .menu-berger-label {
   display: none;
 }
+.sublink_Link:hover a {
+  color: #fff !important;
+}
 
 @media (max-width: 768px) {
   header .navbarUl ul li span {

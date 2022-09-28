@@ -25,20 +25,13 @@ const Footer = () => {
             </div>
             <div className="">
               <h2>About us</h2>
-              <p>
-                Supporting the effective use of advanced technologies in the
-                field of solar energy.
-              </p>
+              <p>Supporting the effective use of advanced technologies in the field of solar energy.</p>
             </div>
             <div>
               <h2>Contact Us</h2>
               <p>
                 <NavLink className="flex gap-2" to="tel:+998947101600">
-                  <img
-                    className="h-full fill-white"
-                    src={telephoneIcon}
-                    alt="telImg"
-                  />
+                  <img className="h-full fill-white" src={telephoneIcon} alt="telImg" />
                   <span>+988 94 710 16 00</span>
                 </NavLink>
               </p>
@@ -51,8 +44,28 @@ const Footer = () => {
             </div>
           </div>
           <div className="footerTitle">
-            <h2>information</h2>
+            <h2>Information</h2>
             <ul>
+              <li>
+                <p>
+                  <NavLink to="innovation-technology">Innovation & Technology</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="climate-change">Climate Change</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="/news">Latest News</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="/education">Education</NavLink>
+                </p>
+              </li>
               <li>
                 <p>
                   <NavLink to="/about">About Us</NavLink>
@@ -60,7 +73,7 @@ const Footer = () => {
               </li>
               <li>
                 <p>
-                  <NavLink to="/contact">Contact</NavLink>
+                  <NavLink to="/cotact">Contact</NavLink>
                 </p>
               </li>
               <li>
@@ -72,15 +85,10 @@ const Footer = () => {
           </div>
           <div className="footerTitle">
             <h2>Helpful Links</h2>
-            <ul>
+            <ul className="capitalize text-inherit">
               <li>
                 <p>
-                  <NavLink to="/contact">Contact</NavLink>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <NavLink to="/ourwork">Ourwork</NavLink>
+                  <NavLink to="/institutional-structure">Institutional Structure</NavLink>
                 </p>
               </li>
               <li>
@@ -90,7 +98,27 @@ const Footer = () => {
               </li>
               <li>
                 <p>
+                  <NavLink to="/isea-membership">Isea Membership</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="/about">About Isea</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="/ourwork">Ourwork</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
                   <NavLink to="/history">History</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="/contact">Contact</NavLink>
                 </p>
               </li>
             </ul>
@@ -104,22 +132,13 @@ const Footer = () => {
                   src={emailIconBlack}
                   alt="emailIcon"
                 />
-                <input
-                  type="text"
-                  name="formInput"
-                  id="formInput"
-                  placeholder="Enter your email"
-                />
+                <input type="text" name="formInput" id="formInput" placeholder="Enter your email" />
               </div>
-              <button className="transition hover:shadow-blue-500/50">
-                Subscribe
-              </button>
+
+              <button className="transition hover:scale-105">Subscribe</button>
             </form>
           </div>
-          <div
-            id="#header"
-            className="topArrowcircle scroll-smooth absolute bottom-0 right-0"
-          >
+          <div id="#header" className="topArrowcircle scroll-smooth absolute bottom-0 right-0">
             <a href="#header">
               <img src={topArrow} alt="topArrow" />
             </a>

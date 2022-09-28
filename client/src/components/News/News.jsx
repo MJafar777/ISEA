@@ -9,6 +9,7 @@ import img4 from "../../img/hero-Slider/4.avif";
 import img5 from "../../img/hero-Slider/5.avif";
 import img6 from "../../img/hero-Slider/6.avif";
 import img7 from "../../img/hero-Slider/7.avif";
+
 const News = () => {
   return (
     <div className={s.card}>
@@ -24,9 +25,8 @@ const News = () => {
                 As a part of its contribution to the Climate Investment Platform
               </h4>
               <p className={s.news_left__img_content}>
-                As a part of its contribution to the Climate Investment
-                Platform, ISEA invites financial institutions, development
-                organisations
+                As a part of its contribution to the Climate Investment Platform, ISEA invites financial institutions,
+                development organisations
               </p>
               <div className={s.title_data}>
                 <h5>ISES Solar Energy Museum</h5>
@@ -39,9 +39,8 @@ const News = () => {
                 As a part of its contribution to the Climate Investment Platform
               </h4>
               <p className={s.news_left__img_content}>
-                As a part of its contribution to the Climate Investment
-                Platform, ISEA invites financial institutions, development
-                organisations
+                As a part of its contribution to the Climate Investment Platform, ISEA invites financial institutions,
+                development organisations
               </p>
               <div className={s.title_data}>
                 <h5>ISES Solar Energy Museum</h5>
@@ -54,9 +53,8 @@ const News = () => {
                 As a part of its contribution to the Climate Investment Platform
               </h4>
               <p className={s.news_left__img_content}>
-                As a part of its contribution to the Climate Investment
-                Platform, ISEA invites financial institutions, development
-                organisations
+                As a part of its contribution to the Climate Investment Platform, ISEA invites financial institutions,
+                development organisations
               </p>
               <div className={s.title_data}>
                 <h5>ISES Solar Energy Museum</h5>
@@ -69,9 +67,8 @@ const News = () => {
                 As a part of its contribution to the Climate Investment Platform
               </h4>
               <p className={s.news_left__img_content}>
-                As a part of its contribution to the Climate Investment
-                Platform, ISEA invites financial institutions, development
-                organisations
+                As a part of its contribution to the Climate Investment Platform, ISEA invites financial institutions,
+                development organisations
               </p>
               <div className={s.title_data}>
                 <h5>ISES Solar Energy Museum</h5>
@@ -94,12 +91,10 @@ const News = () => {
               </div>
               <div className={s.popular_news_card__right}>
                 <h4 className={s.popular_news_card__right_title}>
-                  The main purpose of the activity: training and retraining of
-                  personnel
+                  The main purpose of the activity: training and retraining of personnel
                 </h4>
                 <p className={s.popular_news_card__right_text}>
-                  supporting the effective use of advanced technologies in the
-                  field of solar energy.
+                  supporting the effective use of advanced technologies in the field of solar energy.
                 </p>
                 <div className={s.title_data}>
                   <h5>ISES Solar Energy Museum</h5>
@@ -113,12 +108,10 @@ const News = () => {
               </div>
               <div className={s.popular_news_card__right}>
                 <h4 className={s.popular_news_card__right_title}>
-                  The main purpose of the activity: training and retraining of
-                  personnel
+                  The main purpose of the activity: training and retraining of personnel
                 </h4>
                 <p className={s.popular_news_card__right_text}>
-                  supporting the effective use of advanced technologies in the
-                  field of solar energy.
+                  supporting the effective use of advanced technologies in the field of solar energy.
                 </p>
                 <div className={s.title_data}>
                   <h5>ISES Solar Energy Museum</h5>
@@ -132,12 +125,10 @@ const News = () => {
               </div>
               <div className={s.popular_news_card__right}>
                 <h4 className={s.popular_news_card__right_title}>
-                  The main purpose of the activity: training and retraining of
-                  personnel
+                  The main purpose of the activity: training and retraining of personnel
                 </h4>
                 <p className={s.popular_news_card__right_text}>
-                  supporting the effective use of advanced technologies in the
-                  field of solar energy.
+                  supporting the effective use of advanced technologies in the field of solar energy.
                 </p>
                 <div className={s.title_data}>
                   <h5>ISES Solar Energy Museum</h5>
@@ -151,12 +142,10 @@ const News = () => {
               </div>
               <div className={s.popular_news_card__right}>
                 <h4 className={s.popular_news_card__right_title}>
-                  The main purpose of the activity: training and retraining of
-                  personnel
+                  The main purpose of the activity: training and retraining of personnel
                 </h4>
                 <p className={s.popular_news_card__right_text}>
-                  supporting the effective use of advanced technologies in the
-                  field of solar energy.
+                  supporting the effective use of advanced technologies in the field of solar energy.
                 </p>
                 <div className={s.title_data}>
                   <h5>ISES Solar Energy Museum</h5>
@@ -170,12 +159,10 @@ const News = () => {
               </div>
               <div className={s.popular_news_card__right}>
                 <h4 className={s.popular_news_card__right_title}>
-                  The main purpose of the activity: training and retraining of
-                  personnel
+                  The main purpose of the activity: training and retraining of personnel
                 </h4>
                 <p className={s.popular_news_card__right_text}>
-                  supporting the effective use of advanced technologies in the
-                  field of solar energy.
+                  supporting the effective use of advanced technologies in the field of solar energy.
                 </p>
                 <div className={s.title_data}>
                   <h5>ISES Solar Energy Museum</h5>

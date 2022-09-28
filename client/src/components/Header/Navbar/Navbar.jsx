@@ -1,14 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import Button from "./Button";
 import NavLinks from "./NavLinks";
-
-import Logo from "../../../img/Logo/neu.avif";
-import profile from "../../../img/icons/profile.svg";
-import flagUz from "../../../img/flag/197416.png";
-import flagRu from "../../../img/flag/323300.png";
-import flagEn from "../../../img/flag/england-circle-512.webp";
-import findIcon from "../../../img/icons/find.svg";
 
 const Navbar = ({ burgerMenu }) => {
   return (
@@ -61,9 +53,31 @@ const Navbar = ({ burgerMenu }) => {
             </Link>
           </li>
           <NavLinks />
-          <div className="py-5">
-            <Button />
-          </div>
+          <li>
+            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/news">
+              News
+            </Link>
+          </li>
+          <li>
+            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/publications">
+              PUBLICATIONS
+            </Link>
+          </li>
+          <li>
+            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/education">
+              EDUCATION
+            </Link>
+          </li>
+          <li>
+            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/engineering">
+              ENGINEERING
+            </Link>
+          </li>
+          <li>
+            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/project">
+              PROJECT
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
