@@ -1,7 +1,6 @@
 .myVideo {
-  width: 100vw;
-  filter: brightness(0.45);
-  /* height: 100%; */
+  width: auto;
+  height: 50vh;
 }
 .headerVideo {
   width: 100%;
@@ -24,7 +23,7 @@
   background: rgba(0, 0, 0, 0.6);
   color: #f1f1f1;
   width: 100%;
-  /* height: 100%; */
+  height: 50vh;
   top: 0;
   bottom: 0;
   left: 0;
@@ -123,11 +122,6 @@
     font-size: 18px;
   }
 }
-@media (max-width: 767px) {
-  .headerVideo {
-    /* margin-top: 4rem; */
-  }
-}
 @media (max-width: 735px) {
   .title {
     font-size: 2.2rem;
@@ -137,16 +131,17 @@
     overflow: hidden;
   }
 }
+@media (max-width: 678px) {
+  .myVideo {
+    min-width: 380vw;
+  }
+}
 @media (max-width: 500px) {
   .title {
     font-size: 1.8rem;
   }
   .description {
     font-size: 1.4rem;
-  }
-}
-@media (max-width: 460px) {
-  .headerVideo {
   }
 }
 @media (max-width: 430px) {
