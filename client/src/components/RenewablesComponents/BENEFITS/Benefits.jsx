@@ -17,7 +17,7 @@ const Benefits = () => {
       <div className="container">
         <div className={s.titleTop}>
           <Title name={"Benefits"} />
-          <h1>
+          <h1 className={s.benefits_h1}>
             Here are 7 benefits related to this renewable source of energy.
           </h1>
         </div>

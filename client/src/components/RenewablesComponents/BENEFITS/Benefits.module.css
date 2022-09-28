@@ -3,12 +3,12 @@
   padding: 2rem;
 }
 
-/* h1 {
+.benefits_h1 {
   font-size: 26px;
   color: black;
   margin-bottom: 1rem;
-  margin-top: -2rem !important;
-} */
+  margin-top: -2rem;
+}
 
 .contentCard h2 {
   font-size: 24px;
