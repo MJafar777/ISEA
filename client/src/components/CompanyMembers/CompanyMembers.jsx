@@ -7,6 +7,13 @@ import img44 from "../../img/OrganisationLogos/texUnver.avif";
 import img55 from "../../img/OrganisationLogos/uzlidep.avif";
 import img66 from "../../img/OrganisationLogos/fti.avif";
 
+// 1 adliyaVazirligi - -> https://www.minjust.uz
+// 2 niresUz - -> http://nires.uz/
+// 3 SavdoSanoatPlatasi - ->
+// 4 texUnver - ->
+// 5 uzlidep - ->
+// 6 fti - ->
+
 import React, { Component } from "react";
 import Slider from "react-slick";
 
