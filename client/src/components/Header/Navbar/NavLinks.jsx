@@ -5,6 +5,7 @@ import { links } from "./MyLinks";
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
+
   return (
     <>
       {links.map((link, index) => (
@@ -21,7 +22,7 @@ const NavLinks = () => {
               <span className="text-xl md:hidden inline">
                 <ion-icon name={`${heading === link.name ? "chevron-up" : "chevron-down"}`}></ion-icon>
               </span>
-              <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
+              <span className="text-xl md:mt-1 md:ml-2  md:block hidden transition-all group-hover:rotate-180 group-hover:-mt-2">
                 <ion-icon name="chevron-down"></ion-icon>
               </span>
             </h1>
@@ -29,17 +30,14 @@ const NavLinks = () => {
               <div>
                 <div className="absolute top-19 hidden group-hover:md:block hover:md:block">
                   <div className="py-[6px]">
-                    <div
-                      className="w-4 h-4 left-3 absolute 
-                    mt-1 bg-white rotate-45"
-                    ></div>
+                    <div className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45 -z-10 group-hover:bg-black"></div>
                   </div>
-                  <div className="bg-white p-0">
+                  <div className="bg-gray-100 p-0">
                     {link.sublinks.map((mysublinks, index) => (
-                      <div className="hover:bg-[#222] text-inherit p-4 group" key={index}>
+                      <div className="hover:bg-[#222] text-inherit p-4 sublink_Link" key={index}>
                         <Link
                           to={mysublinks.link}
-                          className="text-[#222] border-solid lg:text-2xl md:text-lg font-bold group-hover:text-white"
+                          className="text-[#222] border-solid lg:text-2xl md:text-lg font-bold "
                         >
                           {mysublinks.Head}
                         </Link>

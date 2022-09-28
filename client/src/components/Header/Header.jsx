@@ -1,10 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./header.css";
 import "./header.module.css";
 
-import Navbar from "../Navbar/Navbar";
-import Router from "../Router/Router";
 import NavbarSection from "./Navbar/Navbar";
 
 import logo from "../../img/Logo/neu.avif";
@@ -20,16 +19,18 @@ const Header = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
   return (
     <>
-      <header id="header relative">
+      <header id="header">
         <div className="bg-[#222]">
           <div className="container">
             <div className="head flex justify-between">
-              <div className="left-head flex gap-4 items-center header-logo-container">
-                <img className="w-[100px]" src={logo} alt="logo_img" />
-                <p className="text-white capitalize text-lg tracking-[.1em]">
-                  international solar <br /> energy system
-                </p>
-              </div>
+              <Link className="flex items-center" to="/">
+                <div className="left-head flex gap-4 items-center header-logo-container">
+                  <img className="w-[100px]" src={logo} alt="logo_img" />
+                  <p className="text-white capitalize text-lg tracking-[.1em]">
+                    international solar <br /> energy system
+                  </p>
+                </div>
+              </Link>
               <input
                 id="menu-burger"
                 type="checkbox"
@@ -42,51 +43,50 @@ const Header = () => {
               <div className="right-head navbarUl">
                 <ul className="flex items-center">
                   <li>
-                    <div className="m-[1rem] p-[.4rem] border-2 border-[#0057BD] rounded-xl">
+                    <div className="m-[1rem] p-[.4rem] border-2 border-[#0057BD] rounded-xl flex items-center gap-4">
                       <img className="headerFindIcon" src={findIcon} alt="findIcon" />
                     </div>
-                    <ul className="rounded-lg">
+                    <ul className="rounded-lg lg:!w-80 md:!w-72 sm:!w-60 !w-52">
                       <li className="bg-[#222] rounded-lg">
-                        <div className=" p-2   rounded-lg">
+                        <div className="p-2 rounded-lg flex gap-1">
                           <div className="relative">
                             <input
-                              className="w-full bg-transparent text-white outline-none border-2 border-[#0057BD] rounded-xl p-2"
+                              className="w-full bg-transparent text-white !pr-4 outline-none border-2 border-[#0057BD] rounded-xl p-2"
                               type="text"
                               name="findIcon"
                               id="findIcon"
+                              placeholder={"Search from " + "services"}
                             />
-                            <img
-                              className="absolute right-1 top-1/2 -translate-y-1/2 headerFindIcon"
-                              src={findIcon}
-                              alt="findIcon"
-                            />
+                          </div>
+                          <div className="bg-[#0057BD] hover:bg-[#4a9eff] w-16 flex items-center justify-center rounded-lg">
+                            <img className="headerFindIcon" src={findIcon} alt="findIcon" />
                           </div>
                         </div>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a className="flex items-center gap-3" href="/">
+                    <span className="flex items-center gap-3 p-4">
                       <img className="" src={lang} alt="arrow-down" />
-                      <span>LANG</span>
-                    </a>
+                      <span>Lang</span>
+                    </span>
                     <ul>
                       <li>
                         <a href="/">
                           <img src={flagRu} alt="flagRu" />
-                          <span>RU</span>
+                          <span>Ru</span>
                         </a>
                       </li>
                       <li>
                         <a href="/">
                           <img src={flagUz} alt="flagUz" />
-                          <span>UZ</span>
+                          <span>Uz</span>
                         </a>
                       </li>
                       <li>
                         <a href="/">
                           <img src={flagEn} alt="flagEng" />
-                          <span>UZ</span>
+                          <span>Eng</span>
                         </a>
                       </li>
                     </ul>
@@ -94,19 +94,17 @@ const Header = () => {
                   <li>
                     <a className="flex items-center gap-2" href="/">
                       <img className="" src={profile} alt="profile" />
-                      <span>LOG IN</span>
+                      <span>Profil</span>
                     </a>
                     <ul>
                       <li>
                         <a href="/">
-                          <img className="" src={profile} alt="profile" />
-                          <span>LOG IN</span>
+                          <span>Sign in</span>
                         </a>
                       </li>
                       <li>
                         <a href="/">
-                          <img className="" src={profile} alt="profile" />
-                          <span>LOG IN</span>
+                          <span>Sign up</span>
                         </a>
                       </li>
                     </ul>

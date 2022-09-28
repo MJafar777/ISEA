@@ -18,6 +18,9 @@ footer .footerTitle a {
   user-select: none;
   margin: 0.5rem 0;
 }
+footer .footerTitle a:hover {
+  color: gray;
+}
 footer .footerTitle a img {
   /* height: 1.4rem; */
   margin-right: 0.5rem;

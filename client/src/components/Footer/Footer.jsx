@@ -44,8 +44,28 @@ const Footer = () => {
             </div>
           </div>
           <div className="footerTitle">
-            <h2>information</h2>
+            <h2>Information</h2>
             <ul>
+              <li>
+                <p>
+                  <NavLink to="innovation-technology">Innovation & Technology</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="climate-change">Climate Change</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="/news">Latest News</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="/education">Education</NavLink>
+                </p>
+              </li>
               <li>
                 <p>
                   <NavLink to="/about">About Us</NavLink>
@@ -53,7 +73,7 @@ const Footer = () => {
               </li>
               <li>
                 <p>
-                  <NavLink to="/contact">Contact</NavLink>
+                  <NavLink to="/cotact">Contact</NavLink>
                 </p>
               </li>
               <li>
@@ -65,15 +85,10 @@ const Footer = () => {
           </div>
           <div className="footerTitle">
             <h2>Helpful Links</h2>
-            <ul>
+            <ul className="capitalize text-inherit">
               <li>
                 <p>
-                  <NavLink to="/contact">Contact</NavLink>
-                </p>
-              </li>
-              <li>
-                <p>
-                  <NavLink to="/ourwork">Ourwork</NavLink>
+                  <NavLink to="/institutional-structure">Institutional Structure</NavLink>
                 </p>
               </li>
               <li>
@@ -83,7 +98,27 @@ const Footer = () => {
               </li>
               <li>
                 <p>
+                  <NavLink to="/isea-membership">Isea Membership</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="/about">About Isea</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="/ourwork">Ourwork</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
                   <NavLink to="/history">History</NavLink>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <NavLink to="/contact">Contact</NavLink>
                 </p>
               </li>
             </ul>
@@ -99,7 +134,7 @@ const Footer = () => {
                 />
                 <input type="text" name="formInput" id="formInput" placeholder="Enter your email" />
               </div>
-              <button className="transition hover:shadow-blue-500/50">Subscribe</button>
+              <button className="transition hover:scale-105">Subscribe</button>
             </form>
           </div>
           <div id="#header" className="topArrowcircle scroll-smooth absolute bottom-0 right-0">
