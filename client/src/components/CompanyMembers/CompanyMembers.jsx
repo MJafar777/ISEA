@@ -7,6 +7,13 @@ import img44 from "../../img/OrganisationLogos/texUnver.avif";
 import img55 from "../../img/OrganisationLogos/uzlidep.avif";
 import img66 from "../../img/OrganisationLogos/fti.avif";
 
+// 1 adliyaVazirligi - -> https://www.minjust.uz
+// 2 niresUz - -> http://nires.uz/
+// 3 SavdoSanoatPlatasi - -> https://chamber.uz/uz/index
+// 4 texUnver - -> http://tdtu.uz/uz/fakultetlar/
+// 5 uzlidep - -> https://uzlidep.uz/
+// 6 fti - -> https://fti.uz/
+
 import React, { Component } from "react";
 import Slider from "react-slick";
 
@@ -72,12 +79,44 @@ export default class CompanyMembers extends Component {
             ref={(slider) => (this.slider = slider)}
             {...settings}
           >
-            <img src={img11} alt="one" className={s.box} />
-            <img src={img22} alt="one" className={s.box} />
-            <img src={img55} alt="one" className={s.box} />
-            <img src={img33} alt="one" className={s.box} />
-            <img src={img44} alt="one" className={s.box} />
-            <img src={img66} alt="one" className={s.box} />
+            <a
+              href="https://www.minjust.uz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={img11} alt="one" className={s.box} />
+            </a>
+            <a
+              href="http://nires.uz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={img22} alt="one" className={s.box} />
+            </a>
+            <a
+              href="https://chamber.uz/uz/index"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={img55} alt="one" className={s.box} />
+            </a>
+            <a
+              href="http://tdtu.uz/uz/fakultetlar/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={img33} alt="one" className={s.box} />
+            </a>
+            <a
+              href="https://uzlidep.uz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={img44} alt="one" className={s.box} />
+            </a>
+            <a href="https://fti.uz/" target="_blank" rel="noopener noreferrer">
+              <img src={img66} alt="one" className={s.box} />
+            </a>
           </Slider>
         </div>
       </div>
