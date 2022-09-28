@@ -30,7 +30,7 @@ const Footer = () => {
             <div>
               <h2>Contact Us</h2>
               <p>
-                <NavLink className="flex gap-2" to="tel:947101600">
+                <NavLink className="flex gap-2" to="tel:+998947101600">
                   <img className="h-full fill-white" src={telephoneIcon} alt="telImg" />
                   <span>+988 94 710 16 00</span>
                 </NavLink>
@@ -38,7 +38,7 @@ const Footer = () => {
               <p>
                 <NavLink className="flex gap-2" to="info@isea.com">
                   <img className="h-full" src={emailIcon} alt="telImg" />
-                  <span>info@isea.com</span>
+                  <span>info@isea.uz</span>
                 </NavLink>
               </p>
             </div>
@@ -134,6 +134,7 @@ const Footer = () => {
                 />
                 <input type="text" name="formInput" id="formInput" placeholder="Enter your email" />
               </div>
+
               <button className="transition hover:scale-105">Subscribe</button>
             </form>
           </div>

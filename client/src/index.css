@@ -100,11 +100,6 @@ ul {
   line-height: 1.5;
 }
 
-.active {
-  background-color: #222 !important;
-  color: #fff !important;
-}
-
 .cardInfo {
   display: grid;
   gap: 4rem;
