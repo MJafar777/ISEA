@@ -6,9 +6,9 @@ import headerVideo from "../../img/headerVideo/isea1.mp4";
 const HeaderVideo = () => {
   return (
     <div className={s.headerVideo}>
-      <video autoPlay muted loop className={s.myVideo}>
+      {/* <video autoPlay muted loop className={s.myVideo}>
         <source className={s.heroVideo} src={headerVideo} type="video/mp4" />
-      </video>
+      </video> */}
       <div className={s.content}>
         <div className={s.contentChild}>
           <h1 className={s.title}>ISEA ASSOCIATION</h1>

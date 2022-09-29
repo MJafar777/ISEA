@@ -9,6 +9,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { BooksGet } from "../../store/bookSlice";
 import HeaderVideo from "../../components/HeaderVideo/HeaderVideo";
 import News from "../../components/News/News";
+import PublicationSlider from "../Publication2/PublicationSlider/PublicationSlider";
 const HomePage = () => {
   const dispatch = useDispatch();
   const [status, setStatus] = useState(false);
@@ -20,7 +21,7 @@ const HomePage = () => {
   return (
     <main>
       <HeaderVideo />
-     <AboutLanding />
+      <AboutLanding />
       <News />
       {/* <NewsLanding /> */}
       <PublicationLanding />

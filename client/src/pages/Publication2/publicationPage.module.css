@@ -32,6 +32,11 @@
   transition: all 0.3s;
   border-bottom: 3px solid var(--bs-blue);
 }
+
+.box {
+  width: 20rem !important;
+}
+
 @media (max-width: 1283px) {
 }
 /* @media (max-width: px) {
