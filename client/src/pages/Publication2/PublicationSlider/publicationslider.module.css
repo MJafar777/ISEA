@@ -1,14 +1,17 @@
 /* slider started */
-
+.slider {
+  margin: 3rem auto !important;
+}
 .container1 {
   width: 90%;
   margin: 0 auto;
 }
+
 .publication_card_content {
   cursor: pointer;
-  border: 1px solid black;
   width: 200%;
-  margin-left: 2.5rem;
+  margin-left: 4rem;
+  margin: 4rem 0;
   -webkit-box-shadow: 3px 8px 35px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 3px 8px 35px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 3px 8px 35px 0px rgba(34, 60, 80, 0.2);

@@ -128,10 +128,10 @@ const PublicationPage = () => {
       </div>
       <div className={s.main}>
         <div className={s.main_hero}>
-          <img className={s.main_hero} src={books} alt="books" />
+          <img className={s.main_hero_img} src={books} alt="books" />
         </div>
         <div className={s.main_hero_slider + " " + "container"}>
-          <Slider {...settings}>
+          <Slider {...settings} className={s.slider}>
             <PublicationSlider
               bookImage={img1}
               mini_title={"The Shack"}
@@ -141,7 +141,7 @@ const PublicationPage = () => {
               }
             />
             <PublicationSlider
-              bookImage={img1}
+              bookImage={img2}
               mini_title={"The Shack"}
               mini_title2={"by Wiliam P.Young"}
               description_book={
@@ -149,7 +149,7 @@ const PublicationPage = () => {
               }
             />
             <PublicationSlider
-              bookImage={img1}
+              bookImage={img3}
               mini_title={"The Shack"}
               mini_title2={"by Wiliam P.Young"}
               description_book={
@@ -157,7 +157,7 @@ const PublicationPage = () => {
               }
             />
             <PublicationSlider
-              bookImage={img1}
+              bookImage={img4}
               mini_title={"The Shack"}
               mini_title2={"by Wiliam P.Young"}
               description_book={
@@ -165,6 +165,9 @@ const PublicationPage = () => {
               }
             />
           </Slider>
+        </div>
+        <div className={s.main_books + " " + "container"}>
+          <Title name={"New Release"} />
         </div>
       </div>
     </div>
