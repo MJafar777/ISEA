@@ -1,0 +1,68 @@
+.one {
+    margin: 4rem;
+    display: flex;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+  .titleh1{
+    margin: 30px 0px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+.newsqq{
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+  
+  .newsqq .textNew  {
+    display: none;
+  }
+
+  .newsqq  .readMore {
+    display: none;
+    
+  }
+  .newsqq  .cardNewImg{
+    height: 150px;
+    border-radius: 5px;
+  }
+ .imgtitle{
+    height: 400px;
+    background-color: rgb(255, 255, 255); 
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+ }
+ 
+ .imgtitle .imgOneBig{
+    width: 99%;
+    margin: auto;
+    height: 70%;
+    margin-top: 5px;
+   
+}
+.imgtitle h2 { 
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 15px;
+    
+}
+.imgtitle span{
+    margin-left: 15px;
+
+}
+.catg{
+    margin:10px 15px; 
+    color:white;
+    font-weight: bold;
+    background-color: orangered;
+    padding: 3px 6px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.oneNewsText{
+    margin: 20px 15px;
+}

@@ -67,9 +67,9 @@
 }
 .one {
   margin: 4rem;
-  display: grid;
+  display: flex;
   grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  gap: 4rem;
 }
 .box1 {
   border: 2px solid black;
@@ -91,6 +91,9 @@
   flex-direction: column;
   gap: 20px;
 }
+
+
+
 @media (max-width: 1033px) {
   .one {
     margin: 4rem;

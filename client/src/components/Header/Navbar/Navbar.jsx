@@ -4,38 +4,38 @@ import NavLinks from "./NavLinks";
 
 const Navbar = ({ burgerMenu }) => {
   return (
-    <nav className="bg-[#0057bd] text-[1.4rem] text-inherit md:text-white sticky top-0 left-0 right-0 z-50">
+    <nav className=" md:bg-[#0057bd] text-[1.4rem] text-inherit md:text-white sticky top-0 left-0 right-0 z-50">
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-3 md:w-auto w-full md:hidden flex justify-center"></div>
-        <ul className="md:flex hidden uppercase items-center gap-8">
+        <ul className="md:flex flex-wrap hidden justify-center items-center md:gap-2 lg:gap-8">
           <li>
-            <Link to="/" className="py-3 px-3 inline-block hover:bg-[#222] text-white">
+            <Link to="/" className="py-3 px-3 uppercase block hover:bg-[#222] text-white">
               Home
             </Link>
           </li>
           <NavLinks />
           <li>
-            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/news">
+            <Link className="py-3 px-3 uppercase block hover:bg-[#222] text-white" to="/news">
               News
             </Link>
           </li>
           <li>
-            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/publications">
+            <Link className="py-3 px-3 uppercase block hover:bg-[#222] text-white" to="/publications">
               PUBLICATIONS
             </Link>
           </li>
           <li>
-            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/education">
+            <Link className="py-3 px-3 uppercase block hover:bg-[#222] text-white" to="/education">
               EDUCATION
             </Link>
           </li>
           <li>
-            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/engineering">
+            <Link className="py-3 px-3 uppercase block hover:bg-[#222] text-white" to="/engineering">
               ENGINEERING
             </Link>
           </li>
           <li>
-            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/project">
+            <Link className="py-3 px-3 uppercase block hover:bg-[#222] text-white" to="/project">
               PROJECT
             </Link>
           </li>
@@ -48,33 +48,51 @@ const Navbar = ({ burgerMenu }) => {
         `}
         >
           <li>
-            <Link to="/" className="py-7 px-3 inline-block">
+            <Link
+              to="/"
+              className="py-7 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
+            >
               Home
             </Link>
           </li>
           <NavLinks />
           <li>
-            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/news">
+            <Link
+              className="py-3 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
+              to="/news"
+            >
               News
             </Link>
           </li>
           <li>
-            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/publications">
+            <Link
+              className="py-3 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
+              to="/publications"
+            >
               PUBLICATIONS
             </Link>
           </li>
           <li>
-            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/education">
+            <Link
+              className="py-3 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
+              to="/education"
+            >
               EDUCATION
             </Link>
           </li>
           <li>
-            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/engineering">
+            <Link
+              className="py-3 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
+              to="/engineering"
+            >
               ENGINEERING
             </Link>
           </li>
           <li>
-            <Link className="py-3 px-3 inline-block hover:bg-[#222] text-white" to="/project">
+            <Link
+              className="py-3 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
+              to="/project"
+            >
               PROJECT
             </Link>
           </li>
