@@ -19,11 +19,11 @@ const Header = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
   return (
     <>
-      <header id="header ">
+      <header id="header">
         <div className="bg-[#222]">
           <div className="container">
             <div className="head flex justify-between">
-              <Link className="flex items-center" to="/">
+              <Link className="hidden md:flex items-center" to="/">
                 <div className="left-head flex gap-4 items-center header-logo-container">
                   <img className="w-[100px]" src={logo} alt="logo_img" />
                   <p className="text-white capitalize text-lg tracking-[.1em]">
@@ -92,7 +92,7 @@ const Header = () => {
                     </ul>
                   </li>
                   <li>
-                    <span className="flex items-center gap-2 py-4">
+                    <span className="flex items-center gap-2 sm:2 p-4">
                       <img className="" src={profile} alt="profile" />
                       <span>Profil</span>
                     </span>
