@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import s from "./publicationPage.module.css";
 
 import Title from "../../components/Title/Title";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import img1 from "../../img/Publications/1.avif";
 import img2 from "../../img/Publications/2.avif";
@@ -116,13 +116,13 @@ const PublicationPage = () => {
         </div>
         <div className={s.category_type}>
           {menu_types.map((val, index) => (
-            <NavLink
-              to=""
+            <a
+              href={"#" + val.id}
               onClick={() => setIsIndex(index + 1)}
               className={isIndex === val.id ? menuTypeBottom : menuType}
             >
               {val.name}
-            </NavLink>
+            </a>
           ))}
         </div>
       </div>
@@ -130,44 +130,456 @@ const PublicationPage = () => {
         <div className={s.main_hero}>
           <img className={s.main_hero_img} src={books} alt="books" />
         </div>
-        <div className={s.main_hero_slider + " " + "container"}>
-          <Slider {...settings} className={s.slider}>
-            <PublicationSlider
-              bookImage={img1}
-              mini_title={"The Shack"}
-              mini_title2={"by Wiliam P.Young"}
-              description_book={
-                "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
-              }
-            />
-            <PublicationSlider
-              bookImage={img2}
-              mini_title={"The Shack"}
-              mini_title2={"by Wiliam P.Young"}
-              description_book={
-                "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
-              }
-            />
-            <PublicationSlider
-              bookImage={img3}
-              mini_title={"The Shack"}
-              mini_title2={"by Wiliam P.Young"}
-              description_book={
-                "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
-              }
-            />
-            <PublicationSlider
-              bookImage={img4}
-              mini_title={"The Shack"}
-              mini_title2={"by Wiliam P.Young"}
-              description_book={
-                "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
-              }
-            />
-          </Slider>
+
+        <div id={"1"} className={s.main_books + " " + "container"}>
+          <div className={s.main_hero_slider + " " + "container"}>
+            <Title name={"All Genres"} />
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+          </div>
         </div>
-        <div className={s.main_books + " " + "container"}>
-          <Title name={"New Release"} />
+        <div id={"2"} className={s.main_books + " " + "container"}>
+          <div className={s.main_hero_slider + " " + "container"}>
+            <Title name={"Science"} />
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+          </div>
+        </div>
+        <div id={"3"} className={s.main_books + " " + "container"}>
+          <div className={s.main_hero_slider + " " + "container"}>
+            <Title name={"Fiction"} />
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+          </div>
+        </div>
+        <div id={"4"} className={s.main_books + " " + "container"}>
+          <div className={s.main_hero_slider + " " + "container"}>
+            <Title name={"BusinessScience"} />
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+          </div>
+        </div>
+        <div id={"5"} className={s.main_books + " " + "container"}>
+          <div className={s.main_hero_slider + " " + "container"}>
+            <Title name={"Fantasy"} />
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+          </div>
+        </div>
+        <div id={"6"} className={s.main_books + " " + "container"}>
+          <div className={s.main_hero_slider + " " + "container"}>
+            <Title name={"Philosophy"} />
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+            <Slider {...settings} className={s.slider}>
+              <PublicationSlider
+                bookImage={img4}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img2}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img3}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+
+              <PublicationSlider
+                bookImage={img1}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+            </Slider>
+          </div>
         </div>
       </div>
     </div>

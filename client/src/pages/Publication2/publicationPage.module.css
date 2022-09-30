@@ -1,3 +1,7 @@
+.slider {
+  margin-top: -5rem !important;
+}
+
 .category {
   width: 90%;
   display: flex;
