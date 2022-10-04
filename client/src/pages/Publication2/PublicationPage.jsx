@@ -9,46 +9,18 @@ import img1 from "../../img/Publications/1.avif";
 import img2 from "../../img/Publications/2.avif";
 import img3 from "../../img/Publications/3.avif";
 import img4 from "../../img/Publications/4.avif";
+import img5 from "../../img/Publications/img5.jpg";
+import img6 from "../../img/Publications/img6.jpg";
+import img7 from "../../img/Publications/img7.JPG";
+import img8 from "../../img/Publications/img8.JPG";
+import img9 from "../../img/Publications/img9.jpg";
+
 import books from "../../img/Publications/books.jpg";
 
 import Slider from "react-slick";
 import PublicationSlider from "./PublicationSlider/PublicationSlider";
 
 const PublicationPage = () => {
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   responsive: [
-  //     // {
-  //     //   breakpoint: 1024,
-  //     //   settings: {
-  //     //     slidesToShow: 3,
-  //     //     slidesToScroll: 3,
-  //     //     infinite: true,
-  //     //     dots: true,
-  //     //   },
-  //     // },
-  //     // {
-  //     //   breakpoint: 600,
-  //     //   settings: {
-  //     //     slidesToShow: 2,
-  //     //     slidesToScroll: 2,
-  //     //     initialSlide: 2,
-  //     //   },
-  //     // },
-  //     // {
-  //     //   breakpoint: 480,
-  //     //   settings: {
-  //     //     slidesToShow: 1,
-  //     //     slidesToScroll: 1,
-  //     //   },
-  //     // },
-  //   ],
-  // };
   const settings = {
     dots: true,
     infinite: true,
@@ -219,7 +191,7 @@ const PublicationPage = () => {
                 }
               />
               <PublicationSlider
-                bookImage={img2}
+                bookImage={img5}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -227,7 +199,7 @@ const PublicationPage = () => {
                 }
               />
               <PublicationSlider
-                bookImage={img3}
+                bookImage={img6}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -236,7 +208,7 @@ const PublicationPage = () => {
               />
 
               <PublicationSlider
-                bookImage={img1}
+                bookImage={img7}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -246,7 +218,7 @@ const PublicationPage = () => {
             </Slider>
             <Slider {...settings} className={s.slider}>
               <PublicationSlider
-                bookImage={img4}
+                bookImage={img8}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -254,7 +226,7 @@ const PublicationPage = () => {
                 }
               />
               <PublicationSlider
-                bookImage={img2}
+                bookImage={img9}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -369,7 +341,7 @@ const PublicationPage = () => {
                 }
               />
               <PublicationSlider
-                bookImage={img2}
+                bookImage={img9}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -377,7 +349,7 @@ const PublicationPage = () => {
                 }
               />
               <PublicationSlider
-                bookImage={img3}
+                bookImage={img8}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -386,7 +358,7 @@ const PublicationPage = () => {
               />
 
               <PublicationSlider
-                bookImage={img1}
+                bookImage={img5}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -396,14 +368,6 @@ const PublicationPage = () => {
             </Slider>
             <Slider {...settings} className={s.slider}>
               <PublicationSlider
-                bookImage={img4}
-                mini_title={"The Shack"}
-                mini_title2={"by Wiliam P.Young"}
-                description_book={
-                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
-                }
-              />
-              <PublicationSlider
                 bookImage={img2}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
@@ -412,7 +376,15 @@ const PublicationPage = () => {
                 }
               />
               <PublicationSlider
-                bookImage={img3}
+                bookImage={img7}
+                mini_title={"The Shack"}
+                mini_title2={"by Wiliam P.Young"}
+                description_book={
+                  "The noun publication comes from the Latin word publicare,meaning make public. Publication usually means somethingis written and made available publicly"
+                }
+              />
+              <PublicationSlider
+                bookImage={img6}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -421,7 +393,7 @@ const PublicationPage = () => {
               />
 
               <PublicationSlider
-                bookImage={img1}
+                bookImage={img8}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -444,7 +416,7 @@ const PublicationPage = () => {
                 }
               />
               <PublicationSlider
-                bookImage={img2}
+                bookImage={img7}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -452,7 +424,7 @@ const PublicationPage = () => {
                 }
               />
               <PublicationSlider
-                bookImage={img3}
+                bookImage={img9}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={
@@ -461,7 +433,7 @@ const PublicationPage = () => {
               />
 
               <PublicationSlider
-                bookImage={img1}
+                bookImage={img5}
                 mini_title={"The Shack"}
                 mini_title2={"by Wiliam P.Young"}
                 description_book={

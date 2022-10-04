@@ -50,6 +50,35 @@ import Solar from "./pages/EnergySources/Solar/Solar";
 import obj from "./dataLidership";
 import PublicationPage from "./pages/Publication2/PublicationPage";
 import Error from "./components/Error/Error";
+import { useState } from "react";
+import BookPublick from "./pages/Publication2/Publication_books/BookPublick.jsx";
+
+// const hello = {
+//   title: {
+//     eng: "Hello",
+//     ru: "Привет",
+//     uz: "Nma gap",
+//   },
+// };
+
+// const Hello = ({ language }) => {
+//   return (
+//     <>
+//       <p>
+//         {language === "uz"
+//           ? hello.title.uz
+//           : language === "ru"
+//           ? hello.title.ru
+//           : hello.title.eng}
+//       </p>
+//     </>
+//   );
+// };
+
+// const Lang = () => {
+//   const [language, setLanguage] = useState("ru");
+//   return <Hello language={language} />;
+// };
 
 const App = () => {
   const dispatch = useDispatch();
@@ -68,10 +97,10 @@ const App = () => {
       </div> */}
 
       <Header />
-
+      {/* <Lang /> */}
       <main className="main">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" exact element={<HomePage />} />
           {/* ---------------------------- */}
 
           <Route path="/about" element={<AboutPage />} />
@@ -129,7 +158,8 @@ const App = () => {
           {/* ---------------------------- */}
 
           {/* <Route path="/publications" element={<Publication />} /> */}
-          <Route path="/publications" element={<PublicationPage />} />
+          <Route path="/publications" exact element={<PublicationPage />} />
+          <Route path="/publication-books" exact element={<BookPublick />} />
 
           {/* ---------------------------- */}
           <Route path="/Announcement" element={<Announcement />} />
