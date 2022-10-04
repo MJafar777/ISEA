@@ -1,0 +1,31 @@
+{
+  "Hello": {
+    "1": "Salom"
+  },
+  "Navbar": {
+    "1": "Asosiy",
+    "2": "QTE",
+    "Renewables": {
+      "1": "foydali jihati",
+      "2": "iqlim o'zgarishi",
+      "3": "energya o'zgarishi",
+      "4": "moliya va investitsiya",
+      "5": "Issiq va sovuq harorat",
+      "6": "innovatsiya va texnologiya",
+      "7": "sarf & xarajat",
+      "8": "quvvat & energiya",
+      "9": "qurilish va transport"
+    },
+    "3": "Biz haqimizda",
+    "About": {
+      "1": "ISEA haqida",
+      "2": "contact",
+      "3": "bizning ishlar"
+    },
+    "4": "Yangiliklar",
+    "5": "Nashrlar",
+    "6": "Ta'lim",
+    "7": "Muhandislik",
+    "8": "Loyihalar"
+  }
+}

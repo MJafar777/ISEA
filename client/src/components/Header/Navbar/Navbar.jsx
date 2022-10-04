@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
+import { useTranslation } from "react-i18next";
 
 const Navbar = ({ burgerMenu }) => {
+  const { t } = useTranslation();
   return (
     <nav className=" md:bg-[#0057bd] text-[1.4rem] text-inherit md:text-white sticky top-0 left-0 right-0 z-50">
       <div className="flex items-center font-medium justify-around">
@@ -10,33 +12,33 @@ const Navbar = ({ burgerMenu }) => {
         <ul className="md:flex flex-wrap hidden justify-center items-center md:gap-2 lg:gap-8">
           <li>
             <Link to="/" className="py-3 px-3 uppercase block hover:bg-[#222] text-white">
-              Home
+              {t("Navbar.1")}
             </Link>
           </li>
           <NavLinks />
           <li>
             <Link className="py-3 px-3 uppercase block hover:bg-[#222] text-white" to="/news">
-              News
+              {t("Navbar.4")}
             </Link>
           </li>
           <li>
             <Link className="py-3 px-3 uppercase block hover:bg-[#222] text-white" to="/publications">
-              PUBLICATIONS
+              {t("Navbar.5")}
             </Link>
           </li>
           <li>
             <Link className="py-3 px-3 uppercase block hover:bg-[#222] text-white" to="/education">
-              EDUCATION
+              {t("Navbar.6")}
             </Link>
           </li>
           <li>
             <Link className="py-3 px-3 uppercase block hover:bg-[#222] text-white" to="/engineering">
-              ENGINEERING
+              {t("Navbar.7")}
             </Link>
           </li>
           <li>
             <Link className="py-3 px-3 uppercase block hover:bg-[#222] text-white" to="/project">
-              PROJECT
+              {t("Navbar.8")}
             </Link>
           </li>
         </ul>
@@ -52,7 +54,7 @@ const Navbar = ({ burgerMenu }) => {
               to="/"
               className="py-7 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
             >
-              Home
+              {t("Navbar.1")}
             </Link>
           </li>
           <NavLinks />
@@ -61,7 +63,7 @@ const Navbar = ({ burgerMenu }) => {
               className="py-3 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
               to="/news"
             >
-              News
+              {t("Navbar.4")}
             </Link>
           </li>
           <li>
@@ -69,7 +71,7 @@ const Navbar = ({ burgerMenu }) => {
               className="py-3 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
               to="/publications"
             >
-              PUBLICATIONS
+              {t("Navbar.5")}
             </Link>
           </li>
           <li>
@@ -77,7 +79,7 @@ const Navbar = ({ burgerMenu }) => {
               className="py-3 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
               to="/education"
             >
-              EDUCATION
+              {t("Navbar.6")}
             </Link>
           </li>
           <li>
@@ -85,7 +87,7 @@ const Navbar = ({ burgerMenu }) => {
               className="py-3 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
               to="/engineering"
             >
-              ENGINEERING
+              {t("Navbar.7")}
             </Link>
           </li>
           <li>
@@ -93,7 +95,7 @@ const Navbar = ({ burgerMenu }) => {
               className="py-3 px-3 uppercase block hover:bg-[#222] text-[#222] hover:text-white md:text-white"
               to="/project"
             >
-              PROJECT
+              {t("Navbar.8")}
             </Link>
           </li>
         </ul>

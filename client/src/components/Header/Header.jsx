@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import "./header.css";
 import "./header.module.css";
@@ -16,7 +17,11 @@ import findIcon from "../../img/icons/find.svg";
 import lang from "./../../img/icons/lang.svg";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
   const [burgerMenu, setBurgerMenu] = useState(false);
+  const langClick = (lang) => {
+    i18n.changeLanguage(lang);
+  };
   return (
     <>
       <header id="header">
@@ -66,28 +71,31 @@ const Header = () => {
                     </ul>
                   </li>
                   <li>
-                    <span className="flex items-center gap-3 p-4">
+                    <span className="flex items-center gap-3 p-4 ">
                       <img className="" src={lang} alt="arrow-down" />
                       <span>Lang</span>
                     </span>
                     <ul>
-                      <li>
-                        <a href="/">
-                          <img src={flagRu} alt="flagRu" />
-                          <span>Ru</span>
-                        </a>
+                      <li
+                        className="flex items-center justify-start gap-3 p-3 cursor-pointer hover:bg-[#222] group"
+                        onClick={() => langClick("ru")}
+                      >
+                        <img src={flagRu} alt="flagRu" />
+                        <span className="group-hover:text-white">Ru</span>
                       </li>
-                      <li>
-                        <a href="/">
-                          <img src={flagUz} alt="flagUz" />
-                          <span>Uz</span>
-                        </a>
+                      <li
+                        className="flex items-center justify-start gap-3 p-3 cursor-pointer hover:bg-[#222] group"
+                        onClick={() => langClick("uz")}
+                      >
+                        <img src={flagUz} alt="flagUz" />
+                        <span className="group-hover:text-white">Uz</span>
                       </li>
-                      <li>
-                        <a href="/">
-                          <img src={flagEn} alt="flagEng" />
-                          <span>Eng</span>
-                        </a>
+                      <li
+                        className="flex items-center justify-start gap-3 p-3 cursor-pointer hover:bg-[#222] group"
+                        onClick={() => langClick("en")}
+                      >
+                        <img src={flagEn} alt="flagEng" />
+                        <span className="group-hover:text-white">Eng</span>
                       </li>
                     </ul>
                   </li>

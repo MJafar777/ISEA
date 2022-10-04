@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { links } from "./MyLinks";
+import links from "./MyLinks";
 
 const NavLinks = () => {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
+  console.log(links());
 
   return (
     <>
-      {links.map((link, index) => (
+      {links().map((link, index) => (
         <div key={index}>
           <div className="px-3 text-left md:cursor-pointer group hover:bg-[#222] hover:text-white">
             <h1
-              className="py-3 flex justify-between items-center md:pr-0 pr-5 group "
+              className="py-3 flex justify-between uppercase items-center md:pr-0 pr-5 group "
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
@@ -34,10 +35,10 @@ const NavLinks = () => {
                   </div>
                   <div className="bg-gray-100 p-0">
                     {link.sublinks.map((mysublinks, index) => (
-                      <div className="hover:bg-[#222] text-inherit p-4 sublink_Link" key={index}>
+                      <div className="hover:bg-[#222] text-inherit sublink_Link" key={index}>
                         <Link
                           to={mysublinks.link}
-                          className="text-[#222] border-solid lg:text-2xl md:text-lg font-bold "
+                          className="text-[#222] border-solid lg:text-2xl md:text-lg font-bold uppercase block p-4"
                         >
                           {mysublinks.Head}
                         </Link>
@@ -66,16 +67,18 @@ const NavLinks = () => {
             {link.sublinks.map((slinks, index) => (
               <div key={index}>
                 <div>
-                  <h1
-                    onClick={() => (subHeading !== slinks.Head ? setSubHeading(slinks.Head) : setSubHeading(""))}
-                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center "
-                  >
-                    {slinks.Head}
+                  <Link to="">
+                    <h1
+                      onClick={() => (subHeading !== slinks.Head ? setSubHeading(slinks.Head) : setSubHeading(""))}
+                      className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center "
+                    >
+                      {slinks.Head}
 
-                    <span className="text-xl md:mt-1 md:ml-2 inline">
-                      <ion-icon name={`${subHeading === slinks.Head ? "chevron-up" : "chevron-down"}`}></ion-icon>
-                    </span>
-                  </h1>
+                      <span className="text-xl md:mt-1 md:ml-2 inline">
+                        <ion-icon name={`${subHeading === slinks.Head ? "chevron-up" : "chevron-down"}`}></ion-icon>
+                      </span>
+                    </h1>
+                  </Link>
                   <div className={`${subHeading === slinks.Head ? "md:hidden" : "hidden"}`}>
                     {slinks.sublink.map((slink, index) => (
                       <li key={index} className="py-3 pl-14">

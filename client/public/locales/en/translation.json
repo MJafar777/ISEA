@@ -1,0 +1,31 @@
+{
+  "Hello": {
+    "1": "Welcome"
+  },
+  "Navbar": {
+    "1": "Home",
+    "2": "Renewables",
+    "Renewables": {
+      "1": "benefits",
+      "2": "climate change",
+      "3": "energy transition",
+      "4": "finance & investiment",
+      "5": "heating & cooling",
+      "6": "innovation & technology",
+      "7": "costs",
+      "8": "power",
+      "9": "inductry & transport"
+    },
+    "3": "About",
+    "About": {
+      "1": "About ISEA",
+      "2": "contact",
+      "3": "ourwork"
+    },
+    "4": "News",
+    "5": "Publications",
+    "6": "Education",
+    "7": "Engineering",
+    "8": "Projects"
+  }
+}
