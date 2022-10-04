@@ -5,12 +5,14 @@ import s from "./publicationslider.module.css";
 import arrow_right from "../../../img/arrow/arrow_right.svg";
 import star from "../../../img/arrow/2792946_star_xmas_icon.svg";
 import shack from "../../../img/shack.jpg";
+import { NavLink } from "react-router-dom";
 
 const PublicationSlider = ({
   bookImage = shack,
   mini_title = "",
   mini_title2 = "",
   description_book = "",
+  id = "",
 }) => {
   return (
     <div className="container">
@@ -38,7 +40,9 @@ const PublicationSlider = ({
                   <img className={s.star} src={star} alt="star" />
                 </div>
                 <p>5.500.000 votes</p>
-                <button className={s.button}>read more</button>
+                <NavLink to="/publication-books">
+                  <button className={s.button}>read more</button>
+                </NavLink>
               </div>
             </div>
           </div>

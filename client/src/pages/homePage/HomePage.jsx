@@ -10,6 +10,7 @@ import { BooksGet } from "../../store/bookSlice";
 import HeaderVideo from "../../components/HeaderVideo/HeaderVideo";
 import News from "../../components/News/News";
 import PublicationSlider from "../Publication2/PublicationSlider/PublicationSlider";
+import BookPublick from "../Publication2/Publication_books/BookPublick";
 const HomePage = () => {
   const dispatch = useDispatch();
   const [status, setStatus] = useState(false);

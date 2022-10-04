@@ -32,7 +32,7 @@ const Header = () => {
                 <div className="left-head flex gap-4 items-center header-logo-container">
                   <img className="w-[100px]" src={logo} alt="logo_img" />
                   <p className="text-white capitalize text-lg tracking-[.1em]">
-                    international solar <br /> energy system
+                    international solar <br /> energy association
                   </p>
                 </div>
               </Link>
@@ -42,14 +42,25 @@ const Header = () => {
                 onClick={() => setBurgerMenu(!burgerMenu)}
                 style={{ display: "none" }}
               />
-              <label htmlFor="menu-burger" className="items-center menu-berger-label">
-                <img className="w-[3.2rem] h-[3.2rem]" src={burger} alt="burger_menu" />
+              <label
+                htmlFor="menu-burger"
+                className="items-center menu-berger-label"
+              >
+                <img
+                  className="w-[3.2rem] h-[3.2rem]"
+                  src={burger}
+                  alt="burger_menu"
+                />
               </label>
               <div className="right-head navbarUl">
                 <ul className="flex items-center">
                   <li>
                     <div className="m-[1rem] p-[.4rem] border-2 border-[#0057BD] rounded-xl flex items-center gap-4">
-                      <img className="headerFindIcon" src={findIcon} alt="findIcon" />
+                      <img
+                        className="headerFindIcon"
+                        src={findIcon}
+                        alt="findIcon"
+                      />
                     </div>
                     <ul className="rounded-lg lg:!w-80 md:!w-72 sm:!w-60 !w-52">
                       <li className="bg-[#222] rounded-lg">
@@ -64,7 +75,11 @@ const Header = () => {
                             />
                           </div>
                           <div className="bg-[#0057BD] hover:bg-[#4a9eff] w-16 flex items-center justify-center rounded-lg">
-                            <img className="headerFindIcon" src={findIcon} alt="findIcon" />
+                            <img
+                              className="headerFindIcon"
+                              src={findIcon}
+                              alt="findIcon"
+                            />
                           </div>
                         </div>
                       </li>
