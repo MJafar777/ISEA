@@ -19,6 +19,13 @@ const obj = [
   },
   {
     id: 3,
+    name: "Baratov Bekzod",
+    status: "Full-Stack Developer",
+    about: "Bekzod",
+    img: img3,
+  },
+  {
+    id: 4,
     name: "Mamurjon Ibragimov",
     status: "Full-Stack Developer",
     about: "Mamurjon",
